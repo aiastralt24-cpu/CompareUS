@@ -70,6 +70,12 @@ Run normal change detection:
 npm run monitor
 ```
 
+Run continuous monitoring:
+
+```bash
+MONITOR_INTERVAL_MINUTES=30 npm run monitor:realtime
+```
+
 Run the dashboard:
 
 ```bash

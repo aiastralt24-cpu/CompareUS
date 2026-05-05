@@ -359,6 +359,147 @@ const moduleLabels = {
   campaigns: "Campaigns"
 };
 
+const moduleHeaders = {
+  overview: {
+    label: "Executive view",
+    title: "Competitive Command Center",
+    copy: "A live public-evidence summary of competitor movement, open alerts, and next actions."
+  },
+  aeo: {
+    label: "Answer engine optimization",
+    title: "AEO Study",
+    copy: "AI crawlability, schema, extractable content, citation readiness, and answer-engine evidence for each brand."
+  },
+  seo: {
+    label: "Search visibility",
+    title: "SEO Study",
+    copy: "Technical and on-page SEO evidence from public pages, with rank and backlink inputs kept separate until connected."
+  },
+  social: {
+    label: "Social intelligence",
+    title: "Social Study",
+    copy: "Confirmed official profiles and the collection status for public social evidence."
+  },
+  website: {
+    label: "Website quality",
+    title: "Website Study",
+    copy: "Public performance proxies, UX signals, accessibility indicators, security headers, and visible technology stack."
+  },
+  campaigns: {
+    label: "Campaign watch",
+    title: "Campaign Monitor",
+    copy: "Public campaign-like URLs, category launches, homepage changes, schema shifts, and evidence-backed alerts."
+  }
+};
+
+const aeoChecklistSections = [
+  {
+    title: "1.1 Brand presence in AI answers",
+    items: [
+      ["Brand is named in top category-defining AI answers", "pending", "Needs scheduled AI prompt testing"],
+      ["Brand cited with source link in Perplexity", "pending", "Needs Perplexity capture"],
+      ["Brand appears in Google AI Overviews / AI Mode", "pending", "Needs SERP/AI Overview capture"],
+      ["Brand mentioned in ChatGPT search results", "pending", "Needs browser-enabled prompt capture"],
+      ["Brand surfaces in Gemini, Copilot, and Claude", "pending", "Needs multi-engine prompt run"],
+      ["AI answer share of voice vs competitors", "pending", "Needs fixed query set"],
+      ["Sentiment of AI mentions", "pending", "Needs answer text classification"],
+      ["Unprompted brand mention frequency", "pending", "Needs category prompt bank"]
+    ]
+  },
+  {
+    title: "1.2 Content structure for extraction",
+    items: [
+      ["Direct-answer intro paragraph", "directAnswer"],
+      ["Question-form H2/H3 headings", "questionHeadings"],
+      ["FAQ blocks on commercial/informational pages", "faqText"],
+      ["Definition boxes, summary callouts, TL;DR sections", "answerBlocks"],
+      ["Numbered lists and tables", "answerBlocks"],
+      ["Self-contained extractable paragraphs", "answerBlocks"],
+      ["Conversational question-answer phrasing", "questionHeadings"],
+      ["80-120 word answer-friendly blocks", "answerBlocks"]
+    ]
+  },
+  {
+    title: "1.3 Structured data and schema",
+    items: [
+      ["FAQPage schema", "faqSchema"],
+      ["HowTo schema", "howToSchema"],
+      ["Article / NewsArticle schema", "articleSchema"],
+      ["Product schema", "productSchema"],
+      ["Organization schema with sameAs/contact signals", "organizationSchema"],
+      ["BreadcrumbList schema", "breadcrumbSchema"],
+      ["Speakable schema", "pending", "Needs schema validator detail"],
+      ["LocalBusiness schema", "localBusinessSchema"],
+      ["Schema validator clean pass", "pending", "Needs Rich Results / Schema.org validator"]
+    ]
+  },
+  {
+    title: "1.4 E-E-A-T signals",
+    items: [
+      ["Named authors / editorial signals", "authorSignals"],
+      ["Author-level topical authority", "pending", "Needs author-page crawl"],
+      ["Editorial / fact-check / review process", "authorSignals"],
+      ["Visible last-updated / freshness signals", "freshnessSignals"],
+      ["Primary-source citations", "pending", "Needs outbound citation audit"],
+      ["First-party data / original research", "pending", "Needs content-level crawl"],
+      ["Customer case studies", "trustSignals"],
+      ["Awards, certifications, BIS/ISI marks", "trustSignals"],
+      ["Wikipedia/Wikidata/directory presence", "pending", "Needs off-site collector"]
+    ]
+  },
+  {
+    title: "1.5 Crawlability for AI crawlers",
+    items: [
+      ["robots.txt allows GPTBot", "gptbot"],
+      ["robots.txt allows ClaudeBot", "claudebot"],
+      ["robots.txt allows PerplexityBot", "perplexitybot"],
+      ["robots.txt allows Google-Extended", "googleextended"],
+      ["robots.txt allows CCBot / Bytespider / Applebot-Extended", "otherAiBots"],
+      ["No known AI-bot block in robots.txt", "aiBots"],
+      ["Server-rendered/pre-rendered HTML proxy", "wordCount"],
+      ["llms.txt published at root", "llms"],
+      ["Sitemap referenced/publicly available", "sitemap"],
+      ["Fast crawler response / TTFB proxy", "response"],
+      ["No login wall on homepage", "homepageReachable"]
+    ]
+  },
+  {
+    title: "1.6 Topical authority and entity building",
+    items: [
+      ["Pillar + cluster architecture", "resourceHub"],
+      ["Internal linking density", "internalLinks"],
+      ["Brand-entity association", "pending", "Needs knowledge graph/off-site checks"],
+      ["Consistent NAP", "contactSignals"],
+      ["Brand mentioned with category keywords off-site", "pending", "Needs web mention collector"],
+      ["Glossary / encyclopedia-style category content", "resourceHub"],
+      ["Branded SERP ownership", "pending", "Needs branded SERP capture"]
+    ]
+  },
+  {
+    title: "1.7 Off-site AI training and citation sources",
+    items: [
+      ["Wikipedia / Wikidata presence", "pending", "Needs off-site collector"],
+      ["Reddit presence", "pending", "Needs social/listening collector"],
+      ["Quora answers", "pending", "Needs off-site collector"],
+      ["YouTube transcripts indexed", "pending", "Needs YouTube collector"],
+      ["Industry publication mentions", "pending", "Needs news/PR collector"],
+      ["Third-party best-of/listicle mentions", "pending", "Needs SERP collector"],
+      ["Public datasets / open documentation", "pending", "Needs off-site collector"],
+      ["Podcast appearances with transcripts", "pending", "Needs media collector"]
+    ]
+  },
+  {
+    title: "1.8 AEO measurement and tracking",
+    items: [
+      ["AEO tracking tool connected", "pending", "Needs Profound/Otterly/Peec/etc."],
+      ["Defined query set tested monthly", "pending", "Needs prompt runner"],
+      ["Citation count and share-of-voice tracked", "pending", "Needs AEO results table"],
+      ["AI referral traffic isolated in GA4", "pending", "First-party only"],
+      ["AI referral conversion rate tracked", "pending", "First-party only"]
+    ]
+  }
+];
+
 function App() {
   const [collapsed, setCollapsed] = useState(false);
   const [activeModule, setActiveModule] = useState("overview");
@@ -392,6 +533,8 @@ function App() {
         timeZone: "Asia/Kolkata"
       }).format(new Date(monitorEvents.generatedAt))
     : "Not run yet";
+  const isOverview = activeModule === "overview";
+  const header = moduleHeaders[activeModule] || moduleHeaders.overview;
 
   return (
     <main className="app-shell">
@@ -407,17 +550,13 @@ function App() {
           setRange={setRange}
         />
 
-        <div className="content-grid">
+        <div className={`content-grid ${isOverview ? "" : "full-width"}`}>
           <section className="main-column">
             <header className="page-header">
               <div>
-                <p className="section-label">{moduleLabels[activeModule]} intelligence · Public data mode</p>
-                <h1>Competitive Command Center</h1>
-                <p className="header-copy">
-                  Factual public-web collection from official websites, robots.txt, sitemaps,
-                  metadata, schema, and registry evidence. Restricted SEO, social, AEO visibility,
-                  and paid metrics remain clearly marked until source data is connected.
-                </p>
+                <p className="section-label">{header.label}</p>
+                <h1>{header.title}</h1>
+                <p className="header-copy">{header.copy}</p>
               </div>
               <div className="brand-select">
                 <span>Focus brand</span>
@@ -429,49 +568,51 @@ function App() {
               </div>
             </header>
 
-            <section className="metric-grid" aria-label="Competitive summary">
-              <MetricCard
-                icon={<ShieldCheck size={19} />}
-                label="Astral public score"
-                value={selected.score}
-                suffix="/100"
-                delta="Collected from official public sources"
-              />
-              <MetricCard
-                icon={<TrendingUp size={19} />}
-                label="Public leader"
-                value={leader.score}
-                suffix="/100"
-                delta={leader.name}
-              />
-              <MetricCard
-                icon={<Activity size={19} />}
-                label="Market average"
-                value={average}
-                suffix="/100"
-                delta={`${brands.length} tracked brands`}
-              />
-              <MetricCard
-                icon={<Sparkles size={19} />}
-                label="Monitor events"
-                value={eventCount}
-                suffix=""
-                delta={`Latest run: ${latestMonitorRun}`}
-              />
-            </section>
+            {isOverview ? (
+              <>
+                <section className="metric-grid" aria-label="Competitive summary">
+                  <MetricCard
+                    icon={<ShieldCheck size={19} />}
+                    label="Astral public score"
+                    value={selected.score}
+                    suffix="/100"
+                    delta="Collected from official public sources"
+                  />
+                  <MetricCard
+                    icon={<TrendingUp size={19} />}
+                    label="Public leader"
+                    value={leader.score}
+                    suffix="/100"
+                    delta={leader.name}
+                  />
+                  <MetricCard
+                    icon={<Activity size={19} />}
+                    label="Market average"
+                    value={average}
+                    suffix="/100"
+                    delta={`${brands.length} tracked brands`}
+                  />
+                  <MetricCard
+                    icon={<Sparkles size={19} />}
+                    label="Monitor events"
+                    value={eventCount}
+                    suffix=""
+                    delta={`Latest run: ${latestMonitorRun}`}
+                  />
+                </section>
 
-            <section className="data-notice" aria-label="Data provenance">
-              <ShieldCheck size={18} />
-              <div>
-                <strong>Data status: collected public-web evidence</strong>
-                <span>
-                  Latest public collection: {generatedAt}. Composite scores now use framework-derived
-                  public signals: website health, AEO readiness, technical SEO, content extractability,
-                  accessibility proxies, security/privacy, and registry completeness. {dataGaps}
-                  restricted data gaps are kept pending instead of guessed.
-                </span>
-              </div>
-            </section>
+                <section className="data-notice" aria-label="Data provenance">
+                  <ShieldCheck size={18} />
+                  <div>
+                    <strong>Live public monitor</strong>
+                    <span>
+                      Latest collection: {generatedAt}. {dataGaps} restricted metrics remain pending
+                      until APIs, exports, or browser evidence are connected.
+                    </span>
+                  </div>
+                </section>
+              </>
+            ) : null}
 
             <ModuleTabs activeModule={activeModule} setActiveModule={setActiveModule} />
 
@@ -484,7 +625,7 @@ function App() {
             />
           </section>
 
-          <aside className="insight-rail">
+          {isOverview ? <aside className="insight-rail">
             <section className="panel focus-panel">
               <div className="focus-score" style={{ "--score": selected.score }}>
                 <span>{selected.score}</span>
@@ -540,7 +681,7 @@ function App() {
                 </label>
               ))}
             </section>
-          </aside>
+          </aside> : null}
         </div>
       </section>
     </main>
@@ -676,8 +817,8 @@ function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand
         />
         <section className="split-grid">
           <SignalPanel
-            title={`${selected.name} AEO parameters`}
-            description="Signals inspired by the AEO checklist."
+            title={`${selected.name} AEO snapshot`}
+            description="Collected public signals for the selected brand."
             signals={[
               ["AEO readiness", selected.auditScores.aeoReadiness],
               ["Content extraction", selected.auditScores.contentExtraction],
@@ -689,6 +830,7 @@ function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand
           />
           <SchemaPanel brand={selected} />
         </section>
+        <AEOChecklistPanel brand={selected} />
       </>
     );
   }
@@ -960,6 +1102,83 @@ function SchemaPanel({ brand }) {
       </div>
     </section>
   );
+}
+
+function AEOChecklistPanel({ brand }) {
+  return (
+    <section className="panel checklist-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>Complete AEO checklist</h2>
+          <p>{brand.name} mapped against the full framework. Collected items use public evidence; pending items need dedicated collectors or first-party access.</p>
+        </div>
+      </div>
+      <div className="checklist-sections">
+        {aeoChecklistSections.map((section) => (
+          <article className="checklist-section" key={section.title}>
+            <h3>{section.title}</h3>
+            <div className="checklist-items">
+              {section.items.map(([label, key, note]) => {
+                const result = resolveAeoChecklistItem(brand, key, note);
+                return (
+                  <div className="checklist-item" key={label}>
+                    <span className={`status-dot ${result.status}`} />
+                    <div>
+                      <strong>{label}</strong>
+                      <small>{result.label}</small>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function resolveAeoChecklistItem(brand, key, note) {
+  const signals = brand.collected.homepage.signals;
+  const counts = brand.collected.homepage.counts;
+  const robots = brand.collected.robots;
+  const llms = brand.collected.llms;
+  const aiPolicy = robots.aiCrawlerPolicy || {};
+  const answerBlocks = brand.collected.homepage.contentStructure.answerFriendlyBlocks;
+  const schemaTypes = brand.collected.homepage.schemaTypes || [];
+  const map = {
+    directAnswer: [signals.hasDirectAnswerIntro, "Public HTML intro checked"],
+    questionHeadings: [counts.questionHeadings > 0, `${counts.questionHeadings} question headings`],
+    faqText: [signals.hasFaqText, "FAQ text detected"],
+    answerBlocks: [answerBlocks > 0, `${answerBlocks} answer-friendly blocks`],
+    faqSchema: [signals.hasFaqSchema, "FAQPage schema"],
+    howToSchema: [signals.hasHowToSchema, "HowTo schema"],
+    articleSchema: [signals.hasArticleSchema, "Article schema"],
+    productSchema: [signals.hasProductSchema, "Product schema"],
+    organizationSchema: [signals.hasOrganizationSchema, "Organization schema"],
+    breadcrumbSchema: [signals.hasBreadcrumbSchema, "Breadcrumb schema"],
+    localBusinessSchema: [schemaTypes.some((type) => /LocalBusiness/i.test(type)), "LocalBusiness schema"],
+    authorSignals: [signals.hasAuthorSignals, "Author/editorial proxy"],
+    freshnessSignals: [signals.hasFreshnessSignals, "Freshness proxy"],
+    trustSignals: [signals.hasTrustSignals, "Trust/certification proxy"],
+    gptbot: [aiPolicy.GPTBot, "robots.txt policy"],
+    claudebot: [aiPolicy.ClaudeBot, "robots.txt policy"],
+    perplexitybot: [aiPolicy.PerplexityBot, "robots.txt policy"],
+    googleextended: [aiPolicy.GoogleExtended, "robots.txt policy"],
+    otherAiBots: [aiPolicy.CCBot && aiPolicy.Bytespider && aiPolicy.ApplebotExtended, "robots.txt policy"],
+    aiBots: [robots.allowsKnownAiBots, "Known AI bots not blocked"],
+    wordCount: [counts.wordCount > 300, `${counts.wordCount} visible words`],
+    llms: [llms?.ok, llms?.ok ? "llms.txt present" : "Not detected"],
+    sitemap: [brand.collected.sitemap.ok, `Sitemap status ${brand.collected.sitemap.status}`],
+    response: [brand.collected.homepage.responseMs < 800, `${brand.collected.homepage.responseMs}ms response`],
+    homepageReachable: [brand.collected.homepage.ok, `Homepage status ${brand.collected.homepage.status}`],
+    resourceHub: [signals.hasResourceHub, "Resource/knowledge/blog signal"],
+    internalLinks: [counts.internalLinks >= 20, `${counts.internalLinks} internal links`],
+    contactSignals: [signals.hasPhoneOrWhatsapp || signals.hasEmailLink, "Contact/NAP proxy"]
+  };
+  if (key === "pending") return { status: "pending", label: note || "Pending collector" };
+  const [passed, label] = map[key] || [false, "Not collected"];
+  return { status: passed ? "passed" : "missing", label: passed ? label : "Not detected" };
 }
 
 function SocialHandlesPanel({ brand }) {
