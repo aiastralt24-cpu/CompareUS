@@ -1231,6 +1231,19 @@ th {
   font-weight: 800;
 }
 
+.table-heading-help {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.table-heading-help .help-tip {
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+}
+
 td {
   color: #344054;
 }

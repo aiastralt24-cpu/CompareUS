@@ -279,6 +279,13 @@ const metricHelp = {
   "Schema types": "Unique schema.org types detected in JSON-LD/microdata on audited pages.",
   "Answer blocks": "Short, extractable paragraphs, lists, tables, and FAQ-like blocks suitable for AI answers.",
   "Question headings": "H2/H3-style headings phrased as questions.",
+  "AEO score": "Overall answer-engine readiness score from public evidence: schema, AI crawler policy, extractable answer content, trust signals, sitemap, and llms.txt.",
+  "FAQ schema": "Whether FAQPage structured data is detected in the public homepage or audited pages. This helps search and AI systems identify question-answer content.",
+  "Product schema": "Whether Product structured data is detected. This helps machines understand product/category entities, attributes, and commercial relevance.",
+  "Org schema": "Whether Organization structured data is detected, including brand/entity identity signals such as name, logo, contact, or sameAs links where available.",
+  "AI bots": "Whether robots.txt appears to allow known AI crawlers such as GPTBot, ClaudeBot, PerplexityBot, Google-Extended, CCBot, Bytespider, and Applebot-Extended.",
+  "llms.txt": "Whether /llms.txt is publicly available. This file can guide AI systems toward approved brand, product, FAQ, and policy URLs.",
+  "Q headings": "Count of public H2/H3 headings phrased as questions. Higher counts usually mean the content is easier for answer engines to extract.",
   "Lazy images": "Images with lazy loading detected in public HTML.",
   "Preconnect hints": "Preconnect or DNS-prefetch hints found in the page head.",
   "Search UI": "Visible search-form or search-input signal detected in public HTML."
@@ -1663,7 +1670,12 @@ function DisciplineTable({ title, description, rows, columns, selectedBrand, set
             <tr>
               <th>Brand</th>
               {columns.map(([label]) => (
-                <th key={label}>{label}</th>
+                <th key={label}>
+                  <span className="table-heading-help">
+                    {label}
+                    <HelpTip label={label} />
+                  </span>
+                </th>
               ))}
             </tr>
           </thead>
