@@ -1,7 +1,6 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { createPortal } from "react-dom";
-import { createClient } from "@supabase/supabase-js";
 import {
   Activity,
   AlertTriangle,
@@ -17,7 +16,6 @@ import {
   Globe2,
   LayoutDashboard,
   LineChart,
-  Lock,
   Megaphone,
   Menu,
   MonitorSmartphone,
@@ -29,6 +27,7 @@ import {
   TrendingUp,
   UsersRound
 } from "lucide-react";
+import periscopeLogo from "./assets/periscope-logo.png";
 import astralBrands from "../data/astral-brands.json";
 import competitorSets from "../data/competitor-sets.json";
 import competitorTaxonomy from "../data/competitor-taxonomy.json";
@@ -37,9 +36,9 @@ import monitorEvents from "../data/generated/monitor-events.json";
 import socialSnapshot from "../data/generated/social-snapshot.json";
 import "./styles.css";
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
-const supabase = supabaseUrl && supabaseAnonKey ? createClient(supabaseUrl, supabaseAnonKey) : null;
+const PERISCOPE_USER_ID = "digital@astral";
+const PERISCOPE_PASSWORD = "digital@2050";
+const PERISCOPE_SESSION_KEY = "periscope_session";
 
 const seedBrands = [
   {
@@ -645,30 +644,29 @@ const aeoChecklistSections = [
 ];
 
 function App() {
-  const [session, setSession] = useState(null);
-  const [authLoading, setAuthLoading] = useState(Boolean(supabase));
+  const [session, setSession] = useState(() => {
+    if (window.localStorage.getItem(PERISCOPE_SESSION_KEY) === PERISCOPE_USER_ID) {
+      return { user: { email: PERISCOPE_USER_ID } };
+    }
+    return null;
+  });
   const [activeOwnedBrandSlug, setActiveOwnedBrandSlug] = useState(() => {
     const params = new URLSearchParams(window.location.search);
     return params.get("brand") || null;
   });
 
-  useEffect(() => {
-    if (!supabase) {
-      setAuthLoading(false);
-      return undefined;
-    }
-    supabase.auth.getSession().then(({ data }) => {
-      setSession(data.session);
-      setAuthLoading(false);
-    });
-    const { data } = supabase.auth.onAuthStateChange((_event, nextSession) => {
-      setSession(nextSession);
-    });
-    return () => data.subscription.unsubscribe();
-  }, []);
+  const handleLogin = ({ userId, password }) => {
+    const isApprovedUser =
+      userId.trim().toLowerCase() === PERISCOPE_USER_ID &&
+      password === PERISCOPE_PASSWORD;
+    if (!isApprovedUser) return false;
+    window.localStorage.setItem(PERISCOPE_SESSION_KEY, PERISCOPE_USER_ID);
+    setSession({ user: { email: PERISCOPE_USER_ID } });
+    return true;
+  };
 
-  const handleLogout = async () => {
-    if (supabase) await supabase.auth.signOut();
+  const handleLogout = () => {
+    window.localStorage.removeItem(PERISCOPE_SESSION_KEY);
     setSession(null);
     setActiveOwnedBrandSlug(null);
     window.history.replaceState(null, "", window.location.pathname);
@@ -684,12 +682,8 @@ function App() {
     window.history.replaceState(null, "", window.location.pathname);
   };
 
-  if (authLoading) {
-    return <AuthLoadingScreen />;
-  }
-
   if (!session) {
-    return <LoginScreen supabase={supabase} />;
+    return <LoginScreen onLogin={handleLogin} />;
   }
 
   const activeOwnedBrand = astralBrands.find((brand) => brand.slug === activeOwnedBrandSlug);
@@ -713,77 +707,56 @@ function App() {
   );
 }
 
-function AuthLoadingScreen() {
-  return (
-    <main className="auth-shell">
-      <section className="auth-card">
-        <div className="logo-mark">A</div>
-        <h1>Astral Digital Universe</h1>
-        <p>Checking secure session...</p>
-      </section>
-    </main>
-  );
-}
-
-function LoginScreen({ supabase }) {
-  const [email, setEmail] = useState("");
+function LoginScreen({ onLogin }) {
+  const [userId, setUserId] = useState("");
   const [password, setPassword] = useState("");
-  const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false);
+  const [invalid, setInvalid] = useState(false);
 
-  const handleLogin = async (event) => {
+  const handleLogin = (event) => {
     event.preventDefault();
-    if (!supabase) {
-      setMessage("Supabase is not configured. Add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY.");
-      return;
-    }
-    setLoading(true);
-    setMessage("");
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
-    setLoading(false);
-    if (error) setMessage(error.message);
-  };
-
-  const handleForgotPassword = async () => {
-    if (!email) {
-      setMessage("Enter your email first, then request a reset link.");
-      return;
-    }
-    if (!supabase) {
-      setMessage("Supabase is not configured yet.");
-      return;
-    }
-    setLoading(true);
-    const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo: window.location.origin
-    });
-    setLoading(false);
-    setMessage(error ? error.message : "Password reset link sent.");
+    const success = onLogin({ userId, password });
+    setInvalid(!success);
   };
 
   return (
     <main className="auth-shell">
       <section className="auth-card login-card">
-        <div className="logo-mark">A</div>
-        <p className="section-label">Secure intelligence platform</p>
-        <h1>Astral Digital Universe</h1>
-        <p className="header-copy">Sign in to monitor brand health, public evidence, campaigns, social signals, and competitor movement.</p>
+        <img className="periscope-logo" src={periscopeLogo} alt="Periscope" />
+        <h1>Astral Periscope Sign In</h1>
         <form className="login-form" onSubmit={handleLogin}>
           <label>
-            <span>Username</span>
-            <input value={email} onChange={(event) => setEmail(event.target.value)} type="email" autoComplete="email" placeholder="name@astral.com" />
+            <span>User ID</span>
+            <input
+              className={invalid ? "invalid" : ""}
+              value={userId}
+              onChange={(event) => {
+                setUserId(event.target.value);
+                setInvalid(false);
+              }}
+              type="text"
+              autoComplete="username"
+              aria-invalid={invalid}
+            />
           </label>
           <label>
             <span>Password</span>
-            <input value={password} onChange={(event) => setPassword(event.target.value)} type="password" autoComplete="current-password" placeholder="Password" />
+            <input
+              className={invalid ? "invalid" : ""}
+              value={password}
+              onChange={(event) => {
+                setPassword(event.target.value);
+                setInvalid(false);
+              }}
+              type="password"
+              autoComplete="current-password"
+              aria-invalid={invalid}
+            />
           </label>
-          <button className="text-button auth-submit" disabled={loading}>
-            <Lock size={16} />
-            {loading ? "Please wait..." : "Sign in"}
+          <button className="text-button auth-submit">
+            Login
           </button>
         </form>
-        <button className="link-button" onClick={handleForgotPassword}>Forgot Password</button>
-        {message ? <p className="auth-message">{message}</p> : null}
+        <button className="link-button" onClick={() => setInvalid(false)}>Forgot Password</button>
       </section>
     </main>
   );
@@ -1015,10 +988,10 @@ function UniverseHome({ user, onLogout, onOpenBrand }) {
     <main className="universe-shell">
       <header className="universe-topbar">
         <div className="brand-lockup universe-lockup">
-          <div className="logo-mark">A</div>
+          <img className="periscope-mark" src={periscopeLogo} alt="Periscope" />
           <div>
-            <strong>Astral Digital Universe</strong>
-            <span>Holistic brand intelligence</span>
+            <strong>Periscope</strong>
+            <span>Astral intelligence</span>
           </div>
         </div>
         <div className="universe-user">
@@ -1026,7 +999,7 @@ function UniverseHome({ user, onLogout, onOpenBrand }) {
           <button
             className="text-button subtle"
             onClick={() =>
-              downloadJson("astral-digital-universe-report.json", {
+              downloadJson("periscope-ecosystem-report.json", {
                 generatedAt: new Date().toISOString(),
                 brands: ownedBrandHealth,
                 monitorEvents: monitorEvents.events || []
@@ -1043,7 +1016,7 @@ function UniverseHome({ user, onLogout, onOpenBrand }) {
       <section className="universe-hero">
         <div>
           <p className="section-label">Ecosystem command center</p>
-          <h1>Astral Digital Universe</h1>
+          <h1>Astral Periscope</h1>
           <p className="header-copy">
             One protected home for brand health, competitive intelligence, campaign monitoring, social evidence, and next actions across the Astral ecosystem.
           </p>
@@ -1185,7 +1158,7 @@ function SetupBrandDashboard({ ownedBrand, user, collapsed, setCollapsed, onHome
               <p className="section-label">Brand setup workspace</p>
               <h1>{ownedBrand.name} Dashboard</h1>
               <p className="header-copy">
-                This brand is registered in Astral Digital Universe, but the factual monitoring baseline is not complete yet.
+                This brand is registered in Periscope, but the factual monitoring baseline is not complete yet.
               </p>
             </div>
             <span className="monitor-count setup">Setup Required</span>
@@ -1290,16 +1263,16 @@ function Sidebar({ collapsed, activeModule, onModule, onHome }) {
   return (
     <aside className={`sidebar ${collapsed ? "collapsed" : ""}`}>
       <div className="brand-lockup">
-        <div className="logo-mark">A</div>
+        <img className="periscope-mark" src={periscopeLogo} alt="Periscope" />
         <div>
-          <strong>Astral DU</strong>
+          <strong>Periscope</strong>
           <span>Brand intelligence</span>
         </div>
       </div>
       <nav aria-label="Dashboard navigation">
         <button onClick={onHome}>
           <LayoutDashboard size={19} />
-          <span>Universe</span>
+          <span>Home</span>
         </button>
         {items.map(([id, Icon, label]) => (
           <button key={id} className={activeModule === id ? "active" : ""} onClick={() => onModule(id)}>
