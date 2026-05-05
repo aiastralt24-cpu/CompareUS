@@ -1838,6 +1838,7 @@ function SchemaPanel({ brand }) {
 }
 
 function AEOChecklistPanel({ brand }) {
+  const [activeItem, setActiveItem] = useState(null);
   return (
     <section className="panel checklist-panel">
       <div className="panel-heading">
@@ -1845,6 +1846,11 @@ function AEOChecklistPanel({ brand }) {
           <h2>Complete AEO checklist</h2>
           <p>{brand.name} mapped against the full framework. Collected items use public evidence; pending items need dedicated collectors or first-party access.</p>
         </div>
+      </div>
+      <div className="status-legend" aria-label="AEO checklist status legend">
+        <span><span className="status-dot passed" /> Green dot = Evidence Found</span>
+        <span><span className="status-dot missing" /> Amber = No Evidence Found</span>
+        <span><span className="status-dot pending" /> Grey = Need Collector</span>
       </div>
       <div className="checklist-sections">
         {aeoChecklistSections.map((section) => (
@@ -1854,21 +1860,97 @@ function AEOChecklistPanel({ brand }) {
               {section.items.map(([label, key, note]) => {
                 const result = resolveAeoChecklistItem(brand, key, note);
                 return (
-                  <div className="checklist-item" key={label}>
+                  <button
+                    className="checklist-item"
+                    key={label}
+                    onClick={() => setActiveItem({ section: section.title, label, result })}
+                    type="button"
+                  >
                     <span className={`status-dot ${result.status}`} />
                     <div>
                       <strong>{label}</strong>
                       <small>{result.label}</small>
                     </div>
-                  </div>
+                  </button>
                 );
               })}
             </div>
           </article>
         ))}
       </div>
+      {activeItem ? (
+        <AEOChecklistDetailModal
+          brand={brand}
+          item={activeItem}
+          onClose={() => setActiveItem(null)}
+        />
+      ) : null}
     </section>
   );
+}
+
+function AEOChecklistDetailModal({ brand, item, onClose }) {
+  const status = getAeoStatusMeta(item.result.status);
+  return createPortal(
+    <div className="modal-backdrop" role="presentation" onClick={onClose}>
+      <section
+        className="detail-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="aeo-detail-title"
+        onClick={(event) => event.stopPropagation()}
+      >
+        <button className="modal-close" onClick={onClose} aria-label="Close detail window">×</button>
+        <p className="section-label">{item.section}</p>
+        <h2 id="aeo-detail-title">{item.label}</h2>
+        <div className="detail-status-row">
+          <span className={`status-dot ${item.result.status}`} />
+          <strong>{status.label}</strong>
+        </div>
+        <dl className="detail-list">
+          <div>
+            <dt>Brand</dt>
+            <dd>{brand.name}</dd>
+          </div>
+          <div>
+            <dt>Meaning</dt>
+            <dd>{status.meaning}</dd>
+          </div>
+          <div>
+            <dt>Current Detail</dt>
+            <dd>{item.result.label}</dd>
+          </div>
+          <div>
+            <dt>Evidence Basis</dt>
+            <dd>{status.evidenceBasis}</dd>
+          </div>
+        </dl>
+      </section>
+    </div>,
+    document.body
+  );
+}
+
+function getAeoStatusMeta(status) {
+  if (status === "passed") {
+    return {
+      label: "Green dot = Evidence Found",
+      meaning: "The collector found public evidence that supports this checklist item.",
+      evidenceBasis: "Public website crawl, robots.txt, sitemap, schema, or audited page signals."
+    };
+  }
+  if (status === "missing") {
+    return {
+      label: "Amber = No Evidence Found",
+      meaning: "The collector checked this item but did not find evidence in the currently collected public data.",
+      evidenceBasis: "Public evidence was checked; the signal was not detected."
+    };
+  }
+  return {
+    label: "Grey = Need Collector",
+    meaning: "This item cannot be honestly marked pass or fail until a dedicated collector, prompt runner, API, export, or first-party source is connected.",
+    evidenceBasis: "Not collected by the current public website collector."
+  };
 }
 
 function resolveAeoChecklistItem(brand, key, note) {
