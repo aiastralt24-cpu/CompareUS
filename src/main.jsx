@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
+import { createPortal } from "react-dom";
 import {
   Activity,
   AlertTriangle,
@@ -1223,11 +1224,44 @@ function SignalPanel({ title, description, signals }) {
 
 function HelpTip({ label, text }) {
   const copy = text || metricHelp[label];
+  const [position, setPosition] = useState(null);
   if (!copy) return null;
+  const show = (event) => {
+    const rect = event.currentTarget.getBoundingClientRect();
+    const width = Math.min(360, window.innerWidth - 32);
+    const left = Math.min(Math.max(16, rect.left + rect.width / 2 - width / 2), window.innerWidth - width - 16);
+    const top = Math.max(16, rect.top - 12);
+    setPosition({ left, top, width });
+  };
   return (
-    <span className="help-tip" tabIndex="0" aria-label={copy}>
-      i
-    </span>
+    <>
+      <span
+        className="help-tip"
+        tabIndex="0"
+        aria-label={copy}
+        onMouseEnter={show}
+        onFocus={show}
+        onMouseLeave={() => setPosition(null)}
+        onBlur={() => setPosition(null)}
+      >
+        i
+      </span>
+      {position
+        ? createPortal(
+            <div
+              className="tooltip-portal"
+              style={{
+                left: position.left,
+                top: position.top,
+                width: position.width
+              }}
+            >
+              {copy}
+            </div>,
+            document.body
+          )
+        : null}
+    </>
   );
 }
 
