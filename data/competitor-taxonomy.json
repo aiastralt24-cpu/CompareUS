@@ -173,66 +173,6 @@
     }
   },
   {
-    "ownedBrandSlug": "probit",
-    "brandName": "Probit",
-    "category": "Software / IT / digital product brand",
-    "needsConfirmation": true,
-    "assumption": "Assumed software, IT services, SaaS, workflow, or digital marketing/software services brand until URL/category is confirmed.",
-    "segments": {
-      "softwareItServices": [
-        "TCS iON / TCS digital services",
-        "Zoho",
-        "Freshworks",
-        "Infosys BPM/digital",
-        "Wipro digital",
-        "Tech Mahindra",
-        "Persistent Systems",
-        "Happiest Minds",
-        "Cybage",
-        "Kellton",
-        "Net Solutions",
-        "TatvaSoft",
-        "IndiaNIC",
-        "OpenXcell",
-        "Bacancy Technology"
-      ],
-      "saasWorkflow": [
-        "Zoho",
-        "Freshworks",
-        "Monday.com",
-        "ClickUp",
-        "Notion",
-        "Asana",
-        "Jira",
-        "Airtable",
-        "HubSpot",
-        "Salesforce",
-        "Microsoft Power Platform"
-      ],
-      "digitalMarketingSoftwareServices": [
-        "WebFX",
-        "Neil Patel Digital",
-        "iProspect",
-        "Schbang",
-        "Social Beat",
-        "Kinnect",
-        "WATConsult",
-        "Performics",
-        "local SEO/web development agencies"
-      ],
-      "marketplaceContent": [
-        "Clutch listings",
-        "G2",
-        "Capterra",
-        "GoodFirms",
-        "SoftwareSuggest",
-        "Google Business Profile competitors",
-        "LinkedIn company pages",
-        "review blogs"
-      ]
-    }
-  },
-  {
     "ownedBrandSlug": "astral-foundation",
     "brandName": "Astral Foundation",
     "category": "CSR/foundation/nonprofit/social-impact arm",

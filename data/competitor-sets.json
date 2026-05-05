@@ -599,13 +599,6 @@
     ]
   },
   {
-    "slug": "probit",
-    "ownedBrandSlug": "probit",
-    "taxonomyRef": "probit",
-    "status": "Needs Confirmation",
-    "brands": []
-  },
-  {
     "slug": "astral-foundation",
     "ownedBrandSlug": "astral-foundation",
     "taxonomyRef": "astral-foundation",
