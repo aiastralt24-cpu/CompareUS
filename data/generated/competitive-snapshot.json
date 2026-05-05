@@ -1,0 +1,1053 @@
+{
+  "generatedAt": "2026-05-05T04:47:16.401Z",
+  "startedAt": "2026-05-05T04:47:02.003Z",
+  "dataMode": "collected_public_web",
+  "methodology": "Public website fetch of homepage, robots.txt, and sitemap.xml. Restricted social, SEO, AEO, and paid metrics are intentionally left null until approved sources are connected.",
+  "brands": [
+    {
+      "name": "Astral Pipes",
+      "type": "Primary brand",
+      "priority": "Core",
+      "website": "https://www.astralpipes.com/",
+      "collectedAt": "2026-05-05T04:47:02.525Z",
+      "dataMode": "collected_public_web",
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "finalUrl": "https://www.astralpipes.com/",
+        "responseMs": 513,
+        "byteLength": 387327,
+        "error": "",
+        "title": "Astral Pipes: Leading PVC Pipes and Fittings Manufacturer",
+        "description": "Astral Pipes India’s leading pipe manufacture company offering quality plastic PVC, CPVC & UPVC pipes for plumbing, drainage & agriculture applications.",
+        "canonical": "https://www.astralpipes.com/",
+        "h1": "What are PVC Pipes?",
+        "schemaTypes": [
+          "Organization",
+          "Place",
+          "PostalAddress",
+          "ContactPoint",
+          "FAQPage",
+          "Question",
+          "Answer",
+          "Brand",
+          "WebSite",
+          "SearchAction"
+        ],
+        "counts": {
+          "h1": 1,
+          "h2": 26,
+          "images": 155,
+          "links": 235,
+          "internalLinks": 200,
+          "externalLinks": 35,
+          "jsonLdBlocks": 4,
+          "forms": 3
+        },
+        "signals": {
+          "hasTitle": true,
+          "titleLength": 57,
+          "hasMetaDescription": true,
+          "descriptionLength": 152,
+          "hasCanonical": true,
+          "hasH1": true,
+          "hasSchema": true,
+          "hasFaqText": true,
+          "hasDealerText": true,
+          "hasContactText": true,
+          "hasProductText": true
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": false,
+          "contentSecurityPolicy": false,
+          "xFrameOptions": true
+        }
+      },
+      "robots": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.astralpipes.com/robots.txt",
+        "byteLength": 463,
+        "mentionsSitemap": false,
+        "allowsKnownAiBots": true
+      },
+      "sitemap": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.astralpipes.com/sitemap.xml",
+        "byteLength": 75487,
+        "urlCount": 95
+      },
+      "social": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/astralpipes/",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/astral_pipes/",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCfcxsolIKB6RReU45xxlAfQ",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/astralpipesofficial",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/AstralPipes",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        }
+      ],
+      "scores": {
+        "publicWebsite": 100,
+        "aeoReadiness": 100,
+        "registryCompleteness": 100,
+        "seoVisibility": null,
+        "socialPerformance": null,
+        "campaignActivity": null,
+        "reputation": null
+      },
+      "scoreEvidence": [
+        "Homepage reachable",
+        "Homepage response under 2s"
+      ],
+      "unavailableMetrics": [
+        "Organic keyword ranks require an SEO source or search API.",
+        "Social follower and engagement metrics require platform APIs, approved tools, exports, or manual captures.",
+        "AEO visibility requires controlled answer-engine prompt runs.",
+        "Paid campaign activity requires ad library capture or approved third-party monitoring."
+      ]
+    },
+    {
+      "name": "Supreme Pipes",
+      "type": "Direct competitor",
+      "priority": "P1",
+      "website": "https://www.supreme.co.in/",
+      "collectedAt": "2026-05-05T04:47:05.490Z",
+      "dataMode": "collected_public_web",
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "finalUrl": "https://www.supreme.co.in/",
+        "responseMs": 2278,
+        "byteLength": 223911,
+        "error": "",
+        "title": "Supreme is India's largest manufacturer and processor of plastics",
+        "description": "With a legacy of trust, Supreme remains relevant and a household name. Supreme, India",
+        "canonical": "https://www.supreme.co.in/",
+        "h1": "",
+        "schemaTypes": [
+          "Organization",
+          "ContactPoint",
+          "Brand",
+          "WebSite",
+          "SearchAction"
+        ],
+        "counts": {
+          "h1": 0,
+          "h2": 28,
+          "images": 193,
+          "links": 342,
+          "internalLinks": 164,
+          "externalLinks": 178,
+          "jsonLdBlocks": 3,
+          "forms": 2
+        },
+        "signals": {
+          "hasTitle": true,
+          "titleLength": 65,
+          "hasMetaDescription": true,
+          "descriptionLength": 85,
+          "hasCanonical": true,
+          "hasH1": false,
+          "hasSchema": true,
+          "hasFaqText": true,
+          "hasDealerText": true,
+          "hasContactText": true,
+          "hasProductText": true
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": true,
+          "contentSecurityPolicy": true,
+          "xFrameOptions": true
+        }
+      },
+      "robots": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.supreme.co.in/robots.txt",
+        "byteLength": 177,
+        "mentionsSitemap": true,
+        "allowsKnownAiBots": true
+      },
+      "sitemap": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.supreme.co.in/sitemap.xml",
+        "byteLength": 827153,
+        "urlCount": 3464
+      },
+      "social": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/supremepipesofficial/",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/supremepipesofficial/",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@TheSupremeIndustries",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/supreme-pipes-official",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        }
+      ],
+      "scores": {
+        "publicWebsite": 85,
+        "aeoReadiness": 90,
+        "registryCompleteness": 80,
+        "seoVisibility": null,
+        "socialPerformance": null,
+        "campaignActivity": null,
+        "reputation": null
+      },
+      "scoreEvidence": [
+        "Homepage reachable"
+      ],
+      "unavailableMetrics": [
+        "Organic keyword ranks require an SEO source or search API.",
+        "Social follower and engagement metrics require platform APIs, approved tools, exports, or manual captures.",
+        "AEO visibility requires controlled answer-engine prompt runs.",
+        "Paid campaign activity requires ad library capture or approved third-party monitoring."
+      ]
+    },
+    {
+      "name": "Prince Pipes",
+      "type": "Direct competitor",
+      "priority": "P1",
+      "website": "https://www.princepipes.com/",
+      "collectedAt": "2026-05-05T04:47:05.686Z",
+      "dataMode": "collected_public_web",
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "finalUrl": "https://www.princepipes.com/",
+        "responseMs": 194,
+        "byteLength": 119172,
+        "error": "",
+        "title": "Prince Pipes | Leading PVC, CPVC & PPR Pipe Manufacturer Company in India",
+        "description": "Prince Pipes is one of the largest PVC, CPVC & PPR pipe manufacturers & multi polymer processors. Explore Sewage, Borewell, Agriculture Pipes & Plumbing systems manufacturer.",
+        "canonical": "https://www.princepipes.com/",
+        "h1": "DECILO LOW NOISE PP Drainage System",
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "SearchAction"
+        ],
+        "counts": {
+          "h1": 2,
+          "h2": 62,
+          "images": 84,
+          "links": 234,
+          "internalLinks": 176,
+          "externalLinks": 58,
+          "jsonLdBlocks": 2,
+          "forms": 1
+        },
+        "signals": {
+          "hasTitle": true,
+          "titleLength": 73,
+          "hasMetaDescription": true,
+          "descriptionLength": 174,
+          "hasCanonical": true,
+          "hasH1": true,
+          "hasSchema": true,
+          "hasFaqText": false,
+          "hasDealerText": true,
+          "hasContactText": true,
+          "hasProductText": true
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": true,
+          "contentSecurityPolicy": true,
+          "xFrameOptions": true
+        }
+      },
+      "robots": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.princepipes.com/robots.txt",
+        "byteLength": 121,
+        "mentionsSitemap": true,
+        "allowsKnownAiBots": true
+      },
+      "sitemap": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.princepipes.com/sitemap.xml",
+        "byteLength": 815,
+        "urlCount": 0
+      },
+      "social": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/princepipesofficial",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/prince_pipes/",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCGhM2x9hF0cCgz6hU8tnYqQ",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/prince-pipes-and-fittings-ltd",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "x",
+          "url": "https://twitter.com/Prince_Pipes",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        }
+      ],
+      "scores": {
+        "publicWebsite": 100,
+        "aeoReadiness": 80,
+        "registryCompleteness": 100,
+        "seoVisibility": null,
+        "socialPerformance": null,
+        "campaignActivity": null,
+        "reputation": null
+      },
+      "scoreEvidence": [
+        "Homepage reachable",
+        "Homepage response under 2s"
+      ],
+      "unavailableMetrics": [
+        "Organic keyword ranks require an SEO source or search API.",
+        "Social follower and engagement metrics require platform APIs, approved tools, exports, or manual captures.",
+        "AEO visibility requires controlled answer-engine prompt runs.",
+        "Paid campaign activity requires ad library capture or approved third-party monitoring."
+      ]
+    },
+    {
+      "name": "Apollo Pipes",
+      "type": "Direct competitor",
+      "priority": "P1",
+      "website": "https://www.apollopipes.com/",
+      "collectedAt": "2026-05-05T04:47:06.912Z",
+      "dataMode": "collected_public_web",
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "finalUrl": "https://www.apollopipes.com/",
+        "responseMs": 1223,
+        "byteLength": 182575,
+        "error": "",
+        "title": "PVC Pipe & Fittings Manufacturers in India - APL Apollo",
+        "description": "APL Apollo Pipes are the leading pipes and fitting manufacturers in India with a wide range of pipes, such as PVC pipes, Water Tanks, Bath fittings, etc.",
+        "canonical": "https://www.apollopipes.com/",
+        "h1": "About Apollo Pipes Ltd",
+        "schemaTypes": [
+          "Corporation",
+          "ContactPoint",
+          "LocalBusiness",
+          "PostalAddress",
+          "GeoCoordinates",
+          "OpeningHoursSpecification"
+        ],
+        "counts": {
+          "h1": 1,
+          "h2": 14,
+          "images": 75,
+          "links": 308,
+          "internalLinks": 286,
+          "externalLinks": 22,
+          "jsonLdBlocks": 2,
+          "forms": 1
+        },
+        "signals": {
+          "hasTitle": true,
+          "titleLength": 55,
+          "hasMetaDescription": true,
+          "descriptionLength": 153,
+          "hasCanonical": true,
+          "hasH1": true,
+          "hasSchema": true,
+          "hasFaqText": true,
+          "hasDealerText": true,
+          "hasContactText": true,
+          "hasProductText": true
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": false,
+          "contentSecurityPolicy": false,
+          "xFrameOptions": false
+        }
+      },
+      "robots": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.apollopipes.com/robots.txt",
+        "byteLength": 333,
+        "mentionsSitemap": false,
+        "allowsKnownAiBots": true
+      },
+      "sitemap": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.apollopipes.com/sitemap.xml",
+        "byteLength": 76554,
+        "urlCount": 410
+      },
+      "social": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/APLAPOLLO/",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/apl_apollo/",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@aplapollo1557",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/apollo-pipes-ltd",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        }
+      ],
+      "scores": {
+        "publicWebsite": 100,
+        "aeoReadiness": 100,
+        "registryCompleteness": 80,
+        "seoVisibility": null,
+        "socialPerformance": null,
+        "campaignActivity": null,
+        "reputation": null
+      },
+      "scoreEvidence": [
+        "Homepage reachable",
+        "Homepage response under 2s"
+      ],
+      "unavailableMetrics": [
+        "Organic keyword ranks require an SEO source or search API.",
+        "Social follower and engagement metrics require platform APIs, approved tools, exports, or manual captures.",
+        "AEO visibility requires controlled answer-engine prompt runs.",
+        "Paid campaign activity requires ad library capture or approved third-party monitoring."
+      ]
+    },
+    {
+      "name": "Ashirvad by Aliaxis",
+      "type": "Direct competitor",
+      "priority": "P1",
+      "website": "https://www.ashirvad.com/",
+      "collectedAt": "2026-05-05T04:47:09.315Z",
+      "dataMode": "collected_public_web",
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "finalUrl": "https://www.ashirvad.com/",
+        "responseMs": 2041,
+        "byteLength": 732408,
+        "error": "",
+        "title": "UPVC Pipe | CPVC Pipes | Water Tank Manufacturers & Suppliers - Ashirvad",
+        "description": "Ashirvad is a leading UPVC Pipe, CPVC Pipes, Water Tank Manufacturers & Suppliers, offering durable piping and water solutions for homes, agriculture & infrastructure.",
+        "canonical": "https://www.ashirvad.com/",
+        "h1": "Connecting Water. Transforming Lives.",
+        "schemaTypes": [
+          "WebPage",
+          "ReadAction",
+          "BreadcrumbList",
+          "ListItem",
+          "WebSite",
+          "SearchAction",
+          "EntryPoint",
+          "PropertyValueSpecification",
+          "Organization",
+          "ImageObject",
+          "QuantitativeValue",
+          "PostalAddress"
+        ],
+        "counts": {
+          "h1": 1,
+          "h2": 14,
+          "images": 331,
+          "links": 382,
+          "internalLinks": 358,
+          "externalLinks": 24,
+          "jsonLdBlocks": 3,
+          "forms": 1
+        },
+        "signals": {
+          "hasTitle": true,
+          "titleLength": 72,
+          "hasMetaDescription": true,
+          "descriptionLength": 167,
+          "hasCanonical": true,
+          "hasH1": true,
+          "hasSchema": true,
+          "hasFaqText": false,
+          "hasDealerText": true,
+          "hasContactText": true,
+          "hasProductText": true
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": true,
+          "contentSecurityPolicy": true,
+          "xFrameOptions": true
+        }
+      },
+      "robots": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.ashirvad.com/robots.txt",
+        "byteLength": 174,
+        "mentionsSitemap": true,
+        "allowsKnownAiBots": true
+      },
+      "sitemap": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.ashirvad.com/sitemap.xml",
+        "byteLength": 1168,
+        "urlCount": 0
+      },
+      "social": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/ashirvadpipesofficial",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/ashirvadbyaliaxis/",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@ashirvadpipesofficial",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/ashirvadpipes",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        }
+      ],
+      "scores": {
+        "publicWebsite": 92,
+        "aeoReadiness": 80,
+        "registryCompleteness": 80,
+        "seoVisibility": null,
+        "socialPerformance": null,
+        "campaignActivity": null,
+        "reputation": null
+      },
+      "scoreEvidence": [
+        "Homepage reachable"
+      ],
+      "unavailableMetrics": [
+        "Organic keyword ranks require an SEO source or search API.",
+        "Social follower and engagement metrics require platform APIs, approved tools, exports, or manual captures.",
+        "AEO visibility requires controlled answer-engine prompt runs.",
+        "Paid campaign activity requires ad library capture or approved third-party monitoring."
+      ]
+    },
+    {
+      "name": "Wavin India",
+      "type": "Direct competitor",
+      "priority": "P2",
+      "website": "https://wavin.com/in",
+      "collectedAt": "2026-05-05T04:47:10.266Z",
+      "dataMode": "collected_public_web",
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "finalUrl": "https://wavin.com/in",
+        "responseMs": 743,
+        "byteLength": 356730,
+        "error": "",
+        "title": "Wavin",
+        "description": "Wavin website",
+        "canonical": "",
+        "h1": "Innovative solutions for the building and infrastructure industry",
+        "schemaTypes": [
+          "WebSite",
+          "Organization",
+          "ImageObject",
+          "SearchAction",
+          "EntryPoint"
+        ],
+        "counts": {
+          "h1": 1,
+          "h2": 10,
+          "images": 50,
+          "links": 82,
+          "internalLinks": 63,
+          "externalLinks": 19,
+          "jsonLdBlocks": 1,
+          "forms": 2
+        },
+        "signals": {
+          "hasTitle": true,
+          "titleLength": 5,
+          "hasMetaDescription": true,
+          "descriptionLength": 13,
+          "hasCanonical": false,
+          "hasH1": true,
+          "hasSchema": true,
+          "hasFaqText": true,
+          "hasDealerText": false,
+          "hasContactText": true,
+          "hasProductText": true
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": false,
+          "contentSecurityPolicy": false,
+          "xFrameOptions": false
+        }
+      },
+      "robots": {
+        "ok": true,
+        "status": 200,
+        "url": "https://wavin.com/robots.txt",
+        "byteLength": 481,
+        "mentionsSitemap": true,
+        "allowsKnownAiBots": true
+      },
+      "sitemap": {
+        "ok": false,
+        "status": 404,
+        "url": "https://wavin.com/sitemap.xml",
+        "byteLength": 80361,
+        "urlCount": 0
+      },
+      "social": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/wavinindia/",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/wavinindia/",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@WavinIndia",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/wavinindia",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        }
+      ],
+      "scores": {
+        "publicWebsite": 81,
+        "aeoReadiness": 100,
+        "registryCompleteness": 80,
+        "seoVisibility": null,
+        "socialPerformance": null,
+        "campaignActivity": null,
+        "reputation": null
+      },
+      "scoreEvidence": [
+        "Homepage reachable",
+        "Homepage response under 2s"
+      ],
+      "unavailableMetrics": [
+        "Organic keyword ranks require an SEO source or search API.",
+        "Social follower and engagement metrics require platform APIs, approved tools, exports, or manual captures.",
+        "AEO visibility requires controlled answer-engine prompt runs.",
+        "Paid campaign activity requires ad library capture or approved third-party monitoring."
+      ]
+    },
+    {
+      "name": "KPT Pipes",
+      "type": "Direct competitor",
+      "priority": "P2",
+      "website": "https://www.kptpipes.com",
+      "collectedAt": "2026-05-05T04:47:13.064Z",
+      "dataMode": "collected_public_web",
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "finalUrl": "https://www.kptpipes.com/",
+        "responseMs": 2796,
+        "byteLength": 92400,
+        "error": "",
+        "title": "Best PPR Pipes and Fittings Manufacturer - KPT Pipes",
+        "description": "Discover top-quality PPR pipes and fittings from the industry",
+        "canonical": "https://www.kptpipes.com/",
+        "h1": "KPT Pipes - PPR Pipes and Fittings Manufacturer",
+        "schemaTypes": [
+          "LocalBusiness",
+          "Corporation",
+          "ContactPoint",
+          "Product",
+          "Brand",
+          "AggregateRating",
+          "FAQPage",
+          "Question",
+          "Answer"
+        ],
+        "counts": {
+          "h1": 1,
+          "h2": 3,
+          "images": 104,
+          "links": 92,
+          "internalLinks": 69,
+          "externalLinks": 23,
+          "jsonLdBlocks": 9,
+          "forms": 1
+        },
+        "signals": {
+          "hasTitle": true,
+          "titleLength": 52,
+          "hasMetaDescription": true,
+          "descriptionLength": 61,
+          "hasCanonical": true,
+          "hasH1": true,
+          "hasSchema": true,
+          "hasFaqText": true,
+          "hasDealerText": false,
+          "hasContactText": true,
+          "hasProductText": true
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": false,
+          "contentSecurityPolicy": false,
+          "xFrameOptions": false
+        }
+      },
+      "robots": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.kptpipes.com/robots.txt",
+        "byteLength": 89,
+        "mentionsSitemap": true,
+        "allowsKnownAiBots": true
+      },
+      "sitemap": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.kptpipes.com/sitemap.xml",
+        "byteLength": 47408,
+        "urlCount": 278
+      },
+      "social": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/KPTPIPINGSYSTEMS/",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/kptpipingsystem/",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/kpt-pp-r-piping-systems",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "x",
+          "url": "https://x.com/PpPiping",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        }
+      ],
+      "scores": {
+        "publicWebsite": 86,
+        "aeoReadiness": 100,
+        "registryCompleteness": 80,
+        "seoVisibility": null,
+        "socialPerformance": null,
+        "campaignActivity": null,
+        "reputation": null
+      },
+      "scoreEvidence": [
+        "Homepage reachable"
+      ],
+      "unavailableMetrics": [
+        "Organic keyword ranks require an SEO source or search API.",
+        "Social follower and engagement metrics require platform APIs, approved tools, exports, or manual captures.",
+        "AEO visibility requires controlled answer-engine prompt runs.",
+        "Paid campaign activity requires ad library capture or approved third-party monitoring."
+      ]
+    },
+    {
+      "name": "POLOPLAST",
+      "type": "International benchmark",
+      "priority": "P3",
+      "website": "https://www.poloplast.com/en-at.html",
+      "collectedAt": "2026-05-05T04:47:14.223Z",
+      "dataMode": "collected_public_web",
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "finalUrl": "https://www.poloplast.com/en-at.html",
+        "responseMs": 1157,
+        "byteLength": 220952,
+        "error": "",
+        "title": "Pipe systems ➝ POLOPLAST - the specialist in plastic pipe systems",
+        "description": "Pipe system specialist POLOPLAST ➝ plastic pipe systems ✓ multilayer pipe system ✓ building drainage ✓ water installation system ✓ . ✅",
+        "canonical": "https://www.poloplast.com/en-at.html",
+        "h1": "Premium  pipe systems",
+        "schemaTypes": [],
+        "counts": {
+          "h1": 2,
+          "h2": 5,
+          "images": 8,
+          "links": 141,
+          "internalLinks": 129,
+          "externalLinks": 12,
+          "jsonLdBlocks": 0,
+          "forms": 2
+        },
+        "signals": {
+          "hasTitle": true,
+          "titleLength": 65,
+          "hasMetaDescription": true,
+          "descriptionLength": 134,
+          "hasCanonical": true,
+          "hasH1": true,
+          "hasSchema": false,
+          "hasFaqText": false,
+          "hasDealerText": false,
+          "hasContactText": true,
+          "hasProductText": true
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": true,
+          "contentSecurityPolicy": true,
+          "xFrameOptions": true
+        }
+      },
+      "robots": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.poloplast.com/robots.txt",
+        "byteLength": 456,
+        "mentionsSitemap": true,
+        "allowsKnownAiBots": true
+      },
+      "sitemap": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.poloplast.com/sitemap.xml",
+        "byteLength": 224668,
+        "urlCount": 0
+      },
+      "social": [
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/poloplastgroup/",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UC-25ynaEycmiHZOhNTtE7vA",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/poloplast.com",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        }
+      ],
+      "scores": {
+        "publicWebsite": 84,
+        "aeoReadiness": 55,
+        "registryCompleteness": 60,
+        "seoVisibility": null,
+        "socialPerformance": null,
+        "campaignActivity": null,
+        "reputation": null
+      },
+      "scoreEvidence": [
+        "Homepage reachable",
+        "Homepage response under 2s"
+      ],
+      "unavailableMetrics": [
+        "Organic keyword ranks require an SEO source or search API.",
+        "Social follower and engagement metrics require platform APIs, approved tools, exports, or manual captures.",
+        "AEO visibility requires controlled answer-engine prompt runs.",
+        "Paid campaign activity requires ad library capture or approved third-party monitoring."
+      ]
+    },
+    {
+      "name": "REHAU India",
+      "type": "Adjacent competitor",
+      "priority": "P3",
+      "website": "https://www.rehau.com/in-en",
+      "collectedAt": "2026-05-05T04:47:16.401Z",
+      "dataMode": "collected_public_web",
+      "homepage": {
+        "ok": true,
+        "status": 200,
+        "finalUrl": "https://www.rehau.com/in-en",
+        "responseMs": 142,
+        "byteLength": 80527,
+        "error": "",
+        "title": "REHAU Interior Solutions",
+        "description": "Explore REHAU’s German-engineered interior solutions—crafted for furniture makers, architects, and homeowners to bring design, innovation, and ideas to life.",
+        "canonical": "https://www.rehau.com/in-en",
+        "h1": "",
+        "schemaTypes": [
+          "Organization",
+          "WebSite",
+          "SearchAction"
+        ],
+        "counts": {
+          "h1": 0,
+          "h2": 0,
+          "images": 11,
+          "links": 92,
+          "internalLinks": 85,
+          "externalLinks": 7,
+          "jsonLdBlocks": 1,
+          "forms": 3
+        },
+        "signals": {
+          "hasTitle": true,
+          "titleLength": 24,
+          "hasMetaDescription": true,
+          "descriptionLength": 157,
+          "hasCanonical": true,
+          "hasH1": false,
+          "hasSchema": true,
+          "hasFaqText": false,
+          "hasDealerText": true,
+          "hasContactText": true,
+          "hasProductText": true
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": true,
+          "contentSecurityPolicy": true,
+          "xFrameOptions": true
+        }
+      },
+      "robots": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.rehau.com/robots.txt",
+        "byteLength": 72,
+        "mentionsSitemap": false,
+        "allowsKnownAiBots": true
+      },
+      "sitemap": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.rehau.com/sitemap.xml",
+        "byteLength": 74300,
+        "urlCount": 0
+      },
+      "social": [
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/REHAUIndia",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "instagram",
+          "url": "https://www.instagram.com/rehau.india/",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "youtube",
+          "url": "https://www.youtube.com/channel/UCukGuiMA6o3KvxAOVLq-BZA",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        },
+        {
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/rehau-india",
+          "status": "registry_only",
+          "note": "Profile URL is in the registry. Platform metrics require approved API, export, or manual evidence capture."
+        }
+      ],
+      "scores": {
+        "publicWebsite": 93,
+        "aeoReadiness": 60,
+        "registryCompleteness": 80,
+        "seoVisibility": null,
+        "socialPerformance": null,
+        "campaignActivity": null,
+        "reputation": null
+      },
+      "scoreEvidence": [
+        "Homepage reachable",
+        "Homepage response under 2s"
+      ],
+      "unavailableMetrics": [
+        "Organic keyword ranks require an SEO source or search API.",
+        "Social follower and engagement metrics require platform APIs, approved tools, exports, or manual captures.",
+        "AEO visibility requires controlled answer-engine prompt runs.",
+        "Paid campaign activity requires ad library capture or approved third-party monitoring."
+      ]
+    }
+  ]
+}
