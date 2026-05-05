@@ -475,95 +475,13 @@ function App() {
 
             <ModuleTabs activeModule={activeModule} setActiveModule={setActiveModule} />
 
-            <section className="panel score-panel">
-              <div className="panel-heading">
-                <div>
-                  <h2>Competitive rank</h2>
-                  <p>Evidence-backed public-web score from the latest collector run.</p>
-                </div>
-                <button className="icon-button" aria-label="Share rank view">
-                  <Share2 size={18} />
-                </button>
-              </div>
-              <div className="rank-list">
-                {ranked.map((brand, index) => (
-                  <button
-                    className={`rank-row ${brand.name === selectedBrand ? "selected" : ""}`}
-                    key={brand.name}
-                    onClick={() => setSelectedBrand(brand.name)}
-                  >
-                    <span className="rank-number">{index + 1}</span>
-                    <span className="brand-dot" style={{ background: brand.color }} />
-                    <span className="rank-name">
-                      <strong>{brand.name}</strong>
-                      <small>{brand.type}</small>
-                    </span>
-                    <span className="bar-track">
-                      <span className="bar-fill" style={{ width: `${brand.score}%`, background: brand.color }} />
-                    </span>
-                    <span className="rank-score">{brand.score}</span>
-                    <span className={`signal ${brand.momentum >= 3 ? "up" : brand.momentum < 0 ? "down" : ""}`}>
-                      {brand.momentum > 0 ? `+${brand.momentum}` : brand.momentum}
-                    </span>
-                  </button>
-                ))}
-              </div>
-            </section>
-
-            <section className="split-grid">
-              <ScoreBreakdown brand={selected} activeModule={activeModule} />
-              <CampaignPanel />
-            </section>
-
-            <MonitorTimeline />
-
-            <section className="panel comparison-panel">
-              <div className="panel-heading">
-                <div>
-                  <h2>Brand comparison</h2>
-                  <p>Brand registry structure with sample social velocity and threat labels.</p>
-                </div>
-                <button className="text-button">
-                  <Download size={16} />
-                  Export CSV
-                </button>
-              </div>
-              <div className="table-wrap">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>Brand</th>
-                      <th>Priority</th>
-                      <th>Website</th>
-                      <th>Followers</th>
-                      <th>Engagement</th>
-                      <th>Frequency</th>
-                      <th>Threat</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {ranked.map((brand) => (
-                      <tr key={brand.name}>
-                        <td>
-                          <span className="table-brand">
-                            <span className="brand-dot" style={{ background: brand.color }} />
-                            {brand.name}
-                          </span>
-                        </td>
-                        <td>{brand.priority}</td>
-                        <td>{brand.website}</td>
-                        <td>{brand.followers}</td>
-                        <td>{brand.engagement}</td>
-                        <td>{brand.frequency}</td>
-                        <td>
-                          <span className={`threat ${brand.threat.toLowerCase()}`}>{brand.threat}</span>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </section>
+            <ModuleWorkspace
+              activeModule={activeModule}
+              ranked={ranked}
+              selectedBrand={selectedBrand}
+              setSelectedBrand={setSelectedBrand}
+              selected={selected}
+            />
           </section>
 
           <aside className="insight-rail">
@@ -736,6 +654,368 @@ function ModuleTabs({ activeModule, setActiveModule }) {
   );
 }
 
+function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand, selected }) {
+  if (activeModule === "aeo") {
+    return (
+      <>
+        <DisciplineTable
+          title="AEO comparison"
+          description="AI crawler readiness, schema coverage, extractable content, E-E-A-T proxies, and llms.txt evidence."
+          rows={ranked}
+          columns={[
+            ["AEO score", (brand) => `${brand.auditScores.aeoReadiness}/100`],
+            ["FAQ schema", (brand) => yesNo(brand.collected.homepage.signals.hasFaqSchema)],
+            ["Product schema", (brand) => yesNo(brand.collected.homepage.signals.hasProductSchema)],
+            ["Org schema", (brand) => yesNo(brand.collected.homepage.signals.hasOrganizationSchema)],
+            ["AI bots", (brand) => yesNo(brand.collected.robots.allowsKnownAiBots)],
+            ["llms.txt", (brand) => statusLabel(brand.collected.llms?.ok)],
+            ["Q headings", (brand) => brand.collected.homepage.counts.questionHeadings]
+          ]}
+          selectedBrand={selectedBrand}
+          setSelectedBrand={setSelectedBrand}
+        />
+        <section className="split-grid">
+          <SignalPanel
+            title={`${selected.name} AEO parameters`}
+            description="Signals inspired by the AEO checklist."
+            signals={[
+              ["AEO readiness", selected.auditScores.aeoReadiness],
+              ["Content extraction", selected.auditScores.contentExtraction],
+              ["Schema blocks", selected.collected.homepage.counts.jsonLdBlocks],
+              ["Answer blocks", selected.collected.homepage.contentStructure.answerFriendlyBlocks],
+              ["Question headings", selected.collected.homepage.counts.questionHeadings],
+              ["Trust signals", yesNo(selected.collected.homepage.signals.hasTrustSignals)]
+            ]}
+          />
+          <SchemaPanel brand={selected} />
+        </section>
+      </>
+    );
+  }
+
+  if (activeModule === "seo") {
+    return (
+      <>
+        <DisciplineTable
+          title="SEO comparison"
+          description="Technical SEO and on-page public signals only. Rank/traffic data stays pending until a rank source is connected."
+          rows={ranked}
+          columns={[
+            ["SEO score", (brand) => `${brand.auditScores.technicalSeo}/100`],
+            ["Title chars", (brand) => brand.collected.homepage.signals.titleLength],
+            ["Meta chars", (brand) => brand.collected.homepage.signals.descriptionLength],
+            ["H1 count", (brand) => brand.collected.homepage.counts.h1],
+            ["Canonical", (brand) => yesNo(brand.collected.homepage.signals.hasCanonical)],
+            ["Sitemap", (brand) => brand.collected.sitemap.status],
+            ["Internal links", (brand) => brand.collected.homepage.counts.internalLinks]
+          ]}
+          selectedBrand={selectedBrand}
+          setSelectedBrand={setSelectedBrand}
+        />
+        <section className="split-grid">
+          <SignalPanel
+            title={`${selected.name} SEO components`}
+            description="On-page and crawlability evidence from public HTML."
+            signals={[
+              ["Technical SEO", selected.auditScores.technicalSeo],
+              ["Homepage status", selected.collected.homepage.status],
+              ["Robots status", selected.collected.robots.status],
+              ["Sitemap URLs", selected.collected.sitemap.urlCount],
+              ["Open Graph", yesNo(selected.collected.homepage.signals.hasOpenGraph)],
+              ["Twitter Card", yesNo(selected.collected.homepage.signals.hasTwitterCard)]
+            ]}
+          />
+          <PendingPanel
+            title="SEO data still pending"
+            items={["Keyword rank distribution", "Non-brand query share", "Backlinks/referring domains", "SERP feature ownership", "Organic traffic estimates"]}
+          />
+        </section>
+      </>
+    );
+  }
+
+  if (activeModule === "social") {
+    return (
+      <>
+        <DisciplineTable
+          title="Social footprint"
+          description="Confirmed handle registry and platform coverage. Engagement metrics are not guessed."
+          rows={ranked}
+          columns={[
+            ["Platforms", (brand) => brand.collected.social.length],
+            ["Facebook", (brand) => platformStatus(brand, "facebook")],
+            ["Instagram", (brand) => platformStatus(brand, "instagram")],
+            ["YouTube", (brand) => platformStatus(brand, "youtube")],
+            ["LinkedIn", (brand) => platformStatus(brand, "linkedin")],
+            ["X", (brand) => platformStatus(brand, "x")]
+          ]}
+          selectedBrand={selectedBrand}
+          setSelectedBrand={setSelectedBrand}
+        />
+        <section className="split-grid">
+          <SocialHandlesPanel brand={selected} />
+          <PendingPanel
+            title="Social metrics pending"
+            items={["Follower count", "Follower growth", "Posting frequency", "Engagement rate", "Creative format mix", "Paid vs organic activity"]}
+          />
+        </section>
+      </>
+    );
+  }
+
+  if (activeModule === "website") {
+    return (
+      <>
+        <DisciplineTable
+          title="Website performance and UX proxy"
+          description="Public technical, accessibility, security, and UX signals. Lighthouse/CrUX can be added as the next collector."
+          rows={ranked}
+          columns={[
+            ["Website score", (brand) => `${brand.auditScores.publicWebsite}/100`],
+            ["Accessibility", (brand) => `${brand.auditScores.accessibilityProxy}/100`],
+            ["Security", (brand) => `${brand.auditScores.securityPrivacy}/100`],
+            ["Response", (brand) => `${brand.collected.homepage.responseMs}ms`],
+            ["Images w/o alt", (brand) => brand.collected.homepage.counts.imagesWithoutAlt],
+            ["HSTS", (brand) => yesNo(brand.collected.homepage.securityHeaders.strictTransportSecurity)]
+          ]}
+          selectedBrand={selectedBrand}
+          setSelectedBrand={setSelectedBrand}
+        />
+        <section className="split-grid">
+          <SignalPanel
+            title={`${selected.name} website components`}
+            description="Public evidence proxies from the website-performance checklist."
+            signals={[
+              ["Public website", selected.auditScores.publicWebsite],
+              ["Accessibility proxy", selected.auditScores.accessibilityProxy],
+              ["Security/privacy", selected.auditScores.securityPrivacy],
+              ["Lazy images", selected.collected.homepage.counts.lazyImages],
+              ["Preconnect hints", selected.collected.homepage.counts.preconnectHints],
+              ["Search UI", yesNo(selected.collected.homepage.signals.hasSearchUi)]
+            ]}
+          />
+          <TechStackPanel brand={selected} />
+        </section>
+      </>
+    );
+  }
+
+  if (activeModule === "campaigns") {
+    return (
+      <>
+        <CampaignPanel />
+        <MonitorTimeline eventTypes={["campaign_page", "category_or_product_page", "new_url_detected", "campaign_terms_detected", "homepage_content_changed"]} />
+      </>
+    );
+  }
+
+  return (
+    <>
+      <RankPanel ranked={ranked} selectedBrand={selectedBrand} setSelectedBrand={setSelectedBrand} />
+      <section className="split-grid">
+        <ScoreBreakdown brand={selected} activeModule={activeModule} />
+        <CampaignPanel />
+      </section>
+      <MonitorTimeline />
+    </>
+  );
+}
+
+function RankPanel({ ranked, selectedBrand, setSelectedBrand }) {
+  return (
+    <section className="panel score-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>Competitive overview</h2>
+          <p>Executive summary using the current public-evidence composite.</p>
+        </div>
+        <button className="icon-button" aria-label="Share rank view">
+          <Share2 size={18} />
+        </button>
+      </div>
+      <div className="rank-list">
+        {ranked.map((brand, index) => (
+          <button
+            className={`rank-row ${brand.name === selectedBrand ? "selected" : ""}`}
+            key={brand.name}
+            onClick={() => setSelectedBrand(brand.name)}
+          >
+            <span className="rank-number">{index + 1}</span>
+            <span className="brand-dot" style={{ background: brand.color }} />
+            <span className="rank-name">
+              <strong>{brand.name}</strong>
+              <small>{brand.type}</small>
+            </span>
+            <span className="bar-track">
+              <span className="bar-fill" style={{ width: `${brand.score}%`, background: brand.color }} />
+            </span>
+            <span className="rank-score">{brand.score}</span>
+            <span className="signal">{brand.dataMode}</span>
+          </button>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function DisciplineTable({ title, description, rows, columns, selectedBrand, setSelectedBrand }) {
+  return (
+    <section className="panel comparison-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
+        <button className="text-button">
+          <Download size={16} />
+          Export CSV
+        </button>
+      </div>
+      <div className="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Brand</th>
+              {columns.map(([label]) => (
+                <th key={label}>{label}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((brand) => (
+              <tr
+                key={brand.name}
+                className={brand.name === selectedBrand ? "selected-row" : ""}
+                onClick={() => setSelectedBrand(brand.name)}
+              >
+                <td>
+                  <span className="table-brand">
+                    <span className="brand-dot" style={{ background: brand.color }} />
+                    {brand.name}
+                  </span>
+                </td>
+                {columns.map(([label, getter]) => (
+                  <td key={label}>{getter(brand)}</td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  );
+}
+
+function SignalPanel({ title, description, signals }) {
+  return (
+    <section className="panel breakdown-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
+      </div>
+      <div className="audit-signal-grid">
+        {signals.map(([label, value]) => (
+          <div className="audit-signal" key={label}>
+            <span>{label}</span>
+            <strong>{value}</strong>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function PendingPanel({ title, items }) {
+  return (
+    <section className="panel campaign-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>{title}</h2>
+          <p>These need platform APIs, exports, browser evidence, or approved tools.</p>
+        </div>
+      </div>
+      <div className="pending-list">
+        {items.map((item) => (
+          <span key={item}>{item}</span>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function SchemaPanel({ brand }) {
+  const types = brand.collected.homepage.schemaTypes || [];
+  return (
+    <section className="panel campaign-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>Schema coverage</h2>
+          <p>Schema types detected on the selected homepage.</p>
+        </div>
+      </div>
+      <div className="pending-list">
+        {types.length ? types.map((type) => <span key={type}>{type}</span>) : <span>No schema detected</span>}
+      </div>
+    </section>
+  );
+}
+
+function SocialHandlesPanel({ brand }) {
+  return (
+    <section className="panel campaign-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>{brand.name} handles</h2>
+          <p>Registry URLs currently tracked for platform monitoring.</p>
+        </div>
+      </div>
+      <div className="handle-list">
+        {brand.collected.social.map((item) => (
+          <a href={item.url} target="_blank" rel="noreferrer" key={item.platform}>
+            <strong>{item.platform}</strong>
+            <span>{item.status}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function TechStackPanel({ brand }) {
+  const stack = brand.collected.homepage.techStack || {};
+  return (
+    <section className="panel campaign-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>Visible tech stack</h2>
+          <p>Public HTML indicators for analytics, CMS, and frontend tooling.</p>
+        </div>
+      </div>
+      <div className="pending-list">
+        {Object.entries(stack).map(([key, value]) => (
+          <span key={key} className={value ? "available" : ""}>
+            {key}: {yesNo(value)}
+          </span>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function yesNo(value) {
+  return value ? "Yes" : "No";
+}
+
+function statusLabel(value) {
+  return value ? "Present" : "Missing";
+}
+
+function platformStatus(brand, platform) {
+  return brand.collected.social.some((item) => item.platform === platform) ? "Tracked" : "Missing";
+}
+
 function ScoreBreakdown({ brand, activeModule }) {
   const categories = [
     ["AEO", brand.aeo, 15],
@@ -819,8 +1099,10 @@ function CampaignPanel() {
   );
 }
 
-function MonitorTimeline() {
-  const events = monitorEvents.events || [];
+function MonitorTimeline({ eventTypes = null }) {
+  const events = eventTypes
+    ? (monitorEvents.events || []).filter((event) => eventTypes.includes(event.type))
+    : monitorEvents.events || [];
   return (
     <section className="panel monitor-panel">
       <div className="panel-heading">

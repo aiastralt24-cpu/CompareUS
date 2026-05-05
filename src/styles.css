@@ -467,7 +467,7 @@ h1 {
 
 .rank-row {
   display: grid;
-  grid-template-columns: 28px 12px minmax(160px, 1.1fr) minmax(140px, 2fr) 42px 46px;
+  grid-template-columns: 28px 12px minmax(160px, 1.1fr) minmax(140px, 2fr) 42px 86px;
   align-items: center;
   gap: 12px;
   min-height: 58px;
@@ -535,7 +535,7 @@ h1 {
 
 .signal {
   justify-self: end;
-  min-width: 38px;
+  min-width: 74px;
   padding: 5px 8px;
   border-radius: 999px;
   background: #eef2f7;
@@ -626,6 +626,40 @@ h1 {
 .campaign-list {
   display: grid;
   gap: 10px;
+}
+
+.pending-list,
+.handle-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.pending-list span,
+.handle-list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: rgba(237, 242, 247, 0.9);
+  color: #42526b;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.pending-list span.available {
+  color: #087b53;
+  background: #e8f7ef;
+}
+
+.handle-list a {
+  gap: 8px;
+}
+
+.handle-list a span {
+  color: var(--blue);
 }
 
 .campaign-list article {
@@ -722,6 +756,15 @@ th {
 
 td {
   color: #344054;
+}
+
+tbody tr {
+  cursor: pointer;
+}
+
+tbody tr:hover,
+tbody tr.selected-row {
+  background: rgba(255, 255, 255, 0.58);
 }
 
 .table-brand {
