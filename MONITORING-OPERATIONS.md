@@ -14,6 +14,25 @@ The current monitor detects public, evidence-backed competitor changes:
 - `robots.txt` changes.
 - Normalized sitemap URL-list changes.
 - Campaign-like terms appearing on the homepage.
+- Homepage meta description changes.
+- Homepage H1 changes.
+- Schema type coverage changes, such as Product, Organization, BreadcrumbList, FAQPage, HowTo, or Article schema.
+- Security/privacy header posture changes.
+- Visible marketing and analytics tag changes, such as GA4, GTM, Clarity, Hotjar, and Meta Pixel.
+- `llms.txt` availability or content changes when a real `llms.txt` file is present.
+
+## Framework-Inspired Public Audit Logic
+
+The collector now adds public-evidence signals inspired by the supplied AEO, SEO, Social Media, and Website Performance framework:
+
+- AEO readiness: AI crawler policy, `llms.txt`, FAQ/schema signals, answer-friendly headings, content extractability, and E-E-A-T proxies.
+- Technical SEO: title/meta length, H1 hygiene, canonical, sitemap, robots, viewport, Open Graph, Twitter Cards, breadcrumbs, and internal links.
+- Content extraction: question headings, FAQ text/schema, answer-friendly blocks, freshness signals, author/editorial signals, trust signals, comparison tools, and resource hubs.
+- Accessibility proxy: HTML language, viewport, image alt coverage, heading structure, form labels, lazy images, search UI, and breadcrumbs.
+- Security/privacy: HTTPS, HSTS, CSP, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, privacy links, terms links, and cookie/DPDP signals.
+- Tech stack and measurement: GA4, GTM, Microsoft Clarity, Hotjar, Meta Pixel, WordPress, Next.js, React, and Cloudflare indicators.
+
+These are public proxies. They do not replace Lighthouse, CrUX, Search Console, social platform exports, or paid intelligence tools, but they make the baseline monitor much more useful without inventing data.
 
 Every event stores:
 
@@ -111,4 +130,3 @@ It should say:
 > New public campaign-like URL detected.
 
 That keeps the output factual and evidence-backed.
-

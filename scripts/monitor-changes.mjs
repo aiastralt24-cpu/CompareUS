@@ -174,6 +174,21 @@ function extractSchema(html) {
     .join("\n---schema-block---\n");
 }
 
+function extractSchemaTypes(html) {
+  return [...new Set([...html.matchAll(/"@type"\s*:\s*"([^"]+)"/gi)].map((match) => match[1]))].sort();
+}
+
+function securityHeaderState(headers = {}) {
+  return {
+    strictTransportSecurity: Boolean(headers["strict-transport-security"]),
+    contentSecurityPolicy: Boolean(headers["content-security-policy"]),
+    xFrameOptions: Boolean(headers["x-frame-options"]),
+    xContentTypeOptions: Boolean(headers["x-content-type-options"]),
+    referrerPolicy: Boolean(headers["referrer-policy"]),
+    permissionsPolicy: Boolean(headers["permissions-policy"])
+  };
+}
+
 function extractPageSignals(html) {
   const title = extractFirst(html, [/<title[^>]*>([\s\S]*?)<\/title>/i]);
   const description = extractFirst(html, [
@@ -194,6 +209,14 @@ function extractPageSignals(html) {
     h1,
     textHash: hash(visibleText),
     schemaHash: hash(extractSchema(html)),
+    schemaTypes: extractSchemaTypes(html),
+    techStack: {
+      googleAnalytics: /gtag\(|google-analytics|G-[A-Z0-9]+/i.test(html),
+      googleTagManager: /googletagmanager|GTM-[A-Z0-9]+/i.test(html),
+      microsoftClarity: /clarity\.ms|Microsoft Clarity/i.test(html),
+      hotjar: /hotjar|hj\(/i.test(html),
+      metaPixel: /fbq\(|facebook\.net\/.*fbevents/i.test(html)
+    },
     campaignTerms: campaignPatterns.filter((term) =>
       new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i").test(`${title} ${description} ${h1} ${visibleText}`)
     )
@@ -228,10 +251,11 @@ function createEvent({ brand, type, severity, title, detail, sourceUrl, evidence
 
 async function collectBrandState(brand) {
   const origin = new URL(brand.website).origin;
-  const [home, robots, sitemap] = await Promise.all([
+  const [home, robots, sitemap, llms] = await Promise.all([
     fetchText(brand.website),
     fetchText(`${origin}/robots.txt`, { timeout: 12000 }),
-    fetchText(`${origin}/sitemap.xml`, { timeout: 15000 })
+    fetchText(`${origin}/sitemap.xml`, { timeout: 15000 }),
+    fetchText(`${origin}/llms.txt`, { timeout: 12000 })
   ]);
   const pageSignals = extractPageSignals(home.text || "");
   const sitemapUrls = sitemap.ok ? extractSitemapUrls(sitemap.text, brand.website) : [];
@@ -253,16 +277,26 @@ async function collectBrandState(brand) {
       htmlHash: hash(home.text || ""),
       textHash: pageSignals.textHash,
       schemaHash: pageSignals.schemaHash,
+      schemaTypes: pageSignals.schemaTypes,
       title: pageSignals.title,
       description: pageSignals.description,
       h1: pageSignals.h1,
-      campaignTerms: pageSignals.campaignTerms
+      campaignTerms: pageSignals.campaignTerms,
+      techStack: pageSignals.techStack,
+      securityHeaders: securityHeaderState(home.headers),
+      securityHeadersHash: hash(JSON.stringify(securityHeaderState(home.headers)))
     },
     robots: {
       ok: robots.ok,
       status: robots.status,
       url: `${origin}/robots.txt`,
       hash: hash(robots.text || "")
+    },
+    llms: {
+      ok: llms.ok,
+      status: llms.status,
+      url: `${origin}/llms.txt`,
+      hash: hash(llms.text || "")
     },
     sitemap: {
       ok: sitemap.ok,
@@ -312,6 +346,34 @@ function diffBrand(brand, previous, current) {
     );
   }
 
+  if (previous.homepage?.description !== current.homepage.description) {
+    events.push(
+      createEvent({
+        brand,
+        type: "meta_description_changed",
+        severity: "Medium",
+        title: `${brand.name} changed homepage meta description`,
+        detail: "Homepage meta description changed. Review snippet messaging and campaign positioning.",
+        sourceUrl: current.homepage.finalUrl || brand.website,
+        evidence: { before: previous.homepage?.description || "", after: current.homepage.description || "" }
+      })
+    );
+  }
+
+  if (previous.homepage?.h1 !== current.homepage.h1) {
+    events.push(
+      createEvent({
+        brand,
+        type: "h1_changed",
+        severity: "Medium",
+        title: `${brand.name} changed homepage H1`,
+        detail: `Homepage H1 changed from "${previous.homepage?.h1 || "missing"}" to "${current.homepage.h1 || "missing"}".`,
+        sourceUrl: current.homepage.finalUrl || brand.website,
+        evidence: { before: previous.homepage?.h1 || "", after: current.homepage.h1 || "" }
+      })
+    );
+  }
+
   if (previous.homepage?.schemaHash !== current.homepage.schemaHash) {
     events.push(
       createEvent({
@@ -322,6 +384,60 @@ function diffBrand(brand, previous, current) {
         detail: "JSON-LD schema hash changed on the public homepage.",
         sourceUrl: current.homepage.finalUrl || brand.website,
         evidence: { beforeHash: previous.homepage?.schemaHash, afterHash: current.homepage.schemaHash }
+      })
+    );
+  }
+
+  const previousSchemaTypes = new Set(previous.homepage?.schemaTypes || []);
+  const currentSchemaTypes = new Set(current.homepage.schemaTypes || []);
+  const addedSchemaTypes = [...currentSchemaTypes].filter((type) => !previousSchemaTypes.has(type));
+  const removedSchemaTypes = [...previousSchemaTypes].filter((type) => !currentSchemaTypes.has(type));
+  if (addedSchemaTypes.length || removedSchemaTypes.length) {
+    events.push(
+      createEvent({
+        brand,
+        type: "schema_types_changed",
+        severity: "High",
+        title: `${brand.name} changed schema type coverage`,
+        detail: `Schema types changed. Added: ${addedSchemaTypes.join(", ") || "none"}. Removed: ${removedSchemaTypes.join(", ") || "none"}.`,
+        sourceUrl: current.homepage.finalUrl || brand.website,
+        evidence: { addedSchemaTypes, removedSchemaTypes }
+      })
+    );
+  }
+
+  if (previous.homepage?.securityHeadersHash !== current.homepage.securityHeadersHash) {
+    events.push(
+      createEvent({
+        brand,
+        type: "security_headers_changed",
+        severity: "High",
+        title: `${brand.name} changed security header posture`,
+        detail: "Homepage security/privacy header presence changed.",
+        sourceUrl: current.homepage.finalUrl || brand.website,
+        evidence: {
+          before: previous.homepage?.securityHeaders || {},
+          after: current.homepage.securityHeaders || {}
+        }
+      })
+    );
+  }
+
+  const previousTech = previous.homepage?.techStack || {};
+  const currentTech = current.homepage.techStack || {};
+  const techChanges = Object.keys({ ...previousTech, ...currentTech }).filter(
+    (key) => Boolean(previousTech[key]) !== Boolean(currentTech[key])
+  );
+  if (techChanges.length) {
+    events.push(
+      createEvent({
+        brand,
+        type: "measurement_stack_changed",
+        severity: "Medium",
+        title: `${brand.name} changed visible measurement tags`,
+        detail: `Detected change in visible marketing/analytics tags: ${techChanges.join(", ")}.`,
+        sourceUrl: current.homepage.finalUrl || brand.website,
+        evidence: { before: previousTech, after: currentTech, changed: techChanges }
       })
     );
   }
@@ -340,7 +456,7 @@ function diffBrand(brand, previous, current) {
     );
   }
 
-  if (previous.robots?.hash !== current.robots.hash) {
+  if (previous.robots?.ok && current.robots.ok && previous.robots?.hash !== current.robots.hash) {
     events.push(
       createEvent({
         brand,
@@ -354,7 +470,28 @@ function diffBrand(brand, previous, current) {
     );
   }
 
-  if (previous.sitemap?.hash !== current.sitemap.hash) {
+  const llmsAvailabilityChanged = Boolean(previous.llms?.ok) !== Boolean(current.llms.ok);
+  const llmsContentChanged = previous.llms?.ok && current.llms.ok && previous.llms?.hash !== current.llms.hash;
+  if (llmsAvailabilityChanged || llmsContentChanged) {
+    events.push(
+      createEvent({
+        brand,
+        type: "llms_txt_changed",
+        severity: "Medium",
+        title: `${brand.name} changed llms.txt`,
+        detail: "llms.txt availability or content changed. Review AI crawler guidance.",
+        sourceUrl: current.llms.url,
+        evidence: {
+          beforeStatus: previous.llms?.status,
+          afterStatus: current.llms.status,
+          beforeHash: previous.llms?.hash,
+          afterHash: current.llms.hash
+        }
+      })
+    );
+  }
+
+  if (previous.sitemap?.ok && current.sitemap.ok && previous.sitemap?.hash !== current.sitemap.hash) {
     events.push(
       createEvent({
         brand,

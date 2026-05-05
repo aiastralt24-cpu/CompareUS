@@ -246,8 +246,20 @@ function toDashboardBrand(brand) {
   const scores = brand.scores || {};
   const publicWebsite = scores.publicWebsite ?? 0;
   const aeoReadiness = scores.aeoReadiness ?? 0;
+  const technicalSeo = scores.technicalSeo ?? publicWebsite;
+  const contentExtraction = scores.contentExtraction ?? aeoReadiness;
+  const accessibilityProxy = scores.accessibilityProxy ?? publicWebsite;
+  const securityPrivacy = scores.securityPrivacy ?? publicWebsite;
   const registryCompleteness = scores.registryCompleteness ?? 0;
-  const composite = Math.round(publicWebsite * 0.55 + aeoReadiness * 0.35 + registryCompleteness * 0.1);
+  const composite = Math.round(
+    publicWebsite * 0.2 +
+      aeoReadiness * 0.2 +
+      technicalSeo * 0.2 +
+      contentExtraction * 0.15 +
+      accessibilityProxy * 0.1 +
+      securityPrivacy * 0.1 +
+      registryCompleteness * 0.05
+  );
   const socialCount = brand.social?.length ?? 0;
   return {
     name: brand.name,
@@ -257,13 +269,13 @@ function toDashboardBrand(brand) {
     score: composite,
     previous: composite,
     aeo: Math.round((aeoReadiness / 100) * 15),
-    seo: null,
+    seo: Math.round((technicalSeo / 100) * 20),
     social: null,
     performance: Math.round((publicWebsite / 100) * 15),
     campaigns: null,
-    content: brand.homepage?.signals?.hasProductText ? 7 : 3,
+    content: Math.round((contentExtraction / 100) * 10),
     reputation: null,
-    verified: Math.min(5, socialCount),
+    verified: Math.round((registryCompleteness / 100) * 5),
     followers: "Restricted",
     engagement: "Restricted",
     frequency: "Needs capture",
@@ -271,6 +283,15 @@ function toDashboardBrand(brand) {
     threat: brand.name === "Astral Pipes" ? "Reference" : "Watch",
     color: brandColors[brand.name] || "#6b7280",
     collected: brand,
+    auditScores: {
+      publicWebsite,
+      aeoReadiness,
+      technicalSeo,
+      contentExtraction,
+      accessibilityProxy,
+      securityPrivacy,
+      registryCompleteness
+    },
     dataMode: "Collected"
   };
 }
@@ -444,9 +465,10 @@ function App() {
               <div>
                 <strong>Data status: collected public-web evidence</strong>
                 <span>
-                  Latest public collection: {generatedAt}. Composite scores use collected website,
-                  AEO-readiness, and registry-completeness signals only. {dataGaps} restricted data
-                  gaps are kept pending instead of guessed.
+                  Latest public collection: {generatedAt}. Composite scores now use framework-derived
+                  public signals: website health, AEO readiness, technical SEO, content extractability,
+                  accessibility proxies, security/privacy, and registry completeness. {dataGaps}
+                  restricted data gaps are kept pending instead of guessed.
                 </span>
               </div>
             </section>
@@ -554,7 +576,7 @@ function App() {
               <div className="mini-stats">
                 <span>AEO {selected.aeo}/15</span>
                 <span>SEO {selected.seo}/20</span>
-                <span>Social {selected.social}/20</span>
+                <span>Social pending</span>
               </div>
             </section>
 
@@ -725,12 +747,23 @@ function ScoreBreakdown({ brand, activeModule }) {
     ["Reputation", brand.reputation, 5],
     ["Verified data", brand.verified, 5]
   ];
+  const auditRows = brand.auditScores
+    ? [
+        ["Public website", brand.auditScores.publicWebsite],
+        ["Technical SEO", brand.auditScores.technicalSeo],
+        ["AEO readiness", brand.auditScores.aeoReadiness],
+        ["Content extraction", brand.auditScores.contentExtraction],
+        ["Accessibility proxy", brand.auditScores.accessibilityProxy],
+        ["Security/privacy", brand.auditScores.securityPrivacy],
+        ["Registry completeness", brand.auditScores.registryCompleteness]
+      ]
+    : [];
   return (
     <section className="panel breakdown-panel">
       <div className="panel-heading">
         <div>
           <h2>{moduleLabels[activeModule]} score anatomy</h2>
-          <p>{brand.name} against the approved 100-point rubric.</p>
+          <p>{brand.name} against the expanded public-evidence rubric.</p>
         </div>
       </div>
       <div className="breakdown-list">
@@ -746,6 +779,16 @@ function ScoreBreakdown({ brand, activeModule }) {
           </div>
         ))}
       </div>
+      {auditRows.length > 0 ? (
+        <div className="audit-signal-grid">
+          {auditRows.map(([label, value]) => (
+            <div className="audit-signal" key={label}>
+              <span>{label}</span>
+              <strong>{value}</strong>
+            </div>
+          ))}
+        </div>
+      ) : null}
     </section>
   );
 }

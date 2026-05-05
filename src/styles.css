@@ -593,6 +593,36 @@ h1 {
   font-size: 13px;
 }
 
+.audit-signal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.audit-signal {
+  min-height: 58px;
+  padding: 10px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.audit-signal span,
+.audit-signal strong {
+  display: block;
+}
+
+.audit-signal span {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.audit-signal strong {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
 .campaign-list {
   display: grid;
   gap: 10px;
@@ -954,6 +984,10 @@ td {
   }
 
   .timeline-item {
+    grid-template-columns: 1fr;
+  }
+
+  .audit-signal-grid {
     grid-template-columns: 1fr;
   }
 

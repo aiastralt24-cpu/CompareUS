@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-05T05:17:32.965Z",
+  "generatedAt": "2026-05-05T05:27:24.202Z",
   "newEventCount": 0,
   "telegram": {
     "attempted": false,
@@ -15,7 +15,7 @@
       "title": "REHAU India monitoring baseline created",
       "detail": "48 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.rehau.com/in-en",
-      "firstSeenAt": "2026-05-05T05:17:13.632Z",
+      "firstSeenAt": "2026-05-05T05:26:57.801Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -32,7 +32,7 @@
       "title": "POLOPLAST monitoring baseline created",
       "detail": "43 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.poloplast.com/en-at.html",
-      "firstSeenAt": "2026-05-05T05:17:13.501Z",
+      "firstSeenAt": "2026-05-05T05:26:57.642Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -49,7 +49,7 @@
       "title": "KPT Pipes monitoring baseline created",
       "detail": "302 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.kptpipes.com",
-      "firstSeenAt": "2026-05-05T05:17:12.298Z",
+      "firstSeenAt": "2026-05-05T05:26:55.692Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -66,7 +66,7 @@
       "title": "Wavin India monitoring baseline created",
       "detail": "34 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://wavin.com/in",
-      "firstSeenAt": "2026-05-05T05:17:05.511Z",
+      "firstSeenAt": "2026-05-05T05:26:52.154Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -83,7 +83,7 @@
       "title": "Ashirvad by Aliaxis monitoring baseline created",
       "detail": "99 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.ashirvad.com/",
-      "firstSeenAt": "2026-05-05T05:17:04.463Z",
+      "firstSeenAt": "2026-05-05T05:26:51.077Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -100,7 +100,7 @@
       "title": "Apollo Pipes monitoring baseline created",
       "detail": "171 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.apollopipes.com/",
-      "firstSeenAt": "2026-05-05T05:17:02.038Z",
+      "firstSeenAt": "2026-05-05T05:26:48.967Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -117,7 +117,7 @@
       "title": "Prince Pipes monitoring baseline created",
       "detail": "66 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.princepipes.com/",
-      "firstSeenAt": "2026-05-05T05:17:00.913Z",
+      "firstSeenAt": "2026-05-05T05:26:47.790Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -134,7 +134,7 @@
       "title": "Supreme Pipes monitoring baseline created",
       "detail": "2349 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.supreme.co.in/",
-      "firstSeenAt": "2026-05-05T05:17:00.711Z",
+      "firstSeenAt": "2026-05-05T05:26:47.400Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -151,7 +151,7 @@
       "title": "Astral Pipes monitoring baseline created",
       "detail": "99 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.astralpipes.com/",
-      "firstSeenAt": "2026-05-05T05:16:58.383Z",
+      "firstSeenAt": "2026-05-05T05:26:45.142Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,

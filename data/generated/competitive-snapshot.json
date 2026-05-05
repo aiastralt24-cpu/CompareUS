@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-05-05T04:47:16.401Z",
-  "startedAt": "2026-05-05T04:47:02.003Z",
+  "generatedAt": "2026-05-05T05:24:09.912Z",
+  "startedAt": "2026-05-05T05:23:55.291Z",
   "dataMode": "collected_public_web",
   "methodology": "Public website fetch of homepage, robots.txt, and sitemap.xml. Restricted social, SEO, AEO, and paid metrics are intentionally left null until approved sources are connected.",
   "brands": [
@@ -9,13 +9,13 @@
       "type": "Primary brand",
       "priority": "Core",
       "website": "https://www.astralpipes.com/",
-      "collectedAt": "2026-05-05T04:47:02.525Z",
+      "collectedAt": "2026-05-05T05:23:55.735Z",
       "dataMode": "collected_public_web",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.astralpipes.com/",
-        "responseMs": 513,
+        "responseMs": 422,
         "byteLength": 387327,
         "error": "",
         "title": "Astral Pipes: Leading PVC Pipes and Fittings Manufacturer",
@@ -38,11 +38,20 @@
           "h1": 1,
           "h2": 26,
           "images": 155,
+          "imagesWithoutAlt": 154,
+          "lazyImages": 66,
           "links": 235,
           "internalLinks": 200,
           "externalLinks": 35,
           "jsonLdBlocks": 4,
-          "forms": 3
+          "forms": 3,
+          "labels": 0,
+          "scripts": 73,
+          "stylesheets": 2,
+          "preloadHints": 8,
+          "preconnectHints": 0,
+          "questionHeadings": 13,
+          "wordCount": 3348
         },
         "signals": {
           "hasTitle": true,
@@ -52,15 +61,91 @@
           "hasCanonical": true,
           "hasH1": true,
           "hasSchema": true,
+          "hasFaqSchema": true,
+          "hasHowToSchema": false,
+          "hasProductSchema": false,
+          "hasOrganizationSchema": true,
+          "hasBreadcrumbSchema": false,
+          "hasArticleSchema": false,
+          "hasViewportMeta": true,
+          "hasHtmlLang": false,
+          "hasOpenGraph": true,
+          "hasTwitterCard": true,
           "hasFaqText": true,
           "hasDealerText": true,
           "hasContactText": true,
-          "hasProductText": true
+          "hasProductText": true,
+          "hasAuthorSignals": false,
+          "hasFreshnessSignals": false,
+          "hasTrustSignals": true,
+          "hasPrivacyLink": false,
+          "hasTermsLink": false,
+          "hasCookieConsent": true,
+          "hasSearchUi": true,
+          "hasBreadcrumbText": false,
+          "hasComparisonTool": true,
+          "hasResourceHub": true,
+          "hasPhoneOrWhatsapp": true,
+          "hasEmailLink": true,
+          "hasDirectAnswerIntro": true
         },
         "securityHeaders": {
           "strictTransportSecurity": false,
           "contentSecurityPolicy": false,
-          "xFrameOptions": true
+          "xFrameOptions": true,
+          "xContentTypeOptions": true,
+          "referrerPolicy": true,
+          "permissionsPolicy": false
+        },
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": false,
+          "wordpress": true,
+          "nextjs": false,
+          "react": false,
+          "cloudflare": true
+        },
+        "contentStructure": {
+          "questionHeadings": [
+            "Do PVC pipes crack in extreme weather conditions?",
+            "Do PVC pipes come with warranties?",
+            "Are PVC pipes suitable for underground installation?",
+            "Are PVC pipes resistant to chemicals?",
+            "What sizes do PVC pipes come in?",
+            "Can PVC pipes be used for hot water?",
+            "What are the advantages of using PVC pipes over other materials?",
+            "How do you join PVC pipes?",
+            "Can PVC pipes be recycled?",
+            "How long do PVC pipes last?",
+            "Are PVC pipes safe for drinking water?",
+            "What is the difference between PVC and CPVC pipes?"
+          ],
+          "answerFriendlyBlocks": 99,
+          "headings": [
+            "India’s No.1 Pipe Brand",
+            "Born in Gujarat, India making waves across the world",
+            "We have the best quality products",
+            "Our Business Verticals",
+            "Astral Adhesives",
+            "Bond It USA &amp; UK",
+            "Astral Paints",
+            "Astral Bathware",
+            "Astral Trubuild",
+            "Types of PVC Pipes",
+            "uPVC Pipes (Unplasticized Polyvinyl Chloride)",
+            "CPVC Pipes (Chlorinated Polyvinyl Chloride)",
+            "Benefits of PVC Pipes",
+            "Common Applications of PVC Pipes",
+            "Difference Between uPVC Pipes and PVC Pipes",
+            "Difference Between CPVC Pipes and PVC Pipes",
+            "Astral Pipes : Your Most Trusted PVC Pipe Manufacturer in India",
+            "FAQ's",
+            "Do PVC pipes crack in extreme weather conditions?",
+            "Do PVC pipes come with warranties?"
+          ]
         }
       },
       "robots": {
@@ -69,14 +154,30 @@
         "url": "https://www.astralpipes.com/robots.txt",
         "byteLength": 463,
         "mentionsSitemap": false,
-        "allowsKnownAiBots": true
+        "allowsKnownAiBots": true,
+        "aiCrawlerPolicy": {
+          "GPTBot": true,
+          "ClaudeBot": true,
+          "PerplexityBot": true,
+          "GoogleExtended": true,
+          "CCBot": true,
+          "Bytespider": true,
+          "ApplebotExtended": true
+        }
       },
       "sitemap": {
         "ok": true,
         "status": 200,
         "url": "https://www.astralpipes.com/sitemap.xml",
         "byteLength": 75487,
-        "urlCount": 95
+        "urlCount": 95,
+        "isSegmented": true
+      },
+      "llms": {
+        "ok": false,
+        "status": 404,
+        "url": "https://www.astralpipes.com/llms.txt",
+        "byteLength": 2541
       },
       "social": [
         {
@@ -113,6 +214,10 @@
       "scores": {
         "publicWebsite": 100,
         "aeoReadiness": 100,
+        "technicalSeo": 94,
+        "contentExtraction": 82,
+        "accessibilityProxy": 40,
+        "securityPrivacy": 53,
         "registryCompleteness": 100,
         "seoVisibility": null,
         "socialPerformance": null,
@@ -135,13 +240,13 @@
       "type": "Direct competitor",
       "priority": "P1",
       "website": "https://www.supreme.co.in/",
-      "collectedAt": "2026-05-05T04:47:05.490Z",
+      "collectedAt": "2026-05-05T05:23:57.173Z",
       "dataMode": "collected_public_web",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.supreme.co.in/",
-        "responseMs": 2278,
+        "responseMs": 1256,
         "byteLength": 223911,
         "error": "",
         "title": "Supreme is India's largest manufacturer and processor of plastics",
@@ -159,11 +264,20 @@
           "h1": 0,
           "h2": 28,
           "images": 193,
+          "imagesWithoutAlt": 51,
+          "lazyImages": 0,
           "links": 342,
           "internalLinks": 164,
           "externalLinks": 178,
           "jsonLdBlocks": 3,
-          "forms": 2
+          "forms": 2,
+          "labels": 7,
+          "scripts": 26,
+          "stylesheets": 2,
+          "preloadHints": 0,
+          "preconnectHints": 0,
+          "questionHeadings": 13,
+          "wordCount": 2910
         },
         "signals": {
           "hasTitle": true,
@@ -173,15 +287,91 @@
           "hasCanonical": true,
           "hasH1": false,
           "hasSchema": true,
+          "hasFaqSchema": false,
+          "hasHowToSchema": false,
+          "hasProductSchema": false,
+          "hasOrganizationSchema": true,
+          "hasBreadcrumbSchema": false,
+          "hasArticleSchema": false,
+          "hasViewportMeta": true,
+          "hasHtmlLang": true,
+          "hasOpenGraph": true,
+          "hasTwitterCard": true,
           "hasFaqText": true,
           "hasDealerText": true,
           "hasContactText": true,
-          "hasProductText": true
+          "hasProductText": true,
+          "hasAuthorSignals": false,
+          "hasFreshnessSignals": false,
+          "hasTrustSignals": true,
+          "hasPrivacyLink": true,
+          "hasTermsLink": true,
+          "hasCookieConsent": true,
+          "hasSearchUi": true,
+          "hasBreadcrumbText": false,
+          "hasComparisonTool": true,
+          "hasResourceHub": true,
+          "hasPhoneOrWhatsapp": true,
+          "hasEmailLink": true,
+          "hasDirectAnswerIntro": false
         },
         "securityHeaders": {
           "strictTransportSecurity": true,
           "contentSecurityPolicy": true,
-          "xFrameOptions": true
+          "xFrameOptions": true,
+          "xContentTypeOptions": true,
+          "referrerPolicy": true,
+          "permissionsPolicy": false
+        },
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": true,
+          "hotjar": false,
+          "metaPixel": true,
+          "wordpress": false,
+          "nextjs": false,
+          "react": false,
+          "cloudflare": false
+        },
+        "contentStructure": {
+          "questionHeadings": [
+            "How to organise a cluttered room with smart cupboard choices?",
+            "What is a Casing Pipe? Features and Benefits",
+            "How to Create a Stylish Garden Seating Area Using Plastic Furniture",
+            "Why DWC HDPE Pipes are Preferred for Infrastructure Electrical Wiring",
+            "Why PVC Conduit Pipes Are Ideal for Electrical Wiring",
+            "What are PPR pipes? Applications and Advantages",
+            "Why CPVC is The Best Pipe for Home Plumbing Systems",
+            "What Are CPVC Pipes and Fittings",
+            "How to Choose the Right Cafe Chairs for Your Space",
+            "10 Reasons Why Plastic Chairs Are Perfect for Any Occasion",
+            "What are CPVC Pipes: Applications and Benefits",
+            "Why Choose Supreme as your trusted partner for plumbing solutions?"
+          ],
+          "answerFriendlyBlocks": 62,
+          "headings": [
+            "Get regular updates about us on",
+            "Download the Supreme Furniture App",
+            "Innovations that transform the way of life",
+            "Nurturing a legacy of trust",
+            "Committed to improving quality of life",
+            "Growing responsibly for a better tommorow",
+            "Building a sustainable future",
+            "Supreme Virtues",
+            "M.P. Taparia",
+            "India's Largest Plastic Processor",
+            "Pan India Presence",
+            "Our Businesses",
+            "Our Businesses",
+            "Supreme Milestones",
+            "1942",
+            "1942-1966",
+            "1966-1980",
+            "1981-1990",
+            "1991-2000",
+            "2001-2010"
+          ]
         }
       },
       "robots": {
@@ -190,14 +380,30 @@
         "url": "https://www.supreme.co.in/robots.txt",
         "byteLength": 177,
         "mentionsSitemap": true,
-        "allowsKnownAiBots": true
+        "allowsKnownAiBots": true,
+        "aiCrawlerPolicy": {
+          "GPTBot": true,
+          "ClaudeBot": true,
+          "PerplexityBot": true,
+          "GoogleExtended": true,
+          "CCBot": true,
+          "Bytespider": true,
+          "ApplebotExtended": true
+        }
       },
       "sitemap": {
         "ok": true,
         "status": 200,
         "url": "https://www.supreme.co.in/sitemap.xml",
         "byteLength": 827153,
-        "urlCount": 3464
+        "urlCount": 3464,
+        "isSegmented": true
+      },
+      "llms": {
+        "ok": false,
+        "status": 404,
+        "url": "https://www.supreme.co.in/llms.txt",
+        "byteLength": 6609
       },
       "social": [
         {
@@ -226,8 +432,12 @@
         }
       ],
       "scores": {
-        "publicWebsite": 85,
+        "publicWebsite": 93,
         "aeoReadiness": 90,
+        "technicalSeo": 86,
+        "contentExtraction": 70,
+        "accessibilityProxy": 50,
+        "securityPrivacy": 94,
         "registryCompleteness": 80,
         "seoVisibility": null,
         "socialPerformance": null,
@@ -235,7 +445,8 @@
         "reputation": null
       },
       "scoreEvidence": [
-        "Homepage reachable"
+        "Homepage reachable",
+        "Homepage response under 2s"
       ],
       "unavailableMetrics": [
         "Organic keyword ranks require an SEO source or search API.",
@@ -249,13 +460,13 @@
       "type": "Direct competitor",
       "priority": "P1",
       "website": "https://www.princepipes.com/",
-      "collectedAt": "2026-05-05T04:47:05.686Z",
+      "collectedAt": "2026-05-05T05:23:58.376Z",
       "dataMode": "collected_public_web",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.princepipes.com/",
-        "responseMs": 194,
+        "responseMs": 1196,
         "byteLength": 119172,
         "error": "",
         "title": "Prince Pipes | Leading PVC, CPVC & PPR Pipe Manufacturer Company in India",
@@ -271,11 +482,20 @@
           "h1": 2,
           "h2": 62,
           "images": 84,
+          "imagesWithoutAlt": 45,
+          "lazyImages": 0,
           "links": 234,
           "internalLinks": 176,
           "externalLinks": 58,
           "jsonLdBlocks": 2,
-          "forms": 1
+          "forms": 1,
+          "labels": 0,
+          "scripts": 33,
+          "stylesheets": 13,
+          "preloadHints": 0,
+          "preconnectHints": 0,
+          "questionHeadings": 3,
+          "wordCount": 2579
         },
         "signals": {
           "hasTitle": true,
@@ -285,15 +505,82 @@
           "hasCanonical": true,
           "hasH1": true,
           "hasSchema": true,
+          "hasFaqSchema": false,
+          "hasHowToSchema": false,
+          "hasProductSchema": false,
+          "hasOrganizationSchema": true,
+          "hasBreadcrumbSchema": false,
+          "hasArticleSchema": false,
+          "hasViewportMeta": true,
+          "hasHtmlLang": true,
+          "hasOpenGraph": true,
+          "hasTwitterCard": true,
           "hasFaqText": false,
           "hasDealerText": true,
           "hasContactText": true,
-          "hasProductText": true
+          "hasProductText": true,
+          "hasAuthorSignals": true,
+          "hasFreshnessSignals": false,
+          "hasTrustSignals": true,
+          "hasPrivacyLink": true,
+          "hasTermsLink": false,
+          "hasCookieConsent": false,
+          "hasSearchUi": true,
+          "hasBreadcrumbText": false,
+          "hasComparisonTool": true,
+          "hasResourceHub": true,
+          "hasPhoneOrWhatsapp": true,
+          "hasEmailLink": false,
+          "hasDirectAnswerIntro": false
         },
         "securityHeaders": {
           "strictTransportSecurity": true,
           "contentSecurityPolicy": true,
-          "xFrameOptions": true
+          "xFrameOptions": true,
+          "xContentTypeOptions": true,
+          "referrerPolicy": true,
+          "permissionsPolicy": true
+        },
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": true,
+          "wordpress": false,
+          "nextjs": false,
+          "react": false,
+          "cloudflare": false
+        },
+        "contentStructure": {
+          "questionHeadings": [
+            "We are committed towards constant innovations in plumbing, irrigation and sewerage technologies.",
+            "We are thrilled to share that Prince Pipes and Fittings Limited (PPFL) has been recognized as one of the Top 2 Most Desired Brands in the Pipes category by TRA Research - Most Desired Brand Report 2024.",
+            "Need Assistance?"
+          ],
+          "answerFriendlyBlocks": 73,
+          "headings": [
+            "Nihar Chheda (AVP - Strategy, Prince Pipes) has been honoured with the Economic Times Polymers Award for 'Next Generation Leader' - 2021",
+            "Nihar Chheda (AVP - Strategy, Prince Pipes) has been honoured with the Economic Times Polymers Award for 'Next Generation Leader' - 2021",
+            "Flowguard Plus",
+            "SmartFit Plus",
+            "EasyFit UPVC",
+            "Easyfit RE",
+            "Greenfit",
+            "GreenFit Blue",
+            "Onefit Corzan",
+            "SilentFit",
+            "Ultrafit",
+            "Rainfit",
+            "Biofit",
+            "DECILO®",
+            "Foamfit",
+            "Drainfit",
+            "Corfit",
+            "Durafit",
+            "Aquafit",
+            "Safefit"
+          ]
         }
       },
       "robots": {
@@ -302,14 +589,30 @@
         "url": "https://www.princepipes.com/robots.txt",
         "byteLength": 121,
         "mentionsSitemap": true,
-        "allowsKnownAiBots": true
+        "allowsKnownAiBots": true,
+        "aiCrawlerPolicy": {
+          "GPTBot": true,
+          "ClaudeBot": true,
+          "PerplexityBot": true,
+          "GoogleExtended": true,
+          "CCBot": true,
+          "Bytespider": true,
+          "ApplebotExtended": true
+        }
       },
       "sitemap": {
         "ok": true,
         "status": 200,
         "url": "https://www.princepipes.com/sitemap.xml",
         "byteLength": 815,
-        "urlCount": 0
+        "urlCount": 0,
+        "isSegmented": true
+      },
+      "llms": {
+        "ok": false,
+        "status": 404,
+        "url": "https://www.princepipes.com/llms.txt",
+        "byteLength": 42306
       },
       "social": [
         {
@@ -346,6 +649,10 @@
       "scores": {
         "publicWebsite": 100,
         "aeoReadiness": 80,
+        "technicalSeo": 76,
+        "contentExtraction": 62,
+        "accessibilityProxy": 40,
+        "securityPrivacy": 88,
         "registryCompleteness": 100,
         "seoVisibility": null,
         "socialPerformance": null,
@@ -368,13 +675,13 @@
       "type": "Direct competitor",
       "priority": "P1",
       "website": "https://www.apollopipes.com/",
-      "collectedAt": "2026-05-05T04:47:06.912Z",
+      "collectedAt": "2026-05-05T05:23:59.520Z",
       "dataMode": "collected_public_web",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.apollopipes.com/",
-        "responseMs": 1223,
+        "responseMs": 1138,
         "byteLength": 182575,
         "error": "",
         "title": "PVC Pipe & Fittings Manufacturers in India - APL Apollo",
@@ -393,11 +700,20 @@
           "h1": 1,
           "h2": 14,
           "images": 75,
+          "imagesWithoutAlt": 1,
+          "lazyImages": 0,
           "links": 308,
           "internalLinks": 286,
           "externalLinks": 22,
           "jsonLdBlocks": 2,
-          "forms": 1
+          "forms": 1,
+          "labels": 0,
+          "scripts": 64,
+          "stylesheets": 11,
+          "preloadHints": 1,
+          "preconnectHints": 0,
+          "questionHeadings": 1,
+          "wordCount": 2952
         },
         "signals": {
           "hasTitle": true,
@@ -407,15 +723,79 @@
           "hasCanonical": true,
           "hasH1": true,
           "hasSchema": true,
+          "hasFaqSchema": false,
+          "hasHowToSchema": false,
+          "hasProductSchema": false,
+          "hasOrganizationSchema": true,
+          "hasBreadcrumbSchema": false,
+          "hasArticleSchema": false,
+          "hasViewportMeta": true,
+          "hasHtmlLang": true,
+          "hasOpenGraph": true,
+          "hasTwitterCard": true,
           "hasFaqText": true,
           "hasDealerText": true,
           "hasContactText": true,
-          "hasProductText": true
+          "hasProductText": true,
+          "hasAuthorSignals": true,
+          "hasFreshnessSignals": false,
+          "hasTrustSignals": true,
+          "hasPrivacyLink": false,
+          "hasTermsLink": false,
+          "hasCookieConsent": false,
+          "hasSearchUi": false,
+          "hasBreadcrumbText": false,
+          "hasComparisonTool": false,
+          "hasResourceHub": true,
+          "hasPhoneOrWhatsapp": true,
+          "hasEmailLink": true,
+          "hasDirectAnswerIntro": false
         },
         "securityHeaders": {
           "strictTransportSecurity": false,
           "contentSecurityPolicy": false,
-          "xFrameOptions": false
+          "xFrameOptions": false,
+          "xContentTypeOptions": false,
+          "referrerPolicy": false,
+          "permissionsPolicy": false
+        },
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": true,
+          "wordpress": false,
+          "nextjs": false,
+          "react": false,
+          "cloudflare": true
+        },
+        "contentStructure": {
+          "questionHeadings": [
+            "Why us?"
+          ],
+          "answerFriendlyBlocks": 89,
+          "headings": [
+            "STYLISH AND DURABLE",
+            "The beauty your bathroom deserves",
+            "THE QUALITY THAT'S TESTED",
+            "THE PERFORMANCE THAT'S TRUSTED",
+            "THE BRAND THAT'S AWARDED!",
+            "STYLISH AND DURABLE",
+            "The beauty your bathroom deserves",
+            "THE QUALITY THAT'S TESTED",
+            "THE PERFORMANCE THAT'S TRUSTED",
+            "THE BRAND THAT'S AWARDED!",
+            "Why us?",
+            "Think quality! Think APL Apollo!",
+            "CSR",
+            "PRODUCT RANGE",
+            "Product Applications",
+            "Our Clientele",
+            "Testimonials from",
+            "clients",
+            "Frequently Asked Questions"
+          ]
         }
       },
       "robots": {
@@ -424,14 +804,30 @@
         "url": "https://www.apollopipes.com/robots.txt",
         "byteLength": 333,
         "mentionsSitemap": false,
-        "allowsKnownAiBots": true
+        "allowsKnownAiBots": true,
+        "aiCrawlerPolicy": {
+          "GPTBot": true,
+          "ClaudeBot": true,
+          "PerplexityBot": true,
+          "GoogleExtended": true,
+          "CCBot": true,
+          "Bytespider": true,
+          "ApplebotExtended": true
+        }
       },
       "sitemap": {
         "ok": true,
         "status": 200,
         "url": "https://www.apollopipes.com/sitemap.xml",
         "byteLength": 76554,
-        "urlCount": 410
+        "urlCount": 410,
+        "isSegmented": true
+      },
+      "llms": {
+        "ok": false,
+        "status": 404,
+        "url": "https://www.apollopipes.com/llms.txt",
+        "byteLength": 95010
       },
       "social": [
         {
@@ -462,6 +858,10 @@
       "scores": {
         "publicWebsite": 100,
         "aeoReadiness": 100,
+        "technicalSeo": 94,
+        "contentExtraction": 60,
+        "accessibilityProxy": 75,
+        "securityPrivacy": 20,
         "registryCompleteness": 80,
         "seoVisibility": null,
         "socialPerformance": null,
@@ -484,13 +884,13 @@
       "type": "Direct competitor",
       "priority": "P1",
       "website": "https://www.ashirvad.com/",
-      "collectedAt": "2026-05-05T04:47:09.315Z",
+      "collectedAt": "2026-05-05T05:24:02.013Z",
       "dataMode": "collected_public_web",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.ashirvad.com/",
-        "responseMs": 2041,
+        "responseMs": 1734,
         "byteLength": 732408,
         "error": "",
         "title": "UPVC Pipe | CPVC Pipes | Water Tank Manufacturers & Suppliers - Ashirvad",
@@ -515,11 +915,20 @@
           "h1": 1,
           "h2": 14,
           "images": 331,
+          "imagesWithoutAlt": 29,
+          "lazyImages": 0,
           "links": 382,
           "internalLinks": 358,
           "externalLinks": 24,
           "jsonLdBlocks": 3,
-          "forms": 1
+          "forms": 1,
+          "labels": 0,
+          "scripts": 59,
+          "stylesheets": 7,
+          "preloadHints": 1,
+          "preconnectHints": 0,
+          "questionHeadings": 3,
+          "wordCount": 3002
         },
         "signals": {
           "hasTitle": true,
@@ -529,15 +938,82 @@
           "hasCanonical": true,
           "hasH1": true,
           "hasSchema": true,
+          "hasFaqSchema": false,
+          "hasHowToSchema": false,
+          "hasProductSchema": false,
+          "hasOrganizationSchema": true,
+          "hasBreadcrumbSchema": true,
+          "hasArticleSchema": false,
+          "hasViewportMeta": true,
+          "hasHtmlLang": true,
+          "hasOpenGraph": true,
+          "hasTwitterCard": true,
           "hasFaqText": false,
           "hasDealerText": true,
           "hasContactText": true,
-          "hasProductText": true
+          "hasProductText": true,
+          "hasAuthorSignals": false,
+          "hasFreshnessSignals": true,
+          "hasTrustSignals": true,
+          "hasPrivacyLink": false,
+          "hasTermsLink": false,
+          "hasCookieConsent": true,
+          "hasSearchUi": true,
+          "hasBreadcrumbText": true,
+          "hasComparisonTool": true,
+          "hasResourceHub": true,
+          "hasPhoneOrWhatsapp": true,
+          "hasEmailLink": true,
+          "hasDirectAnswerIntro": true
         },
         "securityHeaders": {
           "strictTransportSecurity": true,
           "contentSecurityPolicy": true,
-          "xFrameOptions": true
+          "xFrameOptions": true,
+          "xContentTypeOptions": true,
+          "referrerPolicy": true,
+          "permissionsPolicy": true
+        },
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": true,
+          "wordpress": true,
+          "nextjs": false,
+          "react": false,
+          "cloudflare": true
+        },
+        "contentStructure": {
+          "questionHeadings": [
+            "Find what you need",
+            "What's Flowing at Ashirvad",
+            "Drainage system basics: What is a drainage system?"
+          ],
+          "answerFriendlyBlocks": 81,
+          "headings": [
+            "Hot and Cold Water Plumbing System",
+            "Cold Water Plumbing System",
+            "Hot and Cold Water Plumbing System",
+            "Cold Water Plumbing System",
+            "Hot and Cold Water Plumbing System",
+            "Cold Water Plumbing System",
+            "Sewerage Solutions",
+            "Underground Drainage Solutions",
+            "Piping Solution",
+            "Jointing Solution",
+            "Hot and Cold Water Plumbing System",
+            "Cold Water Plumbing System",
+            "Sewerage Solutions",
+            "Underground Drainage Solutions",
+            "Piping Solution",
+            "Jointing Solution",
+            "Hot and Cold Water Plumbing System",
+            "Cold Water Plumbing System",
+            "Hot and Cold Water Plumbing System",
+            "Cold Water Plumbing System"
+          ]
         }
       },
       "robots": {
@@ -546,14 +1022,30 @@
         "url": "https://www.ashirvad.com/robots.txt",
         "byteLength": 174,
         "mentionsSitemap": true,
-        "allowsKnownAiBots": true
+        "allowsKnownAiBots": true,
+        "aiCrawlerPolicy": {
+          "GPTBot": true,
+          "ClaudeBot": true,
+          "PerplexityBot": true,
+          "GoogleExtended": true,
+          "CCBot": true,
+          "Bytespider": true,
+          "ApplebotExtended": true
+        }
       },
       "sitemap": {
         "ok": true,
         "status": 200,
         "url": "https://www.ashirvad.com/sitemap.xml",
         "byteLength": 1168,
-        "urlCount": 0
+        "urlCount": 0,
+        "isSegmented": true
+      },
+      "llms": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.ashirvad.com/llms.txt",
+        "byteLength": 5144
       },
       "social": [
         {
@@ -582,8 +1074,12 @@
         }
       ],
       "scores": {
-        "publicWebsite": 92,
+        "publicWebsite": 100,
         "aeoReadiness": 80,
+        "technicalSeo": 90,
+        "contentExtraction": 76,
+        "accessibilityProxy": 85,
+        "securityPrivacy": 87,
         "registryCompleteness": 80,
         "seoVisibility": null,
         "socialPerformance": null,
@@ -591,7 +1087,8 @@
         "reputation": null
       },
       "scoreEvidence": [
-        "Homepage reachable"
+        "Homepage reachable",
+        "Homepage response under 2s"
       ],
       "unavailableMetrics": [
         "Organic keyword ranks require an SEO source or search API.",
@@ -605,14 +1102,14 @@
       "type": "Direct competitor",
       "priority": "P2",
       "website": "https://wavin.com/in",
-      "collectedAt": "2026-05-05T04:47:10.266Z",
+      "collectedAt": "2026-05-05T05:24:03.029Z",
       "dataMode": "collected_public_web",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://wavin.com/in",
-        "responseMs": 743,
-        "byteLength": 356730,
+        "responseMs": 820,
+        "byteLength": 356729,
         "error": "",
         "title": "Wavin",
         "description": "Wavin website",
@@ -629,11 +1126,20 @@
           "h1": 1,
           "h2": 10,
           "images": 50,
+          "imagesWithoutAlt": 22,
+          "lazyImages": 48,
           "links": 82,
           "internalLinks": 63,
           "externalLinks": 19,
           "jsonLdBlocks": 1,
-          "forms": 2
+          "forms": 2,
+          "labels": 0,
+          "scripts": 84,
+          "stylesheets": 2,
+          "preloadHints": 6,
+          "preconnectHints": 0,
+          "questionHeadings": 0,
+          "wordCount": 821
         },
         "signals": {
           "hasTitle": true,
@@ -643,15 +1149,68 @@
           "hasCanonical": false,
           "hasH1": true,
           "hasSchema": true,
+          "hasFaqSchema": false,
+          "hasHowToSchema": false,
+          "hasProductSchema": false,
+          "hasOrganizationSchema": true,
+          "hasBreadcrumbSchema": false,
+          "hasArticleSchema": false,
+          "hasViewportMeta": true,
+          "hasHtmlLang": true,
+          "hasOpenGraph": false,
+          "hasTwitterCard": false,
           "hasFaqText": true,
           "hasDealerText": false,
           "hasContactText": true,
-          "hasProductText": true
+          "hasProductText": true,
+          "hasAuthorSignals": true,
+          "hasFreshnessSignals": true,
+          "hasTrustSignals": true,
+          "hasPrivacyLink": false,
+          "hasTermsLink": true,
+          "hasCookieConsent": true,
+          "hasSearchUi": true,
+          "hasBreadcrumbText": true,
+          "hasComparisonTool": false,
+          "hasResourceHub": true,
+          "hasPhoneOrWhatsapp": false,
+          "hasEmailLink": false,
+          "hasDirectAnswerIntro": false
         },
         "securityHeaders": {
           "strictTransportSecurity": false,
           "contentSecurityPolicy": false,
-          "xFrameOptions": false
+          "xFrameOptions": false,
+          "xContentTypeOptions": false,
+          "referrerPolicy": false,
+          "permissionsPolicy": false
+        },
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": false,
+          "wordpress": false,
+          "nextjs": true,
+          "react": true,
+          "cloudflare": false
+        },
+        "contentStructure": {
+          "questionHeadings": [],
+          "answerFriendlyBlocks": 16,
+          "headings": [
+            "Our Legacy",
+            "About Wavin India",
+            "Selection from our portfolio",
+            "Our Services",
+            "Our Goals",
+            "Product Innovations",
+            "Book A Project Consultation",
+            "Building sustainability into everything we do",
+            "News &amp; Events",
+            "Important Information"
+          ]
         }
       },
       "robots": {
@@ -660,14 +1219,30 @@
         "url": "https://wavin.com/robots.txt",
         "byteLength": 481,
         "mentionsSitemap": true,
-        "allowsKnownAiBots": true
+        "allowsKnownAiBots": true,
+        "aiCrawlerPolicy": {
+          "GPTBot": true,
+          "ClaudeBot": true,
+          "PerplexityBot": true,
+          "GoogleExtended": true,
+          "CCBot": true,
+          "Bytespider": true,
+          "ApplebotExtended": true
+        }
       },
       "sitemap": {
         "ok": false,
         "status": 404,
         "url": "https://wavin.com/sitemap.xml",
         "byteLength": 80361,
-        "urlCount": 0
+        "urlCount": 0,
+        "isSegmented": true
+      },
+      "llms": {
+        "ok": false,
+        "status": 404,
+        "url": "https://wavin.com/llms.txt",
+        "byteLength": 80361
       },
       "social": [
         {
@@ -698,6 +1273,10 @@
       "scores": {
         "publicWebsite": 81,
         "aeoReadiness": 100,
+        "technicalSeo": 52,
+        "contentExtraction": 70,
+        "accessibilityProxy": 65,
+        "securityPrivacy": 32,
         "registryCompleteness": 80,
         "seoVisibility": null,
         "socialPerformance": null,
@@ -720,13 +1299,13 @@
       "type": "Direct competitor",
       "priority": "P2",
       "website": "https://www.kptpipes.com",
-      "collectedAt": "2026-05-05T04:47:13.064Z",
+      "collectedAt": "2026-05-05T05:24:06.615Z",
       "dataMode": "collected_public_web",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.kptpipes.com/",
-        "responseMs": 2796,
+        "responseMs": 3580,
         "byteLength": 92400,
         "error": "",
         "title": "Best PPR Pipes and Fittings Manufacturer - KPT Pipes",
@@ -748,11 +1327,20 @@
           "h1": 1,
           "h2": 3,
           "images": 104,
+          "imagesWithoutAlt": 1,
+          "lazyImages": 82,
           "links": 92,
           "internalLinks": 69,
           "externalLinks": 23,
           "jsonLdBlocks": 9,
-          "forms": 1
+          "forms": 1,
+          "labels": 0,
+          "scripts": 27,
+          "stylesheets": 9,
+          "preloadHints": 2,
+          "preconnectHints": 2,
+          "questionHeadings": 0,
+          "wordCount": 2333
         },
         "signals": {
           "hasTitle": true,
@@ -762,15 +1350,65 @@
           "hasCanonical": true,
           "hasH1": true,
           "hasSchema": true,
+          "hasFaqSchema": true,
+          "hasHowToSchema": false,
+          "hasProductSchema": true,
+          "hasOrganizationSchema": true,
+          "hasBreadcrumbSchema": false,
+          "hasArticleSchema": false,
+          "hasViewportMeta": true,
+          "hasHtmlLang": true,
+          "hasOpenGraph": true,
+          "hasTwitterCard": true,
           "hasFaqText": true,
           "hasDealerText": false,
           "hasContactText": true,
-          "hasProductText": true
+          "hasProductText": true,
+          "hasAuthorSignals": false,
+          "hasFreshnessSignals": false,
+          "hasTrustSignals": true,
+          "hasPrivacyLink": false,
+          "hasTermsLink": false,
+          "hasCookieConsent": false,
+          "hasSearchUi": false,
+          "hasBreadcrumbText": false,
+          "hasComparisonTool": true,
+          "hasResourceHub": true,
+          "hasPhoneOrWhatsapp": true,
+          "hasEmailLink": false,
+          "hasDirectAnswerIntro": false
         },
         "securityHeaders": {
           "strictTransportSecurity": false,
           "contentSecurityPolicy": false,
-          "xFrameOptions": false
+          "xFrameOptions": false,
+          "xContentTypeOptions": false,
+          "referrerPolicy": false,
+          "permissionsPolicy": false
+        },
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": false,
+          "wordpress": true,
+          "nextjs": false,
+          "react": true,
+          "cloudflare": true
+        },
+        "contentStructure": {
+          "questionHeadings": [],
+          "answerFriendlyBlocks": 65,
+          "headings": [
+            "KPT Pipes: Your Go-To Manufacturer for High-Quality Products",
+            "Global Presence – Leading Supplier and Exporter",
+            "PPR Pipes & Fittings",
+            "Introduction",
+            "Specifications",
+            "Applications",
+            "Features of KPT PPR Pipes Over Other Piping Systems"
+          ]
         }
       },
       "robots": {
@@ -779,14 +1417,30 @@
         "url": "https://www.kptpipes.com/robots.txt",
         "byteLength": 89,
         "mentionsSitemap": true,
-        "allowsKnownAiBots": true
+        "allowsKnownAiBots": true,
+        "aiCrawlerPolicy": {
+          "GPTBot": true,
+          "ClaudeBot": true,
+          "PerplexityBot": true,
+          "GoogleExtended": true,
+          "CCBot": true,
+          "Bytespider": true,
+          "ApplebotExtended": true
+        }
       },
       "sitemap": {
         "ok": true,
         "status": 200,
         "url": "https://www.kptpipes.com/sitemap.xml",
         "byteLength": 47408,
-        "urlCount": 278
+        "urlCount": 278,
+        "isSegmented": true
+      },
+      "llms": {
+        "ok": false,
+        "status": 404,
+        "url": "https://www.kptpipes.com/llms.txt",
+        "byteLength": 859
       },
       "social": [
         {
@@ -817,6 +1471,10 @@
       "scores": {
         "publicWebsite": 86,
         "aeoReadiness": 100,
+        "technicalSeo": 84,
+        "contentExtraction": 56,
+        "accessibilityProxy": 80,
+        "securityPrivacy": 20,
         "registryCompleteness": 80,
         "seoVisibility": null,
         "socialPerformance": null,
@@ -838,13 +1496,13 @@
       "type": "International benchmark",
       "priority": "P3",
       "website": "https://www.poloplast.com/en-at.html",
-      "collectedAt": "2026-05-05T04:47:14.223Z",
+      "collectedAt": "2026-05-05T05:24:07.818Z",
       "dataMode": "collected_public_web",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.poloplast.com/en-at.html",
-        "responseMs": 1157,
+        "responseMs": 1191,
         "byteLength": 220952,
         "error": "",
         "title": "Pipe systems ➝ POLOPLAST - the specialist in plastic pipe systems",
@@ -856,11 +1514,20 @@
           "h1": 2,
           "h2": 5,
           "images": 8,
+          "imagesWithoutAlt": 1,
+          "lazyImages": 0,
           "links": 141,
           "internalLinks": 129,
           "externalLinks": 12,
           "jsonLdBlocks": 0,
-          "forms": 2
+          "forms": 2,
+          "labels": 1,
+          "scripts": 6,
+          "stylesheets": 2,
+          "preloadHints": 0,
+          "preconnectHints": 0,
+          "questionHeadings": 1,
+          "wordCount": 766
         },
         "signals": {
           "hasTitle": true,
@@ -870,15 +1537,72 @@
           "hasCanonical": true,
           "hasH1": true,
           "hasSchema": false,
+          "hasFaqSchema": false,
+          "hasHowToSchema": false,
+          "hasProductSchema": false,
+          "hasOrganizationSchema": false,
+          "hasBreadcrumbSchema": false,
+          "hasArticleSchema": false,
+          "hasViewportMeta": true,
+          "hasHtmlLang": true,
+          "hasOpenGraph": true,
+          "hasTwitterCard": false,
           "hasFaqText": false,
           "hasDealerText": false,
           "hasContactText": true,
-          "hasProductText": true
+          "hasProductText": true,
+          "hasAuthorSignals": true,
+          "hasFreshnessSignals": false,
+          "hasTrustSignals": true,
+          "hasPrivacyLink": true,
+          "hasTermsLink": true,
+          "hasCookieConsent": true,
+          "hasSearchUi": false,
+          "hasBreadcrumbText": false,
+          "hasComparisonTool": false,
+          "hasResourceHub": true,
+          "hasPhoneOrWhatsapp": false,
+          "hasEmailLink": false,
+          "hasDirectAnswerIntro": true
         },
         "securityHeaders": {
           "strictTransportSecurity": true,
           "contentSecurityPolicy": true,
-          "xFrameOptions": true
+          "xFrameOptions": true,
+          "xContentTypeOptions": true,
+          "referrerPolicy": true,
+          "permissionsPolicy": false
+        },
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": false,
+          "wordpress": false,
+          "nextjs": false,
+          "react": false,
+          "cloudflare": false
+        },
+        "contentStructure": {
+          "questionHeadings": [
+            "We are invisible. And yet you encounter us every day."
+          ],
+          "answerFriendlyBlocks": 19,
+          "headings": [
+            "Europe",
+            "Europe",
+            "POLOPLAST: versatile, sustainable, innovative",
+            "We are invisible. And yet you encounter us every day.",
+            "So beautifully still.",
+            "Made in Austria.",
+            "Pipe systems using the three-layer technology",
+            "Get to know our company",
+            "Products",
+            "Company",
+            "People",
+            "Contact"
+          ]
         }
       },
       "robots": {
@@ -887,14 +1611,30 @@
         "url": "https://www.poloplast.com/robots.txt",
         "byteLength": 456,
         "mentionsSitemap": true,
-        "allowsKnownAiBots": true
+        "allowsKnownAiBots": true,
+        "aiCrawlerPolicy": {
+          "GPTBot": true,
+          "ClaudeBot": true,
+          "PerplexityBot": true,
+          "GoogleExtended": true,
+          "CCBot": true,
+          "Bytespider": true,
+          "ApplebotExtended": true
+        }
       },
       "sitemap": {
         "ok": true,
         "status": 200,
         "url": "https://www.poloplast.com/sitemap.xml",
         "byteLength": 224668,
-        "urlCount": 0
+        "urlCount": 0,
+        "isSegmented": true
+      },
+      "llms": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.poloplast.com/llms.txt",
+        "byteLength": 224668
       },
       "social": [
         {
@@ -919,6 +1659,10 @@
       "scores": {
         "publicWebsite": 84,
         "aeoReadiness": 55,
+        "technicalSeo": 83,
+        "contentExtraction": 56,
+        "accessibilityProxy": 60,
+        "securityPrivacy": 94,
         "registryCompleteness": 60,
         "seoVisibility": null,
         "socialPerformance": null,
@@ -941,14 +1685,14 @@
       "type": "Adjacent competitor",
       "priority": "P3",
       "website": "https://www.rehau.com/in-en",
-      "collectedAt": "2026-05-05T04:47:16.401Z",
+      "collectedAt": "2026-05-05T05:24:09.912Z",
       "dataMode": "collected_public_web",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.rehau.com/in-en",
-        "responseMs": 142,
-        "byteLength": 80527,
+        "responseMs": 2090,
+        "byteLength": 80530,
         "error": "",
         "title": "REHAU Interior Solutions",
         "description": "Explore REHAU’s German-engineered interior solutions—crafted for furniture makers, architects, and homeowners to bring design, innovation, and ideas to life.",
@@ -963,11 +1707,20 @@
           "h1": 0,
           "h2": 0,
           "images": 11,
+          "imagesWithoutAlt": 1,
+          "lazyImages": 0,
           "links": 92,
           "internalLinks": 85,
           "externalLinks": 7,
           "jsonLdBlocks": 1,
-          "forms": 3
+          "forms": 3,
+          "labels": 7,
+          "scripts": 7,
+          "stylesheets": 1,
+          "preloadHints": 13,
+          "preconnectHints": 0,
+          "questionHeadings": 0,
+          "wordCount": 1060
         },
         "signals": {
           "hasTitle": true,
@@ -977,15 +1730,57 @@
           "hasCanonical": true,
           "hasH1": false,
           "hasSchema": true,
+          "hasFaqSchema": false,
+          "hasHowToSchema": false,
+          "hasProductSchema": false,
+          "hasOrganizationSchema": true,
+          "hasBreadcrumbSchema": false,
+          "hasArticleSchema": false,
+          "hasViewportMeta": true,
+          "hasHtmlLang": true,
+          "hasOpenGraph": true,
+          "hasTwitterCard": false,
           "hasFaqText": false,
           "hasDealerText": true,
           "hasContactText": true,
-          "hasProductText": true
+          "hasProductText": true,
+          "hasAuthorSignals": true,
+          "hasFreshnessSignals": false,
+          "hasTrustSignals": true,
+          "hasPrivacyLink": true,
+          "hasTermsLink": true,
+          "hasCookieConsent": true,
+          "hasSearchUi": true,
+          "hasBreadcrumbText": false,
+          "hasComparisonTool": true,
+          "hasResourceHub": true,
+          "hasPhoneOrWhatsapp": false,
+          "hasEmailLink": true,
+          "hasDirectAnswerIntro": false
         },
         "securityHeaders": {
           "strictTransportSecurity": true,
           "contentSecurityPolicy": true,
-          "xFrameOptions": true
+          "xFrameOptions": true,
+          "xContentTypeOptions": true,
+          "referrerPolicy": true,
+          "permissionsPolicy": true
+        },
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": true,
+          "wordpress": false,
+          "nextjs": false,
+          "react": false,
+          "cloudflare": false
+        },
+        "contentStructure": {
+          "questionHeadings": [],
+          "answerFriendlyBlocks": 37,
+          "headings": []
         }
       },
       "robots": {
@@ -994,14 +1789,30 @@
         "url": "https://www.rehau.com/robots.txt",
         "byteLength": 72,
         "mentionsSitemap": false,
-        "allowsKnownAiBots": true
+        "allowsKnownAiBots": true,
+        "aiCrawlerPolicy": {
+          "GPTBot": true,
+          "ClaudeBot": true,
+          "PerplexityBot": true,
+          "GoogleExtended": true,
+          "CCBot": true,
+          "Bytespider": true,
+          "ApplebotExtended": true
+        }
       },
       "sitemap": {
         "ok": true,
         "status": 200,
         "url": "https://www.rehau.com/sitemap.xml",
         "byteLength": 74300,
-        "urlCount": 0
+        "urlCount": 0,
+        "isSegmented": true
+      },
+      "llms": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.rehau.com/llms.txt",
+        "byteLength": 74300
       },
       "social": [
         {
@@ -1030,8 +1841,12 @@
         }
       ],
       "scores": {
-        "publicWebsite": 93,
+        "publicWebsite": 85,
         "aeoReadiness": 60,
+        "technicalSeo": 73,
+        "contentExtraction": 48,
+        "accessibilityProxy": 75,
+        "securityPrivacy": 100,
         "registryCompleteness": 80,
         "seoVisibility": null,
         "socialPerformance": null,
@@ -1039,8 +1854,7 @@
         "reputation": null
       },
       "scoreEvidence": [
-        "Homepage reachable",
-        "Homepage response under 2s"
+        "Homepage reachable"
       ],
       "unavailableMetrics": [
         "Organic keyword ranks require an SEO source or search API.",

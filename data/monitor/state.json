@@ -1,18 +1,30 @@
 {
-  "generatedAt": "2026-05-05T05:17:21.828Z",
+  "generatedAt": "2026-05-05T05:27:12.971Z",
   "brands": {
     "Astral Pipes": {
       "name": "Astral Pipes",
       "website": "https://www.astralpipes.com/",
-      "collectedAt": "2026-05-05T05:17:22.114Z",
+      "collectedAt": "2026-05-05T05:27:13.402Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.astralpipes.com/",
-        "responseMs": 278,
+        "responseMs": 268,
         "htmlHash": "0b16fc56fd9751cea3e24b3722761735bdf78d00988105b0090e45dd7752b00e",
         "textHash": "d2358a8cf5eda0096ed67b65c3ad56ef17124bd246a3b8c86f7241a17270a637",
         "schemaHash": "89391c0c2e34853731c3b624960e37caa5f5e7c812813445967eca5a9afd305d",
+        "schemaTypes": [
+          "Answer",
+          "Brand",
+          "ContactPoint",
+          "FAQPage",
+          "Organization",
+          "Place",
+          "PostalAddress",
+          "Question",
+          "SearchAction",
+          "WebSite"
+        ],
         "title": "Astral Pipes: Leading PVC Pipes and Fittings Manufacturer",
         "description": "Astral Pipes India’s leading pipe manufacture company offering quality plastic PVC, CPVC & UPVC pipes for plumbing, drainage & agriculture applications.",
         "h1": "What are PVC Pipes?",
@@ -25,13 +37,35 @@
           "video",
           "news",
           "press"
-        ]
+        ],
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": false
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": false,
+          "contentSecurityPolicy": false,
+          "xFrameOptions": true,
+          "xContentTypeOptions": true,
+          "referrerPolicy": true,
+          "permissionsPolicy": false
+        },
+        "securityHeadersHash": "30ecaae5d423ccfb5e1a716889ce72782fd9bb334d5bb29703bf22299d2bbfe4"
       },
       "robots": {
         "ok": true,
         "status": 200,
         "url": "https://www.astralpipes.com/robots.txt",
         "hash": "92b869868d0d75db05e3d9771a49c54a844449ab0fba64f2b52691a79a157373"
+      },
+      "llms": {
+        "ok": false,
+        "status": 404,
+        "url": "https://www.astralpipes.com/llms.txt",
+        "hash": "d6030ea11d4d6ae2d4618b23add5f94779c4c2a36f8394fc2a898adbbc006ce8"
       },
       "sitemap": {
         "ok": true,
@@ -746,15 +780,22 @@
     "Supreme Pipes": {
       "name": "Supreme Pipes",
       "website": "https://www.supreme.co.in/",
-      "collectedAt": "2026-05-05T05:17:24.383Z",
+      "collectedAt": "2026-05-05T05:27:15.140Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.supreme.co.in/",
-        "responseMs": 2243,
-        "htmlHash": "a943c49a662f432ac71bdd3dcb778edda11d0c1bbd4b621f937b0d5a57195150",
+        "responseMs": 1723,
+        "htmlHash": "81e8f73baeef7276a37edb820aa1954d2b022f79123c1431b1b4896c6147cb44",
         "textHash": "89e09c8eb83775c59d7a881b13be77f62c86f4069e7d02d282964581bbdc16c9",
         "schemaHash": "829e5aff0046b74b54aad73c2faa4a7cc4a1a4f54c0be643295eac6baf6af6e3",
+        "schemaTypes": [
+          "Brand",
+          "ContactPoint",
+          "Organization",
+          "SearchAction",
+          "WebSite"
+        ],
         "title": "Supreme is India's largest manufacturer and processor of plastics",
         "description": "With a legacy of trust, Supreme remains relevant and a household name. Supreme, India",
         "h1": "",
@@ -763,13 +804,35 @@
           "distributor",
           "sustainability",
           "press"
-        ]
+        ],
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": true,
+          "hotjar": false,
+          "metaPixel": true
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": true,
+          "contentSecurityPolicy": true,
+          "xFrameOptions": true,
+          "xContentTypeOptions": true,
+          "referrerPolicy": true,
+          "permissionsPolicy": false
+        },
+        "securityHeadersHash": "e20b763ba96e9200505ec0fcfb4fefb0970b28449a7c847180a32102af6b49ea"
       },
       "robots": {
         "ok": true,
         "status": 200,
         "url": "https://www.supreme.co.in/robots.txt",
         "hash": "e81d1fec165c4e156e43d3952eb3956101d4f642ee7d27a0033fa38cda5c77d3"
+      },
+      "llms": {
+        "ok": false,
+        "status": 404,
+        "url": "https://www.supreme.co.in/llms.txt",
+        "hash": "8437bd0ef46a19c9a7c294c53e0429b40e76ebbd5fe9fd73a9025752495ddb1c"
       },
       "sitemap": {
         "ok": true,
@@ -16885,15 +16948,20 @@
     "Prince Pipes": {
       "name": "Prince Pipes",
       "website": "https://www.princepipes.com/",
-      "collectedAt": "2026-05-05T05:17:24.558Z",
+      "collectedAt": "2026-05-05T05:27:15.273Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.princepipes.com/",
-        "responseMs": 170,
+        "responseMs": 131,
         "htmlHash": "90858ae7cc69c332e2399788e46eafaa2bb97021f90c9721fe06899d2cf07773",
         "textHash": "a3ac944b28cba3c133aab53be82a502ddc6fcea55347c10be9c32fe3d8948c97",
         "schemaHash": "78bd732056270d71c73be7930e7f6292e3e1f3f999cbc664e5c69b001e3c2f52",
+        "schemaTypes": [
+          "Organization",
+          "SearchAction",
+          "WebSite"
+        ],
         "title": "Prince Pipes | Leading PVC, CPVC & PPR Pipe Manufacturer Company in India",
         "description": "Prince Pipes is one of the largest PVC, CPVC & PPR pipe manufacturers & multi polymer processors. Explore Sewage, Borewell, Agriculture Pipes & Plumbing systems manufacturer.",
         "h1": "DECILO LOW NOISE PP Drainage System",
@@ -16906,13 +16974,35 @@
           "blog",
           "news",
           "press"
-        ]
+        ],
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": true
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": true,
+          "contentSecurityPolicy": true,
+          "xFrameOptions": true,
+          "xContentTypeOptions": true,
+          "referrerPolicy": true,
+          "permissionsPolicy": true
+        },
+        "securityHeadersHash": "cbe570463b2e726d7bcd4ea273aa7945d18b256c81fdc8fdd6e6a25c693806f8"
       },
       "robots": {
         "ok": true,
         "status": 200,
         "url": "https://www.princepipes.com/robots.txt",
         "hash": "183b3923c09d2d1004f37e4eed4907d654862728c4b1bd36d09be48c0720146d"
+      },
+      "llms": {
+        "ok": false,
+        "status": 404,
+        "url": "https://www.princepipes.com/llms.txt",
+        "hash": "43919ee55f07cbdfff9c331daa17c2ec7fcb3d39202add7489868a817b1d76bf"
       },
       "sitemap": {
         "ok": true,
@@ -17348,15 +17438,23 @@
     "Apollo Pipes": {
       "name": "Apollo Pipes",
       "website": "https://www.apollopipes.com/",
-      "collectedAt": "2026-05-05T05:17:25.636Z",
+      "collectedAt": "2026-05-05T05:27:16.529Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.apollopipes.com/",
-        "responseMs": 1073,
-        "htmlHash": "0a275ef115fce4c5a8cd57fe1552ab1caa4ee85f2dc231669f98d3433c87389a",
+        "responseMs": 1249,
+        "htmlHash": "e6c3a9e6337bf3cb00227117db3c70987e9238eb55e0882bc30e953cd993f588",
         "textHash": "e24975753ae842d436a984a1ccdd8e5a4c4fd59bbca6459b77f336c904be52d5",
         "schemaHash": "90e1e03ceb13913998939bc89cd0911a2279b57107eccf99a851273eb448c169",
+        "schemaTypes": [
+          "ContactPoint",
+          "Corporation",
+          "GeoCoordinates",
+          "LocalBusiness",
+          "OpeningHoursSpecification",
+          "PostalAddress"
+        ],
         "title": "PVC Pipe & Fittings Manufacturers in India - APL Apollo",
         "description": "APL Apollo Pipes are the leading pipes and fitting manufacturers in India with a wide range of pipes, such as PVC pipes, Water Tanks, Bath fittings, etc.",
         "h1": "About Apollo Pipes Ltd",
@@ -17366,13 +17464,35 @@
           "blog",
           "news",
           "press"
-        ]
+        ],
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": true
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": false,
+          "contentSecurityPolicy": false,
+          "xFrameOptions": false,
+          "xContentTypeOptions": false,
+          "referrerPolicy": false,
+          "permissionsPolicy": false
+        },
+        "securityHeadersHash": "b8d80401629f8c5d3d474645aca9fd1880779099187db17d2ab7e0de6669a9b2"
       },
       "robots": {
         "ok": true,
         "status": 200,
         "url": "https://www.apollopipes.com/robots.txt",
         "hash": "5203784b20aa1f2dabfa62bd6e39c0d097a16b125f87aec6e3c5858ebd6ec45c"
+      },
+      "llms": {
+        "ok": false,
+        "status": 404,
+        "url": "https://www.apollopipes.com/llms.txt",
+        "hash": "285a5ac396c16ccda60915518ede29ddbc6a118759a31eb8029bb34ef7c7f291"
       },
       "sitemap": {
         "ok": true,
@@ -18755,15 +18875,30 @@
     "Ashirvad by Aliaxis": {
       "name": "Ashirvad by Aliaxis",
       "website": "https://www.ashirvad.com/",
-      "collectedAt": "2026-05-05T05:17:27.637Z",
+      "collectedAt": "2026-05-05T05:27:18.792Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.ashirvad.com/",
-        "responseMs": 1661,
-        "htmlHash": "a32fce0d0c2d67ecff575a20c2ae3354a4c1404c5eb566d66024d82fa167dc9e",
+        "responseMs": 1942,
+        "htmlHash": "fe03e78b7b3962685cdc33b9476d2166dcd1230c1bf3310c391670b6a078f42f",
         "textHash": "2c380067f716de31bc92ec6c1543a18bd7e21815c89619ca0b8b37d2c4448029",
         "schemaHash": "dac3cbd059ac750f0932cc8dee467b681a1035f6bf43cf3fb46b7e21ceae6f81",
+        "schemaTypes": [
+          "BreadcrumbList",
+          "ContactPoint",
+          "EntryPoint",
+          "ImageObject",
+          "ListItem",
+          "Organization",
+          "PostalAddress",
+          "PropertyValueSpecification",
+          "QuantitativeValue",
+          "ReadAction",
+          "SearchAction",
+          "WebPage",
+          "WebSite"
+        ],
         "title": "UPVC Pipe | CPVC Pipes | Water Tank Manufacturers & Suppliers - Ashirvad",
         "description": "Ashirvad is a leading UPVC Pipe, CPVC Pipes, Water Tank Manufacturers & Suppliers, offering durable piping and water solutions for homes, agriculture & infrastructure.",
         "h1": "Connecting Water. Transforming Lives.",
@@ -18773,13 +18908,35 @@
           "sustainability",
           "blog",
           "news"
-        ]
+        ],
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": true
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": true,
+          "contentSecurityPolicy": true,
+          "xFrameOptions": true,
+          "xContentTypeOptions": true,
+          "referrerPolicy": true,
+          "permissionsPolicy": true
+        },
+        "securityHeadersHash": "cbe570463b2e726d7bcd4ea273aa7945d18b256c81fdc8fdd6e6a25c693806f8"
       },
       "robots": {
         "ok": true,
         "status": 200,
         "url": "https://www.ashirvad.com/robots.txt",
         "hash": "ca8fed4fbf1343f7339c5dd167151bceed82c00526ec844a5735cd69acb10051"
+      },
+      "llms": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.ashirvad.com/llms.txt",
+        "hash": "6b29a1ba5db50d2db5792da70a069a795f651e3af003d65047374cb254cafaca"
       },
       "sitemap": {
         "ok": true,
@@ -19044,15 +19201,22 @@
     "Wavin India": {
       "name": "Wavin India",
       "website": "https://wavin.com/in",
-      "collectedAt": "2026-05-05T05:17:28.785Z",
+      "collectedAt": "2026-05-05T05:27:20.080Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://wavin.com/in",
-        "responseMs": 824,
-        "htmlHash": "b09fff6f03ed843b6be2a44969cf1721206a27a34772287af07da142a830c2dd",
+        "responseMs": 685,
+        "htmlHash": "bda89493e9bb309208f113add1cb65cc3b746dff87ec77369151ca6ae04417db",
         "textHash": "417fb97473250b9f79821136e9b712435a4b00f87e59dc997a01307e1ee76528",
         "schemaHash": "4bee440fe6fefc82f70dc5a63af2c83fc75d742d55766c68135358e3dc0435bc",
+        "schemaTypes": [
+          "EntryPoint",
+          "ImageObject",
+          "Organization",
+          "SearchAction",
+          "WebSite"
+        ],
         "title": "Wavin",
         "description": "Wavin website",
         "h1": "Innovative solutions for the building and infrastructure industry",
@@ -19062,13 +19226,35 @@
           "sustainability",
           "news",
           "press"
-        ]
+        ],
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": false
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": false,
+          "contentSecurityPolicy": false,
+          "xFrameOptions": false,
+          "xContentTypeOptions": false,
+          "referrerPolicy": false,
+          "permissionsPolicy": false
+        },
+        "securityHeadersHash": "b8d80401629f8c5d3d474645aca9fd1880779099187db17d2ab7e0de6669a9b2"
       },
       "robots": {
         "ok": true,
         "status": 200,
         "url": "https://wavin.com/robots.txt",
         "hash": "c5f2a76571be789b5e3474e05fa17d137e913d94c048462bbd2cd798b97083a7"
+      },
+      "llms": {
+        "ok": false,
+        "status": 404,
+        "url": "https://wavin.com/llms.txt",
+        "hash": "38a1bb2f58e7c8f3839495deedeca43ad351f536f039f97b63cfb630875e6e6d"
       },
       "sitemap": {
         "ok": false,
@@ -19168,15 +19354,26 @@
     "KPT Pipes": {
       "name": "KPT Pipes",
       "website": "https://www.kptpipes.com",
-      "collectedAt": "2026-05-05T05:17:31.551Z",
+      "collectedAt": "2026-05-05T05:27:22.827Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.kptpipes.com/",
-        "responseMs": 2761,
-        "htmlHash": "f2a97978bbb8156f6dba0c177507cd3da88b9690e85014d5e12768c4cfe242aa",
+        "responseMs": 2742,
+        "htmlHash": "e5f3916c345afb098e43d6286a940d5e3842f3c5ece663f294f6841037637ad7",
         "textHash": "034d798b4d2c0d6d61fffaaf75f1920e17549530f71fdb36fcc38b91ba0360c1",
         "schemaHash": "8fc4f172fc07fb7c26cb416e7ef13236e3f569ca1e044a2e8f051ec805331781",
+        "schemaTypes": [
+          "AggregateRating",
+          "Answer",
+          "Brand",
+          "ContactPoint",
+          "Corporation",
+          "FAQPage",
+          "LocalBusiness",
+          "Product",
+          "Question"
+        ],
         "title": "Best PPR Pipes and Fittings Manufacturer - KPT Pipes",
         "description": "Discover top-quality PPR pipes and fittings from the industry",
         "h1": "KPT Pipes - PPR Pipes and Fittings Manufacturer",
@@ -19185,13 +19382,35 @@
           "video",
           "blog",
           "press"
-        ]
+        ],
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": false
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": false,
+          "contentSecurityPolicy": false,
+          "xFrameOptions": false,
+          "xContentTypeOptions": false,
+          "referrerPolicy": false,
+          "permissionsPolicy": false
+        },
+        "securityHeadersHash": "b8d80401629f8c5d3d474645aca9fd1880779099187db17d2ab7e0de6669a9b2"
       },
       "robots": {
         "ok": true,
         "status": 200,
         "url": "https://www.kptpipes.com/robots.txt",
         "hash": "49865116d9a9fe9c9b5fdac829ce255ec5f99c8fa197c9693adb43bf37a88ac3"
+      },
+      "llms": {
+        "ok": false,
+        "status": 404,
+        "url": "https://www.kptpipes.com/llms.txt",
+        "hash": "4475c81772a495038928f4d9fdd126daff71d9c51ee19a27126d729aa100da7e"
       },
       "sitemap": {
         "ok": true,
@@ -21696,15 +21915,16 @@
     "POLOPLAST": {
       "name": "POLOPLAST",
       "website": "https://www.poloplast.com/en-at.html",
-      "collectedAt": "2026-05-05T05:17:32.787Z",
+      "collectedAt": "2026-05-05T05:27:24.034Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.poloplast.com/en-at.html",
-        "responseMs": 1224,
+        "responseMs": 1203,
         "htmlHash": "10190072d7047567ed236630347e54661c546125a3bb16e42ab3257a9e05c28b",
         "textHash": "20f10cdd429982a68ccf999a2b7126881d276af8e0997687a90f51e6bc1c80b5",
         "schemaHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "schemaTypes": [],
         "title": "Pipe systems ➝ POLOPLAST - the specialist in plastic pipe systems",
         "description": "Pipe system specialist POLOPLAST ➝ plastic pipe systems ✓ multilayer pipe system ✓ building drainage ✓ water installation system ✓ . ✅",
         "h1": "Premium  pipe systems",
@@ -21712,13 +21932,35 @@
           "sustainability",
           "video",
           "news"
-        ]
+        ],
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": false
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": true,
+          "contentSecurityPolicy": true,
+          "xFrameOptions": true,
+          "xContentTypeOptions": true,
+          "referrerPolicy": true,
+          "permissionsPolicy": false
+        },
+        "securityHeadersHash": "e20b763ba96e9200505ec0fcfb4fefb0970b28449a7c847180a32102af6b49ea"
       },
       "robots": {
         "ok": true,
         "status": 200,
         "url": "https://www.poloplast.com/robots.txt",
         "hash": "7063a16f0d28850fd900b219ee0f8e2921f0726053200cdf1c0d57ab3dbb32f9"
+      },
+      "llms": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.poloplast.com/llms.txt",
+        "hash": "3acf515cb7356d0d3503aa4991e470eda29dfaa75ae3f8b2ec9975c1ebeef181"
       },
       "sitemap": {
         "ok": true,
@@ -21887,15 +22129,20 @@
     "REHAU India": {
       "name": "REHAU India",
       "website": "https://www.rehau.com/in-en",
-      "collectedAt": "2026-05-05T05:17:32.962Z",
+      "collectedAt": "2026-05-05T05:27:24.197Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.rehau.com/in-en",
-        "responseMs": 154,
-        "htmlHash": "58aae4c0f17b163d897c0fa71945e58b5063abca040c31fc5fcf2a75ce1e2680",
+        "responseMs": 101,
+        "htmlHash": "1f9b4e2708718d949f897e0bc94960810d1e6f45471da30708cf0b13427d5d76",
         "textHash": "c8e7f2b8b29565be433ad7eafa26929abd975ac183e5d8a527227422fd1081c2",
         "schemaHash": "6cff479623bbbad460047a0515f17addb03bd825a0c2da69dd329fba9e6890e7",
+        "schemaTypes": [
+          "Organization",
+          "SearchAction",
+          "WebSite"
+        ],
         "title": "REHAU Interior Solutions",
         "description": "Explore REHAU’s German-engineered interior solutions—crafted for furniture makers, architects, and homeowners to bring design, innovation, and ideas to life.",
         "h1": "",
@@ -21904,13 +22151,35 @@
           "sustainability",
           "blog",
           "press"
-        ]
+        ],
+        "techStack": {
+          "googleAnalytics": true,
+          "googleTagManager": true,
+          "microsoftClarity": false,
+          "hotjar": false,
+          "metaPixel": true
+        },
+        "securityHeaders": {
+          "strictTransportSecurity": true,
+          "contentSecurityPolicy": true,
+          "xFrameOptions": true,
+          "xContentTypeOptions": true,
+          "referrerPolicy": true,
+          "permissionsPolicy": true
+        },
+        "securityHeadersHash": "cbe570463b2e726d7bcd4ea273aa7945d18b256c81fdc8fdd6e6a25c693806f8"
       },
       "robots": {
         "ok": true,
         "status": 200,
         "url": "https://www.rehau.com/robots.txt",
         "hash": "137e499d68bb5db32f183c3baea2e795c26a6fe9d258166c717fe39bd65771ec"
+      },
+      "llms": {
+        "ok": true,
+        "status": 200,
+        "url": "https://www.rehau.com/llms.txt",
+        "hash": "b110de0a96e3d7e914a91fbbf986f16d745f91de0eed54855ef833ae032009d3"
       },
       "sitemap": {
         "ok": true,
