@@ -45,9 +45,80 @@ function absoluteUrl(base, maybeUrl) {
   }
 }
 
+function normalizeUrl(url) {
+  try {
+    const parsed = new URL(url);
+    parsed.hash = "";
+    parsed.searchParams.sort();
+    return parsed.toString().replace(/\/$/, "");
+  } catch {
+    return "";
+  }
+}
+
+function isHtmlLikeUrl(url) {
+  try {
+    const lower = new URL(url).pathname.toLowerCase();
+    return !/\.(jpg|jpeg|png|webp|gif|svg|pdf|zip|mp4|webm|css|js|woff|woff2|xml|txt)$/i.test(lower);
+  } catch {
+    return false;
+  }
+}
+
+function extractSitemapUrls(xml, baseUrl) {
+  return [
+    ...new Set(
+      [...xml.matchAll(/<loc>\s*([^<]+)\s*<\/loc>/gi)]
+        .map((match) => normalizeUrl(absoluteUrl(baseUrl, decodeEntities(match[1].trim()))))
+        .filter(Boolean)
+        .filter(isHtmlLikeUrl)
+    )
+  ].sort();
+}
+
+function selectAuditUrls({ brand, homepageUrl, sitemapUrls, homePage }) {
+  const origin = new URL(brand.website).origin;
+  const homeLinks = [...homePage.internalLinks].map(normalizeUrl).filter(Boolean);
+  const pool = [...new Set([normalizeUrl(homepageUrl || brand.website), ...sitemapUrls, ...homeLinks])]
+    .filter(Boolean)
+    .filter((url) => new URL(url).origin === origin)
+    .filter(isHtmlLikeUrl);
+  const groups = [
+    /faq|frequently|question/i,
+    /product|pipe|fitting|category|solution|system/i,
+    /blog|article|news|press|resource|knowledge|guide/i,
+    /dealer|locator|contact|distributor/i,
+    /campaign|launch|offer|contest|awareness/i
+  ];
+  const selected = [normalizeUrl(homepageUrl || brand.website)];
+  for (const pattern of groups) {
+    for (const url of pool.filter((item) => pattern.test(item)).slice(0, 3)) {
+      if (!selected.includes(url)) selected.push(url);
+    }
+  }
+  for (const url of pool) {
+    if (selected.length >= 14) break;
+    if (!selected.includes(url)) selected.push(url);
+  }
+  return selected.filter(Boolean).slice(0, 14);
+}
+
 async function fetchText(url, options = {}) {
+  const retries = options.retries ?? 2;
+  let lastResult;
+  for (let attempt = 0; attempt <= retries; attempt += 1) {
+    lastResult = await fetchTextOnce(url, options);
+    if (lastResult.ok || lastResult.status >= 300) return lastResult;
+    if (attempt < retries) {
+      await new Promise((resolve) => setTimeout(resolve, 750 * (attempt + 1)));
+    }
+  }
+  return lastResult;
+}
+
+async function fetchTextOnce(url, options = {}) {
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), options.timeout ?? 15000);
+  const timeout = setTimeout(() => controller.abort(), options.timeout ?? 22000);
   const start = performance.now();
   try {
     const response = await fetch(url, {
@@ -188,7 +259,9 @@ function parsePage(baseUrl, html) {
       questionHeadings: headings.filter((heading) => /\?|\b(what|why|how|which|when|where|can|does|is|are)\b/i.test(heading)).slice(0, 12),
       answerFriendlyBlocks: countMatches(html, /<(p|li)[^>]*>[\s\S]{320,900}?<\/(p|li)>/gi),
       headings: headings.slice(0, 20)
-    }
+    },
+    internalLinks,
+    externalLinks
   };
 }
 
@@ -296,6 +369,81 @@ function scoreSecurityPrivacy({ response, page }) {
   return Math.min(score, 100);
 }
 
+function aggregatePageAudit(pages) {
+  const okPages = pages.filter((item) => item.ok);
+  const schemaTypes = [...new Set(okPages.flatMap((item) => item.schemaTypes || []))].sort();
+  const countPages = (predicate) => okPages.filter((item) => predicate(item)).length;
+  const totals = okPages.reduce(
+    (acc, item) => {
+      acc.questionHeadings += item.counts.questionHeadings || 0;
+      acc.answerFriendlyBlocks += item.contentStructure.answerFriendlyBlocks || 0;
+      acc.wordCount += item.counts.wordCount || 0;
+      acc.internalLinks += item.counts.internalLinks || 0;
+      acc.externalLinks += item.counts.externalLinks || 0;
+      return acc;
+    },
+    { questionHeadings: 0, answerFriendlyBlocks: 0, wordCount: 0, internalLinks: 0, externalLinks: 0 }
+  );
+
+  const schemaCoverage = {
+    FAQPage: schemaTypes.some((type) => /FAQPage/i.test(type)),
+    HowTo: schemaTypes.some((type) => /HowTo/i.test(type)),
+    Article: schemaTypes.some((type) => /Article|NewsArticle|BlogPosting/i.test(type)),
+    Product: schemaTypes.some((type) => /Product/i.test(type)),
+    Organization: schemaTypes.some((type) => /Organization|Corporation|LocalBusiness/i.test(type)),
+    BreadcrumbList: schemaTypes.some((type) => /BreadcrumbList/i.test(type)),
+    LocalBusiness: schemaTypes.some((type) => /LocalBusiness/i.test(type))
+  };
+
+  return {
+    pageCount: pages.length,
+    okPageCount: okPages.length,
+    schemaTypes,
+    schemaCoverage,
+    pagesWithFaqText: countPages((item) => item.signals.hasFaqText),
+    pagesWithProductText: countPages((item) => item.signals.hasProductText),
+    pagesWithAuthorSignals: countPages((item) => item.signals.hasAuthorSignals),
+    pagesWithFreshnessSignals: countPages((item) => item.signals.hasFreshnessSignals),
+    pagesWithTrustSignals: countPages((item) => item.signals.hasTrustSignals),
+    pagesWithResourceHubSignals: countPages((item) => item.signals.hasResourceHub),
+    pagesWithComparisonTools: countPages((item) => item.signals.hasComparisonTool),
+    pagesWithDirectAnswerIntro: countPages((item) => item.signals.hasDirectAnswerIntro),
+    totals,
+    topEvidencePages: okPages
+      .map((item) => ({
+        url: item.url,
+        title: item.title,
+        schemaTypes: item.schemaTypes,
+        questionHeadings: item.counts.questionHeadings,
+        answerFriendlyBlocks: item.contentStructure.answerFriendlyBlocks,
+        wordCount: item.counts.wordCount
+      }))
+      .sort((a, b) => b.answerFriendlyBlocks + b.questionHeadings - (a.answerFriendlyBlocks + a.questionHeadings))
+      .slice(0, 6)
+  };
+}
+
+function scoreAeoFromAudit({ page, audit, robots, llms }) {
+  let score = 0;
+  if (audit.schemaTypes.length > 0 || page.signals.hasSchema) score += 12;
+  if (audit.schemaCoverage.FAQPage || page.signals.hasFaqSchema) score += 9;
+  if (audit.schemaCoverage.Product) score += 7;
+  if (audit.schemaCoverage.Organization || page.signals.hasOrganizationSchema) score += 7;
+  if (audit.schemaCoverage.BreadcrumbList) score += 6;
+  if (audit.pagesWithFaqText > 0 || page.signals.hasFaqText) score += 8;
+  if (audit.totals.questionHeadings >= 8) score += 8;
+  if (audit.totals.answerFriendlyBlocks >= 12) score += 8;
+  if (audit.pagesWithFreshnessSignals > 0) score += 6;
+  if (audit.pagesWithAuthorSignals > 0) score += 5;
+  if (audit.pagesWithTrustSignals > 0) score += 5;
+  if (audit.pagesWithResourceHubSignals > 0) score += 5;
+  if (robots.ok && !/GPTBot[^\n]*Disallow:\s*\//i.test(robots.text || "")) score += 4;
+  if (robots.ok && !/ClaudeBot[^\n]*Disallow:\s*\//i.test(robots.text || "")) score += 4;
+  if (robots.ok && !/PerplexityBot[^\n]*Disallow:\s*\//i.test(robots.text || "")) score += 4;
+  if (llms.ok) score += 2;
+  return Math.min(score, 100);
+}
+
 async function collectBrand(brand) {
   const website = brand.website;
   const origin = new URL(website).origin;
@@ -306,8 +454,33 @@ async function collectBrand(brand) {
     fetchText(`${origin}/llms.txt`, { timeout: 10000 })
   ]);
   const page = parsePage(home.finalUrl || website, home.text || "");
+  const sitemapUrls = sitemap.ok ? extractSitemapUrls(sitemap.text || "", website) : [];
+  const auditUrls = selectAuditUrls({
+    brand,
+    homepageUrl: home.finalUrl || website,
+    sitemapUrls,
+    homePage: page
+  });
+  const auditedPages = [];
+  for (const url of auditUrls) {
+    const response = normalizeUrl(url) === normalizeUrl(home.finalUrl || website) ? home : await fetchText(url, { timeout: 12000 });
+    const parsed = parsePage(response.finalUrl || url, response.text || "");
+    auditedPages.push({
+      url,
+      ok: response.ok,
+      status: response.status,
+      responseMs: response.ms,
+      title: parsed.title,
+      description: parsed.description,
+      schemaTypes: parsed.schemaTypes,
+      counts: parsed.counts,
+      signals: parsed.signals,
+      contentStructure: parsed.contentStructure
+    });
+  }
+  const pageAudit = aggregatePageAudit(auditedPages);
   const websiteScore = scoreWebsite({ page, robots, sitemap, response: home });
-  const aeoReadiness = scoreAeoReadiness({ page, robots });
+  const aeoReadiness = scoreAeoFromAudit({ page, audit: pageAudit, robots, llms });
   const socialPlatforms = Object.entries(brand.social || {}).map(([platform, url]) => ({
     platform,
     url,
@@ -372,11 +545,13 @@ async function collectBrand(brand) {
       status: sitemap.status,
       url: `${origin}/sitemap.xml`,
       byteLength: Buffer.byteLength(sitemap.text || "", "utf8"),
-      urlCount: countMatches(sitemap.text || "", /<url>/gi),
+      urlCount: sitemapUrls.length || countMatches(sitemap.text || "", /<url>/gi),
       isSegmented:
         /sitemapindex/i.test(sitemap.text || "") ||
         /image|video|news|product|post|page|category/i.test(sitemap.text || "")
     },
+    pageAudit,
+    auditedPages,
     llms: {
       ok: llms.ok,
       status: llms.status,

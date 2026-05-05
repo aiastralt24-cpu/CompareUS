@@ -799,6 +799,7 @@ function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand
   if (activeModule === "aeo") {
     return (
       <>
+        <AEOCommandCenter brand={selected} competitors={ranked} />
         <DisciplineTable
           title="AEO comparison"
           description="AI crawler readiness, schema coverage, extractable content, E-E-A-T proxies, and llms.txt evidence."
@@ -810,7 +811,7 @@ function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand
             ["Org schema", (brand) => yesNo(brand.collected.homepage.signals.hasOrganizationSchema)],
             ["AI bots", (brand) => yesNo(brand.collected.robots.allowsKnownAiBots)],
             ["llms.txt", (brand) => statusLabel(brand.collected.llms?.ok)],
-            ["Q headings", (brand) => brand.collected.homepage.counts.questionHeadings]
+            ["Q headings", (brand) => brand.collected.pageAudit?.totals?.questionHeadings || brand.collected.homepage.counts.questionHeadings]
           ]}
           selectedBrand={selectedBrand}
           setSelectedBrand={setSelectedBrand}
@@ -822,10 +823,10 @@ function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand
             signals={[
               ["AEO readiness", selected.auditScores.aeoReadiness],
               ["Content extraction", selected.auditScores.contentExtraction],
-              ["Schema blocks", selected.collected.homepage.counts.jsonLdBlocks],
-              ["Answer blocks", selected.collected.homepage.contentStructure.answerFriendlyBlocks],
-              ["Question headings", selected.collected.homepage.counts.questionHeadings],
-              ["Trust signals", yesNo(selected.collected.homepage.signals.hasTrustSignals)]
+              ["Pages audited", selected.collected.pageAudit?.okPageCount || 1],
+              ["Schema types", selected.collected.pageAudit?.schemaTypes?.length || selected.collected.homepage.schemaTypes.length],
+              ["Answer blocks", selected.collected.pageAudit?.totals?.answerFriendlyBlocks || selected.collected.homepage.contentStructure.answerFriendlyBlocks],
+              ["Question headings", selected.collected.pageAudit?.totals?.questionHeadings || selected.collected.homepage.counts.questionHeadings]
             ]}
           />
           <SchemaPanel brand={selected} />
@@ -1000,6 +1001,114 @@ function RankPanel({ ranked, selectedBrand, setSelectedBrand }) {
   );
 }
 
+function AEOCommandCenter({ brand, competitors }) {
+  const sections = getAeoSectionSummaries(brand);
+  const critical = sections.filter((section) => section.score < 3).slice(0, 3);
+  const leader = [...competitors].sort((a, b) => b.auditScores.aeoReadiness - a.auditScores.aeoReadiness)[0];
+  return (
+    <section className="panel aeo-command">
+      <div className="panel-heading">
+        <div>
+          <h2>AEO command center</h2>
+          <p>{brand.name} against the full answer-engine framework, using multi-page public evidence where available.</p>
+        </div>
+        <span className="monitor-count">Leader: {leader.name}</span>
+      </div>
+      <div className="aeo-score-grid">
+        {sections.map((section) => (
+          <article className="aeo-score-card" key={section.title}>
+            <div>
+              <strong>{section.title}</strong>
+              <span>{section.status}</span>
+            </div>
+            <b>{section.score}/5</b>
+          </article>
+        ))}
+      </div>
+      <div className="split-grid aeo-actions-grid">
+        <section className="sub-panel">
+          <h3>Priority gaps</h3>
+          {critical.length ? critical.map((section) => <p key={section.title}>{section.gap}</p>) : <p>No critical public-evidence gaps in collected AEO signals.</p>}
+        </section>
+        <section className="sub-panel">
+          <h3>Next actions</h3>
+          {sections.flatMap((section) => section.actions).slice(0, 5).map((action) => <p key={action}>{action}</p>)}
+        </section>
+      </div>
+    </section>
+  );
+}
+
+function getAeoSectionSummaries(brand) {
+  const audit = brand.collected.pageAudit || {};
+  const homepage = brand.collected.homepage;
+  const schema = audit.schemaCoverage || {};
+  const aiPolicy = brand.collected.robots.aiCrawlerPolicy || {};
+  const promptPending = {
+    title: "AI answers",
+    score: 0,
+    status: "Pending prompt data",
+    gap: "AI answer presence is not collected yet.",
+    actions: ["Connect the scheduled AEO prompt runner for ChatGPT, Perplexity, Gemini, Claude, Copilot, and Google AI Overviews."]
+  };
+  return [
+    promptPending,
+    {
+      title: "Content extraction",
+      score: scoreToFive((audit.totals?.answerFriendlyBlocks || 0) >= 12, (audit.totals?.questionHeadings || 0) >= 8, audit.pagesWithFaqText > 0, audit.pagesWithDirectAnswerIntro > 0, (audit.okPageCount || 0) >= 5),
+      status: `${audit.totals?.answerFriendlyBlocks || 0} answer blocks across ${audit.okPageCount || 0} pages`,
+      gap: "Some pages may still need tighter direct-answer summaries and FAQ blocks.",
+      actions: ["Add short answer-first summaries and FAQ blocks to priority product/category pages."]
+    },
+    {
+      title: "Schema",
+      score: scoreToFive(schema.FAQPage, schema.Product, schema.Organization || homepage.signals.hasOrganizationSchema, schema.BreadcrumbList, schema.Article || schema.HowTo),
+      status: `${audit.schemaTypes?.length || 0} schema types detected`,
+      gap: "Schema coverage is incomplete across Product, Breadcrumb, Article, HowTo, and FAQ opportunities.",
+      actions: ["Add Product and Breadcrumb schema to category/product pages; validate FAQ and Organization schema."]
+    },
+    {
+      title: "E-E-A-T",
+      score: scoreToFive(audit.pagesWithAuthorSignals > 0, audit.pagesWithFreshnessSignals > 0, audit.pagesWithTrustSignals > 0, audit.pagesWithResourceHubSignals > 0, audit.pagesWithComparisonTools > 0),
+      status: `${audit.pagesWithTrustSignals || 0} pages with trust signals`,
+      gap: "Author, freshness, original research, and citation signals are not consistent yet.",
+      actions: ["Add last-updated dates, reviewer/editorial details, and primary-source citations to knowledge pages."]
+    },
+    {
+      title: "AI crawlability",
+      score: scoreToFive(aiPolicy.GPTBot, aiPolicy.ClaudeBot, aiPolicy.PerplexityBot, brand.collected.sitemap.ok, brand.collected.llms?.ok),
+      status: brand.collected.llms?.ok ? "AI crawler basics plus llms.txt" : "AI crawler basics; llms.txt missing",
+      gap: "llms.txt is missing or not publicly available.",
+      actions: ["Publish /llms.txt with canonical brand, product, category, FAQ, and policy URLs."]
+    },
+    {
+      title: "Topical authority",
+      score: scoreToFive((audit.okPageCount || 0) >= 8, (audit.totals?.internalLinks || 0) >= 100, audit.pagesWithResourceHubSignals > 0, audit.pagesWithProductText > 2, homepage.signals.hasPhoneOrWhatsapp || homepage.signals.hasEmailLink),
+      status: `${audit.okPageCount || 0} pages audited`,
+      gap: "Off-site entity and branded SERP evidence still need collection.",
+      actions: ["Build pillar-cluster views for PVC, CPVC, SWR, agri, fittings, and plumber education."]
+    },
+    {
+      title: "Off-site citations",
+      score: 0,
+      status: "Pending off-site collectors",
+      gap: "Wikipedia, Reddit, Quora, news, listicles, and YouTube transcript evidence are not connected yet.",
+      actions: ["Add off-site citation collectors for SERPs, news, YouTube transcripts, Reddit, Quora, Wikipedia, and Wikidata."]
+    },
+    {
+      title: "Measurement",
+      score: 0,
+      status: "Pending AEO measurement",
+      gap: "Citation share, sentiment, and AI referral conversion data are not connected yet.",
+      actions: ["Store prompt results, citation URLs, mention order, sentiment, and share-of-voice monthly."]
+    }
+  ];
+}
+
+function scoreToFive(...checks) {
+  return checks.filter(Boolean).length;
+}
+
 function DisciplineTable({ title, description, rows, columns, selectedBrand, setSelectedBrand }) {
   return (
     <section className="panel comparison-panel">
@@ -1141,6 +1250,7 @@ function AEOChecklistPanel({ brand }) {
 function resolveAeoChecklistItem(brand, key, note) {
   const signals = brand.collected.homepage.signals;
   const counts = brand.collected.homepage.counts;
+  const audit = brand.collected.pageAudit || {};
   const robots = brand.collected.robots;
   const llms = brand.collected.llms;
   const aiPolicy = robots.aiCrawlerPolicy || {};
@@ -1148,32 +1258,32 @@ function resolveAeoChecklistItem(brand, key, note) {
   const schemaTypes = brand.collected.homepage.schemaTypes || [];
   const map = {
     directAnswer: [signals.hasDirectAnswerIntro, "Public HTML intro checked"],
-    questionHeadings: [counts.questionHeadings > 0, `${counts.questionHeadings} question headings`],
-    faqText: [signals.hasFaqText, "FAQ text detected"],
-    answerBlocks: [answerBlocks > 0, `${answerBlocks} answer-friendly blocks`],
-    faqSchema: [signals.hasFaqSchema, "FAQPage schema"],
-    howToSchema: [signals.hasHowToSchema, "HowTo schema"],
-    articleSchema: [signals.hasArticleSchema, "Article schema"],
-    productSchema: [signals.hasProductSchema, "Product schema"],
-    organizationSchema: [signals.hasOrganizationSchema, "Organization schema"],
-    breadcrumbSchema: [signals.hasBreadcrumbSchema, "Breadcrumb schema"],
-    localBusinessSchema: [schemaTypes.some((type) => /LocalBusiness/i.test(type)), "LocalBusiness schema"],
-    authorSignals: [signals.hasAuthorSignals, "Author/editorial proxy"],
-    freshnessSignals: [signals.hasFreshnessSignals, "Freshness proxy"],
-    trustSignals: [signals.hasTrustSignals, "Trust/certification proxy"],
+    questionHeadings: [(audit.totals?.questionHeadings || counts.questionHeadings) > 0, `${audit.totals?.questionHeadings || counts.questionHeadings} question headings`],
+    faqText: [(audit.pagesWithFaqText || 0) > 0 || signals.hasFaqText, `${audit.pagesWithFaqText || 0} audited pages with FAQ text`],
+    answerBlocks: [(audit.totals?.answerFriendlyBlocks || answerBlocks) > 0, `${audit.totals?.answerFriendlyBlocks || answerBlocks} answer-friendly blocks`],
+    faqSchema: [audit.schemaCoverage?.FAQPage || signals.hasFaqSchema, "FAQPage schema"],
+    howToSchema: [audit.schemaCoverage?.HowTo || signals.hasHowToSchema, "HowTo schema"],
+    articleSchema: [audit.schemaCoverage?.Article || signals.hasArticleSchema, "Article schema"],
+    productSchema: [audit.schemaCoverage?.Product || signals.hasProductSchema, "Product schema"],
+    organizationSchema: [audit.schemaCoverage?.Organization || signals.hasOrganizationSchema, "Organization schema"],
+    breadcrumbSchema: [audit.schemaCoverage?.BreadcrumbList || signals.hasBreadcrumbSchema, "Breadcrumb schema"],
+    localBusinessSchema: [audit.schemaCoverage?.LocalBusiness || schemaTypes.some((type) => /LocalBusiness/i.test(type)), "LocalBusiness schema"],
+    authorSignals: [(audit.pagesWithAuthorSignals || 0) > 0 || signals.hasAuthorSignals, `${audit.pagesWithAuthorSignals || 0} audited pages with author/editorial proxy`],
+    freshnessSignals: [(audit.pagesWithFreshnessSignals || 0) > 0 || signals.hasFreshnessSignals, `${audit.pagesWithFreshnessSignals || 0} audited pages with freshness proxy`],
+    trustSignals: [(audit.pagesWithTrustSignals || 0) > 0 || signals.hasTrustSignals, `${audit.pagesWithTrustSignals || 0} audited pages with trust proxy`],
     gptbot: [aiPolicy.GPTBot, "robots.txt policy"],
     claudebot: [aiPolicy.ClaudeBot, "robots.txt policy"],
     perplexitybot: [aiPolicy.PerplexityBot, "robots.txt policy"],
     googleextended: [aiPolicy.GoogleExtended, "robots.txt policy"],
     otherAiBots: [aiPolicy.CCBot && aiPolicy.Bytespider && aiPolicy.ApplebotExtended, "robots.txt policy"],
     aiBots: [robots.allowsKnownAiBots, "Known AI bots not blocked"],
-    wordCount: [counts.wordCount > 300, `${counts.wordCount} visible words`],
+    wordCount: [(audit.totals?.wordCount || counts.wordCount) > 300, `${audit.totals?.wordCount || counts.wordCount} visible words`],
     llms: [llms?.ok, llms?.ok ? "llms.txt present" : "Not detected"],
     sitemap: [brand.collected.sitemap.ok, `Sitemap status ${brand.collected.sitemap.status}`],
     response: [brand.collected.homepage.responseMs < 800, `${brand.collected.homepage.responseMs}ms response`],
     homepageReachable: [brand.collected.homepage.ok, `Homepage status ${brand.collected.homepage.status}`],
-    resourceHub: [signals.hasResourceHub, "Resource/knowledge/blog signal"],
-    internalLinks: [counts.internalLinks >= 20, `${counts.internalLinks} internal links`],
+    resourceHub: [(audit.pagesWithResourceHubSignals || 0) > 0 || signals.hasResourceHub, `${audit.pagesWithResourceHubSignals || 0} audited pages with resource signal`],
+    internalLinks: [(audit.totals?.internalLinks || counts.internalLinks) >= 20, `${audit.totals?.internalLinks || counts.internalLinks} internal links`],
     contactSignals: [signals.hasPhoneOrWhatsapp || signals.hasEmailLink, "Contact/NAP proxy"]
   };
   if (key === "pending") return { status: "pending", label: note || "Pending collector" };
