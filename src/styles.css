@@ -335,7 +335,7 @@ button {
 .login-form {
   display: grid;
   gap: 13px;
-  margin-top: 22px;
+  margin-top: 18px;
 }
 
 .login-form label {
@@ -366,6 +366,7 @@ button {
   width: 100%;
   height: 46px;
   margin-top: 3px;
+  margin-bottom: 12px;
 }
 
 .auth-message {

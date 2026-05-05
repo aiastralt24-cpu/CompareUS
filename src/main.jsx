@@ -722,7 +722,6 @@ function LoginScreen({ onLogin }) {
     <main className="auth-shell">
       <section className="auth-card login-card">
         <img className="periscope-logo" src={periscopeLogo} alt="Periscope" />
-        <h1>Astral Periscope Sign In</h1>
         <form className="login-form" onSubmit={handleLogin}>
           <label>
             <span>User ID</span>
