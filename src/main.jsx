@@ -26,6 +26,7 @@ import {
   UsersRound
 } from "lucide-react";
 import snapshot from "../data/generated/competitive-snapshot.json";
+import monitorEvents from "../data/generated/monitor-events.json";
 import "./styles.css";
 
 const seedBrands = [
@@ -284,36 +285,21 @@ const generatedAt = snapshot?.generatedAt
     }).format(new Date(snapshot.generatedAt))
   : "Not collected";
 
-const alerts = snapshot.brands
-  .flatMap((brand) => {
-    const items = [];
-    if (!brand.sitemap?.ok) {
-      items.push({
-        level: "High",
-        title: `${brand.name} sitemap check failed`,
-        detail: `Expected sitemap returned status ${brand.sitemap?.status || "unavailable"}.`,
-        time: "Latest collection"
-      });
-    }
-    if ((brand.homepage?.responseMs || 0) > 2000) {
-      items.push({
-        level: "Medium",
-        title: `${brand.name} homepage response is slow`,
-        detail: `Public fetch took ${brand.homepage.responseMs} ms from the collector run.`,
-        time: "Latest collection"
-      });
-    }
-    if (!brand.homepage?.signals?.hasSchema) {
-      items.push({
-        level: "Medium",
-        title: `${brand.name} schema not detected`,
-        detail: "Homepage HTML did not expose JSON-LD schema in the public fetch.",
-        time: "Latest collection"
-      });
-    }
-    return items;
-  })
-  .slice(0, 4);
+const alerts = (monitorEvents.events || []).slice(0, 5).map((event) => ({
+  level: event.severity,
+  title: event.title,
+  detail: event.detail,
+  time: event.firstSeenAt
+    ? new Intl.DateTimeFormat("en-IN", {
+        dateStyle: "medium",
+        timeStyle: "short",
+        timeZone: "Asia/Kolkata"
+      }).format(new Date(event.firstSeenAt))
+    : "Not run",
+  sourceUrl: event.sourceUrl,
+  brand: event.brand,
+  confidence: event.confidence
+}));
 
 const recommendations = [
   "Run the approved AEO prompt bank and attach cited answer evidence.",
@@ -322,7 +308,20 @@ const recommendations = [
   "Run Lighthouse on homepage, category, dealer locator, contact, and campaign pages."
 ];
 
-const campaigns = snapshot.brands.slice(0, 5).map((brand) => ({
+const campaigns = (monitorEvents.events || [])
+  .filter((event) =>
+    ["campaign_page", "category_or_product_page", "new_url_detected", "campaign_terms_detected"].includes(event.type)
+  )
+  .slice(0, 5)
+  .map((event) => ({
+    brand: event.brand,
+    name: event.title,
+    channel: "Public monitor",
+    status: event.type === "baseline_created" ? "Baseline" : "Detected",
+    impact: event.severity
+  }));
+
+const fallbackCampaigns = snapshot.brands.slice(0, 5).map((brand) => ({
   brand: brand.name,
   name: brand.homepage?.signals?.hasDealerText ? "Dealer signal detected" : "Website evidence captured",
   channel: "Official website",
@@ -364,6 +363,14 @@ function App() {
     (sum, brand) => sum + (brand.unavailableMetrics?.length || 0),
     0
   );
+  const eventCount = monitorEvents.events?.length || 0;
+  const latestMonitorRun = monitorEvents.generatedAt
+    ? new Intl.DateTimeFormat("en-IN", {
+        dateStyle: "medium",
+        timeStyle: "short",
+        timeZone: "Asia/Kolkata"
+      }).format(new Date(monitorEvents.generatedAt))
+    : "Not run yet";
 
   return (
     <main className="app-shell">
@@ -425,10 +432,10 @@ function App() {
               />
               <MetricCard
                 icon={<Sparkles size={19} />}
-                label="Restricted gaps"
-                value={dataGaps}
+                label="Monitor events"
+                value={eventCount}
                 suffix=""
-                delta="Need APIs, exports, or browser evidence"
+                delta={`Latest run: ${latestMonitorRun}`}
               />
             </section>
 
@@ -438,8 +445,8 @@ function App() {
                 <strong>Data status: collected public-web evidence</strong>
                 <span>
                   Latest public collection: {generatedAt}. Composite scores use collected website,
-                  AEO-readiness, and registry-completeness signals only; unavailable metrics are not
-                  guessed.
+                  AEO-readiness, and registry-completeness signals only. {dataGaps} restricted data
+                  gaps are kept pending instead of guessed.
                 </span>
               </div>
             </section>
@@ -485,6 +492,8 @@ function App() {
               <ScoreBreakdown brand={selected} activeModule={activeModule} />
               <CampaignPanel />
             </section>
+
+            <MonitorTimeline />
 
             <section className="panel comparison-panel">
               <div className="panel-heading">
@@ -560,9 +569,22 @@ function App() {
                     <span className={`alert-level ${alert.level.toLowerCase()}`}>{alert.level}</span>
                     <h3>{alert.title}</h3>
                     <p>{alert.detail}</p>
+                    {alert.sourceUrl ? (
+                      <a href={alert.sourceUrl} target="_blank" rel="noreferrer">
+                        Evidence
+                      </a>
+                    ) : null}
                     <time>{alert.time}</time>
                   </article>
                 ))}
+                {alerts.length === 0 ? (
+                  <article className="alert-item">
+                    <span className="alert-level info">Ready</span>
+                    <h3>No monitor events yet</h3>
+                    <p>Run npm run monitor to create a baseline and detect future website changes.</p>
+                    <time>Waiting for first run</time>
+                  </article>
+                ) : null}
               </div>
             </section>
 
@@ -729,17 +751,18 @@ function ScoreBreakdown({ brand, activeModule }) {
 }
 
 function CampaignPanel() {
+  const rows = campaigns.length > 0 ? campaigns : fallbackCampaigns;
   return (
     <section className="panel campaign-panel">
       <div className="panel-heading">
         <div>
           <h2>Campaign watch</h2>
-          <p>Recent movement that needs analyst review.</p>
+          <p>Detected public URLs, campaign terms, or website evidence.</p>
         </div>
         <AlertTriangle size={18} />
       </div>
       <div className="campaign-list">
-        {campaigns.map((campaign) => (
+        {rows.map((campaign) => (
           <article key={`${campaign.brand}-${campaign.name}`}>
             <div>
               <strong>{campaign.name}</strong>
@@ -748,6 +771,45 @@ function CampaignPanel() {
             <span className={`impact ${campaign.impact.toLowerCase()}`}>{campaign.impact}</span>
           </article>
         ))}
+      </div>
+    </section>
+  );
+}
+
+function MonitorTimeline() {
+  const events = monitorEvents.events || [];
+  return (
+    <section className="panel monitor-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>Evidence timeline</h2>
+          <p>Public competitor changes captured by the monitor with source links and confidence labels.</p>
+        </div>
+        <span className="monitor-count">{events.length} events</span>
+      </div>
+      <div className="timeline-list">
+        {events.slice(0, 8).map((event) => (
+          <article className="timeline-item" key={event.id}>
+            <span className={`alert-level ${event.severity.toLowerCase()}`}>{event.severity}</span>
+            <div>
+              <strong>{event.title}</strong>
+              <p>{event.detail}</p>
+              <div className="timeline-meta">
+                <span>{event.brand}</span>
+                <span>{event.confidence}</span>
+                <a href={event.sourceUrl} target="_blank" rel="noreferrer">
+                  Source
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
+        {events.length === 0 ? (
+          <article className="timeline-empty">
+            <strong>No changes captured yet</strong>
+            <p>Run the monitor once to create a baseline. Every later run compares against it and creates evidence-backed alerts.</p>
+          </article>
+        ) : null}
       </div>
     </section>
   );

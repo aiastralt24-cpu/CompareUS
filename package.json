@@ -3,6 +3,8 @@
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "collect": "node scripts/collect-public-data.mjs",
+    "monitor": "node scripts/monitor-changes.mjs",
+    "monitor:reset": "MONITOR_RESET=1 node scripts/monitor-changes.mjs",
     "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {
