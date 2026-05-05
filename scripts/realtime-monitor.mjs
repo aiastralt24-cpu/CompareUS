@@ -32,6 +32,11 @@ async function tick() {
     if (collectCode !== 0) {
       console.log(`[realtime-monitor] collect exited with code ${collectCode}`);
     }
+
+    const socialCollectCode = await runCommand("npm", ["run", "social:collect"]);
+    if (socialCollectCode !== 0) {
+      console.log(`[realtime-monitor] social:collect exited with code ${socialCollectCode}`);
+    }
   }
 
   const monitorCode = await runCommand("npm", ["run", "monitor"]);

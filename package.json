@@ -3,6 +3,7 @@
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "collect": "node scripts/collect-public-data.mjs",
+    "social:collect": "node scripts/collect-social-data.mjs",
     "monitor": "node scripts/monitor-changes.mjs",
     "monitor:reset": "MONITOR_RESET=1 node scripts/monitor-changes.mjs",
     "monitor:realtime": "node scripts/realtime-monitor.mjs",

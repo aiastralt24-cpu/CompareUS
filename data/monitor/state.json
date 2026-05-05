@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-05-05T05:27:12.971Z",
+  "generatedAt": "2026-05-05T07:39:24.498Z",
   "brands": {
     "Astral Pipes": {
       "name": "Astral Pipes",
       "website": "https://www.astralpipes.com/",
-      "collectedAt": "2026-05-05T05:27:13.402Z",
+      "collectedAt": "2026-05-05T07:39:25.157Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.astralpipes.com/",
-        "responseMs": 268,
-        "htmlHash": "0b16fc56fd9751cea3e24b3722761735bdf78d00988105b0090e45dd7752b00e",
+        "responseMs": 439,
+        "htmlHash": "d41575b5e78f0bbb4ec3f082ed1efc4750a4999c1242643bf2c4c9c3f7411607",
         "textHash": "d2358a8cf5eda0096ed67b65c3ad56ef17124bd246a3b8c86f7241a17270a637",
         "schemaHash": "89391c0c2e34853731c3b624960e37caa5f5e7c812813445967eca5a9afd305d",
         "schemaTypes": [
@@ -71,7 +71,7 @@
         "ok": true,
         "status": 200,
         "url": "https://www.astralpipes.com/sitemap.xml",
-        "hash": "0fbf6c721f44d49fbadbfd447405a1826ff175b34586e1db5aa9f7aa9dc12c2c",
+        "hash": "071aeb25e0bcc57fadbfcf2e6ba0218ba1f4619388c95af1cc5cdbc64dfe21be",
         "urls": [
           "https://www.astralpipes.com",
           "https://www.astralpipes.com/about-us",
@@ -155,6 +155,7 @@
           "https://www.astralpipes.com/specialty-fittings/y-strainer",
           "https://www.astralpipes.com/upcoming-events",
           "https://www.astralpipes.com/urban-infrastructure",
+          "https://www.astralpipes.com/urban-infrastructure/opvc-pro",
           "https://www.astralpipes.com/urban-infrastructure/plusstirex-corrugated",
           "https://www.astralpipes.com/urban-infrastructure/pre-stirex-corrugated",
           "https://www.astralpipes.com/water-tanks",
@@ -775,19 +776,59 @@
           "type": "category_or_product_page",
           "matchedTerms": []
         }
-      ]
+      ],
+      "social": {
+        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "profilesTracked": 5,
+        "reachableProfiles": 5,
+        "youtubeVideos30d": 15,
+        "youtubeVideos90d": 15,
+        "lastYoutubeVideoAt": "2026-05-01T12:18:49+00:00",
+        "latestYoutubeVideos": [
+          {
+            "title": "Every Home is Built by Skilled Hands 💪 | Astral Labour Day Tribute",
+            "published": "2026-05-01T12:18:49+00:00",
+            "link": "https://www.youtube.com/shorts/wWxveSBX1UE",
+            "videoId": "wWxveSBX1UE"
+          },
+          {
+            "title": "How Astral CPVC Pipes Changed the Plumbing Industry",
+            "published": "2026-04-30T04:30:00+00:00",
+            "link": "https://www.youtube.com/shorts/YmPPRCa06Es",
+            "videoId": "YmPPRCa06Es"
+          },
+          {
+            "title": "Win Match Tickets with Astral Pipes | GT vs RCB Contest",
+            "published": "2026-04-28T11:33:40+00:00",
+            "link": "https://www.youtube.com/shorts/7D8yK0IRw7o",
+            "videoId": "7D8yK0IRw7o"
+          },
+          {
+            "title": "Inside the Strength of Astral Water Tanks | Advanced Rotomoulding Technology",
+            "published": "2026-04-28T11:25:22+00:00",
+            "link": "https://www.youtube.com/shorts/4Vmz2H4e1tg",
+            "videoId": "4Vmz2H4e1tg"
+          },
+          {
+            "title": "MI vs CSK 🔥 Kaun Hai Astral Strong? | Astral Pipes | #MumbaiIndians #SuperKings",
+            "published": "2026-04-26T03:30:00+00:00",
+            "link": "https://www.youtube.com/shorts/pqm1eEdcVGg",
+            "videoId": "pqm1eEdcVGg"
+          }
+        ]
+      }
     },
     "Supreme Pipes": {
       "name": "Supreme Pipes",
       "website": "https://www.supreme.co.in/",
-      "collectedAt": "2026-05-05T05:27:15.140Z",
+      "collectedAt": "2026-05-05T07:39:27.172Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.supreme.co.in/",
-        "responseMs": 1723,
-        "htmlHash": "81e8f73baeef7276a37edb820aa1954d2b022f79123c1431b1b4896c6147cb44",
-        "textHash": "89e09c8eb83775c59d7a881b13be77f62c86f4069e7d02d282964581bbdc16c9",
+        "responseMs": 1997,
+        "htmlHash": "484f2573a437de3a32bcae6e19465471f14b75ef546ea4cdedf8f151f8544108",
+        "textHash": "82acc127fa1b9b7b82a833bf715d48699e4967e9e49be215c9d0cc462489241c",
         "schemaHash": "829e5aff0046b74b54aad73c2faa4a7cc4a1a4f54c0be643295eac6baf6af6e3",
         "schemaTypes": [
           "Brand",
@@ -16943,17 +16984,57 @@
           "type": "category_or_product_page",
           "matchedTerms": []
         }
-      ]
+      ],
+      "social": {
+        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "profilesTracked": 4,
+        "reachableProfiles": 4,
+        "youtubeVideos30d": 2,
+        "youtubeVideos90d": 15,
+        "lastYoutubeVideoAt": "2026-05-05T05:34:41+00:00",
+        "latestYoutubeVideos": [
+          {
+            "title": "Orchid PTMT Tap series",
+            "published": "2026-05-05T05:34:41+00:00",
+            "link": "https://www.youtube.com/watch?v=W8WXNz6BqV0",
+            "videoId": "W8WXNz6BqV0"
+          },
+          {
+            "title": "Standard Tap (BIS)",
+            "published": "2026-04-24T08:38:29+00:00",
+            "link": "https://www.youtube.com/watch?v=Biq7gW0hfsc",
+            "videoId": "Biq7gW0hfsc"
+          },
+          {
+            "title": "The Supreme Industries Limited| Griham Testimonies |Griham Doors & Windows |Doors-Windowsindustry",
+            "published": "2026-04-02T08:37:41+00:00",
+            "link": "https://www.youtube.com/shorts/dxbgE_uNtz0",
+            "videoId": "dxbgE_uNtz0"
+          },
+          {
+            "title": "The Supreme Industries Limited| Griham Testimonies |Griham Doors & Windows |Doors-Windowsindustry",
+            "published": "2026-04-02T08:31:34+00:00",
+            "link": "https://www.youtube.com/shorts/B5NsudMWC6Y",
+            "videoId": "B5NsudMWC6Y"
+          },
+          {
+            "title": "The Supreme Industries Limited| Griham Testimonies |Griham Doors & Windows |Doors-Windowsindustry",
+            "published": "2026-04-02T07:33:37+00:00",
+            "link": "https://www.youtube.com/shorts/AGJ2hOU91OQ",
+            "videoId": "AGJ2hOU91OQ"
+          }
+        ]
+      }
     },
     "Prince Pipes": {
       "name": "Prince Pipes",
       "website": "https://www.princepipes.com/",
-      "collectedAt": "2026-05-05T05:27:15.273Z",
+      "collectedAt": "2026-05-05T07:39:27.460Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.princepipes.com/",
-        "responseMs": 131,
+        "responseMs": 284,
         "htmlHash": "90858ae7cc69c332e2399788e46eafaa2bb97021f90c9721fe06899d2cf07773",
         "textHash": "a3ac944b28cba3c133aab53be82a502ddc6fcea55347c10be9c32fe3d8948c97",
         "schemaHash": "78bd732056270d71c73be7930e7f6292e3e1f3f999cbc664e5c69b001e3c2f52",
@@ -17433,18 +17514,58 @@
           "type": "category_or_product_page",
           "matchedTerms": []
         }
-      ]
+      ],
+      "social": {
+        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "profilesTracked": 5,
+        "reachableProfiles": 5,
+        "youtubeVideos30d": 3,
+        "youtubeVideos90d": 11,
+        "lastYoutubeVideoAt": "2026-04-17T11:35:30+00:00",
+        "latestYoutubeVideos": [
+          {
+            "title": "Inside Plumbex 2026 with RJ Patakishruti | Prince Pipes Bengaluru",
+            "published": "2026-04-17T11:35:30+00:00",
+            "link": "https://www.youtube.com/watch?v=_BwPQF19XdM",
+            "videoId": "_BwPQF19XdM"
+          },
+          {
+            "title": "Plumbex 2026 Bengaluru – We’re Here!",
+            "published": "2026-04-16T08:03:03+00:00",
+            "link": "https://www.youtube.com/shorts/cid-wYWfh84",
+            "videoId": "cid-wYWfh84"
+          },
+          {
+            "title": "Prince SmartFit Plus CPVC | Built for Strength, Designed for Performance",
+            "published": "2026-04-13T06:35:49+00:00",
+            "link": "https://www.youtube.com/watch?v=L5Ny-cNmBjY",
+            "videoId": "L5Ny-cNmBjY"
+          },
+          {
+            "title": "A Plumber's Story: Small Beginnings, Big Rise | Prince Udaan 2.0 (Telugu)",
+            "published": "2026-03-20T05:37:19+00:00",
+            "link": "https://www.youtube.com/watch?v=ekuUQwa1G18",
+            "videoId": "ekuUQwa1G18"
+          },
+          {
+            "title": "A Plumber's Story: Small Beginnings, Big Rise | Prince Udaan 2.0 (Malayalam)",
+            "published": "2026-03-20T05:37:16+00:00",
+            "link": "https://www.youtube.com/watch?v=rVZweBcfHws",
+            "videoId": "rVZweBcfHws"
+          }
+        ]
+      }
     },
     "Apollo Pipes": {
       "name": "Apollo Pipes",
       "website": "https://www.apollopipes.com/",
-      "collectedAt": "2026-05-05T05:27:16.529Z",
+      "collectedAt": "2026-05-05T07:39:28.777Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.apollopipes.com/",
-        "responseMs": 1249,
-        "htmlHash": "e6c3a9e6337bf3cb00227117db3c70987e9238eb55e0882bc30e953cd993f588",
+        "responseMs": 1311,
+        "htmlHash": "c35eab9e7f4f7ace7de08027e01763e60410ec7d3320bb1f9ce252114efb8141",
         "textHash": "e24975753ae842d436a984a1ccdd8e5a4c4fd59bbca6459b77f336c904be52d5",
         "schemaHash": "90e1e03ceb13913998939bc89cd0911a2279b57107eccf99a851273eb448c169",
         "schemaTypes": [
@@ -17492,7 +17613,7 @@
         "ok": false,
         "status": 404,
         "url": "https://www.apollopipes.com/llms.txt",
-        "hash": "285a5ac396c16ccda60915518ede29ddbc6a118759a31eb8029bb34ef7c7f291"
+        "hash": "f9860f7b178c7a2a7c825bd11b3235e2ffca6e5132d6d8d764bd46b0d2a2bfa1"
       },
       "sitemap": {
         "ok": true,
@@ -18870,18 +18991,58 @@
           "type": "category_or_product_page",
           "matchedTerms": []
         }
-      ]
+      ],
+      "social": {
+        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "profilesTracked": 4,
+        "reachableProfiles": 4,
+        "youtubeVideos30d": 12,
+        "youtubeVideos90d": 15,
+        "lastYoutubeVideoAt": "2026-04-27T11:44:10+00:00",
+        "latestYoutubeVideos": [
+          {
+            "title": "APL Apollo CPVC-X Pipes - Tiger Shroff 50 SEC (Telugu)",
+            "published": "2026-04-27T11:44:10+00:00",
+            "link": "https://www.youtube.com/watch?v=SJNK6W6iGrM",
+            "videoId": "SJNK6W6iGrM"
+          },
+          {
+            "title": "APL Apollo CPVC-X Pipes - Tiger Shroff 50 SEC (Tamil)",
+            "published": "2026-04-27T11:29:48+00:00",
+            "link": "https://www.youtube.com/watch?v=KFxbyqRYk1I",
+            "videoId": "KFxbyqRYk1I"
+          },
+          {
+            "title": "APL Apollo CPVC-X Pipes - Tiger Shroff 50 SEC (Malayalam)",
+            "published": "2026-04-27T11:19:33+00:00",
+            "link": "https://www.youtube.com/watch?v=LoET5tz0lg0",
+            "videoId": "LoET5tz0lg0"
+          },
+          {
+            "title": "APL Apollo CPVC-X Pipes - Tiger Shroff 50 SEC (Kannada)",
+            "published": "2026-04-27T11:06:39+00:00",
+            "link": "https://www.youtube.com/watch?v=AJEO9uw4N1c",
+            "videoId": "AJEO9uw4N1c"
+          },
+          {
+            "title": "APL Apollo CPVC-X Pipes - Tiger Shroff 50 SEC (Gujarati)",
+            "published": "2026-04-27T10:30:01+00:00",
+            "link": "https://www.youtube.com/watch?v=taDvKXDN298",
+            "videoId": "taDvKXDN298"
+          }
+        ]
+      }
     },
     "Ashirvad by Aliaxis": {
       "name": "Ashirvad by Aliaxis",
       "website": "https://www.ashirvad.com/",
-      "collectedAt": "2026-05-05T05:27:18.792Z",
+      "collectedAt": "2026-05-05T07:39:30.830Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.ashirvad.com/",
-        "responseMs": 1942,
-        "htmlHash": "fe03e78b7b3962685cdc33b9476d2166dcd1230c1bf3310c391670b6a078f42f",
+        "responseMs": 1677,
+        "htmlHash": "037ab6edc50380200d228b221c3c2f86a421f181162bee43c6b2d5ffabbec771",
         "textHash": "2c380067f716de31bc92ec6c1543a18bd7e21815c89619ca0b8b37d2c4448029",
         "schemaHash": "dac3cbd059ac750f0932cc8dee467b681a1035f6bf43cf3fb46b7e21ceae6f81",
         "schemaTypes": [
@@ -19196,18 +19357,58 @@
           "type": "category_or_product_page",
           "matchedTerms": []
         }
-      ]
+      ],
+      "social": {
+        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "profilesTracked": 4,
+        "reachableProfiles": 4,
+        "youtubeVideos30d": 1,
+        "youtubeVideos90d": 15,
+        "lastYoutubeVideoAt": "2026-04-16T06:45:02+00:00",
+        "latestYoutubeVideos": [
+          {
+            "title": "Honoured to partner with The Art of Living (AOL-SSRDP) in creating sustainable social impact.",
+            "published": "2026-04-16T06:45:02+00:00",
+            "link": "https://www.youtube.com/watch?v=TmlISMpcQS8",
+            "videoId": "TmlISMpcQS8"
+          },
+          {
+            "title": "Ashirvad Expert's Club - Plumber Testimonial - Loyalty and Scholarship (Regional)",
+            "published": "2026-03-17T06:17:26+00:00",
+            "link": "https://www.youtube.com/watch?v=02fEVohLXmk",
+            "videoId": "02fEVohLXmk"
+          },
+          {
+            "title": "Ashirvad Expert's Club: Plumber Testimonial - Loyalty Program & Scholarship",
+            "published": "2026-03-17T05:22:55+00:00",
+            "link": "https://www.youtube.com/watch?v=hODSTnEfl_g",
+            "videoId": "hODSTnEfl_g"
+          },
+          {
+            "title": "An Ode to Plumbers: The People That Keep Life Flowing (Gujarati)",
+            "published": "2026-03-12T10:49:31+00:00",
+            "link": "https://www.youtube.com/watch?v=8S_j0HtqnKU",
+            "videoId": "8S_j0HtqnKU"
+          },
+          {
+            "title": "An Ode to Plumbers: The People That Keep Life Flowing (Punjabi)",
+            "published": "2026-03-12T10:47:54+00:00",
+            "link": "https://www.youtube.com/watch?v=syCc26UBAkc",
+            "videoId": "syCc26UBAkc"
+          }
+        ]
+      }
     },
     "Wavin India": {
       "name": "Wavin India",
       "website": "https://wavin.com/in",
-      "collectedAt": "2026-05-05T05:27:20.080Z",
+      "collectedAt": "2026-05-05T07:39:31.924Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://wavin.com/in",
-        "responseMs": 685,
-        "htmlHash": "bda89493e9bb309208f113add1cb65cc3b746dff87ec77369151ca6ae04417db",
+        "responseMs": 630,
+        "htmlHash": "66f9c310e9e82d13489d536e95e4b6a2c056f9fa3586bee75933ae1e86a61a04",
         "textHash": "417fb97473250b9f79821136e9b712435a4b00f87e59dc997a01307e1ee76528",
         "schemaHash": "4bee440fe6fefc82f70dc5a63af2c83fc75d742d55766c68135358e3dc0435bc",
         "schemaTypes": [
@@ -19254,7 +19455,7 @@
         "ok": false,
         "status": 404,
         "url": "https://wavin.com/llms.txt",
-        "hash": "38a1bb2f58e7c8f3839495deedeca43ad351f536f039f97b63cfb630875e6e6d"
+        "hash": "860ebdcc24c11c2f99ba43202d558633f82c57adaa98f3ae3d0651cca1b71bb9"
       },
       "sitemap": {
         "ok": false,
@@ -19349,18 +19550,58 @@
           "type": "category_or_product_page",
           "matchedTerms": []
         }
-      ]
+      ],
+      "social": {
+        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "profilesTracked": 4,
+        "reachableProfiles": 4,
+        "youtubeVideos30d": 0,
+        "youtubeVideos90d": 0,
+        "lastYoutubeVideoAt": "2025-05-31T13:19:40+00:00",
+        "latestYoutubeVideos": [
+          {
+            "title": "Tigris K5 M5 Press Fit Multilayer Piping System 1 mp4 31 5 25",
+            "published": "2025-05-31T13:19:40+00:00",
+            "link": "https://www.youtube.com/shorts/qYjq5QffcNU",
+            "videoId": "qYjq5QffcNU"
+          },
+          {
+            "title": "Wavin AS+",
+            "published": "2025-05-29T09:58:04+00:00",
+            "link": "https://www.youtube.com/shorts/_C0aO5ghLa8",
+            "videoId": "_C0aO5ghLa8"
+          },
+          {
+            "title": "Wavin QuickStream",
+            "published": "2025-05-26T06:33:50+00:00",
+            "link": "https://www.youtube.com/shorts/8d4rmVNjRHE",
+            "videoId": "8d4rmVNjRHE"
+          },
+          {
+            "title": "Wavin AquaCell",
+            "published": "2025-05-23T07:06:10+00:00",
+            "link": "https://www.youtube.com/shorts/TKyNrPvBx9Y",
+            "videoId": "TKyNrPvBx9Y"
+          },
+          {
+            "title": "Innovation in Every Frame. Performance in Every Drop | Wavin India",
+            "published": "2025-05-21T06:40:13+00:00",
+            "link": "https://www.youtube.com/shorts/MFondH4kHK0",
+            "videoId": "MFondH4kHK0"
+          }
+        ]
+      }
     },
     "KPT Pipes": {
       "name": "KPT Pipes",
       "website": "https://www.kptpipes.com",
-      "collectedAt": "2026-05-05T05:27:22.827Z",
+      "collectedAt": "2026-05-05T07:39:34.801Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.kptpipes.com/",
-        "responseMs": 2742,
-        "htmlHash": "e5f3916c345afb098e43d6286a940d5e3842f3c5ece663f294f6841037637ad7",
+        "responseMs": 2873,
+        "htmlHash": "0edb87e11f9529a466f6955bd40b70b9d2021408ae9e28f374b85910541951a7",
         "textHash": "034d798b4d2c0d6d61fffaaf75f1920e17549530f71fdb36fcc38b91ba0360c1",
         "schemaHash": "8fc4f172fc07fb7c26cb416e7ef13236e3f569ca1e044a2e8f051ec805331781",
         "schemaTypes": [
@@ -21910,17 +22151,26 @@
           "type": "category_or_product_page",
           "matchedTerms": []
         }
-      ]
+      ],
+      "social": {
+        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "profilesTracked": 4,
+        "reachableProfiles": 4,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "latestYoutubeVideos": []
+      }
     },
     "POLOPLAST": {
       "name": "POLOPLAST",
       "website": "https://www.poloplast.com/en-at.html",
-      "collectedAt": "2026-05-05T05:27:24.034Z",
+      "collectedAt": "2026-05-05T07:39:35.954Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.poloplast.com/en-at.html",
-        "responseMs": 1203,
+        "responseMs": 1139,
         "htmlHash": "10190072d7047567ed236630347e54661c546125a3bb16e42ab3257a9e05c28b",
         "textHash": "20f10cdd429982a68ccf999a2b7126881d276af8e0997687a90f51e6bc1c80b5",
         "schemaHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -22124,18 +22374,58 @@
           "type": "category_or_product_page",
           "matchedTerms": []
         }
-      ]
+      ],
+      "social": {
+        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "profilesTracked": 3,
+        "reachableProfiles": 3,
+        "youtubeVideos30d": 0,
+        "youtubeVideos90d": 1,
+        "lastYoutubeVideoAt": "2026-03-27T10:59:40+00:00",
+        "latestYoutubeVideos": [
+          {
+            "title": "POLO-KAL XS Championship",
+            "published": "2026-03-27T10:59:40+00:00",
+            "link": "https://www.youtube.com/watch?v=jW61YVvu1hE",
+            "videoId": "jW61YVvu1hE"
+          },
+          {
+            "title": "POLOPLAST video promozionale",
+            "published": "2026-01-09T09:56:46+00:00",
+            "link": "https://www.youtube.com/watch?v=_9gxZimj5_Q",
+            "videoId": "_9gxZimj5_Q"
+          },
+          {
+            "title": "POLOPLAST vidéo promotionnelle",
+            "published": "2026-01-09T09:31:06+00:00",
+            "link": "https://www.youtube.com/watch?v=NolJ3s7TEkY",
+            "videoId": "NolJ3s7TEkY"
+          },
+          {
+            "title": "POLOPLAST image film",
+            "published": "2026-01-09T08:52:10+00:00",
+            "link": "https://www.youtube.com/watch?v=FTm1_-9HgOg",
+            "videoId": "FTm1_-9HgOg"
+          },
+          {
+            "title": "POLOPLAST-Imagefilm",
+            "published": "2026-01-09T08:19:48+00:00",
+            "link": "https://www.youtube.com/watch?v=3WCFSquUKQ8",
+            "videoId": "3WCFSquUKQ8"
+          }
+        ]
+      }
     },
     "REHAU India": {
       "name": "REHAU India",
       "website": "https://www.rehau.com/in-en",
-      "collectedAt": "2026-05-05T05:27:24.197Z",
+      "collectedAt": "2026-05-05T07:39:38.571Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.rehau.com/in-en",
-        "responseMs": 101,
-        "htmlHash": "1f9b4e2708718d949f897e0bc94960810d1e6f45471da30708cf0b13427d5d76",
+        "responseMs": 1712,
+        "htmlHash": "53e9cca61e355de167a63478fe4100c24cf440303482b0c1e8ab9ebe255bb419",
         "textHash": "c8e7f2b8b29565be433ad7eafa26929abd975ac183e5d8a527227422fd1081c2",
         "schemaHash": "6cff479623bbbad460047a0515f17addb03bd825a0c2da69dd329fba9e6890e7",
         "schemaTypes": [
@@ -22179,7 +22469,7 @@
         "ok": true,
         "status": 200,
         "url": "https://www.rehau.com/llms.txt",
-        "hash": "b110de0a96e3d7e914a91fbbf986f16d745f91de0eed54855ef833ae032009d3"
+        "hash": "13a9dad6bd9634dbe2609578d978f3dc40ee50eccea35316bc7977ce676f5722"
       },
       "sitemap": {
         "ok": true,
@@ -22329,7 +22619,47 @@
           "type": "category_or_product_page",
           "matchedTerms": []
         }
-      ]
+      ],
+      "social": {
+        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "profilesTracked": 4,
+        "reachableProfiles": 4,
+        "youtubeVideos30d": 12,
+        "youtubeVideos90d": 15,
+        "lastYoutubeVideoAt": "2026-04-29T06:53:17+00:00",
+        "latestYoutubeVideos": [
+          {
+            "title": "Edgeband ماتلاب REHAU",
+            "published": "2026-04-29T06:53:17+00:00",
+            "link": "https://www.youtube.com/watch?v=9tXnQKeVGCY",
+            "videoId": "9tXnQKeVGCY"
+          },
+          {
+            "title": "Edgeband ਮੈਟਲੈਬ REHAU",
+            "published": "2026-04-16T05:02:47+00:00",
+            "link": "https://www.youtube.com/watch?v=Ef-gkRj4Edg",
+            "videoId": "Ef-gkRj4Edg"
+          },
+          {
+            "title": "Edgeband ম্যাটল্যাব REHAU",
+            "published": "2026-04-15T12:49:10+00:00",
+            "link": "https://www.youtube.com/watch?v=VxD47L_T1do",
+            "videoId": "VxD47L_T1do"
+          },
+          {
+            "title": "Edgeband मॅटलॅब REHAU",
+            "published": "2026-04-15T12:44:12+00:00",
+            "link": "https://www.youtube.com/watch?v=_kta5ON7uL8",
+            "videoId": "_kta5ON7uL8"
+          },
+          {
+            "title": "Edgeband મેટલેબ REHAU",
+            "published": "2026-04-15T12:41:20+00:00",
+            "link": "https://www.youtube.com/watch?v=TJxBtk7jDhw",
+            "videoId": "TJxBtk7jDhw"
+          }
+        ]
+      }
     }
   }
 }

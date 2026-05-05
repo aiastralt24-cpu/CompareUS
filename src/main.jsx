@@ -27,6 +27,7 @@ import {
 } from "lucide-react";
 import snapshot from "../data/generated/competitive-snapshot.json";
 import monitorEvents from "../data/generated/monitor-events.json";
+import socialSnapshot from "../data/generated/social-snapshot.json";
 import "./styles.css";
 
 const seedBrands = [
@@ -242,7 +243,39 @@ const brandColors = {
   "REHAU India": "#263238"
 };
 
+const socialByBrand = new Map((socialSnapshot.brands || []).map((brand) => [brand.name, brand]));
+
+const metricHelp = {
+  "Public website":
+    "Homepage and public-site reachability score: status, response, title, meta description, H1, canonical, schema, robots, sitemap, contact/product signals, and internal links.",
+  "Technical SEO":
+    "Public crawl and on-page SEO proxy: metadata quality, headings, canonical, Open Graph/Twitter card, sitemap, robots, schema, and link structure.",
+  "AEO readiness":
+    "Answer-engine readiness proxy: schema, AI-crawler robots policy, answer-friendly content blocks, FAQ/question structure, trust signals, sitemap, and llms.txt.",
+  "Content extraction":
+    "How easily AI/search systems can extract direct answers: question headings, FAQ text, short answer blocks, list/table structure, and self-contained paragraphs.",
+  "Accessibility proxy":
+    "Public HTML accessibility proxy: lang/viewport basics, heading structure, image-alt coverage, link text, labels, and visible semantic clues. This is not a full WCAG audit.",
+  "Security/privacy":
+    "Public security and privacy proxy: HTTPS, HSTS/CSP and related headers, plus visible privacy, terms, and cookie-policy signals.",
+  "Registry completeness":
+    "How complete the official brand registry is: website plus confirmed social handles available for monitoring. It does not prove account ownership beyond the stored source evidence.",
+  "Homepage status": "HTTP status returned by the selected brand homepage during collection.",
+  "Robots status": "HTTP status for robots.txt, used to inspect crawler and AI-bot policy.",
+  "Sitemap URLs": "Public URLs discovered from the selected brand sitemap.",
+  "Open Graph": "Whether the homepage exposes Open Graph tags for rich link previews.",
+  "Twitter Card": "Whether the homepage exposes Twitter/X card metadata.",
+  "Pages audited": "Number of public pages successfully audited from sitemap and important URL discovery.",
+  "Schema types": "Unique schema.org types detected in JSON-LD/microdata on audited pages.",
+  "Answer blocks": "Short, extractable paragraphs, lists, tables, and FAQ-like blocks suitable for AI answers.",
+  "Question headings": "H2/H3-style headings phrased as questions.",
+  "Lazy images": "Images with lazy loading detected in public HTML.",
+  "Preconnect hints": "Preconnect or DNS-prefetch hints found in the page head.",
+  "Search UI": "Visible search-form or search-input signal detected in public HTML."
+};
+
 function toDashboardBrand(brand) {
+  const socialData = socialByBrand.get(brand.name);
   const scores = brand.scores || {};
   const publicWebsite = scores.publicWebsite ?? 0;
   const aeoReadiness = scores.aeoReadiness ?? 0;
@@ -261,6 +294,7 @@ function toDashboardBrand(brand) {
       registryCompleteness * 0.05
   );
   const socialCount = brand.social?.length ?? 0;
+  const youtubeVideos30d = socialData?.summary?.youtubeVideos30d;
   return {
     name: brand.name,
     type: brand.type,
@@ -270,15 +304,15 @@ function toDashboardBrand(brand) {
     previous: composite,
     aeo: Math.round((aeoReadiness / 100) * 15),
     seo: Math.round((technicalSeo / 100) * 20),
-    social: null,
+    social: socialData ? Math.min(20, Math.round(((socialData.summary.reachableProfiles || 0) / Math.max(socialData.summary.profilesTracked || 1, 1)) * 12) + Math.min(8, youtubeVideos30d || 0)) : null,
     performance: Math.round((publicWebsite / 100) * 15),
     campaigns: null,
     content: Math.round((contentExtraction / 100) * 10),
     reputation: null,
     verified: Math.round((registryCompleteness / 100) * 5),
-    followers: "Restricted",
+    followers: "API restricted",
     engagement: "Restricted",
-    frequency: "Needs capture",
+    frequency: youtubeVideos30d != null ? `${youtubeVideos30d} YouTube videos / 30d` : "Needs capture",
     momentum: 0,
     threat: brand.name === "Astral Pipes" ? "Reference" : "Watch",
     color: brandColors[brand.name] || "#6b7280",
@@ -292,11 +326,20 @@ function toDashboardBrand(brand) {
       securityPrivacy,
       registryCompleteness
     },
+    socialData,
     dataMode: "Collected"
   };
 }
 
 const brands = snapshot?.brands?.length ? snapshot.brands.map(toDashboardBrand) : seedBrands;
+
+const socialGeneratedAt = socialSnapshot?.generatedAt
+  ? new Intl.DateTimeFormat("en-IN", {
+      dateStyle: "medium",
+      timeStyle: "short",
+      timeZone: "Asia/Kolkata"
+    }).format(new Date(socialSnapshot.generatedAt))
+  : "Not collected";
 
 const generatedAt = snapshot?.generatedAt
   ? new Intl.DateTimeFormat("en-IN", {
@@ -331,24 +374,16 @@ const recommendations = [
 
 const campaigns = (monitorEvents.events || [])
   .filter((event) =>
-    ["campaign_page", "category_or_product_page", "new_url_detected", "campaign_terms_detected"].includes(event.type)
+    ["campaign_page", "category_or_product_page", "new_url_detected", "campaign_terms_detected", "social_post_detected"].includes(event.type)
   )
   .slice(0, 5)
   .map((event) => ({
     brand: event.brand,
     name: event.title,
-    channel: "Public monitor",
+    channel: event.type === "social_post_detected" ? "YouTube RSS" : "Public monitor",
     status: event.type === "baseline_created" ? "Baseline" : "Detected",
     impact: event.severity
   }));
-
-const fallbackCampaigns = snapshot.brands.slice(0, 5).map((brand) => ({
-  brand: brand.name,
-  name: brand.homepage?.signals?.hasDealerText ? "Dealer signal detected" : "Website evidence captured",
-  channel: "Official website",
-  status: brand.homepage?.ok ? "Collected" : "Failed",
-  impact: brand.homepage?.signals?.hasDealerText ? "Medium" : "Low"
-}));
 
 const moduleLabels = {
   overview: "Overview",
@@ -502,7 +537,10 @@ const aeoChecklistSections = [
 
 function App() {
   const [collapsed, setCollapsed] = useState(false);
-  const [activeModule, setActiveModule] = useState("overview");
+  const [activeModule, setActiveModule] = useState(() => {
+    const requested = new URLSearchParams(window.location.search).get("module");
+    return moduleHeaders[requested] ? requested : "overview";
+  });
   const [selectedBrand, setSelectedBrand] = useState("Astral Pipes");
   const [range, setRange] = useState("Last 90 days");
   const [query, setQuery] = useState("");
@@ -635,7 +673,7 @@ function App() {
               <div className="mini-stats">
                 <span>AEO {selected.aeo}/15</span>
                 <span>SEO {selected.seo}/20</span>
-                <span>Social pending</span>
+                <span>{selected.social === null ? "Social restricted" : `Social ${selected.social}/20`}</span>
               </div>
             </section>
 
@@ -881,27 +919,29 @@ function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand
     return (
       <>
         <DisciplineTable
-          title="Social footprint"
-          description="Confirmed handle registry and platform coverage. Engagement metrics are not guessed."
+          title="Social public metrics"
+          description={`Public social evidence collected where platforms allow it. Latest social collection: ${socialGeneratedAt}.`}
           rows={ranked}
           columns={[
-            ["Platforms", (brand) => brand.collected.social.length],
-            ["Facebook", (brand) => platformStatus(brand, "facebook")],
-            ["Instagram", (brand) => platformStatus(brand, "instagram")],
-            ["YouTube", (brand) => platformStatus(brand, "youtube")],
-            ["LinkedIn", (brand) => platformStatus(brand, "linkedin")],
-            ["X", (brand) => platformStatus(brand, "x")]
+            ["Profiles", (brand) => socialProfilesText(brand)],
+            ["Reachable", (brand) => socialReachText(brand)],
+            ["YouTube 30d", (brand) => youtubeCountText(brand, "youtubeVideos30d")],
+            ["YouTube 90d", (brand) => youtubeCountText(brand, "youtubeVideos90d")],
+            ["Last YouTube", (brand) => formatShortDate(brand.socialData?.summary?.lastYoutubeVideoAt)],
+            ["Metric status", (brand) => brand.socialData?.summary?.status || "Needs collection"]
           ]}
           selectedBrand={selectedBrand}
           setSelectedBrand={setSelectedBrand}
         />
         <section className="split-grid">
-          <SocialHandlesPanel brand={selected} />
+          <SocialEvidencePanel brand={selected} />
           <PendingPanel
-            title="Social metrics pending"
-            items={["Follower count", "Follower growth", "Posting frequency", "Engagement rate", "Creative format mix", "Paid vs organic activity"]}
+            title="Restricted social metrics"
+            description="These are not shown as numbers until connected through APIs, approved browser evidence, or platform exports."
+            items={["Follower count", "Follower growth", "Engagement rate", "Creative format mix", "Paid vs organic activity", "Post-level comments/reactions"]}
           />
         </section>
+        <SocialHandlesPanel brand={selected} />
       </>
     );
   }
@@ -947,7 +987,7 @@ function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand
     return (
       <>
         <CampaignPanel />
-        <MonitorTimeline eventTypes={["campaign_page", "category_or_product_page", "new_url_detected", "campaign_terms_detected", "homepage_content_changed"]} />
+        <MonitorTimeline eventTypes={["campaign_page", "category_or_product_page", "new_url_detected", "campaign_terms_detected", "homepage_content_changed", "social_post_detected"]} />
       </>
     );
   }
@@ -1169,7 +1209,10 @@ function SignalPanel({ title, description, signals }) {
       <div className="audit-signal-grid">
         {signals.map(([label, value]) => (
           <div className="audit-signal" key={label}>
-            <span>{label}</span>
+            <span className="label-with-help">
+              {label}
+              <HelpTip label={label} />
+            </span>
             <strong>{value}</strong>
           </div>
         ))}
@@ -1178,13 +1221,23 @@ function SignalPanel({ title, description, signals }) {
   );
 }
 
-function PendingPanel({ title, items }) {
+function HelpTip({ label, text }) {
+  const copy = text || metricHelp[label];
+  if (!copy) return null;
+  return (
+    <span className="help-tip" tabIndex="0" aria-label={copy}>
+      i
+    </span>
+  );
+}
+
+function PendingPanel({ title, description = "These need platform APIs, exports, browser evidence, or approved tools.", items }) {
   return (
     <section className="panel campaign-panel">
       <div className="panel-heading">
         <div>
           <h2>{title}</h2>
-          <p>These need platform APIs, exports, browser evidence, or approved tools.</p>
+          <p>{description}</p>
         </div>
       </div>
       <div className="pending-list">
@@ -1292,21 +1345,67 @@ function resolveAeoChecklistItem(brand, key, note) {
 }
 
 function SocialHandlesPanel({ brand }) {
+  const profiles = brand.socialData?.profiles || [];
   return (
     <section className="panel campaign-panel">
       <div className="panel-heading">
         <div>
           <h2>{brand.name} handles</h2>
-          <p>Registry URLs currently tracked for platform monitoring.</p>
+          <p>Registry URLs tracked for platform monitoring, with public reachability from the latest collector.</p>
         </div>
       </div>
       <div className="handle-list">
         {brand.collected.social.map((item) => (
           <a href={item.url} target="_blank" rel="noreferrer" key={item.platform}>
             <strong>{item.platform}</strong>
-            <span>{item.status}</span>
+            <span>{profiles.find((profile) => profile.platform === item.platform)?.collectionStatus || item.status}</span>
           </a>
         ))}
+      </div>
+    </section>
+  );
+}
+
+function SocialEvidencePanel({ brand }) {
+  const summary = brand.socialData?.summary;
+  const youtube = brand.socialData?.profiles?.find((profile) => profile.platform === "youtube")?.youtube;
+  const latestVideos = youtube?.latestVideos || [];
+  return (
+    <section className="panel social-evidence-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>{brand.name} social evidence</h2>
+          <p>Real public signals currently collected. Restricted metrics remain clearly marked instead of estimated.</p>
+        </div>
+      </div>
+      <div className="social-metric-grid">
+        <article>
+          <span>Profiles tracked</span>
+          <strong>{summary?.profilesTracked ?? brand.collected.social.length}</strong>
+        </article>
+        <article>
+          <span>Reachable profiles</span>
+          <strong>{summary ? `${summary.reachableProfiles}/${summary.profilesTracked}` : "Not collected"}</strong>
+        </article>
+        <article>
+          <span>YouTube cadence</span>
+          <strong>{summary?.youtubeVideos30d != null ? `${summary.youtubeVideos30d} / 30d` : "No public feed"}</strong>
+        </article>
+        <article>
+          <span>Last YouTube post</span>
+          <strong>{formatShortDate(summary?.lastYoutubeVideoAt)}</strong>
+        </article>
+      </div>
+      <div className="latest-video-list">
+        <h3>Latest public YouTube evidence</h3>
+        {latestVideos.length ? latestVideos.map((video) => (
+          <a href={video.link} target="_blank" rel="noreferrer" key={video.videoId || video.link}>
+            <span>{formatShortDate(video.published)}</span>
+            <strong>{video.title}</strong>
+          </a>
+        )) : (
+          <p>No public YouTube RSS entries collected for this brand.</p>
+        )}
       </div>
     </section>
   );
@@ -1343,6 +1442,32 @@ function statusLabel(value) {
 
 function platformStatus(brand, platform) {
   return brand.collected.social.some((item) => item.platform === platform) ? "Tracked" : "Missing";
+}
+
+function socialProfilesText(brand) {
+  const tracked = brand.socialData?.summary?.profilesTracked ?? brand.collected.social.length;
+  return `${tracked} tracked`;
+}
+
+function socialReachText(brand) {
+  const summary = brand.socialData?.summary;
+  if (!summary) return "Needs collection";
+  return `${summary.reachableProfiles}/${summary.profilesTracked}`;
+}
+
+function youtubeCountText(brand, key) {
+  const value = brand.socialData?.summary?.[key];
+  return value == null ? "No public feed" : value;
+}
+
+function formatShortDate(value) {
+  if (!value) return "Not collected";
+  return new Intl.DateTimeFormat("en-IN", {
+    day: "2-digit",
+    month: "short",
+    year: "numeric",
+    timeZone: "Asia/Kolkata"
+  }).format(new Date(value));
 }
 
 function ScoreBreakdown({ brand, activeModule }) {
@@ -1392,7 +1517,10 @@ function ScoreBreakdown({ brand, activeModule }) {
         <div className="audit-signal-grid">
           {auditRows.map(([label, value]) => (
             <div className="audit-signal" key={label}>
-              <span>{label}</span>
+              <span className="label-with-help">
+                {label}
+                <HelpTip label={label} />
+              </span>
               <strong>{value}</strong>
             </div>
           ))}
@@ -1403,18 +1531,20 @@ function ScoreBreakdown({ brand, activeModule }) {
 }
 
 function CampaignPanel() {
-  const rows = campaigns.length > 0 ? campaigns : fallbackCampaigns;
   return (
     <section className="panel campaign-panel">
       <div className="panel-heading">
         <div>
-          <h2>Campaign watch</h2>
-          <p>Detected public URLs, campaign terms, or website evidence.</p>
+          <h2>Campaign signal watch</h2>
+          <p>
+            Evidence-backed indicators from sitemap changes, new URLs, homepage copy, schema shifts, and campaign-like terms.
+            A signal is not treated as a confirmed paid campaign unless ad-library or platform evidence is attached.
+          </p>
         </div>
         <AlertTriangle size={18} />
       </div>
       <div className="campaign-list">
-        {rows.map((campaign) => (
+        {campaigns.map((campaign) => (
           <article key={`${campaign.brand}-${campaign.name}`}>
             <div>
               <strong>{campaign.name}</strong>
@@ -1423,6 +1553,17 @@ function CampaignPanel() {
             <span className={`impact ${campaign.impact.toLowerCase()}`}>{campaign.impact}</span>
           </article>
         ))}
+        {campaigns.length === 0 ? (
+          <article className="campaign-empty">
+            <div>
+              <strong>No confirmed campaign-change events yet</strong>
+              <span>
+                The monitor is watching for new campaign pages, launch/offer/contest language, category or product page additions,
+                sitemap movement, homepage copy shifts, and schema changes.
+              </span>
+            </div>
+          </article>
+        ) : null}
       </div>
     </section>
   );
@@ -1433,6 +1574,7 @@ function MonitorTimeline({ eventTypes = null }) {
     ? (monitorEvents.events || []).filter((event) => eventTypes.includes(event.type))
     : monitorEvents.events || [];
   const visibleEvents = events.slice(0, 8);
+  const scopedNewCount = eventTypes ? Math.min(monitorEvents.newEventCount || 0, events.length) : monitorEvents.newEventCount || 0;
   return (
     <section className="panel monitor-panel">
       <div className="panel-heading">
@@ -1442,7 +1584,7 @@ function MonitorTimeline({ eventTypes = null }) {
         </div>
         <div className="timeline-summary">
           <span>{events.length} events</span>
-          <span>{monitorEvents.newEventCount || 0} new</span>
+          <span>{scopedNewCount} new</span>
         </div>
       </div>
       <div className="timeline-list">

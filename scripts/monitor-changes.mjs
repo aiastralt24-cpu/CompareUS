@@ -8,6 +8,7 @@ const stateDir = path.resolve("data/monitor");
 const stateFile = path.join(stateDir, "state.json");
 const generatedDir = path.resolve("data/generated");
 const eventsFile = path.join(generatedDir, "monitor-events.json");
+const socialSnapshotFile = path.join(generatedDir, "social-snapshot.json");
 const userAgent =
   "CompareUSChangeMonitor/0.1 (+public competitor monitoring; contact: internal research)";
 
@@ -249,7 +250,7 @@ function createEvent({ brand, type, severity, title, detail, sourceUrl, evidence
   };
 }
 
-async function collectBrandState(brand) {
+async function collectBrandState(brand, socialData = null) {
   const origin = new URL(brand.website).origin;
   const [home, robots, sitemap, llms] = await Promise.all([
     fetchText(brand.website),
@@ -306,7 +307,26 @@ async function collectBrandState(brand) {
       urls: sitemapUrls
     },
     discoveredUrls,
-    campaignUrls
+    campaignUrls,
+    social: socialData
+      ? {
+          collectedAt: socialData.generatedAt || null,
+          profilesTracked: socialData.summary?.profilesTracked ?? socialData.profiles?.length ?? 0,
+          reachableProfiles: socialData.summary?.reachableProfiles ?? 0,
+          youtubeVideos30d: socialData.summary?.youtubeVideos30d ?? null,
+          youtubeVideos90d: socialData.summary?.youtubeVideos90d ?? null,
+          lastYoutubeVideoAt: socialData.summary?.lastYoutubeVideoAt ?? null,
+          latestYoutubeVideos:
+            socialData.profiles
+              ?.find((profile) => profile.platform === "youtube")
+              ?.youtube?.latestVideos?.map((video) => ({
+                title: video.title,
+                published: video.published,
+                link: video.link,
+                videoId: video.videoId
+              })) || []
+        }
+      : null
   };
 }
 
@@ -556,6 +576,33 @@ function diffBrand(brand, previous, current) {
     );
   }
 
+  if (previous.social && current.social) {
+    const previousVideos = new Set((previous.social.latestYoutubeVideos || []).map((video) => video.videoId || video.link));
+    const currentVideos = current.social.latestYoutubeVideos || [];
+    const newVideos = currentVideos.filter((video) => !previousVideos.has(video.videoId || video.link)).slice(0, 5);
+    for (const video of newVideos) {
+      const matchedCampaignTerms = campaignPatterns.filter((term) =>
+        new RegExp(term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "i").test(video.title)
+      );
+      events.push(
+        createEvent({
+          brand,
+          type: "social_post_detected",
+          severity: matchedCampaignTerms.length ? "High" : "Medium",
+          title: `${brand.name} posted a new public YouTube creative`,
+          detail: `"${video.title}" was detected in the public YouTube RSS feed.`,
+          sourceUrl: video.link,
+          evidence: {
+            published: video.published,
+            videoId: video.videoId,
+            matchedCampaignTerms
+          },
+          confidence: "Verified public YouTube RSS evidence"
+        })
+      );
+    }
+  }
+
   return events;
 }
 
@@ -607,6 +654,16 @@ async function sendTelegram(events) {
 const resetBaseline = process.env.MONITOR_RESET === "1";
 const previousState = resetBaseline ? { brands: {} } : await readJson(stateFile, { brands: {} });
 const existingEvents = resetBaseline ? { events: [] } : await readJson(eventsFile, { events: [] });
+const socialSnapshot = await readJson(socialSnapshotFile, { generatedAt: null, brands: [] });
+const socialSnapshotByBrand = new Map(
+  (socialSnapshot.brands || []).map((brand) => [
+    brand.name,
+    {
+      ...brand,
+      generatedAt: socialSnapshot.generatedAt
+    }
+  ])
+);
 const nextState = {
   generatedAt: new Date().toISOString(),
   brands: {}
@@ -615,7 +672,7 @@ let newEvents = [];
 
 for (const brand of brands) {
   console.log(`Monitoring ${brand.name}...`);
-  const current = await collectBrandState(brand);
+  const current = await collectBrandState(brand, socialSnapshotByBrand.get(brand.name));
   const previous = previousState.brands?.[brand.name];
   nextState.brands[brand.name] = current;
   newEvents.push(...diffBrand(brand, previous, current));
