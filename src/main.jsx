@@ -1,6 +1,7 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { createRoot } from "react-dom/client";
 import { createPortal } from "react-dom";
+import { createClient } from "@supabase/supabase-js";
 import {
   Activity,
   AlertTriangle,
@@ -10,11 +11,13 @@ import {
   CalendarDays,
   ChevronDown,
   Download,
+  Eye,
   FileText,
   Gauge,
   Globe2,
   LayoutDashboard,
   LineChart,
+  Lock,
   Megaphone,
   Menu,
   MonitorSmartphone,
@@ -26,10 +29,16 @@ import {
   TrendingUp,
   UsersRound
 } from "lucide-react";
+import astralBrands from "../data/astral-brands.json";
+import competitorSets from "../data/competitor-sets.json";
 import snapshot from "../data/generated/competitive-snapshot.json";
 import monitorEvents from "../data/generated/monitor-events.json";
 import socialSnapshot from "../data/generated/social-snapshot.json";
 import "./styles.css";
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const supabase = supabaseUrl && supabaseAnonKey ? createClient(supabaseUrl, supabaseAnonKey) : null;
 
 const seedBrands = [
   {
@@ -375,16 +384,100 @@ const recommendations = [
 
 const campaigns = (monitorEvents.events || [])
   .filter((event) =>
-    ["campaign_page", "category_or_product_page", "new_url_detected", "campaign_terms_detected", "social_post_detected"].includes(event.type)
+    ["campaign_page", "category_or_product_page", "new_url_detected", "campaign_terms_detected", "social_post_detected", "ad_library_creative_detected"].includes(event.type)
   )
   .slice(0, 5)
   .map((event) => ({
     brand: event.brand,
     name: event.title,
-    channel: event.type === "social_post_detected" ? "YouTube RSS" : "Public monitor",
+    channel: event.type === "social_post_detected" ? "YouTube RSS" : event.type === "ad_library_creative_detected" ? "Meta Ad Library" : "Public monitor",
     status: event.type === "baseline_created" ? "Baseline" : "Detected",
     impact: event.severity
   }));
+
+const ownedBrandHealth = astralBrands.map((ownedBrand) => {
+  const primary = ownedBrand.slug === "astral-pipes" ? brands.find((brand) => brand.name === "Astral Pipes") : null;
+  const pointers = generateTopPointers({ ownedBrand, primary });
+  return {
+    ...ownedBrand,
+    score: primary?.score ?? null,
+    scoreLabel: primary ? `${primary.score}/100` : "--/100",
+    dataStatus: primary ? "Live" : ownedBrand.status,
+    pointers,
+    primary
+  };
+});
+
+function generateTopPointers({ ownedBrand, primary }) {
+  if (!primary) {
+    return [
+      createPointer("Setup", "High", "Registry", `${ownedBrand.name} needs its verified official social handles before scoring can start.`, ownedBrand.evidence.evidenceUrl),
+      createPointer("Setup", "High", "Website", `Run public website collection for ${ownedBrand.website}.`, ownedBrand.website),
+      createPointer("Setup", "Medium", "Social", "Connect YouTube/X APIs or browser evidence before showing follower or engagement metrics.", ownedBrand.evidence.evidenceUrl),
+      createPointer("Setup", "Medium", "Campaigns", "Add Meta Ad Library page IDs and campaign keywords for active creative monitoring.", ownedBrand.evidence.evidenceUrl),
+      createPointer("Setup", "Medium", "AEO", "Run the AEO checklist and prompt bank after the first website crawl.", ownedBrand.website),
+      createPointer("Setup", "Medium", "SEO", "Create the first category keyword bank and ranking source for this brand.", ownedBrand.website),
+      createPointer("Setup", "Low", "Reports", "Prepare brand-level report exports once baseline data exists.", ownedBrand.evidence.evidenceUrl),
+      createPointer("Setup", "Low", "Monitoring", "Add Telegram routing for brand-specific alerts.", ownedBrand.evidence.evidenceUrl),
+      createPointer("Setup", "Low", "Evidence", "Store every metric with source, collection method, confidence, and evidence URL.", ownedBrand.evidence.evidenceUrl),
+      createPointer("Setup", "Low", "Governance", "Keep this card in Setup Required until factual baselines are collected.", ownedBrand.evidence.evidenceUrl)
+    ];
+  }
+
+  const audit = primary.auditScores || {};
+  const events = (monitorEvents.events || []).filter((event) => event.brand === primary.name);
+  const weakScores = [
+    ["AEO", audit.aeoReadiness, "Improve answer-engine readiness with schema, FAQs, llms.txt, and prompt evidence."],
+    ["SEO", audit.technicalSeo, "Review metadata, sitemap, canonical, internal links, and structured data."],
+    ["Accessibility", audit.accessibilityProxy, "Run a proper accessibility crawl and fix image alt, labels, headings, and mobile semantics."],
+    ["Security", audit.securityPrivacy, "Review HTTPS/security headers and privacy policy signals."],
+    ["Content", audit.contentExtraction, "Add direct-answer summaries, FAQs, tables, and extractable educational blocks."]
+  ]
+    .filter(([, score]) => Number(score) < 75)
+    .map(([module, score, action]) => createPointer(score < 50 ? "Critical" : "Watch", score < 50 ? "High" : "Medium", module, `${module} score is ${score}/100. ${action}`, primary.collected?.website || primary.website));
+
+  const eventPointers = events.slice(0, 4).map((event) =>
+    createPointer(event.severity, event.severity, formatEventType(event.type), event.detail, event.sourceUrl)
+  );
+
+  const social = primary.socialData?.summary;
+  const socialPointers = [
+    social?.youtubeVideos30d != null
+      ? createPointer("Live", "Medium", "Social", `${primary.name} has ${social.youtubeVideos30d} public YouTube uploads in the last 30 days.`, primary.socialData?.profiles?.find((profile) => profile.platform === "youtube")?.url)
+      : createPointer("Restricted", "Medium", "Social", "YouTube cadence is not available until channel/feed evidence is connected.", primary.collected?.website || primary.website),
+    createPointer("Restricted", "Medium", "Social", "Follower growth and engagement rate remain hidden until API, export, or browser evidence is attached.", primary.collected?.website || primary.website)
+  ];
+
+  const checklistPointers = [
+    createPointer("Action", "Medium", "AEO", "Run scheduled AI prompt testing for ChatGPT, Perplexity, Gemini, Claude, Copilot, and Google AI Overviews.", primary.collected?.website || primary.website),
+    createPointer("Action", "Medium", "SEO", "Import rank tracking for the approved non-brand pipe category keyword bank.", primary.collected?.website || primary.website),
+    createPointer("Action", "Low", "Reports", "Generate the next monthly executive summary from verified monitor events and public evidence.", primary.collected?.website || primary.website)
+  ];
+
+  return [...eventPointers, ...weakScores, ...socialPointers, ...checklistPointers].slice(0, 10);
+}
+
+function createPointer(status, severity, module, title, evidenceUrl) {
+  return {
+    status,
+    severity,
+    module,
+    title,
+    action: title,
+    source: evidenceUrl ? "Verified public evidence" : "Setup required",
+    evidenceUrl
+  };
+}
+
+function downloadJson(filename, data) {
+  const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = filename;
+  link.click();
+  URL.revokeObjectURL(url);
+}
 
 const moduleLabels = {
   overview: "Overview",
@@ -537,6 +630,151 @@ const aeoChecklistSections = [
 ];
 
 function App() {
+  const [session, setSession] = useState(null);
+  const [authLoading, setAuthLoading] = useState(Boolean(supabase));
+  const [activeOwnedBrandSlug, setActiveOwnedBrandSlug] = useState(() => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get("brand") || null;
+  });
+
+  useEffect(() => {
+    if (!supabase) {
+      setAuthLoading(false);
+      return undefined;
+    }
+    supabase.auth.getSession().then(({ data }) => {
+      setSession(data.session);
+      setAuthLoading(false);
+    });
+    const { data } = supabase.auth.onAuthStateChange((_event, nextSession) => {
+      setSession(nextSession);
+    });
+    return () => data.subscription.unsubscribe();
+  }, []);
+
+  const handleLogout = async () => {
+    if (supabase) await supabase.auth.signOut();
+    setSession(null);
+    setActiveOwnedBrandSlug(null);
+    window.history.replaceState(null, "", window.location.pathname);
+  };
+
+  const openOwnedBrand = (slug) => {
+    setActiveOwnedBrandSlug(slug);
+    window.history.replaceState(null, "", `?brand=${slug}`);
+  };
+
+  const goHome = () => {
+    setActiveOwnedBrandSlug(null);
+    window.history.replaceState(null, "", window.location.pathname);
+  };
+
+  if (authLoading) {
+    return <AuthLoadingScreen />;
+  }
+
+  if (!session) {
+    return <LoginScreen supabase={supabase} />;
+  }
+
+  const activeOwnedBrand = astralBrands.find((brand) => brand.slug === activeOwnedBrandSlug);
+  if (!activeOwnedBrand) {
+    return (
+      <UniverseHome
+        user={session.user}
+        onLogout={handleLogout}
+        onOpenBrand={openOwnedBrand}
+      />
+    );
+  }
+
+  return (
+    <BrandDashboard
+      ownedBrand={activeOwnedBrand}
+      user={session.user}
+      onHome={goHome}
+      onLogout={handleLogout}
+    />
+  );
+}
+
+function AuthLoadingScreen() {
+  return (
+    <main className="auth-shell">
+      <section className="auth-card">
+        <div className="logo-mark">A</div>
+        <h1>Astral Digital Universe</h1>
+        <p>Checking secure session...</p>
+      </section>
+    </main>
+  );
+}
+
+function LoginScreen({ supabase }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleLogin = async (event) => {
+    event.preventDefault();
+    if (!supabase) {
+      setMessage("Supabase is not configured. Add VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY.");
+      return;
+    }
+    setLoading(true);
+    setMessage("");
+    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    setLoading(false);
+    if (error) setMessage(error.message);
+  };
+
+  const handleForgotPassword = async () => {
+    if (!email) {
+      setMessage("Enter your email first, then request a reset link.");
+      return;
+    }
+    if (!supabase) {
+      setMessage("Supabase is not configured yet.");
+      return;
+    }
+    setLoading(true);
+    const { error } = await supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: window.location.origin
+    });
+    setLoading(false);
+    setMessage(error ? error.message : "Password reset link sent.");
+  };
+
+  return (
+    <main className="auth-shell">
+      <section className="auth-card login-card">
+        <div className="logo-mark">A</div>
+        <p className="section-label">Secure intelligence platform</p>
+        <h1>Astral Digital Universe</h1>
+        <p className="header-copy">Sign in to monitor brand health, public evidence, campaigns, social signals, and competitor movement.</p>
+        <form className="login-form" onSubmit={handleLogin}>
+          <label>
+            <span>Username</span>
+            <input value={email} onChange={(event) => setEmail(event.target.value)} type="email" autoComplete="email" placeholder="name@astral.com" />
+          </label>
+          <label>
+            <span>Password</span>
+            <input value={password} onChange={(event) => setPassword(event.target.value)} type="password" autoComplete="current-password" placeholder="Password" />
+          </label>
+          <button className="text-button auth-submit" disabled={loading}>
+            <Lock size={16} />
+            {loading ? "Please wait..." : "Sign in"}
+          </button>
+        </form>
+        <button className="link-button" onClick={handleForgotPassword}>Forgot Password</button>
+        {message ? <p className="auth-message">{message}</p> : null}
+      </section>
+    </main>
+  );
+}
+
+function BrandDashboard({ ownedBrand, user, onHome, onLogout }) {
   const [collapsed, setCollapsed] = useState(false);
   const [activeModule, setActiveModule] = useState(() => {
     const requested = new URLSearchParams(window.location.search).get("module");
@@ -575,9 +813,22 @@ function App() {
   const isOverview = activeModule === "overview";
   const header = moduleHeaders[activeModule] || moduleHeaders.overview;
 
+  if (ownedBrand.slug !== "astral-pipes") {
+    return (
+      <SetupBrandDashboard
+        ownedBrand={ownedBrand}
+        user={user}
+        collapsed={collapsed}
+        setCollapsed={setCollapsed}
+        onHome={onHome}
+        onLogout={onLogout}
+      />
+    );
+  }
+
   return (
     <main className="app-shell">
-      <Sidebar collapsed={collapsed} activeModule={activeModule} onModule={setActiveModule} />
+      <Sidebar collapsed={collapsed} activeModule={activeModule} onModule={setActiveModule} onHome={onHome} />
 
       <section className="workspace">
         <TopBar
@@ -587,6 +838,18 @@ function App() {
           setQuery={setQuery}
           range={range}
           setRange={setRange}
+          user={user}
+          onLogout={onLogout}
+          onReport={() =>
+            downloadJson(`${ownedBrand.slug}-brand-report.json`, {
+              generatedAt: new Date().toISOString(),
+              ownedBrand,
+              selectedBrand: selected,
+              ranked,
+              alerts,
+              monitorEvents: monitorEvents.events || []
+            })
+          }
         />
 
         <div className={`content-grid ${isOverview ? "" : "full-width"}`}>
@@ -594,7 +857,7 @@ function App() {
             <header className="page-header">
               <div>
                 <p className="section-label">{header.label}</p>
-                <h1>{header.title}</h1>
+                <h1>{ownedBrand.name} {header.title}</h1>
                 <p className="header-copy">{header.copy}</p>
               </div>
               <div className="brand-select">
@@ -727,7 +990,228 @@ function App() {
   );
 }
 
-function Sidebar({ collapsed, activeModule, onModule }) {
+function UniverseHome({ user, onLogout, onOpenBrand }) {
+  const [selectedSlug, setSelectedSlug] = useState("astral-pipes");
+  const selected = ownedBrandHealth.find((brand) => brand.slug === selectedSlug) || ownedBrandHealth[0];
+  const liveCount = ownedBrandHealth.filter((brand) => brand.dataStatus === "Live").length;
+  const setupCount = ownedBrandHealth.length - liveCount;
+
+  return (
+    <main className="universe-shell">
+      <header className="universe-topbar">
+        <div className="brand-lockup universe-lockup">
+          <div className="logo-mark">A</div>
+          <div>
+            <strong>Astral Digital Universe</strong>
+            <span>Holistic brand intelligence</span>
+          </div>
+        </div>
+        <div className="universe-user">
+          <span>{user?.email}</span>
+          <button
+            className="text-button subtle"
+            onClick={() =>
+              downloadJson("astral-digital-universe-report.json", {
+                generatedAt: new Date().toISOString(),
+                brands: ownedBrandHealth,
+                monitorEvents: monitorEvents.events || []
+              })
+            }
+          >
+            <Download size={16} />
+            Ecosystem report
+          </button>
+          <button className="text-button" onClick={onLogout}>Logout</button>
+        </div>
+      </header>
+
+      <section className="universe-hero">
+        <div>
+          <p className="section-label">Ecosystem command center</p>
+          <h1>Astral Digital Universe</h1>
+          <p className="header-copy">
+            One protected home for brand health, competitive intelligence, campaign monitoring, social evidence, and next actions across the Astral ecosystem.
+          </p>
+        </div>
+        <div className="universe-summary">
+          <article>
+            <span>Live dashboards</span>
+            <strong>{liveCount}</strong>
+          </article>
+          <article>
+            <span>Setup required</span>
+            <strong>{setupCount}</strong>
+          </article>
+          <article>
+            <span>Monitor events</span>
+            <strong>{monitorEvents.events?.length || 0}</strong>
+          </article>
+        </div>
+      </section>
+
+      <section className="owned-brand-rail" aria-label="Astral brands">
+        {ownedBrandHealth.map((brand) => (
+          <article
+            key={brand.slug}
+            className={`owned-brand-card ${brand.slug === selected.slug ? "active" : ""}`}
+            onClick={() => setSelectedSlug(brand.slug)}
+            tabIndex="0"
+            role="button"
+            onKeyDown={(event) => {
+              if (event.key === "Enter" || event.key === " ") setSelectedSlug(brand.slug);
+            }}
+          >
+            <div className="owned-card-topline">
+              <span>{brand.priority}</span>
+              <b className={brand.dataStatus === "Live" ? "status-live" : "status-setup"}>{brand.dataStatus}</b>
+            </div>
+            <h2>{brand.name}</h2>
+            <p>{brand.category}</p>
+            <div className="owned-score-row">
+              <strong>{brand.scoreLabel}</strong>
+              <span>Overall Health Score</span>
+            </div>
+            <button className="text-button" onClick={(event) => {
+              event.stopPropagation();
+              onOpenBrand(brand.slug);
+            }}>
+              <Eye size={16} />
+              View Dashboard
+            </button>
+          </article>
+        ))}
+      </section>
+
+      <section className="universe-detail-grid">
+        <div className="panel selected-brand-panel">
+          <div className="panel-heading">
+            <div>
+              <h2>{selected.name}</h2>
+              <p>{selected.category}</p>
+            </div>
+            <span className={`monitor-count ${selected.dataStatus === "Live" ? "" : "setup"}`}>{selected.dataStatus}</span>
+          </div>
+          <div className="universe-score-lockup">
+            <div className="focus-score" style={{ "--score": selected.score || 0 }}>
+              <span>{selected.score ?? "--"}</span>
+            </div>
+            <div>
+              <h3>Overall Health Score</h3>
+              <p>
+                {selected.score === null
+                  ? "Score is intentionally withheld until factual baselines are collected."
+                  : "Score uses the current verified public-evidence model."}
+              </p>
+            </div>
+          </div>
+          <button className="text-button" onClick={() => onOpenBrand(selected.slug)}>
+            <Eye size={16} />
+            View Dashboard
+          </button>
+        </div>
+        <TopPointersPanel pointers={selected.pointers} title="Top 10 Most Important Pointers" />
+      </section>
+    </main>
+  );
+}
+
+function TopPointersPanel({ pointers, title }) {
+  return (
+    <section className="panel pointer-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>{title}</h2>
+          <p>Dynamic concerns, evidence gaps, and next actions for the selected brand.</p>
+        </div>
+      </div>
+      <div className="pointer-list">
+        {pointers.map((pointer, index) => (
+          <article className={`pointer-item severity-${pointer.severity.toLowerCase()}`} key={`${pointer.module}-${index}`}>
+            <span>{index + 1}</span>
+            <div>
+              <strong>{pointer.title}</strong>
+              <small>{pointer.module} · {pointer.source}</small>
+            </div>
+            {pointer.evidenceUrl ? <a href={pointer.evidenceUrl} target="_blank" rel="noreferrer">Evidence</a> : null}
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function SetupBrandDashboard({ ownedBrand, user, collapsed, setCollapsed, onHome, onLogout }) {
+  const setupPointers = generateTopPointers({ ownedBrand, primary: null });
+  return (
+    <main className="app-shell">
+      <Sidebar collapsed={collapsed} activeModule="overview" onModule={() => {}} onHome={onHome} />
+      <section className="workspace">
+        <TopBar
+          collapsed={collapsed}
+          setCollapsed={setCollapsed}
+          query=""
+          setQuery={() => {}}
+          range="Setup"
+          setRange={() => {}}
+          user={user}
+          onLogout={onLogout}
+          onReport={() =>
+            downloadJson(`${ownedBrand.slug}-setup-report.json`, {
+              generatedAt: new Date().toISOString(),
+              ownedBrand,
+              setupPointers
+            })
+          }
+        />
+        <section className="setup-dashboard">
+          <header className="page-header">
+            <div>
+              <p className="section-label">Brand setup workspace</p>
+              <h1>{ownedBrand.name} Dashboard</h1>
+              <p className="header-copy">
+                This brand is registered in Astral Digital Universe, but the factual monitoring baseline is not complete yet.
+              </p>
+            </div>
+            <span className="monitor-count setup">Setup Required</span>
+          </header>
+          <section className="metric-grid">
+            <MetricCard icon={<ShieldCheck size={19} />} label="Overall Health Score" value="--" suffix="/100" delta="Withheld until baseline collection" />
+            <MetricCard icon={<Globe2 size={19} />} label="Official website" value="1" suffix="" delta={ownedBrand.website.replace(/^https?:\/\//, "")} />
+            <MetricCard icon={<Activity size={19} />} label="Data status" value="0" suffix="/100" delta="No fake metrics shown" />
+            <MetricCard icon={<Sparkles size={19} />} label="Next stage" value="10" suffix="" delta="Setup pointers ready" />
+          </section>
+          <section className="split-grid">
+            <TopPointersPanel pointers={setupPointers} title={`${ownedBrand.name} setup pointers`} />
+            <section className="panel">
+              <div className="panel-heading">
+                <div>
+                  <h2>Source registry</h2>
+                  <p>Initial source evidence for this Astral brand.</p>
+                </div>
+              </div>
+              <div className="evidence-grid">
+                <div>
+                  <span>Website</span>
+                  <a href={ownedBrand.website} target="_blank" rel="noreferrer">{ownedBrand.website}</a>
+                </div>
+                <div>
+                  <span>Confidence</span>
+                  <strong>{ownedBrand.evidence.confidence}</strong>
+                </div>
+                <div>
+                  <span>Evidence</span>
+                  <a href={ownedBrand.evidence.evidenceUrl} target="_blank" rel="noreferrer">Open evidence</a>
+                </div>
+              </div>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+  );
+}
+
+function Sidebar({ collapsed, activeModule, onModule, onHome }) {
   const items = [
     ["overview", LayoutDashboard, "Overview"],
     ["aeo", Bot, "AEO"],
@@ -743,11 +1227,15 @@ function Sidebar({ collapsed, activeModule, onModule }) {
       <div className="brand-lockup">
         <div className="logo-mark">A</div>
         <div>
-          <strong>CompareUS</strong>
-          <span>Pipe intelligence</span>
+          <strong>Astral DU</strong>
+          <span>Brand intelligence</span>
         </div>
       </div>
       <nav aria-label="Dashboard navigation">
+        <button onClick={onHome}>
+          <LayoutDashboard size={19} />
+          <span>Universe</span>
+        </button>
         {items.map(([id, Icon, label]) => (
           <button key={id} className={activeModule === id ? "active" : ""} onClick={() => onModule(id)}>
             <Icon size={19} />
@@ -765,7 +1253,7 @@ function Sidebar({ collapsed, activeModule, onModule }) {
   );
 }
 
-function TopBar({ collapsed, setCollapsed, query, setQuery, range, setRange }) {
+function TopBar({ collapsed, setCollapsed, query, setQuery, range, setRange, user, onLogout, onReport }) {
   return (
     <header className="topbar">
       <button className="icon-button" onClick={() => setCollapsed(!collapsed)} aria-label="Toggle sidebar">
@@ -783,6 +1271,7 @@ function TopBar({ collapsed, setCollapsed, query, setQuery, range, setRange }) {
         <label className="range-control">
           <CalendarDays size={17} />
           <select value={range} onChange={(event) => setRange(event.target.value)}>
+            {range === "Setup" ? <option>Setup</option> : null}
             <option>Last 30 days</option>
             <option>Last 90 days</option>
             <option>This quarter</option>
@@ -790,10 +1279,15 @@ function TopBar({ collapsed, setCollapsed, query, setQuery, range, setRange }) {
           </select>
           <ChevronDown size={15} />
         </label>
-        <button className="text-button">
+        <button className="text-button" onClick={onReport}>
           <Download size={16} />
           Report
         </button>
+        {user ? (
+          <button className="text-button subtle" onClick={onLogout}>
+            Logout
+          </button>
+        ) : null}
       </div>
     </header>
   );
@@ -988,7 +1482,7 @@ function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand
     return (
       <>
         <CampaignPanel />
-        <MonitorTimeline eventTypes={["campaign_page", "category_or_product_page", "new_url_detected", "campaign_terms_detected", "homepage_content_changed", "social_post_detected"]} />
+        <MonitorTimeline eventTypes={["campaign_page", "category_or_product_page", "new_url_detected", "campaign_terms_detected", "homepage_content_changed", "social_post_detected", "ad_library_creative_detected"]} />
       </>
     );
   }
@@ -1429,6 +1923,14 @@ function SocialEvidencePanel({ brand }) {
           <span>Last YouTube post</span>
           <strong>{formatShortDate(summary?.lastYoutubeVideoAt)}</strong>
         </article>
+        <article>
+          <span>YouTube subscribers</span>
+          <strong>{summary?.youtubeSubscriberCount != null ? formatNumber(summary.youtubeSubscriberCount) : "API restricted"}</strong>
+        </article>
+        <article>
+          <span>X followers</span>
+          <strong>{summary?.xFollowerCount != null ? formatNumber(summary.xFollowerCount) : "API restricted"}</strong>
+        </article>
       </div>
       <div className="latest-video-list">
         <h3>Latest public YouTube evidence</h3>
@@ -1502,6 +2004,10 @@ function formatShortDate(value) {
     year: "numeric",
     timeZone: "Asia/Kolkata"
   }).format(new Date(value));
+}
+
+function formatNumber(value) {
+  return new Intl.NumberFormat("en-IN", { notation: "compact", maximumFractionDigits: 1 }).format(value);
 }
 
 function ScoreBreakdown({ brand, activeModule }) {

@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "astral-pipes",
+    "name": "Astral Pipes",
+    "category": "Pipes, Fittings and Water Tanks",
+    "status": "Live",
+    "priority": "Core",
+    "website": "https://www.astralpipes.com/",
+    "evidence": {
+      "source": "Official website",
+      "evidenceUrl": "https://www.astralpipes.com/",
+      "method": "Public registry verification",
+      "confidence": "Verified public evidence"
+    },
+    "competitorSetSlug": "astral-pipes"
+  },
+  {
+    "slug": "astral-adhesives",
+    "name": "Astral Adhesives",
+    "category": "Adhesives, Sealants and Putty",
+    "status": "Setup Required",
+    "priority": "P1",
+    "website": "https://www.astraladhesives.com/",
+    "evidence": {
+      "source": "Official website search result",
+      "evidenceUrl": "https://www.astraladhesives.com/",
+      "method": "Public registry verification",
+      "confidence": "Verified public evidence"
+    },
+    "competitorSetSlug": "astral-adhesives"
+  },
+  {
+    "slug": "astral-bathware",
+    "name": "Astral Bathware",
+    "category": "Faucets and Sanitaryware",
+    "status": "Setup Required",
+    "priority": "P1",
+    "website": "https://www.astralbathware.com/",
+    "evidence": {
+      "source": "Official website search result",
+      "evidenceUrl": "https://www.astralbathware.com/",
+      "method": "Public registry verification",
+      "confidence": "Verified public evidence"
+    },
+    "competitorSetSlug": "astral-bathware"
+  },
+  {
+    "slug": "astral-paints",
+    "name": "Astral Paints",
+    "category": "Interior, Exterior and Protective Paints",
+    "status": "Setup Required",
+    "priority": "P1",
+    "website": "https://www.astralpaints.com/",
+    "evidence": {
+      "source": "Official website search result",
+      "evidenceUrl": "https://www.astralpaints.com/",
+      "method": "Public registry verification",
+      "confidence": "Verified public evidence"
+    },
+    "competitorSetSlug": "astral-paints"
+  },
+  {
+    "slug": "true-build",
+    "name": "True Build",
+    "category": "Construction Chemicals and Waterproofing",
+    "status": "Setup Required",
+    "priority": "P2",
+    "website": "https://www.trubuild.in/",
+    "evidence": {
+      "source": "Astral Trubuild LinkedIn website field",
+      "evidenceUrl": "https://www.linkedin.com/company/astral-trubuild",
+      "method": "Public registry verification",
+      "confidence": "Needs official-site crawl confirmation"
+    },
+    "competitorSetSlug": "true-build"
+  },
+  {
+    "slug": "astral-foundation",
+    "name": "Astral Foundation",
+    "category": "CSR and Foundation Initiatives",
+    "status": "Setup Required",
+    "priority": "P2",
+    "website": "https://www.astralltd.com/",
+    "evidence": {
+      "source": "Astral Limited official website foundation section",
+      "evidenceUrl": "https://www.astralltd.com/",
+      "method": "Public registry verification",
+      "confidence": "Verified public evidence"
+    },
+    "competitorSetSlug": "astral-foundation"
+  }
+]

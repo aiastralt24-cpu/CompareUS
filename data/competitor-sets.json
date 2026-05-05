@@ -1,0 +1,148 @@
+[
+  {
+    "slug": "astral-pipes",
+    "ownedBrandSlug": "astral-pipes",
+    "status": "Live",
+    "brands": [
+      {
+        "name": "Astral Pipes",
+        "type": "Primary brand",
+        "priority": "Core",
+        "website": "https://www.astralpipes.com/",
+        "social": {
+          "facebook": "https://www.facebook.com/astralpipes/",
+          "instagram": "https://www.instagram.com/astral_pipes/",
+          "youtube": "https://www.youtube.com/channel/UCfcxsolIKB6RReU45xxlAfQ",
+          "linkedin": "https://www.linkedin.com/company/astralpipesofficial",
+          "x": "https://x.com/AstralPipes"
+        }
+      },
+      {
+        "name": "Supreme Pipes",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.supreme.co.in/",
+        "social": {
+          "facebook": "https://www.facebook.com/supremepipesofficial/",
+          "instagram": "https://www.instagram.com/supremepipesofficial/",
+          "youtube": "https://www.youtube.com/@TheSupremeIndustries",
+          "linkedin": "https://www.linkedin.com/company/supreme-pipes-official"
+        }
+      },
+      {
+        "name": "Prince Pipes",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.princepipes.com/",
+        "social": {
+          "facebook": "https://www.facebook.com/princepipesofficial",
+          "instagram": "https://www.instagram.com/prince_pipes/",
+          "youtube": "https://www.youtube.com/channel/UCGhM2x9hF0cCgz6hU8tnYqQ",
+          "linkedin": "https://www.linkedin.com/company/prince-pipes-and-fittings-ltd",
+          "x": "https://twitter.com/Prince_Pipes"
+        }
+      },
+      {
+        "name": "Apollo Pipes",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.apollopipes.com/",
+        "social": {
+          "facebook": "https://www.facebook.com/APLAPOLLO/",
+          "instagram": "https://www.instagram.com/apl_apollo/",
+          "youtube": "https://www.youtube.com/@aplapollo1557",
+          "linkedin": "https://www.linkedin.com/company/apollo-pipes-ltd"
+        }
+      },
+      {
+        "name": "Ashirvad by Aliaxis",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.ashirvad.com/",
+        "social": {
+          "facebook": "https://www.facebook.com/ashirvadpipesofficial",
+          "instagram": "https://www.instagram.com/ashirvadbyaliaxis/",
+          "youtube": "https://www.youtube.com/@ashirvadpipesofficial",
+          "linkedin": "https://www.linkedin.com/company/ashirvadpipes"
+        }
+      },
+      {
+        "name": "Wavin India",
+        "type": "Direct competitor",
+        "priority": "P2",
+        "website": "https://wavin.com/in",
+        "social": {
+          "facebook": "https://www.facebook.com/wavinindia/",
+          "instagram": "https://www.instagram.com/wavinindia/",
+          "youtube": "https://www.youtube.com/@WavinIndia",
+          "linkedin": "https://www.linkedin.com/company/wavinindia"
+        }
+      },
+      {
+        "name": "KPT Pipes",
+        "type": "Direct competitor",
+        "priority": "P2",
+        "website": "https://www.kptpipes.com",
+        "social": {
+          "facebook": "https://www.facebook.com/KPTPIPINGSYSTEMS/",
+          "instagram": "https://www.instagram.com/kptpipingsystem/",
+          "linkedin": "https://www.linkedin.com/company/kpt-pp-r-piping-systems",
+          "x": "https://x.com/PpPiping"
+        }
+      },
+      {
+        "name": "POLOPLAST",
+        "type": "International benchmark",
+        "priority": "P3",
+        "website": "https://www.poloplast.com/en-at.html",
+        "social": {
+          "instagram": "https://www.instagram.com/poloplastgroup/",
+          "youtube": "https://www.youtube.com/channel/UC-25ynaEycmiHZOhNTtE7vA",
+          "linkedin": "https://www.linkedin.com/company/poloplast.com"
+        }
+      },
+      {
+        "name": "REHAU India",
+        "type": "Adjacent competitor",
+        "priority": "P3",
+        "website": "https://www.rehau.com/in-en",
+        "social": {
+          "facebook": "https://www.facebook.com/REHAUIndia",
+          "instagram": "https://www.instagram.com/rehau.india/",
+          "youtube": "https://www.youtube.com/channel/UCukGuiMA6o3KvxAOVLq-BZA",
+          "linkedin": "https://www.linkedin.com/company/rehau-india"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "astral-adhesives",
+    "ownedBrandSlug": "astral-adhesives",
+    "status": "Setup Required",
+    "brands": []
+  },
+  {
+    "slug": "astral-bathware",
+    "ownedBrandSlug": "astral-bathware",
+    "status": "Setup Required",
+    "brands": []
+  },
+  {
+    "slug": "astral-paints",
+    "ownedBrandSlug": "astral-paints",
+    "status": "Setup Required",
+    "brands": []
+  },
+  {
+    "slug": "true-build",
+    "ownedBrandSlug": "true-build",
+    "status": "Setup Required",
+    "brands": []
+  },
+  {
+    "slug": "astral-foundation",
+    "ownedBrandSlug": "astral-foundation",
+    "status": "Setup Required",
+    "brands": []
+  }
+]

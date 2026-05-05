@@ -1,11 +1,14 @@
 {
-  "generatedAt": "2026-05-05T07:34:19.563Z",
+  "generatedAt": "2026-05-05T08:15:46.917Z",
+  "monitoredSet": "astral-pipes",
   "methodology": {
     "mode": "public social evidence collector",
     "collected": [
       "Official social URL reachability and response metadata",
       "Public title/description/canonical metadata where platforms allow access",
-      "YouTube public RSS latest-video cadence when channel id can be resolved"
+      "YouTube public RSS latest-video cadence when channel id can be resolved",
+      "YouTube Data API statistics when YOUTUBE_API_KEY is configured",
+      "X API public metrics when X_BEARER_TOKEN is configured"
     ],
     "notCollectedWithoutAccess": [
       "Follower count requires platform API, approved browser capture, or exported evidence.",
@@ -26,9 +29,9 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.facebook.com/astralpipes/",
-          "responseMs": 1150,
+          "responseMs": 862,
           "title": "Astral Pipes | Ahmedabad",
-          "description": "Astral Pipes, &#xa85;&#xaae;&#xaa6;&#xabe;&#xab5;&#xabe;&#xaa6;. 9,22,485 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 6,351 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;. &#xb7; 3 &#xa85;&#xab9;&#xac0;&#xa82; &#xab9;&#xaa4;&#xabe;. Official account of Astral Pipes.\nIndia&#x2019;s Most Trusted...",
+          "description": "Astral Pipes, &#xa85;&#xaae;&#xaa6;&#xabe;&#xab5;&#xabe;&#xaa6;. 9,22,484 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 6,351 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;. &#xb7; 3 &#xa85;&#xab9;&#xac0;&#xa82; &#xab9;&#xaa4;&#xabe;. Official account of Astral Pipes.\nIndia&#x2019;s Most Trusted...",
           "canonical": "https://www.facebook.com/astralpipes",
           "collectionStatus": "Public profile reached"
         },
@@ -39,7 +42,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.instagram.com/astral_pipes/",
-          "responseMs": 522,
+          "responseMs": 965,
           "title": "Astral Pipes (&#064;astral_pipes) • Instagram photos and videos",
           "description": "232K followers, 17 following, 1,478 posts &#x2013; Astral Pipes (&#064;astral_pipes) on Instagram: \"Official account of Astral Pipes.\nIndia&#x2019;s Most Trusted Pipe Brand - 2025 by TRA.\"",
           "canonical": "https://www.instagram.com/astral_pipes/",
@@ -52,7 +55,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.youtube.com/channel/UCfcxsolIKB6RReU45xxlAfQ",
-          "responseMs": 938,
+          "responseMs": 488,
           "title": "ASTRAL PIPES - YouTube",
           "description": "Astral Limited was established in 1996 with the aim to manufacture pro-India plumbing and drainage systems in the country. While serving the plumbing needs o...",
           "canonical": "https://www.youtube.com/channel/UCfcxsolIKB6RReU45xxlAfQ",
@@ -101,7 +104,9 @@
                 "link": "https://www.youtube.com/shorts/pqm1eEdcVGg",
                 "videoId": "pqm1eEdcVGg"
               }
-            ]
+            ],
+            "apiMetrics": null,
+            "latestVideoStats": []
           }
         },
         {
@@ -111,9 +116,9 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.linkedin.com/company/astralpipesofficial",
-          "responseMs": 1064,
+          "responseMs": 798,
           "title": "Astral Pipes | LinkedIn",
-          "description": "Astral Pipes | 77,659 followers on LinkedIn. Astral Pipes specialises in manufacturing the best quality plumbing &amp; drainage systems for both residential and commercial applications, CPVC piping systems for industrial applications, column and pressure piping system for agriculture applications and also conduit pipes for residential and commercial applications. Astral pipes embraces latest international technology and provides solutions made for the Indian markets.\r\n\r\nAstral Pipes is known as pro- customers company as we serve with an intention of taking excellence to new heights.",
+          "description": "Astral Pipes | 77,660 followers on LinkedIn. Astral Pipes specialises in manufacturing the best quality plumbing &amp; drainage systems for both residential and commercial applications, CPVC piping systems for industrial applications, column and pressure piping system for agriculture applications and also conduit pipes for residential and commercial applications. Astral pipes embraces latest international technology and provides solutions made for the Indian markets.\r\n\r\nAstral Pipes is known as pro- customers company as we serve with an intention of taking excellence to new heights.",
           "canonical": "https://in.linkedin.com/company/astralpipesofficial",
           "collectionStatus": "Public profile reached"
         },
@@ -124,11 +129,12 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://x.com/AstralPipes",
-          "responseMs": 2111,
+          "responseMs": 714,
           "title": "",
           "description": "",
           "canonical": "",
-          "collectionStatus": "Public profile reached"
+          "collectionStatus": "Public profile reached",
+          "xApi": null
         }
       ],
       "summary": {
@@ -137,6 +143,10 @@
         "youtubeVideos30d": 15,
         "youtubeVideos90d": 15,
         "lastYoutubeVideoAt": "2026-05-01T12:18:49+00:00",
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
         "status": "Active in last 30 days"
       },
       "unavailableMetrics": [
@@ -157,7 +167,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.facebook.com/supremepipesofficial/",
-          "responseMs": 1311,
+          "responseMs": 619,
           "title": "Supreme Pipes | Mumbai",
           "description": "Supreme Pipes, Mumbai. 10,18,266 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 479 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;. &#xb7; 445 &#xa85;&#xab9;&#xac0;&#xa82; &#xab9;&#xaa4;&#xabe;. Supreme Industries Limited is India&#039;s leading plastic...",
           "canonical": "https://www.facebook.com/supremepipesofficial",
@@ -170,7 +180,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.instagram.com/supremepipesofficial/",
-          "responseMs": 514,
+          "responseMs": 489,
           "title": "Supreme Pipes (&#064;supremepipesofficial) • Instagram photos and videos",
           "description": "63K followers, 17 following, 2,074 posts &#x2013; Supreme Pipes (&#064;supremepipesofficial) on Instagram: \"End To End Plumbing And Drainage Solutions\"",
           "canonical": "https://www.instagram.com/supremepipesofficial/",
@@ -183,7 +193,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.youtube.com/@TheSupremeIndustries",
-          "responseMs": 470,
+          "responseMs": 469,
           "title": "The Supreme Industries Limited - YouTube",
           "description": "Founded in 1942, Supreme is an acknowledged leader of India's plastics industry.Our 25 advanced plants are powered by technology from world leaders, and comp...",
           "canonical": "https://www.youtube.com/channel/UCRK3yVr2OrcLmpYt-ngeWag",
@@ -232,7 +242,9 @@
                 "link": "https://www.youtube.com/shorts/AGJ2hOU91OQ",
                 "videoId": "AGJ2hOU91OQ"
               }
-            ]
+            ],
+            "apiMetrics": null,
+            "latestVideoStats": []
           }
         },
         {
@@ -242,7 +254,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.linkedin.com/company/supreme-pipes-official",
-          "responseMs": 1057,
+          "responseMs": 969,
           "title": "Supreme Pipes Official (Division of The Supreme Industries Limited) | LinkedIn",
           "description": "Supreme Pipes Official (Division of The Supreme Industries Limited) | 28,161 followers on LinkedIn. Supreme - People who know plastics best. | An acknowledged leader of the Indian plastic industry, The Supreme Industries Limited offers the most diversified portfolio of plastic products. Credited with pioneering several path-breaking piping products, it has been at the forefront in the development of many innovative &amp; cost-effective plastic piping solutions.\n\nWith 13,759+ products, plastic pipes and fittings form a key part of Supreme’s portfolio.",
           "canonical": "https://in.linkedin.com/company/supreme-pipes-official",
@@ -255,6 +267,10 @@
         "youtubeVideos30d": 2,
         "youtubeVideos90d": 15,
         "lastYoutubeVideoAt": "2026-05-05T05:34:41+00:00",
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
         "status": "Active in last 30 days"
       },
       "unavailableMetrics": [
@@ -275,9 +291,9 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.facebook.com/princepipesofficial",
-          "responseMs": 1339,
+          "responseMs": 837,
           "title": "Prince Pipes",
-          "description": "Prince Pipes.1,72,506 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 252 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;.OFFICIAL ACCOUNT\nPlumbing | Agriculture | Drainage | Industrial\nBrand of the Year...",
+          "description": "Prince Pipes.1,72,505 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 252 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;.OFFICIAL ACCOUNT\nPlumbing | Agriculture | Drainage | Industrial\nBrand of the Year...",
           "canonical": "https://www.facebook.com/princepipesofficial",
           "collectionStatus": "Public profile reached"
         },
@@ -288,7 +304,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.instagram.com/prince_pipes/",
-          "responseMs": 567,
+          "responseMs": 495,
           "title": "Prince Pipes (&#064;prince_pipes) • Instagram photos and videos",
           "description": "25K followers, 7 following, 1,317 posts &#x2013; Prince Pipes (&#064;prince_pipes) on Instagram: \"OFFICIAL ACCOUNT \nPlumbing | Agriculture | Drainage | Industrial \nBrand of the Year &#x2013; Pipes Category, INEX Realty+ Awards 2023\"",
           "canonical": "https://www.instagram.com/prince_pipes/",
@@ -301,7 +317,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.youtube.com/channel/UCGhM2x9hF0cCgz6hU8tnYqQ",
-          "responseMs": 457,
+          "responseMs": 557,
           "title": "Prince Pipes - YouTube",
           "description": "Prince Pipes and Fittings Limited is one of India’s leading integrated piping solutions providers and multi-polymer manufacturers. Established in 1987 and he...",
           "canonical": "https://www.youtube.com/channel/UCGhM2x9hF0cCgz6hU8tnYqQ",
@@ -350,7 +366,9 @@
                 "link": "https://www.youtube.com/watch?v=rVZweBcfHws",
                 "videoId": "rVZweBcfHws"
               }
-            ]
+            ],
+            "apiMetrics": null,
+            "latestVideoStats": []
           }
         },
         {
@@ -360,7 +378,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.linkedin.com/company/prince-pipes-and-fittings-ltd",
-          "responseMs": 830,
+          "responseMs": 736,
           "title": "Prince Pipes and Fittings Ltd | LinkedIn",
           "description": "Prince Pipes and Fittings Ltd | 65,190 followers on LinkedIn. OFFICIAL ACCOUNT \nPlumbing | Agriculture | Drainage | Industrial \nIndia Ki Pragati Ka Taj | 40 Years of Proven Expertise | With 40+ years of excellence, Prince Pipes is a leading pipes and fittings brand in India, delivering high-quality CPVC, UPVC, PPR, PP, HDPE, and LLDPE polymer solutions.\n\nBuilt on Ambition, Effort, and Excellence, we enable water management, sanitation, and infrastructure growth.\n\nProudly supporting Vocal for Local, we power India’s progress every day.",
           "canonical": "https://in.linkedin.com/company/prince-pipes-and-fittings-ltd",
@@ -373,11 +391,12 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://x.com/Prince_Pipes",
-          "responseMs": 1684,
+          "responseMs": 3344,
           "title": "",
           "description": "",
           "canonical": "",
-          "collectionStatus": "Public profile reached"
+          "collectionStatus": "Public profile reached",
+          "xApi": null
         }
       ],
       "summary": {
@@ -386,6 +405,10 @@
         "youtubeVideos30d": 3,
         "youtubeVideos90d": 11,
         "lastYoutubeVideoAt": "2026-04-17T11:35:30+00:00",
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
         "status": "Active in last 30 days"
       },
       "unavailableMetrics": [
@@ -406,7 +429,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.facebook.com/APLAPOLLO/",
-          "responseMs": 2287,
+          "responseMs": 896,
           "title": "Apollo Pipes Limited | Noida",
           "description": "Apollo Pipes Limited, Noida. 3,03,062 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 9,559 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;. Leading Manufacturer of Pipes & Fittings, Water Tank, Bathroom...",
           "canonical": "https://www.facebook.com/APLAPOLLO",
@@ -419,7 +442,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.instagram.com/apl_apollo/",
-          "responseMs": 509,
+          "responseMs": 530,
           "title": "Apollo Pipes Limited (&#064;apl_apollo) • Instagram photos and videos",
           "description": "179K followers, 8 following, 1,170 posts &#x2013; Apollo Pipes Limited (&#064;apl_apollo) on Instagram: \"APL Apollo is the Leading Manufacturer of Pipes and Fittings, Water Tanks, Bathroom Fittings, Kitchen Sinks, and Adhesives\n&#064;aplapollo_doorsandwindows\"",
           "canonical": "https://www.instagram.com/apl_apollo/",
@@ -432,7 +455,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.youtube.com/@aplapollo1557",
-          "responseMs": 561,
+          "responseMs": 507,
           "title": "Apollo Pipes Limited - YouTube",
           "description": "APOLLO PIPES LIMITED  is one of the key group companies of SUDESH GROUP. APL APOLLO is a leading Manufacturer of PVC Pipes & Fittings, Water Tanks, Bath Fitt...",
           "canonical": "https://www.youtube.com/channel/UC_VuCZ7Nr4VsfoS81V063Ig",
@@ -481,7 +504,9 @@
                 "link": "https://www.youtube.com/watch?v=taDvKXDN298",
                 "videoId": "taDvKXDN298"
               }
-            ]
+            ],
+            "apiMetrics": null,
+            "latestVideoStats": []
           }
         },
         {
@@ -491,7 +516,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.linkedin.com/company/apollo-pipes-ltd",
-          "responseMs": 1011,
+          "responseMs": 1024,
           "title": "APOLLO PIPES LTD | LinkedIn",
           "description": "APOLLO PIPES LTD | 43,985 followers on LinkedIn. APL Apollo, Leading Manufacturer of Pipes &amp; Fittings, Water Tanks, Adhesives, Bath Fittings &amp; Accessories, etc. | We are pleased to introduce ourselves as “Apollo Pipes Ltd” (Sudesh Group) incorporated in 2000 an ISO 9001:2008 certified Company and one of the leading and fastest-growing company, Manufacturing and Supplying uPVC Pipes, Ribbed Screen Pipes, Casing Pipes (CM &amp; CS), uPVC Column Pipes &amp; Plumbing Systems, HDPE Pipes, Ducts &amp; Sprinkler Systems, PPR Plumbing Pipes, PTMT taps, Health Faucets, a complete range of Bath Fittings &amp; Accessories, Water tanks, Adhesives, etc as per various National and International Standards. We have 5 manufacturing units located across the country.",
           "canonical": "https://in.linkedin.com/company/apollo-pipes-ltd",
@@ -504,6 +529,10 @@
         "youtubeVideos30d": 12,
         "youtubeVideos90d": 15,
         "lastYoutubeVideoAt": "2026-04-27T11:44:10+00:00",
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
         "status": "Active in last 30 days"
       },
       "unavailableMetrics": [
@@ -524,7 +553,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.facebook.com/ashirvadpipesofficial",
-          "responseMs": 1097,
+          "responseMs": 923,
           "title": "Ashirvad Pipes",
           "description": "Ashirvad Pipes.36,256 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 198 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;.25+yrs of excellence in Fluid Management solutions. \nThis is the official page of...",
           "canonical": "https://www.facebook.com/ashirvadpipesofficial",
@@ -537,7 +566,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.instagram.com/ashirvadbyaliaxis/",
-          "responseMs": 488,
+          "responseMs": 672,
           "title": "Ashirvad pipes (&#064;ashirvadbyaliaxis) • Instagram photos and videos",
           "description": "30K followers, 3 following, 825 posts &#x2013; Ashirvad pipes (&#064;ashirvadbyaliaxis) on Instagram: \"25+ years of excellence in Fluid Management solutions. This is our official page. Any communication received from other pages should not be relied.\"",
           "canonical": "https://www.instagram.com/ashirvadbyaliaxis/",
@@ -550,7 +579,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.youtube.com/@ashirvadpipesofficial",
-          "responseMs": 380,
+          "responseMs": 427,
           "title": "Ashirvad by aliaxis - YouTube",
           "description": "Ashirvad by Aliaxis, is a fully owned company of Aliaxis, and has been a key player in the region for 25+ years. Ashirvad by Aliaxis offers solutions in Buil...",
           "canonical": "https://www.youtube.com/channel/UCU3Mx2zBuwCmMoU4Tin-JSA",
@@ -599,7 +628,9 @@
                 "link": "https://www.youtube.com/watch?v=syCc26UBAkc",
                 "videoId": "syCc26UBAkc"
               }
-            ]
+            ],
+            "apiMetrics": null,
+            "latestVideoStats": []
           }
         },
         {
@@ -609,9 +640,9 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.linkedin.com/company/ashirvadpipes",
-          "responseMs": 1084,
+          "responseMs": 1443,
           "title": "Ashirvad by aliaxis | LinkedIn",
-          "description": "Ashirvad by aliaxis | 70,261 followers on LinkedIn. Innovating Water, Empowering Tomorrow. | Ashirvad by Aliaxis | Pioneering Fluid Management for Over 27 Years\n\nFor more than two decades, Ashirvad has been at the forefront of fluid management solutions in India—delivering innovative, reliable, and sustainable systems for homes, businesses, and industries. As a leader in plumbing, drainage, and water infrastructure, we are committed to enhancing water efficiency, sustainability, and ease of use through world-class technology and engineering excellence.\n\nAt Ashirvad, we believe in #CreatingBetterTomorrows by enabling seamless fluid flow, optimizing water usage, and building resilient infrastructure.",
+          "description": "Ashirvad by aliaxis | 70,262 followers on LinkedIn. Innovating Water, Empowering Tomorrow. | Ashirvad by Aliaxis | Pioneering Fluid Management for Over 27 Years\n\nFor more than two decades, Ashirvad has been at the forefront of fluid management solutions in India—delivering innovative, reliable, and sustainable systems for homes, businesses, and industries. As a leader in plumbing, drainage, and water infrastructure, we are committed to enhancing water efficiency, sustainability, and ease of use through world-class technology and engineering excellence.\n\nAt Ashirvad, we believe in #CreatingBetterTomorrows by enabling seamless fluid flow, optimizing water usage, and building resilient infrastructure.",
           "canonical": "https://in.linkedin.com/company/ashirvadpipes",
           "collectionStatus": "Public profile reached"
         }
@@ -622,6 +653,10 @@
         "youtubeVideos30d": 1,
         "youtubeVideos90d": 15,
         "lastYoutubeVideoAt": "2026-04-16T06:45:02+00:00",
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
         "status": "Active in last 30 days"
       },
       "unavailableMetrics": [
@@ -642,7 +677,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.facebook.com/wavinindia/",
-          "responseMs": 1792,
+          "responseMs": 1222,
           "title": "Wavin India | Noida",
           "description": "Wavin India, Noida. 3,41,227 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 10 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;. &#xb7; 376 &#xa85;&#xab9;&#xac0;&#xa82; &#xab9;&#xaa4;&#xabe;. Wavin India provides Innovative Plumbing & Drainage...",
           "canonical": "https://www.facebook.com/wavinindia",
@@ -655,7 +690,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.instagram.com/wavinindia/",
-          "responseMs": 471,
+          "responseMs": 531,
           "title": "Wavin India (&#064;wavinindia) • Instagram photos and videos",
           "description": "9,807 followers, 45 following, 1,176 posts &#x2013; Wavin India (&#064;wavinindia) on Instagram: \"Wavin India is a leading provider of Innovative Plumbing & Drainage Solutions that operates with two product brands: Wavin &&#xa0;Vectus&#xa0;by&#xa0;Wavin\"",
           "canonical": "https://www.instagram.com/wavinindia/",
@@ -668,7 +703,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.youtube.com/@WavinIndia",
-          "responseMs": 343,
+          "responseMs": 440,
           "title": "Wavin India - YouTube",
           "description": "Wavin India is a leading provider of Innovative Plumbing & Drainage Solutions that operates with two product brands: Wavin & Vectus by Wavin",
           "canonical": "https://www.youtube.com/channel/UCXu-9tKqgXCUrD0P4JLuyqA",
@@ -717,7 +752,9 @@
                 "link": "https://www.youtube.com/shorts/MFondH4kHK0",
                 "videoId": "MFondH4kHK0"
               }
-            ]
+            ],
+            "apiMetrics": null,
+            "latestVideoStats": []
           }
         },
         {
@@ -727,7 +764,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.linkedin.com/company/wavinindia",
-          "responseMs": 1021,
+          "responseMs": 978,
           "title": "Wavin India, an Orbia Business | LinkedIn",
           "description": "Wavin India, an Orbia Business | 19,783 followers on LinkedIn. Wavin India provides Innovative Plumbing &amp; Drainage Solutions that operates with two brands: Wavin &amp; Vectus by Wavin | Wavin is an innovative solution provider for the building and infrastructure industry across multiple continents. Backed up by 60+ years of expertise, we are geared up to tackle some of the world’s biggest challenges around water supply, sanitation, climate-resilient cities, and building performance.\n\nAt Wavin, we focus on creating positive change in the world and our passion is building livable and loveable places.",
           "canonical": "https://in.linkedin.com/company/wavinindia",
@@ -740,6 +777,10 @@
         "youtubeVideos30d": 0,
         "youtubeVideos90d": 0,
         "lastYoutubeVideoAt": "2025-05-31T13:19:40+00:00",
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
         "status": "No recent public RSS video"
       },
       "unavailableMetrics": [
@@ -760,9 +801,9 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.facebook.com/KPTPIPINGSYSTEMS/",
-          "responseMs": 1394,
+          "responseMs": 630,
           "title": "KPT PPR-C Piping Systems | Dehra Dun",
-          "description": "KPT PPR-C Piping Systems, Dehra Dun. 4,37,783 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 40 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;. &#xb7; 15 &#xa85;&#xab9;&#xac0;&#xa82; &#xab9;&#xaa4;&#xabe;. India&#x2019;s Largest Manufacturer of Food-Grade...",
+          "description": "KPT PPR-C Piping Systems, Dehra Dun. 4,37,782 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 40 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;. &#xb7; 15 &#xa85;&#xab9;&#xac0;&#xa82; &#xab9;&#xaa4;&#xabe;. India&#x2019;s Largest Manufacturer of Food-Grade...",
           "canonical": "https://www.facebook.com/KPTPIPINGSYSTEMS",
           "collectionStatus": "Public profile reached"
         },
@@ -773,7 +814,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.instagram.com/kptpipingsystem/",
-          "responseMs": 568,
+          "responseMs": 469,
           "title": "KPT Pipes (&#064;kptpipingsystem) • Instagram photos and videos",
           "description": "189K followers, 6 following, 1,557 posts &#x2013; KPT Pipes (&#064;kptpipingsystem) on Instagram: \"&#x1f91d; Official Piping Partner of &#064;royalchallengers.bengaluru\n&#x1f30e; India&#x2019;s Leading Manufacturer of PVC & #PPRPipes with a holistic range of up to 400 MM\"",
           "canonical": "https://www.instagram.com/kptpipingsystem/",
@@ -786,7 +827,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.linkedin.com/company/kpt-pp-r-piping-systems",
-          "responseMs": 906,
+          "responseMs": 974,
           "title": "KPT Piping System Private Limited | LinkedIn",
           "description": "KPT Piping System Private Limited | 5,509 followers on LinkedIn. The Largest Range available with the Most Technological Advance Applications in PP-RC Piping Systems. | Presenting 100% Food Grade, Fusion Welded, German Technology Piping System made from the Finest Raw Material R200P on this Planet with Advanced Applications for Water, Air &amp; Fire Lines.",
           "canonical": "https://in.linkedin.com/company/kpt-pp-r-piping-systems",
@@ -799,11 +840,12 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://x.com/PpPiping",
-          "responseMs": 1152,
+          "responseMs": 745,
           "title": "",
           "description": "",
           "canonical": "",
-          "collectionStatus": "Public profile reached"
+          "collectionStatus": "Public profile reached",
+          "xApi": null
         }
       ],
       "summary": {
@@ -812,6 +854,10 @@
         "youtubeVideos30d": null,
         "youtubeVideos90d": null,
         "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
         "status": "Profiles tracked; post metrics restricted"
       },
       "unavailableMetrics": [
@@ -832,7 +878,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.instagram.com/poloplastgroup/",
-          "responseMs": 460,
+          "responseMs": 480,
           "title": "POLOPLAST Group (&#064;poloplastgroup) • Instagram photos and videos",
           "description": "1,160 followers, 3 following, 242 posts &#x2013; POLOPLAST Group (&#064;poloplastgroup) on Instagram: \"&#x1f4a1; Innovative Kunststoffrohrsysteme \n&#x1f4a7; Abwasserentsorgung\n&#x1f3e0; Haustechnik | &#x1f3d7;&#xfe0f; Tiefbau\n&#x267b;&#xfe0f; Nachhaltig. Seit 70+ Jahren.\n&#x2b07;&#xfe0f; Mehr erfahren\"",
           "canonical": "https://www.instagram.com/poloplastgroup/",
@@ -845,7 +891,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.youtube.com/channel/UC-25ynaEycmiHZOhNTtE7vA",
-          "responseMs": 431,
+          "responseMs": 371,
           "title": "POLOPLAST GmbH & Co KG - YouTube",
           "description": "POLOPLAST - your specialist in plastic pipe systems.For seventy years, POLOPLAST has found innovative answers to technological questions involving plastic pi...",
           "canonical": "https://www.youtube.com/channel/UC-25ynaEycmiHZOhNTtE7vA",
@@ -894,7 +940,9 @@
                 "link": "https://www.youtube.com/watch?v=3WCFSquUKQ8",
                 "videoId": "3WCFSquUKQ8"
               }
-            ]
+            ],
+            "apiMetrics": null,
+            "latestVideoStats": []
           }
         },
         {
@@ -904,7 +952,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.linkedin.com/company/poloplast.com",
-          "responseMs": 1020,
+          "responseMs": 820,
           "title": "POLOPLAST GmbH & Co KG | LinkedIn",
           "description": "POLOPLAST GmbH &amp; Co KG | 3,299 followers on LinkedIn. Pure Progress.\nIhr Spezialist für Kunststoffrohrsysteme.                                      | POLOPLAST - your specialist in plastic pipe systems.\n \nFor seventy years, POLOPLAST has found innovative answers to technological questions involving plastic pipe systems and polymer compound materials. \n\nIntelligent systemic solutions in and around building services and civil engineering have helped the company to develop from a regional niche supplier to one of the leaders in the European pipe industry.",
           "canonical": "https://at.linkedin.com/company/poloplast.com",
@@ -917,6 +965,10 @@
         "youtubeVideos30d": 0,
         "youtubeVideos90d": 1,
         "lastYoutubeVideoAt": "2026-03-27T10:59:40+00:00",
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
         "status": "Active in last 90 days"
       },
       "unavailableMetrics": [
@@ -937,7 +989,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.facebook.com/REHAUIndia",
-          "responseMs": 1821,
+          "responseMs": 683,
           "title": "REHAU India",
           "description": "REHAU India.43,601 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 8 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;.REHAU is a leading system and service provider for \"Furniture, Building & Industrial...",
           "canonical": "https://www.facebook.com/REHAUIndia",
@@ -950,7 +1002,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.instagram.com/rehau.india/",
-          "responseMs": 482,
+          "responseMs": 512,
           "title": "REHAU India (&#064;rehau.india) • Instagram photos and videos",
           "description": "20K followers, 202 following, 1,305 posts &#x2013; REHAU India (&#064;rehau.india) on Instagram: \"REHAU Interior Solutions offers a curated design collection of modern surfaces and fabricated, custom-made components for millwork and cabinetry.\"",
           "canonical": "https://www.instagram.com/rehau.india/",
@@ -963,7 +1015,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.youtube.com/channel/UCukGuiMA6o3KvxAOVLq-BZA",
-          "responseMs": 565,
+          "responseMs": 1728,
           "title": "REHAU India - YouTube",
           "description": "We are a leading global supplier of furniture components with a focus on edgebands, surfaces, and roller shutters. Our loyal customers include the large-scal...",
           "canonical": "https://www.youtube.com/channel/UCukGuiMA6o3KvxAOVLq-BZA",
@@ -1012,7 +1064,9 @@
                 "link": "https://www.youtube.com/watch?v=TJxBtk7jDhw",
                 "videoId": "TJxBtk7jDhw"
               }
-            ]
+            ],
+            "apiMetrics": null,
+            "latestVideoStats": []
           }
         },
         {
@@ -1022,7 +1076,7 @@
           "ok": true,
           "status": 200,
           "finalUrl": "https://www.linkedin.com/company/rehau-india",
-          "responseMs": 890,
+          "responseMs": 847,
           "title": "REHAU India | LinkedIn",
           "description": "REHAU India | 16,976 followers on LinkedIn. The world's leading provider of Furniture Components | We are a leading global supplier of furniture components with a focus on edgebands, surfaces, and roller shutters. Our loyal customers include the large-scale industry and trade, as well as craft businesses or design studios. What unites them all is that they appreciate our complete package comprising the service, \"Made in Germany\" quality standards, and our integrated design matches for components with total seamless integration.",
           "canonical": "https://in.linkedin.com/company/rehau-india",
@@ -1035,6 +1089,10 @@
         "youtubeVideos30d": 12,
         "youtubeVideos90d": 15,
         "lastYoutubeVideoAt": "2026-04-29T06:53:17+00:00",
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
         "status": "Active in last 30 days"
       },
       "unavailableMetrics": [

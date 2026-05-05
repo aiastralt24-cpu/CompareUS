@@ -1,10 +1,13 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { performance } from "node:perf_hooks";
-import brands from "../data/brands.json" with { type: "json" };
+import competitorSets from "../data/competitor-sets.json" with { type: "json" };
 
 const outDir = path.resolve("data/generated");
 const outFile = path.join(outDir, "competitive-snapshot.json");
+const activeSetSlug = process.env.MONITOR_BRAND_SLUG || "astral-pipes";
+const activeSet = competitorSets.find((set) => set.slug === activeSetSlug) || competitorSets[0];
+const brands = activeSet.brands || [];
 const userAgent =
   "CompareUSCompetitiveStudyBot/0.1 (+public website audit; contact: internal research)";
 
@@ -592,6 +595,7 @@ for (const brand of brands) {
 const snapshot = {
   generatedAt: new Date().toISOString(),
   startedAt,
+  monitoredSet: activeSetSlug,
   dataMode: "collected_public_web",
   methodology:
     "Public website fetch of homepage, robots.txt, and sitemap.xml. Restricted social, SEO, AEO, and paid metrics are intentionally left null until approved sources are connected.",

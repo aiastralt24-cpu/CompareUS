@@ -2,13 +2,17 @@ import crypto from "node:crypto";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { performance } from "node:perf_hooks";
-import brands from "../data/brands.json" with { type: "json" };
+import competitorSets from "../data/competitor-sets.json" with { type: "json" };
 
 const stateDir = path.resolve("data/monitor");
 const stateFile = path.join(stateDir, "state.json");
 const generatedDir = path.resolve("data/generated");
 const eventsFile = path.join(generatedDir, "monitor-events.json");
 const socialSnapshotFile = path.join(generatedDir, "social-snapshot.json");
+const adSnapshotFile = path.join(generatedDir, "ad-library-snapshot.json");
+const activeSetSlug = process.env.MONITOR_BRAND_SLUG || "astral-pipes";
+const activeSet = competitorSets.find((set) => set.slug === activeSetSlug) || competitorSets[0];
+const brands = activeSet.brands || [];
 const userAgent =
   "CompareUSChangeMonitor/0.1 (+public competitor monitoring; contact: internal research)";
 
@@ -250,7 +254,7 @@ function createEvent({ brand, type, severity, title, detail, sourceUrl, evidence
   };
 }
 
-async function collectBrandState(brand, socialData = null) {
+async function collectBrandState(brand, socialData = null, adData = null) {
   const origin = new URL(brand.website).origin;
   const [home, robots, sitemap, llms] = await Promise.all([
     fetchText(brand.website),
@@ -325,6 +329,19 @@ async function collectBrandState(brand, socialData = null) {
                 link: video.link,
                 videoId: video.videoId
               })) || []
+        }
+      : null,
+    ads: adData
+      ? {
+          collectedAt: adData.generatedAt || null,
+          activeAds: adData.summary?.activeAds ?? 0,
+          latestAds:
+            adData.ads?.map((ad) => ({
+              id: ad.id || ad.ad_archive_id,
+              title: ad.title || ad.page_name || ad.body || "Meta ad creative",
+              startDate: ad.ad_delivery_start_time || ad.startDate || null,
+              sourceUrl: ad.ad_snapshot_url || ad.url || ad.evidenceUrl || null
+            })) || []
         }
       : null
   };
@@ -603,6 +620,29 @@ function diffBrand(brand, previous, current) {
     }
   }
 
+  if (previous.ads && current.ads) {
+    const previousAds = new Set((previous.ads.latestAds || []).map((ad) => ad.id || ad.sourceUrl));
+    const newAds = (current.ads.latestAds || []).filter((ad) => !previousAds.has(ad.id || ad.sourceUrl)).slice(0, 5);
+    for (const ad of newAds) {
+      events.push(
+        createEvent({
+          brand,
+          type: "ad_library_creative_detected",
+          severity: "High",
+          title: `${brand.name} launched a new Meta ad-library creative`,
+          detail: `"${ad.title}" appeared in the configured Meta Ad Library collector.`,
+          sourceUrl: ad.sourceUrl || brand.website,
+          evidence: {
+            adId: ad.id,
+            startDate: ad.startDate,
+            source: "Meta Ad Library snapshot"
+          },
+          confidence: "Verified ad-library evidence"
+        })
+      );
+    }
+  }
+
   return events;
 }
 
@@ -620,12 +660,25 @@ function formatTelegramEvent(event) {
     `🚨 ${event.severity} competitor update`,
     "",
     `Brand: ${event.brand}`,
+    `Module: ${formatEventType(event.type)}`,
     `Change: ${event.title}`,
     `Detail: ${event.detail}`,
     `First seen: ${event.firstSeenAt}`,
     `Source: ${event.sourceUrl}`,
-    `Confidence: ${event.confidence}`
+    `Confidence: ${event.confidence}`,
+    `Recommended action: ${recommendedActionForEvent(event)}`
   ].join("\n");
+}
+
+function formatEventType(value = "") {
+  return value.replaceAll("_", " ");
+}
+
+function recommendedActionForEvent(event) {
+  if (/schema|robots|sitemap|llms/i.test(event.type)) return "Ask SEO/AEO owner to review technical change and update the evidence log.";
+  if (/social|ad_library|campaign/i.test(event.type)) return "Ask brand team to review creative, messaging, platform, and campaign response.";
+  if (/security/i.test(event.type)) return "Ask web team to verify headers and privacy posture.";
+  return "Review evidence, classify business impact, and decide whether a response is needed.";
 }
 
 async function sendTelegram(events) {
@@ -655,12 +708,22 @@ const resetBaseline = process.env.MONITOR_RESET === "1";
 const previousState = resetBaseline ? { brands: {} } : await readJson(stateFile, { brands: {} });
 const existingEvents = resetBaseline ? { events: [] } : await readJson(eventsFile, { events: [] });
 const socialSnapshot = await readJson(socialSnapshotFile, { generatedAt: null, brands: [] });
+const adSnapshot = await readJson(adSnapshotFile, { generatedAt: null, brands: [] });
 const socialSnapshotByBrand = new Map(
   (socialSnapshot.brands || []).map((brand) => [
     brand.name,
     {
       ...brand,
       generatedAt: socialSnapshot.generatedAt
+    }
+  ])
+);
+const adSnapshotByBrand = new Map(
+  (adSnapshot.brands || []).map((brand) => [
+    brand.name,
+    {
+      ...brand,
+      generatedAt: adSnapshot.generatedAt
     }
   ])
 );
@@ -672,7 +735,7 @@ let newEvents = [];
 
 for (const brand of brands) {
   console.log(`Monitoring ${brand.name}...`);
-  const current = await collectBrandState(brand, socialSnapshotByBrand.get(brand.name));
+  const current = await collectBrandState(brand, socialSnapshotByBrand.get(brand.name), adSnapshotByBrand.get(brand.name));
   const previous = previousState.brands?.[brand.name];
   nextState.brands[brand.name] = current;
   newEvents.push(...diffBrand(brand, previous, current));
@@ -687,6 +750,7 @@ const telegram = await sendTelegram(newEvents);
 await writeJson(stateFile, nextState);
 await writeJson(eventsFile, {
   generatedAt: new Date().toISOString(),
+  monitoredSet: activeSetSlug,
   newEventCount: newEvents.length,
   telegram,
   events: allEvents

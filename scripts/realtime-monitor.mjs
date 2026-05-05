@@ -37,6 +37,18 @@ async function tick() {
     if (socialCollectCode !== 0) {
       console.log(`[realtime-monitor] social:collect exited with code ${socialCollectCode}`);
     }
+
+    const adCollectCode = await runCommand("npm", ["run", "ads:collect"]);
+    if (adCollectCode !== 0) {
+      console.log(`[realtime-monitor] ads:collect exited with code ${adCollectCode}`);
+    }
+
+    if (process.env.BROWSER_EVIDENCE_ENABLED === "1") {
+      const browserEvidenceCode = await runCommand("npm", ["run", "browser-evidence:collect"]);
+      if (browserEvidenceCode !== 0) {
+        console.log(`[realtime-monitor] browser-evidence:collect exited with code ${browserEvidenceCode}`);
+      }
+    }
   }
 
   const monitorCode = await runCommand("npm", ["run", "monitor"]);

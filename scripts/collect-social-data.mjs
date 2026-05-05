@@ -1,8 +1,13 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import brands from "../data/brands.json" with { type: "json" };
+import competitorSets from "../data/competitor-sets.json" with { type: "json" };
 
 const outFile = path.resolve("data/generated/social-snapshot.json");
+const activeSetSlug = process.env.MONITOR_BRAND_SLUG || "astral-pipes";
+const activeSet = competitorSets.find((set) => set.slug === activeSetSlug) || competitorSets[0];
+const brands = activeSet.brands || [];
+const youtubeApiKey = process.env.YOUTUBE_API_KEY;
+const xBearerToken = process.env.X_BEARER_TOKEN;
 const userAgent =
   "CompareUS-SocialMonitor/1.0 (+https://github.com/aiastralt24-cpu/CompareUS; public competitive evidence monitor)";
 
@@ -51,6 +56,23 @@ async function fetchText(url, { timeoutMs = 16000, retries = 1 } = {}) {
     text: "",
     responseMs: null,
     error: lastError?.message || "Fetch failed"
+  };
+}
+
+async function fetchJson(url, headers = {}) {
+  const response = await fetch(url, {
+    headers: {
+      "user-agent": userAgent,
+      accept: "application/json",
+      ...headers
+    }
+  });
+  const json = await response.json();
+  return {
+    ok: response.ok,
+    status: response.status,
+    url: response.url,
+    json
   };
 }
 
@@ -104,6 +126,16 @@ function youtubeChannelIdFrom(url, html = "") {
   ]);
 }
 
+function xUsernameFrom(url = "") {
+  try {
+    const parsed = new URL(url);
+    const [, username] = parsed.pathname.split("/");
+    return username ? username.replace("@", "") : "";
+  } catch {
+    return "";
+  }
+}
+
 function parseYoutubeFeed(xml = "") {
   const entries = [...xml.matchAll(/<entry>([\s\S]*?)<\/entry>/g)].map(([, block]) => {
     const title = extractFirst(block, [/<title[^>]*>([\s\S]*?)<\/title>/i]);
@@ -143,6 +175,90 @@ function summarizeYoutube(entries) {
   };
 }
 
+async function collectYoutubeApiMetrics(channelId, entries) {
+  if (!youtubeApiKey || !channelId) return null;
+  const channelUrl = new URL("https://www.googleapis.com/youtube/v3/channels");
+  channelUrl.searchParams.set("part", "snippet,statistics");
+  channelUrl.searchParams.set("id", channelId);
+  channelUrl.searchParams.set("key", youtubeApiKey);
+  const channel = await fetchJson(channelUrl.toString());
+  const channelItem = channel.json?.items?.[0];
+  const videoIds = entries.map((entry) => entry.videoId).filter(Boolean).slice(0, 10);
+  let videoStats = [];
+  if (videoIds.length) {
+    const videosUrl = new URL("https://www.googleapis.com/youtube/v3/videos");
+    videosUrl.searchParams.set("part", "snippet,statistics");
+    videosUrl.searchParams.set("id", videoIds.join(","));
+    videosUrl.searchParams.set("key", youtubeApiKey);
+    const videos = await fetchJson(videosUrl.toString());
+    videoStats = (videos.json?.items || []).map((item) => ({
+      videoId: item.id,
+      title: item.snippet?.title,
+      publishedAt: item.snippet?.publishedAt,
+      statistics: {
+        viewCount: Number(item.statistics?.viewCount || 0),
+        likeCount: Number(item.statistics?.likeCount || 0),
+        commentCount: Number(item.statistics?.commentCount || 0)
+      },
+      evidence: {
+        source: "YouTube Data API",
+        collectedAt: new Date().toISOString(),
+        method: "videos.list statistics",
+        confidence: "Live API data"
+      }
+    }));
+  }
+  return {
+    ok: channel.ok,
+    status: channel.status,
+    channel: channelItem
+      ? {
+          title: channelItem.snippet?.title,
+          subscriberCount: Number(channelItem.statistics?.subscriberCount || 0),
+          hiddenSubscriberCount: Boolean(channelItem.statistics?.hiddenSubscriberCount),
+          viewCount: Number(channelItem.statistics?.viewCount || 0),
+          videoCount: Number(channelItem.statistics?.videoCount || 0),
+          evidence: {
+            source: "YouTube Data API",
+            collectedAt: new Date().toISOString(),
+            method: "channels.list statistics",
+            confidence: "Live API data"
+          }
+        }
+      : null,
+    latestVideoStats: videoStats
+  };
+}
+
+async function collectXApiMetrics(url) {
+  const username = xUsernameFrom(url);
+  if (!xBearerToken || !username) return null;
+  const apiUrl = `https://api.x.com/2/users/by/username/${encodeURIComponent(username)}?user.fields=created_at,description,public_metrics,verified`;
+  const response = await fetchJson(apiUrl, {
+    authorization: `Bearer ${xBearerToken}`
+  });
+  return {
+    ok: response.ok,
+    status: response.status,
+    username,
+    data: response.json?.data
+      ? {
+          id: response.json.data.id,
+          name: response.json.data.name,
+          username: response.json.data.username,
+          verified: response.json.data.verified,
+          publicMetrics: response.json.data.public_metrics,
+          evidence: {
+            source: "X API",
+            collectedAt: new Date().toISOString(),
+            method: "users/by/username public_metrics",
+            confidence: "Live API data"
+          }
+        }
+      : null
+  };
+}
+
 async function collectProfile(brandName, platform, url) {
   const profile = await fetchText(url);
   const meta = extractMeta(profile.text);
@@ -160,6 +276,15 @@ async function collectProfile(brandName, platform, url) {
     collectionStatus: profile.ok ? "Public profile reached" : "Profile restricted or unavailable"
   };
 
+  if (platform === "x") {
+    const xApi = await collectXApiMetrics(url);
+    return {
+      ...base,
+      xApi,
+      collectionStatus: xApi?.data ? "X API public metrics collected" : base.collectionStatus
+    };
+  }
+
   if (platform !== "youtube") return base;
 
   const channelId = youtubeChannelIdFrom(url, profile.text);
@@ -174,13 +299,19 @@ async function collectProfile(brandName, platform, url) {
   const feedUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
   const feed = await fetchText(feedUrl, { timeoutMs: 16000, retries: 1 });
   const entries = feed.ok ? parseYoutubeFeed(feed.text) : [];
+  const youtube = summarizeYoutube(entries);
+  const youtubeApi = await collectYoutubeApiMetrics(channelId, entries);
   return {
     ...base,
     channelId,
     feedUrl,
     feedStatus: feed.status,
-    collectionStatus: feed.ok ? "YouTube RSS collected" : "YouTube RSS unavailable",
-    youtube: summarizeYoutube(entries)
+    collectionStatus: youtubeApi?.channel ? "YouTube API metrics collected" : feed.ok ? "YouTube RSS collected" : "YouTube RSS unavailable",
+    youtube: {
+      ...youtube,
+      apiMetrics: youtubeApi?.channel || null,
+      latestVideoStats: youtubeApi?.latestVideoStats || []
+    }
   };
 }
 
@@ -193,6 +324,10 @@ function summarizeBrand(profiles) {
     youtubeVideos30d: youtube?.videosIn30Days ?? null,
     youtubeVideos90d: youtube?.videosIn90Days ?? null,
     lastYoutubeVideoAt: youtube?.lastVideoAt ?? null,
+    youtubeSubscriberCount: youtube?.apiMetrics?.subscriberCount ?? null,
+    youtubeChannelViews: youtube?.apiMetrics?.viewCount ?? null,
+    youtubeVideoCount: youtube?.apiMetrics?.videoCount ?? null,
+    xFollowerCount: profiles.find((profile) => profile.platform === "x")?.xApi?.data?.publicMetrics?.followers_count ?? null,
     status:
       profiles.length === 0
         ? "No handles in registry"
@@ -222,12 +357,15 @@ async function main() {
 
   const output = {
     generatedAt: new Date().toISOString(),
+    monitoredSet: activeSetSlug,
     methodology: {
       mode: "public social evidence collector",
       collected: [
         "Official social URL reachability and response metadata",
         "Public title/description/canonical metadata where platforms allow access",
-        "YouTube public RSS latest-video cadence when channel id can be resolved"
+        "YouTube public RSS latest-video cadence when channel id can be resolved",
+        "YouTube Data API statistics when YOUTUBE_API_KEY is configured",
+        "X API public metrics when X_BEARER_TOKEN is configured"
       ],
       notCollectedWithoutAccess: restrictedMetricNotes
     },

@@ -4,18 +4,23 @@
     "build": "vite build",
     "collect": "node scripts/collect-public-data.mjs",
     "social:collect": "node scripts/collect-social-data.mjs",
+    "ads:collect": "node scripts/collect-ad-library-data.mjs",
+    "browser-evidence:collect": "node scripts/collect-browser-evidence.mjs",
     "monitor": "node scripts/monitor-changes.mjs",
     "monitor:reset": "MONITOR_RESET=1 node scripts/monitor-changes.mjs",
     "monitor:realtime": "node scripts/realtime-monitor.mjs",
     "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.105.3",
     "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "typescript": "latest",
+    "lucide-react": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "lucide-react": "latest"
+    "typescript": "latest",
+    "vite": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "playwright": "^1.59.1"
+  }
 }

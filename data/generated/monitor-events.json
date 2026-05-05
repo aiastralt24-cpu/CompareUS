@@ -1,12 +1,30 @@
 {
-  "generatedAt": "2026-05-05T07:39:38.580Z",
-  "newEventCount": 9,
+  "generatedAt": "2026-05-05T08:25:00.534Z",
+  "monitoredSet": "astral-pipes",
+  "newEventCount": 1,
   "telegram": {
     "attempted": false,
     "sent": 0,
     "reason": "Telegram env vars missing or no events"
   },
   "events": [
+    {
+      "id": "782cdabc8e46e321",
+      "brand": "REHAU India",
+      "type": "llms_txt_changed",
+      "severity": "Medium",
+      "title": "REHAU India changed llms.txt",
+      "detail": "llms.txt availability or content changed. Review AI crawler guidance.",
+      "sourceUrl": "https://www.rehau.com/llms.txt",
+      "firstSeenAt": "2026-05-05T08:25:00.524Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "beforeStatus": 200,
+        "afterStatus": 200,
+        "beforeHash": "13a9dad6bd9634dbe2609578d978f3dc40ee50eccea35316bc7977ce676f5722",
+        "afterHash": "c73e31e2f52e5d4548518441e4bfebf30dc75b9702110f71c8a1e26332ee1c98"
+      }
+    },
     {
       "id": "84c200db40354634",
       "brand": "REHAU India",

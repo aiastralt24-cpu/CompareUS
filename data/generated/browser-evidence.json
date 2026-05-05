@@ -1,0 +1,12 @@
+{
+  "generatedAt": "2026-05-05T08:26:44.473Z",
+  "monitoredSet": "astral-pipes",
+  "methodology": {
+    "mode": "Approved browser evidence collector",
+    "collected": "Screenshots and visible page metadata for restricted social platforms",
+    "confidence": "Browser evidence when Playwright is installed and pages are reachable"
+  },
+  "brands": [],
+  "status": "Restricted",
+  "unavailableReason": "Browser launch was blocked by the local sandbox or OS permissions. Run outside the sandbox or with approved browser automation permissions."
+}

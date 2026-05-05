@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-05-05T07:39:24.498Z",
+  "generatedAt": "2026-05-05T08:24:45.722Z",
   "brands": {
     "Astral Pipes": {
       "name": "Astral Pipes",
       "website": "https://www.astralpipes.com/",
-      "collectedAt": "2026-05-05T07:39:25.157Z",
+      "collectedAt": "2026-05-05T08:24:46.305Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.astralpipes.com/",
-        "responseMs": 439,
+        "responseMs": 447,
         "htmlHash": "d41575b5e78f0bbb4ec3f082ed1efc4750a4999c1242643bf2c4c9c3f7411607",
         "textHash": "d2358a8cf5eda0096ed67b65c3ad56ef17124bd246a3b8c86f7241a17270a637",
         "schemaHash": "89391c0c2e34853731c3b624960e37caa5f5e7c812813445967eca5a9afd305d",
@@ -778,7 +778,7 @@
         }
       ],
       "social": {
-        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "collectedAt": "2026-05-05T08:15:46.917Z",
         "profilesTracked": 5,
         "reachableProfiles": 5,
         "youtubeVideos30d": 15,
@@ -816,18 +816,23 @@
             "videoId": "pqm1eEdcVGg"
           }
         ]
+      },
+      "ads": {
+        "collectedAt": "2026-05-05T07:59:34.401Z",
+        "activeAds": 0,
+        "latestAds": []
       }
     },
     "Supreme Pipes": {
       "name": "Supreme Pipes",
       "website": "https://www.supreme.co.in/",
-      "collectedAt": "2026-05-05T07:39:27.172Z",
+      "collectedAt": "2026-05-05T08:24:48.001Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.supreme.co.in/",
-        "responseMs": 1997,
-        "htmlHash": "484f2573a437de3a32bcae6e19465471f14b75ef546ea4cdedf8f151f8544108",
+        "responseMs": 1616,
+        "htmlHash": "7a750edab26471c55d1fa3f2f865847c4d68393b376dcefa2cc7bb0e778435eb",
         "textHash": "82acc127fa1b9b7b82a833bf715d48699e4967e9e49be215c9d0cc462489241c",
         "schemaHash": "829e5aff0046b74b54aad73c2faa4a7cc4a1a4f54c0be643295eac6baf6af6e3",
         "schemaTypes": [
@@ -16986,7 +16991,7 @@
         }
       ],
       "social": {
-        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "collectedAt": "2026-05-05T08:15:46.917Z",
         "profilesTracked": 4,
         "reachableProfiles": 4,
         "youtubeVideos30d": 2,
@@ -17024,17 +17029,22 @@
             "videoId": "AGJ2hOU91OQ"
           }
         ]
+      },
+      "ads": {
+        "collectedAt": "2026-05-05T07:59:34.401Z",
+        "activeAds": 0,
+        "latestAds": []
       }
     },
     "Prince Pipes": {
       "name": "Prince Pipes",
       "website": "https://www.princepipes.com/",
-      "collectedAt": "2026-05-05T07:39:27.460Z",
+      "collectedAt": "2026-05-05T08:24:48.136Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.princepipes.com/",
-        "responseMs": 284,
+        "responseMs": 132,
         "htmlHash": "90858ae7cc69c332e2399788e46eafaa2bb97021f90c9721fe06899d2cf07773",
         "textHash": "a3ac944b28cba3c133aab53be82a502ddc6fcea55347c10be9c32fe3d8948c97",
         "schemaHash": "78bd732056270d71c73be7930e7f6292e3e1f3f999cbc664e5c69b001e3c2f52",
@@ -17516,7 +17526,7 @@
         }
       ],
       "social": {
-        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "collectedAt": "2026-05-05T08:15:46.917Z",
         "profilesTracked": 5,
         "reachableProfiles": 5,
         "youtubeVideos30d": 3,
@@ -17554,18 +17564,23 @@
             "videoId": "rVZweBcfHws"
           }
         ]
+      },
+      "ads": {
+        "collectedAt": "2026-05-05T07:59:34.401Z",
+        "activeAds": 0,
+        "latestAds": []
       }
     },
     "Apollo Pipes": {
       "name": "Apollo Pipes",
       "website": "https://www.apollopipes.com/",
-      "collectedAt": "2026-05-05T07:39:28.777Z",
+      "collectedAt": "2026-05-05T08:24:49.281Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.apollopipes.com/",
-        "responseMs": 1311,
-        "htmlHash": "c35eab9e7f4f7ace7de08027e01763e60410ec7d3320bb1f9ce252114efb8141",
+        "responseMs": 1135,
+        "htmlHash": "e9f7299026707adc40fc02bf2e28658dc53a0aaef24f8d748898b15ab3db1b85",
         "textHash": "e24975753ae842d436a984a1ccdd8e5a4c4fd59bbca6459b77f336c904be52d5",
         "schemaHash": "90e1e03ceb13913998939bc89cd0911a2279b57107eccf99a851273eb448c169",
         "schemaTypes": [
@@ -17613,7 +17628,7 @@
         "ok": false,
         "status": 404,
         "url": "https://www.apollopipes.com/llms.txt",
-        "hash": "f9860f7b178c7a2a7c825bd11b3235e2ffca6e5132d6d8d764bd46b0d2a2bfa1"
+        "hash": "60a57907bdb4c708417bd7caa0af48a255d1544b478b7a9a46bb52bde87c3b3d"
       },
       "sitemap": {
         "ok": true,
@@ -18993,7 +19008,7 @@
         }
       ],
       "social": {
-        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "collectedAt": "2026-05-05T08:15:46.917Z",
         "profilesTracked": 4,
         "reachableProfiles": 4,
         "youtubeVideos30d": 12,
@@ -19031,18 +19046,23 @@
             "videoId": "taDvKXDN298"
           }
         ]
+      },
+      "ads": {
+        "collectedAt": "2026-05-05T07:59:34.401Z",
+        "activeAds": 0,
+        "latestAds": []
       }
     },
     "Ashirvad by Aliaxis": {
       "name": "Ashirvad by Aliaxis",
       "website": "https://www.ashirvad.com/",
-      "collectedAt": "2026-05-05T07:39:30.830Z",
+      "collectedAt": "2026-05-05T08:24:51.416Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.ashirvad.com/",
-        "responseMs": 1677,
-        "htmlHash": "037ab6edc50380200d228b221c3c2f86a421f181162bee43c6b2d5ffabbec771",
+        "responseMs": 1899,
+        "htmlHash": "2abc2ee858026c8c69682bb5a5700f027db641969f83ba51f66c8cea4ef0b417",
         "textHash": "2c380067f716de31bc92ec6c1543a18bd7e21815c89619ca0b8b37d2c4448029",
         "schemaHash": "dac3cbd059ac750f0932cc8dee467b681a1035f6bf43cf3fb46b7e21ceae6f81",
         "schemaTypes": [
@@ -19359,7 +19379,7 @@
         }
       ],
       "social": {
-        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "collectedAt": "2026-05-05T08:15:46.917Z",
         "profilesTracked": 4,
         "reachableProfiles": 4,
         "youtubeVideos30d": 1,
@@ -19397,18 +19417,23 @@
             "videoId": "syCc26UBAkc"
           }
         ]
+      },
+      "ads": {
+        "collectedAt": "2026-05-05T07:59:34.401Z",
+        "activeAds": 0,
+        "latestAds": []
       }
     },
     "Wavin India": {
       "name": "Wavin India",
       "website": "https://wavin.com/in",
-      "collectedAt": "2026-05-05T07:39:31.924Z",
+      "collectedAt": "2026-05-05T08:24:52.836Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://wavin.com/in",
-        "responseMs": 630,
-        "htmlHash": "66f9c310e9e82d13489d536e95e4b6a2c056f9fa3586bee75933ae1e86a61a04",
+        "responseMs": 747,
+        "htmlHash": "fc65c44d72849b88751e2c6032bc457e1aa3afb08ea2506d6d8c3a7fc10c1fb7",
         "textHash": "417fb97473250b9f79821136e9b712435a4b00f87e59dc997a01307e1ee76528",
         "schemaHash": "4bee440fe6fefc82f70dc5a63af2c83fc75d742d55766c68135358e3dc0435bc",
         "schemaTypes": [
@@ -19455,7 +19480,7 @@
         "ok": false,
         "status": 404,
         "url": "https://wavin.com/llms.txt",
-        "hash": "860ebdcc24c11c2f99ba43202d558633f82c57adaa98f3ae3d0651cca1b71bb9"
+        "hash": "29c1cd074f1d5bcd50f6358163878a54b0bab8f13fc5054c669900a27435f6ef"
       },
       "sitemap": {
         "ok": false,
@@ -19552,7 +19577,7 @@
         }
       ],
       "social": {
-        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "collectedAt": "2026-05-05T08:15:46.917Z",
         "profilesTracked": 4,
         "reachableProfiles": 4,
         "youtubeVideos30d": 0,
@@ -19590,18 +19615,23 @@
             "videoId": "MFondH4kHK0"
           }
         ]
+      },
+      "ads": {
+        "collectedAt": "2026-05-05T07:59:34.401Z",
+        "activeAds": 0,
+        "latestAds": []
       }
     },
     "KPT Pipes": {
       "name": "KPT Pipes",
       "website": "https://www.kptpipes.com",
-      "collectedAt": "2026-05-05T07:39:34.801Z",
+      "collectedAt": "2026-05-05T08:24:57.679Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.kptpipes.com/",
-        "responseMs": 2873,
-        "htmlHash": "0edb87e11f9529a466f6955bd40b70b9d2021408ae9e28f374b85910541951a7",
+        "responseMs": 4836,
+        "htmlHash": "e250cda019c79ea90eef292c45d16c4b32ca840fad3422bc362d7266cd59d696",
         "textHash": "034d798b4d2c0d6d61fffaaf75f1920e17549530f71fdb36fcc38b91ba0360c1",
         "schemaHash": "8fc4f172fc07fb7c26cb416e7ef13236e3f569ca1e044a2e8f051ec805331781",
         "schemaTypes": [
@@ -22153,24 +22183,29 @@
         }
       ],
       "social": {
-        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "collectedAt": "2026-05-05T08:15:46.917Z",
         "profilesTracked": 4,
         "reachableProfiles": 4,
         "youtubeVideos30d": null,
         "youtubeVideos90d": null,
         "lastYoutubeVideoAt": null,
         "latestYoutubeVideos": []
+      },
+      "ads": {
+        "collectedAt": "2026-05-05T07:59:34.401Z",
+        "activeAds": 0,
+        "latestAds": []
       }
     },
     "POLOPLAST": {
       "name": "POLOPLAST",
       "website": "https://www.poloplast.com/en-at.html",
-      "collectedAt": "2026-05-05T07:39:35.954Z",
+      "collectedAt": "2026-05-05T08:24:59.169Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.poloplast.com/en-at.html",
-        "responseMs": 1139,
+        "responseMs": 1486,
         "htmlHash": "10190072d7047567ed236630347e54661c546125a3bb16e42ab3257a9e05c28b",
         "textHash": "20f10cdd429982a68ccf999a2b7126881d276af8e0997687a90f51e6bc1c80b5",
         "schemaHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -22376,7 +22411,7 @@
         }
       ],
       "social": {
-        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "collectedAt": "2026-05-05T08:15:46.917Z",
         "profilesTracked": 3,
         "reachableProfiles": 3,
         "youtubeVideos30d": 0,
@@ -22414,18 +22449,23 @@
             "videoId": "3WCFSquUKQ8"
           }
         ]
+      },
+      "ads": {
+        "collectedAt": "2026-05-05T07:59:34.401Z",
+        "activeAds": 0,
+        "latestAds": []
       }
     },
     "REHAU India": {
       "name": "REHAU India",
       "website": "https://www.rehau.com/in-en",
-      "collectedAt": "2026-05-05T07:39:38.571Z",
+      "collectedAt": "2026-05-05T08:25:00.524Z",
       "homepage": {
         "ok": true,
         "status": 200,
         "finalUrl": "https://www.rehau.com/in-en",
-        "responseMs": 1712,
-        "htmlHash": "53e9cca61e355de167a63478fe4100c24cf440303482b0c1e8ab9ebe255bb419",
+        "responseMs": 1351,
+        "htmlHash": "3a4107ca0c0ce2d6aa5a8c5e34ad3b1d513afbea916f68a15ee168f13d4382d2",
         "textHash": "c8e7f2b8b29565be433ad7eafa26929abd975ac183e5d8a527227422fd1081c2",
         "schemaHash": "6cff479623bbbad460047a0515f17addb03bd825a0c2da69dd329fba9e6890e7",
         "schemaTypes": [
@@ -22469,7 +22509,7 @@
         "ok": true,
         "status": 200,
         "url": "https://www.rehau.com/llms.txt",
-        "hash": "13a9dad6bd9634dbe2609578d978f3dc40ee50eccea35316bc7977ce676f5722"
+        "hash": "c73e31e2f52e5d4548518441e4bfebf30dc75b9702110f71c8a1e26332ee1c98"
       },
       "sitemap": {
         "ok": true,
@@ -22621,7 +22661,7 @@
         }
       ],
       "social": {
-        "collectedAt": "2026-05-05T07:34:19.563Z",
+        "collectedAt": "2026-05-05T08:15:46.917Z",
         "profilesTracked": 4,
         "reachableProfiles": 4,
         "youtubeVideos30d": 12,
@@ -22659,6 +22699,11 @@
             "videoId": "TJxBtk7jDhw"
           }
         ]
+      },
+      "ads": {
+        "collectedAt": "2026-05-05T07:59:34.401Z",
+        "activeAds": 0,
+        "latestAds": []
       }
     }
   }
