@@ -603,6 +603,34 @@ button {
   padding-top: 16px;
 }
 
+.taxonomy-panel {
+  margin-top: 14px;
+}
+
+.taxonomy-note {
+  margin-bottom: 12px;
+  color: #42526b;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.taxonomy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.taxonomy-grid article {
+  padding: 13px;
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.taxonomy-grid h3 {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
 .content-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 340px;
@@ -1876,7 +1904,8 @@ tbody tr.selected-row {
   }
 
   .universe-summary,
-  .universe-detail-grid {
+  .universe-detail-grid,
+  .taxonomy-grid {
     grid-template-columns: 1fr;
   }
 

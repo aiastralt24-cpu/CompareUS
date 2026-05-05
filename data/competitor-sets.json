@@ -2,6 +2,7 @@
   {
     "slug": "astral-pipes",
     "ownedBrandSlug": "astral-pipes",
+    "taxonomyRef": "astral-pipes",
     "status": "Live",
     "brands": [
       {
@@ -118,30 +119,35 @@
   {
     "slug": "astral-adhesives",
     "ownedBrandSlug": "astral-adhesives",
+    "taxonomyRef": "astral-adhesives",
     "status": "Setup Required",
     "brands": []
   },
   {
     "slug": "astral-bathware",
     "ownedBrandSlug": "astral-bathware",
+    "taxonomyRef": "astral-bathware",
     "status": "Setup Required",
     "brands": []
   },
   {
     "slug": "astral-paints",
     "ownedBrandSlug": "astral-paints",
+    "taxonomyRef": "astral-paints",
     "status": "Setup Required",
     "brands": []
   },
   {
-    "slug": "true-build",
-    "ownedBrandSlug": "true-build",
-    "status": "Setup Required",
+    "slug": "probit",
+    "ownedBrandSlug": "probit",
+    "taxonomyRef": "probit",
+    "status": "Needs Confirmation",
     "brands": []
   },
   {
     "slug": "astral-foundation",
     "ownedBrandSlug": "astral-foundation",
+    "taxonomyRef": "astral-foundation",
     "status": "Setup Required",
     "brands": []
   }

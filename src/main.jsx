@@ -31,6 +31,7 @@ import {
 } from "lucide-react";
 import astralBrands from "../data/astral-brands.json";
 import competitorSets from "../data/competitor-sets.json";
+import competitorTaxonomy from "../data/competitor-taxonomy.json";
 import snapshot from "../data/generated/competitive-snapshot.json";
 import monitorEvents from "../data/generated/monitor-events.json";
 import socialSnapshot from "../data/generated/social-snapshot.json";
@@ -254,6 +255,7 @@ const brandColors = {
 };
 
 const socialByBrand = new Map((socialSnapshot.brands || []).map((brand) => [brand.name, brand]));
+const taxonomyByBrandSlug = new Map(competitorTaxonomy.map((entry) => [entry.ownedBrandSlug, entry]));
 
 const metricHelp = {
   "Public website":
@@ -404,21 +406,27 @@ const campaigns = (monitorEvents.events || [])
 
 const ownedBrandHealth = astralBrands.map((ownedBrand) => {
   const primary = ownedBrand.slug === "astral-pipes" ? brands.find((brand) => brand.name === "Astral Pipes") : null;
-  const pointers = generateTopPointers({ ownedBrand, primary });
+  const taxonomy = taxonomyByBrandSlug.get(ownedBrand.slug);
+  const pointers = generateTopPointers({ ownedBrand, primary, taxonomy });
   return {
     ...ownedBrand,
     score: primary?.score ?? null,
     scoreLabel: primary ? `${primary.score}/100` : "--/100",
     dataStatus: primary ? "Live" : ownedBrand.status,
     pointers,
+    taxonomy,
     primary
   };
 });
 
-function generateTopPointers({ ownedBrand, primary }) {
+function generateTopPointers({ ownedBrand, primary, taxonomy }) {
   if (!primary) {
+    const taxonomyCount = taxonomy ? Object.values(taxonomy.segments || {}).flat().length : 0;
     return [
       createPointer("Setup", "High", "Registry", `${ownedBrand.name} needs its verified official social handles before scoring can start.`, ownedBrand.evidence.evidenceUrl),
+      taxonomyCount
+        ? createPointer("Setup", "High", "Competitor taxonomy", `${taxonomyCount} competitor and comparable entities are mapped; next step is official URL verification.`, ownedBrand.evidence.evidenceUrl)
+        : createPointer("Setup", "High", "Competitor taxonomy", "Competitor taxonomy is not mapped yet.", ownedBrand.evidence.evidenceUrl),
       createPointer("Setup", "High", "Website", `Run public website collection for ${ownedBrand.website}.`, ownedBrand.website),
       createPointer("Setup", "Medium", "Social", "Connect YouTube/X APIs or browser evidence before showing follower or engagement metrics.", ownedBrand.evidence.evidenceUrl),
       createPointer("Setup", "Medium", "Campaigns", "Add Meta Ad Library page IDs and campaign keywords for active creative monitoring.", ownedBrand.evidence.evidenceUrl),
@@ -428,7 +436,7 @@ function generateTopPointers({ ownedBrand, primary }) {
       createPointer("Setup", "Low", "Monitoring", "Add Telegram routing for brand-specific alerts.", ownedBrand.evidence.evidenceUrl),
       createPointer("Setup", "Low", "Evidence", "Store every metric with source, collection method, confidence, and evidence URL.", ownedBrand.evidence.evidenceUrl),
       createPointer("Setup", "Low", "Governance", "Keep this card in Setup Required until factual baselines are collected.", ownedBrand.evidence.evidenceUrl)
-    ];
+    ].slice(0, 10);
   }
 
   const audit = primary.auditScores || {};
@@ -1148,7 +1156,8 @@ function TopPointersPanel({ pointers, title }) {
 }
 
 function SetupBrandDashboard({ ownedBrand, user, collapsed, setCollapsed, onHome, onLogout }) {
-  const setupPointers = generateTopPointers({ ownedBrand, primary: null });
+  const taxonomy = taxonomyByBrandSlug.get(ownedBrand.slug);
+  const setupPointers = generateTopPointers({ ownedBrand, primary: null, taxonomy });
   return (
     <main className="app-shell">
       <Sidebar collapsed={collapsed} activeModule="overview" onModule={() => {}} onHome={onHome} />
@@ -1212,10 +1221,59 @@ function SetupBrandDashboard({ ownedBrand, user, collapsed, setCollapsed, onHome
               </div>
             </section>
           </section>
+          <CompetitorTaxonomyPanel taxonomy={taxonomy} />
         </section>
       </section>
     </main>
   );
+}
+
+function CompetitorTaxonomyPanel({ taxonomy }) {
+  if (!taxonomy) {
+    return (
+      <section className="panel taxonomy-panel">
+        <div className="panel-heading">
+          <div>
+            <h2>Competitor taxonomy</h2>
+            <p>No competitor taxonomy has been mapped for this brand yet.</p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  return (
+    <section className="panel taxonomy-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>Competitor taxonomy</h2>
+          <p>{taxonomy.category}</p>
+        </div>
+        {taxonomy.needsConfirmation ? <span className="monitor-count setup">Needs Confirmation</span> : null}
+      </div>
+      {taxonomy.note ? <p className="taxonomy-note">{taxonomy.note}</p> : null}
+      {taxonomy.assumption ? <p className="taxonomy-note">{taxonomy.assumption}</p> : null}
+      <div className="taxonomy-grid">
+        {Object.entries(taxonomy.segments || {}).map(([segment, items]) => (
+          <article key={segment}>
+            <h3>{formatSegmentLabel(segment)}</h3>
+            <div className="pending-list">
+              {items.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
+            </div>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function formatSegmentLabel(value) {
+  return value
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replaceAll("_", " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
 function Sidebar({ collapsed, activeModule, onModule, onHome }) {

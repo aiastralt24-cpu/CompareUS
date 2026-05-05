@@ -60,19 +60,19 @@
     "competitorSetSlug": "astral-paints"
   },
   {
-    "slug": "true-build",
-    "name": "True Build",
-    "category": "Construction Chemicals and Waterproofing",
-    "status": "Setup Required",
+    "slug": "probit",
+    "name": "Probit",
+    "category": "Software, IT services, SaaS, workflow, or digital product brand",
+    "status": "Needs Confirmation",
     "priority": "P2",
-    "website": "https://www.trubuild.in/",
+    "website": "",
     "evidence": {
-      "source": "Astral Trubuild LinkedIn website field",
-      "evidenceUrl": "https://www.linkedin.com/company/astral-trubuild",
-      "method": "Public registry verification",
-      "confidence": "Needs official-site crawl confirmation"
+      "source": "User-supplied category assumption",
+      "evidenceUrl": "",
+      "method": "Pending URL/category confirmation",
+      "confidence": "Needs confirmation"
     },
-    "competitorSetSlug": "true-build"
+    "competitorSetSlug": "probit"
   },
   {
     "slug": "astral-foundation",

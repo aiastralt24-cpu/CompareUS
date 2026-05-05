@@ -1,0 +1,349 @@
+[
+  {
+    "ownedBrandSlug": "astral-pipes",
+    "brandName": "Astral Pipes",
+    "category": "Pipes, fittings, water tanks, plumbing, drainage, agriculture, industrial piping",
+    "segments": {
+      "direct": [
+        "Supreme Industries",
+        "Finolex Pipes",
+        "Prince Pipes",
+        "Ashirvad Pipes",
+        "Apollo Pipes",
+        "Vectus",
+        "Ajay Pipes",
+        "Kisan Mouldings",
+        "Skipper Pipes",
+        "Trity Pipes",
+        "Star Pipes",
+        "Birla HIL Pipes"
+      ],
+      "premiumEnterprise": [
+        "Ashirvad Pipes",
+        "Supreme Industries",
+        "Finolex",
+        "Prince Pipes",
+        "Wavin / Orbia",
+        "GF Piping Systems",
+        "Georg Fischer industrial piping"
+      ],
+      "budgetRegional": [
+        "Trity Pipes",
+        "Star Pipes",
+        "Kisan",
+        "local PVC/CPVC manufacturers",
+        "regional agricultural pipe brands",
+        "dealer-private-label pipes"
+      ],
+      "indirect": [
+        "GI pipes",
+        "copper pipes",
+        "PPR pipe brands",
+        "HDPE pipe brands",
+        "local plumbing contractors recommending non-branded material"
+      ],
+      "marketplaceContent": [
+        "IndiaMART pipe suppliers",
+        "TradeIndia suppliers",
+        "Amazon/Flipkart plumbing listings",
+        "plumbing blogs",
+        "contractor YouTube channels",
+        "Quora/Reddit plumbing answers"
+      ]
+    }
+  },
+  {
+    "ownedBrandSlug": "astral-adhesives",
+    "brandName": "Astral Adhesives",
+    "category": "Adhesives, sealants, epoxy, solvent cement, putty, tapes, construction chemicals",
+    "segments": {
+      "direct": [
+        "Pidilite / Fevicol",
+        "Araldite",
+        "M-Seal",
+        "Dr. Fixit",
+        "Sika",
+        "Fosroc",
+        "MYK Laticrete",
+        "Roff",
+        "Bostik",
+        "Loctite / Henkel",
+        "3M",
+        "Asian Paints SmartCare",
+        "Berger HomeShield",
+        "Weber Saint-Gobain",
+        "FEVICOL Marine / SR / HeatX variants"
+      ],
+      "premiumIndustrial": [
+        "Sika",
+        "Fosroc",
+        "Henkel Loctite",
+        "3M",
+        "Bostik",
+        "Huntsman Araldite",
+        "Dow sealants",
+        "Wacker silicones"
+      ],
+      "budgetRegional": [
+        "Rylan",
+        "Araldite lookalike/local epoxy brands",
+        "local tile adhesive manufacturers",
+        "regional silicone sealant brands",
+        "hardware-store private labels"
+      ],
+      "indirect": [
+        "mechanical fasteners",
+        "welding",
+        "cement mortar",
+        "traditional putty/fillers",
+        "tapes/clamps",
+        "contractor-preferred local chemicals"
+      ],
+      "marketplaceContent": [
+        "IndiaMART adhesive suppliers",
+        "Amazon epoxy/silicone listings",
+        "YouTube DIY repair channels",
+        "carpenter/contractor forums",
+        "tile fixing blogs",
+        "waterproofing comparison articles"
+      ]
+    }
+  },
+  {
+    "ownedBrandSlug": "astral-bathware",
+    "brandName": "Astral Bathware",
+    "category": "Faucets, sanitaryware, basins, toilets, showers, bathroom accessories, PTMT fittings",
+    "segments": {
+      "direct": [
+        "Jaquar",
+        "Hindware",
+        "CERA",
+        "Parryware / Roca",
+        "Kohler",
+        "Grohe",
+        "American Standard",
+        "TOTO",
+        "Vitra",
+        "Duravit",
+        "Somany Bathware",
+        "Kajaria Bathware",
+        "Watertec",
+        "Plumber Bathware",
+        "Neycer",
+        "Johnson Bathrooms"
+      ],
+      "premium": [
+        "Kohler",
+        "TOTO",
+        "Grohe",
+        "Duravit",
+        "Vitra",
+        "American Standard",
+        "Hansgrohe",
+        "Roca"
+      ],
+      "massMidMarket": [
+        "Jaquar",
+        "Hindware",
+        "CERA",
+        "Parryware",
+        "Somany",
+        "Kajaria",
+        "Watertec"
+      ],
+      "budgetRegional": [
+        "local sanitaryware brands",
+        "Morbi ceramic/sanitaryware manufacturers",
+        "PTMT regional brands",
+        "dealer-led faucet brands"
+      ],
+      "indirect": [
+        "interior designers specifying other brands",
+        "plumber/dealer recommendations",
+        "imported Chinese bath fittings",
+        "unbranded sanitaryware from local markets"
+      ],
+      "marketplaceContent": [
+        "Amazon/Flipkart bathware listings",
+        "IndiaMART faucet suppliers",
+        "bathroom design blogs",
+        "YouTube bathroom renovation channels",
+        "architect/interior Instagram pages"
+      ]
+    }
+  },
+  {
+    "ownedBrandSlug": "probit",
+    "brandName": "Probit",
+    "category": "Software / IT / digital product brand",
+    "needsConfirmation": true,
+    "assumption": "Assumed software, IT services, SaaS, workflow, or digital marketing/software services brand until URL/category is confirmed.",
+    "segments": {
+      "softwareItServices": [
+        "TCS iON / TCS digital services",
+        "Zoho",
+        "Freshworks",
+        "Infosys BPM/digital",
+        "Wipro digital",
+        "Tech Mahindra",
+        "Persistent Systems",
+        "Happiest Minds",
+        "Cybage",
+        "Kellton",
+        "Net Solutions",
+        "TatvaSoft",
+        "IndiaNIC",
+        "OpenXcell",
+        "Bacancy Technology"
+      ],
+      "saasWorkflow": [
+        "Zoho",
+        "Freshworks",
+        "Monday.com",
+        "ClickUp",
+        "Notion",
+        "Asana",
+        "Jira",
+        "Airtable",
+        "HubSpot",
+        "Salesforce",
+        "Microsoft Power Platform"
+      ],
+      "digitalMarketingSoftwareServices": [
+        "WebFX",
+        "Neil Patel Digital",
+        "iProspect",
+        "Schbang",
+        "Social Beat",
+        "Kinnect",
+        "WATConsult",
+        "Performics",
+        "local SEO/web development agencies"
+      ],
+      "marketplaceContent": [
+        "Clutch listings",
+        "G2",
+        "Capterra",
+        "GoodFirms",
+        "SoftwareSuggest",
+        "Google Business Profile competitors",
+        "LinkedIn company pages",
+        "review blogs"
+      ]
+    }
+  },
+  {
+    "ownedBrandSlug": "astral-foundation",
+    "brandName": "Astral Foundation",
+    "category": "CSR/foundation/nonprofit/social-impact arm",
+    "note": "For foundations, comparable entities are visibility, trust, donation, CSR, and impact-reporting comparables rather than commercial competitors.",
+    "segments": {
+      "corporateFoundationComparables": [
+        "Tata Trusts",
+        "Reliance Foundation",
+        "Adani Foundation",
+        "Infosys Foundation",
+        "Wipro Foundation",
+        "HCL Foundation",
+        "Mahindra Foundation",
+        "JSW Foundation",
+        "Godrej Foundation",
+        "Bajaj Foundation",
+        "Ambuja Foundation",
+        "L&T Public Charitable Trust",
+        "ICICI Foundation",
+        "Axis Bank Foundation",
+        "HDFC Bank Parivartan",
+        "SBI Foundation"
+      ],
+      "csrThemeComparables": [
+        "education NGOs",
+        "water/sanitation NGOs",
+        "rural development NGOs",
+        "healthcare NGOs",
+        "environment/sustainability NGOs",
+        "skill development foundations"
+      ],
+      "trustAuthority": [
+        "GiveIndia-listed NGOs",
+        "CSRBox-listed initiatives",
+        "NGO Darpan profiles",
+        "impact-reporting pages from large corporate foundations",
+        "ESG/sustainability reports of public companies"
+      ],
+      "content": [
+        "CSR case study pages",
+        "annual impact reports",
+        "sustainability reports",
+        "foundation storytelling videos",
+        "LinkedIn CSR campaigns"
+      ]
+    }
+  },
+  {
+    "ownedBrandSlug": "astral-paints",
+    "brandName": "Astral Paints",
+    "category": "Decorative paints, industrial paints, protective coatings, primers, enamels, putty, ancillaries",
+    "note": "Astral's paint entry is linked to Gem Paints.",
+    "segments": {
+      "direct": [
+        "Asian Paints",
+        "Berger Paints",
+        "Nerolac",
+        "Dulux / AkzoNobel",
+        "Indigo Paints",
+        "JSW Paints",
+        "Birla Opus",
+        "Shalimar Paints",
+        "Nippon Paint",
+        "Jotun",
+        "Sheenlac",
+        "Snowcem",
+        "Kamdhenu Paints",
+        "Sirca Paints",
+        "Gem Paints competitors in South India"
+      ],
+      "premium": [
+        "Asian Paints Royale",
+        "Berger Silk / WeatherCoat",
+        "Dulux Velvet Touch / Weathershield",
+        "Nerolac Impressions",
+        "Jotun",
+        "Nippon premium ranges"
+      ],
+      "massMidMarket": [
+        "Berger",
+        "Nerolac",
+        "Indigo",
+        "JSW Paints",
+        "Birla Opus",
+        "Shalimar",
+        "Kamdhenu"
+      ],
+      "budgetRegional": [
+        "local paint manufacturers",
+        "regional putty/primer brands",
+        "dealer-private-label paints",
+        "economy distemper brands",
+        "local contractor-preferred brands"
+      ],
+      "industrialProtectiveCoatings": [
+        "AkzoNobel",
+        "Jotun",
+        "Asian Paints PPG",
+        "Berger Protective Coatings",
+        "Kansai Nerolac industrial coatings",
+        "Nippon industrial coatings"
+      ],
+      "marketplaceContent": [
+        "paint calculator pages",
+        "colour visualizer tools",
+        "house painting cost blogs",
+        "YouTube painting contractor channels",
+        "interior design Instagram pages",
+        "dealer listings",
+        "Justdial/IndiaMART paint suppliers"
+      ]
+    }
+  }
+]
