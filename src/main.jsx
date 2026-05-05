@@ -27,6 +27,7 @@ import {
   TrendingUp,
   UsersRound
 } from "lucide-react";
+import periscopeIcon from "./assets/periscope-icon.png";
 import periscopeLogo from "./assets/periscope-logo.png";
 import astralBrands from "../data/astral-brands.json";
 import competitorSets from "../data/competitor-sets.json";
@@ -987,7 +988,7 @@ function UniverseHome({ user, onLogout, onOpenBrand }) {
     <main className="universe-shell">
       <header className="universe-topbar">
         <div className="brand-lockup universe-lockup">
-          <img className="periscope-mark" src={periscopeLogo} alt="Periscope" />
+          <img className="periscope-icon-mark" src={periscopeIcon} alt="Periscope" />
           <div>
             <strong>Periscope</strong>
             <span>Astral intelligence</span>
@@ -1262,7 +1263,7 @@ function Sidebar({ collapsed, activeModule, onModule, onHome }) {
   return (
     <aside className={`sidebar ${collapsed ? "collapsed" : ""}`}>
       <div className="brand-lockup">
-        <img className="periscope-mark" src={periscopeLogo} alt="Periscope" />
+        <img className="periscope-icon-mark" src={periscopeIcon} alt="Periscope" />
         <div>
           <strong>Periscope</strong>
           <span>Brand intelligence</span>

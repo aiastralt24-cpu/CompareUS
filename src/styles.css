@@ -105,6 +105,17 @@ button {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.65);
 }
 
+.periscope-icon-mark {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  padding: 6px;
+  border-radius: 14px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.65);
+}
+
 .brand-lockup strong,
 .brand-lockup span,
 .sidebar nav span,
