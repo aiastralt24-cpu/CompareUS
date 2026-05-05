@@ -1432,31 +1432,49 @@ function MonitorTimeline({ eventTypes = null }) {
   const events = eventTypes
     ? (monitorEvents.events || []).filter((event) => eventTypes.includes(event.type))
     : monitorEvents.events || [];
+  const visibleEvents = events.slice(0, 8);
   return (
     <section className="panel monitor-panel">
       <div className="panel-heading">
         <div>
           <h2>Evidence timeline</h2>
-          <p>Public competitor changes captured by the monitor with source links and confidence labels.</p>
+          <p>Verified public changes, newest first.</p>
         </div>
-        <span className="monitor-count">{events.length} events</span>
+        <div className="timeline-summary">
+          <span>{events.length} events</span>
+          <span>{monitorEvents.newEventCount || 0} new</span>
+        </div>
       </div>
       <div className="timeline-list">
-        {events.slice(0, 8).map((event) => (
-          <article className="timeline-item" key={event.id}>
-            <span className={`alert-level ${event.severity.toLowerCase()}`}>{event.severity}</span>
-            <div>
-              <strong>{event.title}</strong>
+        {visibleEvents.map((event) => (
+          <details className={`timeline-item severity-${event.severity.toLowerCase()}`} key={event.id}>
+            <summary>
+              <span className="timeline-severity">{event.severity}</span>
+              <span className="timeline-summary-copy">
+                <strong>{event.title}</strong>
+                <small>{event.brand} · {formatEventType(event.type)}</small>
+              </span>
+              <time>{formatEventTime(event.firstSeenAt)}</time>
+              <span className="timeline-chevron">⌄</span>
+            </summary>
+            <div className="timeline-content">
               <p>{event.detail}</p>
-              <div className="timeline-meta">
-                <span>{event.brand}</span>
-                <span>{event.confidence}</span>
-                <a href={event.sourceUrl} target="_blank" rel="noreferrer">
-                  Source
-                </a>
+              <div className="evidence-grid">
+                <div>
+                  <span>Confidence</span>
+                  <strong>{event.confidence}</strong>
+                </div>
+                <div>
+                  <span>First seen</span>
+                  <strong>{formatEventTime(event.firstSeenAt)}</strong>
+                </div>
+                <div>
+                  <span>Source</span>
+                  <a href={event.sourceUrl} target="_blank" rel="noreferrer">Open evidence</a>
+                </div>
               </div>
             </div>
-          </article>
+          </details>
         ))}
         {events.length === 0 ? (
           <article className="timeline-empty">
@@ -1467,6 +1485,21 @@ function MonitorTimeline({ eventTypes = null }) {
       </div>
     </section>
   );
+}
+
+function formatEventTime(value) {
+  if (!value) return "Not timestamped";
+  return new Intl.DateTimeFormat("en-IN", {
+    day: "2-digit",
+    month: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: "Asia/Kolkata"
+  }).format(new Date(value));
+}
+
+function formatEventType(value = "") {
+  return value.replaceAll("_", " ");
 }
 
 createRoot(document.getElementById("root")).render(<App />);
