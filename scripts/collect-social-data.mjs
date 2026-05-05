@@ -3,6 +3,7 @@ import path from "node:path";
 import competitorSets from "../data/competitor-sets.json" with { type: "json" };
 
 const outFile = path.resolve("data/generated/social-snapshot.json");
+const setOutDir = path.resolve("data/generated/social-snapshots");
 const activeSetSlug = process.env.MONITOR_BRAND_SLUG || "astral-pipes";
 const activeSet = competitorSets.find((set) => set.slug === activeSetSlug) || competitorSets[0];
 const brands = activeSet.brands || [];
@@ -358,6 +359,7 @@ async function main() {
   const output = {
     generatedAt: new Date().toISOString(),
     monitoredSet: activeSetSlug,
+    ownedBrandSlug: activeSet.ownedBrandSlug,
     methodology: {
       mode: "public social evidence collector",
       collected: [
@@ -373,7 +375,35 @@ async function main() {
   };
 
   await fs.mkdir(path.dirname(outFile), { recursive: true });
-  await fs.writeFile(outFile, `${JSON.stringify(output, null, 2)}\n`);
+  await fs.mkdir(setOutDir, { recursive: true });
+  await fs.writeFile(path.join(setOutDir, `${activeSetSlug}.json`), `${JSON.stringify(output, null, 2)}\n`);
+
+  const setSnapshots = [];
+  for (const file of await fs.readdir(setOutDir)) {
+    if (!file.endsWith(".json")) continue;
+    try {
+      const parsed = JSON.parse(await fs.readFile(path.join(setOutDir, file), "utf8"));
+      if (parsed?.monitoredSet && Array.isArray(parsed.brands)) setSnapshots.push(parsed);
+    } catch {
+      // Ignore malformed partial files.
+    }
+  }
+  setSnapshots.sort((a, b) => (a.monitoredSet || "").localeCompare(b.monitoredSet || ""));
+  const aggregate = {
+    generatedAt: new Date().toISOString(),
+    activeMonitoredSet: activeSetSlug,
+    methodology: output.methodology,
+    sets: setSnapshots,
+    brands: setSnapshots.flatMap((set) =>
+      (set.brands || []).map((brand) => ({
+        ...brand,
+        monitoredSet: set.monitoredSet,
+        ownedBrandSlug: set.ownedBrandSlug
+      }))
+    )
+  };
+  await fs.writeFile(outFile, `${JSON.stringify(aggregate, null, 2)}\n`);
+  console.log(`Wrote ${path.join(setOutDir, `${activeSetSlug}.json`)}`);
   console.log(`Wrote ${outFile}`);
 }
 

@@ -1,0 +1,184 @@
+{
+  "generatedAt": "2026-05-05T19:23:22.141Z",
+  "monitoredSet": "astral-pipes",
+  "ownedBrandSlug": "astral-pipes",
+  "newEventCount": 9,
+  "telegram": {
+    "attempted": false,
+    "sent": 0,
+    "reason": "Telegram env vars missing or no events"
+  },
+  "events": [
+    {
+      "id": "84c200db40354634",
+      "brand": "REHAU India",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "REHAU India monitoring baseline created",
+      "detail": "48 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.rehau.com/in-en",
+      "firstSeenAt": "2026-05-05T19:23:22.134Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 48,
+        "campaignLikeUrls": 16
+      }
+    },
+    {
+      "id": "2b95b3c0619c654f",
+      "brand": "POLOPLAST",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "POLOPLAST monitoring baseline created",
+      "detail": "43 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.poloplast.com/en-at.html",
+      "firstSeenAt": "2026-05-05T19:23:21.970Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 43,
+        "campaignLikeUrls": 21
+      }
+    },
+    {
+      "id": "7ed142ba3df4f98c",
+      "brand": "KPT Pipes",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "KPT Pipes monitoring baseline created",
+      "detail": "302 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.kptpipes.com",
+      "firstSeenAt": "2026-05-05T19:23:20.615Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 302,
+        "campaignLikeUrls": 302
+      }
+    },
+    {
+      "id": "04de2ded43859d42",
+      "brand": "Wavin India",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Wavin India monitoring baseline created",
+      "detail": "34 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://wavin.com/in",
+      "firstSeenAt": "2026-05-05T19:23:17.466Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 404,
+        "trackedUrls": 34,
+        "campaignLikeUrls": 9
+      }
+    },
+    {
+      "id": "78b483f064d86063",
+      "brand": "Ashirvad by Aliaxis",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Ashirvad by Aliaxis monitoring baseline created",
+      "detail": "99 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.ashirvad.com/",
+      "firstSeenAt": "2026-05-05T19:23:16.108Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 99,
+        "campaignLikeUrls": 25
+      }
+    },
+    {
+      "id": "a6a9a716ce933efe",
+      "brand": "Apollo Pipes",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Apollo Pipes monitoring baseline created",
+      "detail": "171 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.apollopipes.com/",
+      "firstSeenAt": "2026-05-05T19:23:14.042Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 171,
+        "campaignLikeUrls": 171
+      }
+    },
+    {
+      "id": "01f25fecdcca61d5",
+      "brand": "Prince Pipes",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Prince Pipes monitoring baseline created",
+      "detail": "66 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.princepipes.com/",
+      "firstSeenAt": "2026-05-05T19:23:12.119Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 66,
+        "campaignLikeUrls": 66
+      }
+    },
+    {
+      "id": "86e796826949874b",
+      "brand": "Supreme Pipes",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Supreme Pipes monitoring baseline created",
+      "detail": "2349 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.supreme.co.in/",
+      "firstSeenAt": "2026-05-05T19:23:11.902Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 2349,
+        "campaignLikeUrls": 2263
+      }
+    },
+    {
+      "id": "1cc03dcd22e8e144",
+      "brand": "Astral Pipes",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Astral Pipes monitoring baseline created",
+      "detail": "99 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.astralpipes.com/",
+      "firstSeenAt": "2026-05-05T19:23:09.502Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 99,
+        "campaignLikeUrls": 99
+      }
+    }
+  ]
+}

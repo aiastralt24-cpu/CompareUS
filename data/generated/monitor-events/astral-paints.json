@@ -1,0 +1,222 @@
+{
+  "generatedAt": "2026-05-05T19:35:45.356Z",
+  "monitoredSet": "astral-paints",
+  "ownedBrandSlug": "astral-paints",
+  "newEventCount": 11,
+  "telegram": {
+    "attempted": false,
+    "sent": 0,
+    "reason": "Telegram env vars missing or no events"
+  },
+  "events": [
+    {
+      "id": "16eb23c9f790c1fc",
+      "brand": "Jotun India",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Jotun India monitoring baseline created",
+      "detail": "2934 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.jotun.com/in-en",
+      "firstSeenAt": "2026-05-05T19:35:45.349Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 2934,
+        "campaignLikeUrls": 2269
+      }
+    },
+    {
+      "id": "4be3613562344999",
+      "brand": "Nippon Paint India",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Nippon Paint India monitoring baseline created",
+      "detail": "40 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.nipponpaint.co.in/",
+      "firstSeenAt": "2026-05-05T19:35:44.059Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 404,
+        "trackedUrls": 40,
+        "campaignLikeUrls": 14
+      }
+    },
+    {
+      "id": "811622cfcf21872e",
+      "brand": "Shalimar Paints",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Shalimar Paints monitoring baseline created",
+      "detail": "106 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.shalimarpaints.com/",
+      "firstSeenAt": "2026-05-05T19:35:40.742Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 106,
+        "campaignLikeUrls": 29
+      }
+    },
+    {
+      "id": "4ef9a7fe68c92ef6",
+      "brand": "Birla Opus",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Birla Opus monitoring baseline created",
+      "detail": "3066 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.birlaopus.com/",
+      "firstSeenAt": "2026-05-05T19:35:40.369Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 3066,
+        "campaignLikeUrls": 529
+      }
+    },
+    {
+      "id": "a79d937f8ae5955a",
+      "brand": "JSW Paints",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "JSW Paints monitoring baseline created",
+      "detail": "470 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.jswpaints.in/",
+      "firstSeenAt": "2026-05-05T19:35:37.829Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 470,
+        "campaignLikeUrls": 113
+      }
+    },
+    {
+      "id": "7a7408da3d74a060",
+      "brand": "Indigo Paints",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Indigo Paints monitoring baseline created",
+      "detail": "44 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://indigopaints.com/",
+      "firstSeenAt": "2026-05-05T19:35:37.671Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 44,
+        "campaignLikeUrls": 31
+      }
+    },
+    {
+      "id": "2e6adda42eb9b724",
+      "brand": "Dulux / AkzoNobel",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Dulux / AkzoNobel monitoring baseline created",
+      "detail": "51 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.dulux.in/",
+      "firstSeenAt": "2026-05-05T19:35:37.068Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 51,
+        "campaignLikeUrls": 14
+      }
+    },
+    {
+      "id": "3b1659d1d051206a",
+      "brand": "Kansai Nerolac",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Kansai Nerolac monitoring baseline created",
+      "detail": "190 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.nerolac.com/",
+      "firstSeenAt": "2026-05-05T19:35:36.378Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 190,
+        "campaignLikeUrls": 47
+      }
+    },
+    {
+      "id": "8dcd85afadcaf557",
+      "brand": "Berger Paints",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Berger Paints monitoring baseline created",
+      "detail": "965 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.bergerpaints.com/",
+      "firstSeenAt": "2026-05-05T19:35:35.840Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 965,
+        "campaignLikeUrls": 850
+      }
+    },
+    {
+      "id": "a59da3799125af45",
+      "brand": "Asian Paints",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Asian Paints monitoring baseline created",
+      "detail": "117 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.asianpaints.com/",
+      "firstSeenAt": "2026-05-05T19:35:35.449Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 117,
+        "campaignLikeUrls": 30
+      }
+    },
+    {
+      "id": "970f613132b3cd01",
+      "brand": "Astral Paints",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Astral Paints monitoring baseline created",
+      "detail": "500 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.astralpaints.com/",
+      "firstSeenAt": "2026-05-05T19:35:35.133Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 500,
+        "campaignLikeUrls": 36
+      }
+    }
+  ]
+}

@@ -1,13 +1,1021 @@
 {
-  "generatedAt": "2026-05-05T07:59:34.401Z",
-  "monitoredSet": "astral-pipes",
+  "generatedAt": "2026-05-05T19:37:00.963Z",
+  "activeMonitoredSet": "astral-foundation",
   "methodology": {
     "mode": "Meta Ad Library active creative collector",
     "source": "Meta Graph API ads_archive",
     "method": "Search by brand name, country filter, active ads only",
     "confidence": "Setup required"
   },
+  "sets": [
+    {
+      "generatedAt": "2026-05-05T19:25:38.625Z",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "methodology": {
+        "mode": "Meta Ad Library active creative collector",
+        "source": "Meta Graph API ads_archive",
+        "method": "Search by brand name, country filter, active ads only",
+        "confidence": "Setup required"
+      },
+      "brands": [
+        {
+          "name": "Astral Adhesives",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Pidilite",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Fevicol",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Araldite",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "M-Seal",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Dr. Fixit",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Sika",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Fosroc",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "MYK Laticrete",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Bostik India",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Loctite / Henkel",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        }
+      ]
+    },
+    {
+      "generatedAt": "2026-05-05T19:28:43.442Z",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "methodology": {
+        "mode": "Meta Ad Library active creative collector",
+        "source": "Meta Graph API ads_archive",
+        "method": "Search by brand name, country filter, active ads only",
+        "confidence": "Setup required"
+      },
+      "brands": [
+        {
+          "name": "Astral Bathware",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Jaquar",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Hindware",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "CERA",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Parryware / Roca",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Kohler India",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Grohe India",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "American Standard India",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "TOTO India",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Vitra India",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Watertec",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        }
+      ]
+    },
+    {
+      "generatedAt": "2026-05-05T19:37:00.955Z",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "methodology": {
+        "mode": "Meta Ad Library active creative collector",
+        "source": "Meta Graph API ads_archive",
+        "method": "Search by brand name, country filter, active ads only",
+        "confidence": "Setup required"
+      },
+      "brands": [
+        {
+          "name": "Astral Foundation",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Tata Trusts",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Reliance Foundation",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Adani Foundation",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Infosys Foundation",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Wipro Foundation",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "HCL Foundation",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Mahindra Foundation",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "JSW Foundation",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "SBI Foundation",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        }
+      ]
+    },
+    {
+      "generatedAt": "2026-05-05T19:35:34.612Z",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "methodology": {
+        "mode": "Meta Ad Library active creative collector",
+        "source": "Meta Graph API ads_archive",
+        "method": "Search by brand name, country filter, active ads only",
+        "confidence": "Setup required"
+      },
+      "brands": [
+        {
+          "name": "Astral Paints",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Asian Paints",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Berger Paints",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Kansai Nerolac",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Dulux / AkzoNobel",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Indigo Paints",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "JSW Paints",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Birla Opus",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Shalimar Paints",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Nippon Paint India",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Jotun India",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        }
+      ]
+    },
+    {
+      "generatedAt": "2026-05-05T19:23:09.007Z",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
+      "methodology": {
+        "mode": "Meta Ad Library active creative collector",
+        "source": "Meta Graph API ads_archive",
+        "method": "Search by brand name, country filter, active ads only",
+        "confidence": "Setup required"
+      },
+      "brands": [
+        {
+          "name": "Astral Pipes",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Supreme Pipes",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Prince Pipes",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Apollo Pipes",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Ashirvad by Aliaxis",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "Wavin India",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "KPT Pipes",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "POLOPLAST",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        },
+        {
+          "name": "REHAU India",
+          "status": "Setup Required",
+          "summary": {
+            "activeAds": null
+          },
+          "ads": [],
+          "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+        }
+      ]
+    }
+  ],
   "brands": [
+    {
+      "name": "Astral Adhesives",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives"
+    },
+    {
+      "name": "Pidilite",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives"
+    },
+    {
+      "name": "Fevicol",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives"
+    },
+    {
+      "name": "Araldite",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives"
+    },
+    {
+      "name": "M-Seal",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives"
+    },
+    {
+      "name": "Dr. Fixit",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives"
+    },
+    {
+      "name": "Sika",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives"
+    },
+    {
+      "name": "Fosroc",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives"
+    },
+    {
+      "name": "MYK Laticrete",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives"
+    },
+    {
+      "name": "Bostik India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives"
+    },
+    {
+      "name": "Loctite / Henkel",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives"
+    },
+    {
+      "name": "Astral Bathware",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware"
+    },
+    {
+      "name": "Jaquar",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware"
+    },
+    {
+      "name": "Hindware",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware"
+    },
+    {
+      "name": "CERA",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware"
+    },
+    {
+      "name": "Parryware / Roca",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware"
+    },
+    {
+      "name": "Kohler India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware"
+    },
+    {
+      "name": "Grohe India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware"
+    },
+    {
+      "name": "American Standard India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware"
+    },
+    {
+      "name": "TOTO India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware"
+    },
+    {
+      "name": "Vitra India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware"
+    },
+    {
+      "name": "Watertec",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware"
+    },
+    {
+      "name": "Astral Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation"
+    },
+    {
+      "name": "Tata Trusts",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation"
+    },
+    {
+      "name": "Reliance Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation"
+    },
+    {
+      "name": "Adani Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation"
+    },
+    {
+      "name": "Infosys Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation"
+    },
+    {
+      "name": "Wipro Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation"
+    },
+    {
+      "name": "HCL Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation"
+    },
+    {
+      "name": "Mahindra Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation"
+    },
+    {
+      "name": "JSW Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation"
+    },
+    {
+      "name": "SBI Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation"
+    },
+    {
+      "name": "Astral Paints",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints"
+    },
+    {
+      "name": "Asian Paints",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints"
+    },
+    {
+      "name": "Berger Paints",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints"
+    },
+    {
+      "name": "Kansai Nerolac",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints"
+    },
+    {
+      "name": "Dulux / AkzoNobel",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints"
+    },
+    {
+      "name": "Indigo Paints",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints"
+    },
+    {
+      "name": "JSW Paints",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints"
+    },
+    {
+      "name": "Birla Opus",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints"
+    },
+    {
+      "name": "Shalimar Paints",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints"
+    },
+    {
+      "name": "Nippon Paint India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints"
+    },
+    {
+      "name": "Jotun India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints"
+    },
     {
       "name": "Astral Pipes",
       "status": "Setup Required",
@@ -15,7 +1023,9 @@
         "activeAds": null
       },
       "ads": [],
-      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes"
     },
     {
       "name": "Supreme Pipes",
@@ -24,7 +1034,9 @@
         "activeAds": null
       },
       "ads": [],
-      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes"
     },
     {
       "name": "Prince Pipes",
@@ -33,7 +1045,9 @@
         "activeAds": null
       },
       "ads": [],
-      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes"
     },
     {
       "name": "Apollo Pipes",
@@ -42,7 +1056,9 @@
         "activeAds": null
       },
       "ads": [],
-      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes"
     },
     {
       "name": "Ashirvad by Aliaxis",
@@ -51,7 +1067,9 @@
         "activeAds": null
       },
       "ads": [],
-      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes"
     },
     {
       "name": "Wavin India",
@@ -60,7 +1078,9 @@
         "activeAds": null
       },
       "ads": [],
-      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes"
     },
     {
       "name": "KPT Pipes",
@@ -69,7 +1089,9 @@
         "activeAds": null
       },
       "ads": [],
-      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes"
     },
     {
       "name": "POLOPLAST",
@@ -78,7 +1100,9 @@
         "activeAds": null
       },
       "ads": [],
-      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes"
     },
     {
       "name": "REHAU India",
@@ -87,7 +1111,9 @@
         "activeAds": null
       },
       "ads": [],
-      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured.",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes"
     }
   ]
 }

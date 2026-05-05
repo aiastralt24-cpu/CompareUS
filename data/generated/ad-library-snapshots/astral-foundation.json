@@ -1,0 +1,103 @@
+{
+  "generatedAt": "2026-05-05T19:37:00.955Z",
+  "monitoredSet": "astral-foundation",
+  "ownedBrandSlug": "astral-foundation",
+  "methodology": {
+    "mode": "Meta Ad Library active creative collector",
+    "source": "Meta Graph API ads_archive",
+    "method": "Search by brand name, country filter, active ads only",
+    "confidence": "Setup required"
+  },
+  "brands": [
+    {
+      "name": "Astral Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Tata Trusts",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Reliance Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Adani Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Infosys Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Wipro Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "HCL Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Mahindra Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "JSW Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "SBI Foundation",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    }
+  ]
+}

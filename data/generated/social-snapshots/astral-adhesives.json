@@ -1,0 +1,433 @@
+{
+  "generatedAt": "2026-05-05T19:25:38.498Z",
+  "monitoredSet": "astral-adhesives",
+  "ownedBrandSlug": "astral-adhesives",
+  "methodology": {
+    "mode": "public social evidence collector",
+    "collected": [
+      "Official social URL reachability and response metadata",
+      "Public title/description/canonical metadata where platforms allow access",
+      "YouTube public RSS latest-video cadence when channel id can be resolved",
+      "YouTube Data API statistics when YOUTUBE_API_KEY is configured",
+      "X API public metrics when X_BEARER_TOKEN is configured"
+    ],
+    "notCollectedWithoutAccess": [
+      "Follower count requires platform API, approved browser capture, or exported evidence.",
+      "Engagement rate requires post-level interactions from API/export/browser evidence.",
+      "Follower growth requires historical platform snapshots.",
+      "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+    ]
+  },
+  "brands": [
+    {
+      "name": "Astral Adhesives",
+      "website": "https://www.astraladhesives.com/",
+      "profiles": [
+        {
+          "brand": "Astral Adhesives",
+          "platform": "facebook",
+          "url": "https://www.facebook.com/AstralAdhesives/",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.facebook.com/AstralAdhesives/",
+          "responseMs": 1181,
+          "title": "Astral Adhesives",
+          "description": "Astral Adhesives.88,406 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 39 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;.Astral Adhesives is one of the India&#039;s leading manufacturers offering a...",
+          "canonical": "https://www.facebook.com/AstralAdhesives",
+          "collectionStatus": "Public profile reached"
+        },
+        {
+          "brand": "Astral Adhesives",
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/astral-adhesives",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.linkedin.com/company/astral-adhesives",
+          "responseMs": 1394,
+          "title": "Astral Adhesives | LinkedIn",
+          "description": "Astral Adhesives | 62,442 followers on LinkedIn. Astral Adhesives is one of India's leading manufacturers offering a diversified range of adhesives, sealants, putties, self-adhesives, tapes, solvent cement, and construction chemicals.",
+          "canonical": "https://in.linkedin.com/company/astral-adhesives",
+          "collectionStatus": "Public profile reached"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 2,
+        "reachableProfiles": 2,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "Profiles tracked; post metrics restricted"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Pidilite",
+      "website": "https://www.pidilite.com/",
+      "profiles": [
+        {
+          "brand": "Pidilite",
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/pidilite-industries-limited",
+          "ok": false,
+          "status": 404,
+          "finalUrl": "https://www.linkedin.com/company/pidilite-industries-limited",
+          "responseMs": 506,
+          "title": "LinkedIn",
+          "description": "",
+          "canonical": "",
+          "collectionStatus": "Profile restricted or unavailable"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 1,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "Profiles tracked; post metrics restricted"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Fevicol",
+      "website": "https://www.fevicol.in/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Araldite",
+      "website": "https://www.araldite.com/en_IN/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "M-Seal",
+      "website": "https://www.mseal.in/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Dr. Fixit",
+      "website": "https://www.drfixit.co.in/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Sika",
+      "website": "https://ind.sika.com/",
+      "profiles": [
+        {
+          "brand": "Sika",
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/sika",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.linkedin.com/company/sika",
+          "responseMs": 851,
+          "title": "Sika | LinkedIn",
+          "description": "Sika | 1,195,326 followers on LinkedIn. Sustainability and innovation drive us to deliver high-performance solutions. Building trust beyond the expected. | Sika is a specialty chemicals company with a globally leading position in the development and production of systems and products for bonding, sealing, damping, reinforcing, and protection in the building sector and industrial manufacturing. Sika has subsidiaries in 102 countries around the world and, in over 400 factories, produces innovative technologies for customers worldwide. In doing so, it plays a crucial role in enabling the transformation of the construction and transportation sector toward greater environmental compatibility.",
+          "canonical": "https://ch.linkedin.com/company/sika",
+          "collectionStatus": "Public profile reached"
+        },
+        {
+          "brand": "Sika",
+          "platform": "youtube",
+          "url": "https://www.youtube.com/user/SikaGroup",
+          "ok": false,
+          "status": 404,
+          "finalUrl": "https://www.youtube.com/user/SikaGroup",
+          "responseMs": 253,
+          "title": "404 Not Found",
+          "description": "",
+          "canonical": "",
+          "collectionStatus": "Profile restricted or unavailable",
+          "youtube": {
+            "status": "No public RSS videos found",
+            "videosIn30Days": 0,
+            "videosIn90Days": 0,
+            "lastVideoAt": null,
+            "latestVideos": []
+          }
+        },
+        {
+          "brand": "Sika",
+          "platform": "facebook",
+          "url": "https://www.facebook.com/Sika",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.facebook.com/Sika",
+          "responseMs": 846,
+          "title": "Sika",
+          "description": "Sika.59,847 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 337 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;.Welcome to Sika&#039;s official Facebook page! Our best stories, photos, and videos from around...",
+          "canonical": "https://www.facebook.com/Sika",
+          "collectionStatus": "Public profile reached"
+        },
+        {
+          "brand": "Sika",
+          "platform": "instagram",
+          "url": "https://www.instagram.com/sika",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.instagram.com/sika",
+          "responseMs": 666,
+          "title": "Instagram",
+          "description": "",
+          "canonical": "",
+          "collectionStatus": "Public profile reached"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 4,
+        "reachableProfiles": 3,
+        "youtubeVideos30d": 0,
+        "youtubeVideos90d": 0,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No public RSS videos found"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Fosroc",
+      "website": "https://www.fosroc.com/about-fosroc-india",
+      "profiles": [
+        {
+          "brand": "Fosroc",
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/fosroc",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.linkedin.com/company/fosroc",
+          "responseMs": 967,
+          "title": "Fosroc | LinkedIn",
+          "description": "Fosroc | 199,420 followers on LinkedIn. A world leader in the development and delivery of Constructive Solutions | Fosroc is a leading global manufacturer of construction chemicals, dedicated to enhancing the performance, durability, and sustainability of buildings and structures. Our innovative products address construction challenges, enabling professionals to achieve exceptional results in diverse environments.\n\nBy leveraging our expertise in material chemistry, Fosroc products significantly improve buildings in the following ways:\n\nStrength &amp; Durability: Our concrete admixtures enhance the strength, workability, and durability of concrete, resulting in robust buildings that withstand heavy loads, harsh weather, and long-term wear and tear.",
+          "canonical": "https://ae.linkedin.com/company/fosroc",
+          "collectionStatus": "Public profile reached"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 1,
+        "reachableProfiles": 1,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "Profiles tracked; post metrics restricted"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "MYK Laticrete",
+      "website": "https://www.myklaticrete.com/",
+      "profiles": [
+        {
+          "brand": "MYK Laticrete",
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/myk-laticrete-india-pvt.-ltd.",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.linkedin.com/company/myk-laticrete-india-pvt.-ltd.",
+          "responseMs": 1128,
+          "title": "MYK LATICRETE India Pvt. Ltd. | LinkedIn",
+          "description": "MYK LATICRETE India Pvt. Ltd. | 51,319 followers on LinkedIn. MYK LATICRETE stands out as a key player in transforming the landscape of tile and stone installation materials in India, setting the bar for contemporary global standards. Leading the way in the market, the company not only addresses fundamental industry needs but also disrupts conventional methods, offering a comprehensive range of tile adhesives, tile grouts, stone care products, and a variety of cleaners.\n\nGuided by a strong customer-centric approach and an unwavering commitment to impeccable quality, MYK LATICRETE maintains its leadership position through continuous innovation.",
+          "canonical": "https://in.linkedin.com/company/myk-laticrete-india-pvt.-ltd.",
+          "collectionStatus": "Public profile reached"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 1,
+        "reachableProfiles": 1,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "Profiles tracked; post metrics restricted"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Bostik India",
+      "website": "https://www.bostik.com/india/en/",
+      "profiles": [
+        {
+          "brand": "Bostik India",
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/bostik",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.linkedin.com/company/bostik",
+          "responseMs": 829,
+          "title": "Bostik | LinkedIn",
+          "description": "Bostik | 154,231 followers on LinkedIn. As the adhesive segment of the Arkema group, we are committed to sustainable solutions that shape a circular future. | For over 130 years, Bostik, the adhesive solutions segment of Arkema, has been a leading global adhesive specialist in industrial, construction and consumer markets. \n\nWith a presence in more than 40 countries and employing 7,000 people, Bostik’s broad technology portfolio, extensive industry knowledge and synergies with Arkema enable our company to meet a diverse range of customers’ evolving needs around the world. \n\nFor the industrial market, Bostik’s smart solutions are found in today’s leading aerospace, transportation and packaging brands, improving operational efficiencies and overall product quality.",
+          "canonical": "https://www.linkedin.com/company/bostik",
+          "collectionStatus": "Public profile reached"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 1,
+        "reachableProfiles": 1,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "Profiles tracked; post metrics restricted"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Loctite / Henkel",
+      "website": "https://www.henkel-adhesives.com/in/en.html",
+      "profiles": [
+        {
+          "brand": "Loctite / Henkel",
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/showcase/henkel-adhesive-technologies",
+          "ok": false,
+          "status": 404,
+          "finalUrl": "https://www.linkedin.com/showcase/henkel-adhesive-technologies",
+          "responseMs": 404,
+          "title": "LinkedIn",
+          "description": "",
+          "canonical": "",
+          "collectionStatus": "Profile restricted or unavailable"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 1,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "Profiles tracked; post metrics restricted"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    }
+  ]
+}

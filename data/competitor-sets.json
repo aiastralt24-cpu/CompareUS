@@ -120,22 +120,483 @@
     "slug": "astral-adhesives",
     "ownedBrandSlug": "astral-adhesives",
     "taxonomyRef": "astral-adhesives",
-    "status": "Setup Required",
-    "brands": []
+    "status": "Live",
+    "brands": [
+      {
+        "name": "Astral Adhesives",
+        "type": "Primary brand",
+        "priority": "Core",
+        "website": "https://www.astraladhesives.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "facebook": "https://www.facebook.com/AstralAdhesives/",
+          "linkedin": "https://www.linkedin.com/company/astral-adhesives"
+        }
+      },
+      {
+        "name": "Pidilite",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.pidilite.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.pidilite.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/company/pidilite-industries-limited"
+        }
+      },
+      {
+        "name": "Fevicol",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.fevicol.in/",
+        "evidence": {
+          "source": "Official brand website",
+          "evidenceUrl": "https://www.fevicol.in/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Araldite",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.araldite.com/en_IN/",
+        "evidence": {
+          "source": "Official brand website",
+          "evidenceUrl": "https://www.araldite.com/en_IN/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "M-Seal",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.mseal.in/",
+        "evidence": {
+          "source": "Official brand website",
+          "evidenceUrl": "https://www.mseal.in/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Dr. Fixit",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.drfixit.co.in/",
+        "evidence": {
+          "source": "Official brand website",
+          "evidenceUrl": "https://www.drfixit.co.in/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Sika",
+        "type": "Premium industrial competitor",
+        "priority": "P1",
+        "website": "https://ind.sika.com/",
+        "evidence": {
+          "source": "Official country website",
+          "evidenceUrl": "https://ind.sika.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/company/sika",
+          "youtube": "https://www.youtube.com/user/SikaGroup",
+          "facebook": "https://www.facebook.com/Sika",
+          "instagram": "https://www.instagram.com/sika"
+        }
+      },
+      {
+        "name": "Fosroc",
+        "type": "Premium industrial competitor",
+        "priority": "P1",
+        "website": "https://www.fosroc.com/about-fosroc-india",
+        "evidence": {
+          "source": "Official India website page",
+          "evidenceUrl": "https://www.fosroc.com/about-fosroc-india",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/company/fosroc"
+        }
+      },
+      {
+        "name": "MYK Laticrete",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.myklaticrete.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.myklaticrete.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/company/myk-laticrete-india-pvt.-ltd."
+        }
+      },
+      {
+        "name": "Bostik India",
+        "type": "Direct competitor",
+        "priority": "P2",
+        "website": "https://www.bostik.com/india/en/",
+        "evidence": {
+          "source": "Official country website",
+          "evidenceUrl": "https://www.bostik.com/india/en/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/company/bostik"
+        }
+      },
+      {
+        "name": "Loctite / Henkel",
+        "type": "Premium industrial competitor",
+        "priority": "P2",
+        "website": "https://www.henkel-adhesives.com/in/en.html",
+        "evidence": {
+          "source": "Official country website",
+          "evidenceUrl": "https://www.henkel-adhesives.com/in/en.html",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/showcase/henkel-adhesive-technologies"
+        }
+      }
+    ]
   },
   {
     "slug": "astral-bathware",
     "ownedBrandSlug": "astral-bathware",
     "taxonomyRef": "astral-bathware",
-    "status": "Setup Required",
-    "brands": []
+    "status": "Live",
+    "brands": [
+      {
+        "name": "Astral Bathware",
+        "type": "Primary brand",
+        "priority": "Core",
+        "website": "https://www.astralbathware.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.astralbathware.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Jaquar",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.jaquar.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.jaquar.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Hindware",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://hindware.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://hindware.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "CERA",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.cera-india.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.cera-india.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/company/cera-sanitaryware-ltd"
+        }
+      },
+      {
+        "name": "Parryware / Roca",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.parryware.in/",
+        "evidence": {
+          "source": "Official brand website",
+          "evidenceUrl": "https://www.parryware.in/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Kohler India",
+        "type": "Premium competitor",
+        "priority": "P1",
+        "website": "https://www.kohler.co.in/",
+        "evidence": {
+          "source": "Official country website",
+          "evidenceUrl": "https://www.kohler.co.in/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/company/kohler-india"
+        }
+      },
+      {
+        "name": "Grohe India",
+        "type": "Premium competitor",
+        "priority": "P1",
+        "website": "https://www.grohe.co.in/",
+        "evidence": {
+          "source": "Official country website",
+          "evidenceUrl": "https://www.grohe.co.in/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "American Standard India",
+        "type": "Premium competitor",
+        "priority": "P2",
+        "website": "https://www.americanstandard.in/",
+        "evidence": {
+          "source": "Official country website",
+          "evidenceUrl": "https://www.americanstandard.in/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "TOTO India",
+        "type": "Premium competitor",
+        "priority": "P2",
+        "website": "https://in.toto.com/",
+        "evidence": {
+          "source": "Official country website",
+          "evidenceUrl": "https://in.toto.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Vitra India",
+        "type": "Premium competitor",
+        "priority": "P2",
+        "website": "https://www.vitra-india.com/",
+        "evidence": {
+          "source": "Official country website",
+          "evidenceUrl": "https://www.vitra-india.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Watertec",
+        "type": "Mass-market competitor",
+        "priority": "P2",
+        "website": "https://www.watertecindia.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.watertecindia.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      }
+    ]
   },
   {
     "slug": "astral-paints",
     "ownedBrandSlug": "astral-paints",
     "taxonomyRef": "astral-paints",
-    "status": "Setup Required",
-    "brands": []
+    "status": "Live",
+    "brands": [
+      {
+        "name": "Astral Paints",
+        "type": "Primary brand",
+        "priority": "Core",
+        "website": "https://www.astralpaints.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Asian Paints",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.asianpaints.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.asianpaints.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/company/asian-paints",
+          "youtube": "https://www.youtube.com/@asianpaints",
+          "instagram": "https://www.instagram.com/asianpaints",
+          "facebook": "https://www.facebook.com/AsianPaints"
+        }
+      },
+      {
+        "name": "Berger Paints",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.bergerpaints.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.bergerpaints.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/company/bergerpaintsindia"
+        }
+      },
+      {
+        "name": "Kansai Nerolac",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.nerolac.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.nerolac.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Dulux / AkzoNobel",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.dulux.in/",
+        "evidence": {
+          "source": "Official country website",
+          "evidenceUrl": "https://www.dulux.in/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Indigo Paints",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://indigopaints.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://indigopaints.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "JSW Paints",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.jswpaints.in/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.jswpaints.in/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Birla Opus",
+        "type": "Direct competitor",
+        "priority": "P1",
+        "website": "https://www.birlaopus.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.birlaopus.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Shalimar Paints",
+        "type": "Direct competitor",
+        "priority": "P2",
+        "website": "https://www.shalimarpaints.com/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.shalimarpaints.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Nippon Paint India",
+        "type": "Direct competitor",
+        "priority": "P2",
+        "website": "https://www.nipponpaint.co.in/",
+        "evidence": {
+          "source": "Official country website",
+          "evidenceUrl": "https://www.nipponpaint.co.in/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Jotun India",
+        "type": "Premium industrial competitor",
+        "priority": "P2",
+        "website": "https://www.jotun.com/in-en",
+        "evidence": {
+          "source": "Official country website",
+          "evidenceUrl": "https://www.jotun.com/in-en",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      }
+    ]
   },
   {
     "slug": "probit",
@@ -148,7 +609,146 @@
     "slug": "astral-foundation",
     "ownedBrandSlug": "astral-foundation",
     "taxonomyRef": "astral-foundation",
-    "status": "Setup Required",
-    "brands": []
+    "status": "Live",
+    "brands": [
+      {
+        "name": "Astral Foundation",
+        "type": "Primary CSR brand",
+        "priority": "Core",
+        "website": "https://www.astralltd.com/",
+        "evidence": {
+          "source": "Astral Limited official website",
+          "evidenceUrl": "https://www.astralltd.com/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Tata Trusts",
+        "type": "Corporate foundation comparable",
+        "priority": "P1",
+        "website": "https://www.tatatrusts.org/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.tatatrusts.org/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "facebook": "https://www.facebook.com/TataTrusts/"
+        }
+      },
+      {
+        "name": "Reliance Foundation",
+        "type": "Corporate foundation comparable",
+        "priority": "P1",
+        "website": "https://www.reliancefoundation.org/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.reliancefoundation.org/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "facebook": "https://www.facebook.com/foundationRIL/"
+        }
+      },
+      {
+        "name": "Adani Foundation",
+        "type": "Corporate foundation comparable",
+        "priority": "P1",
+        "website": "https://www.adani.com/adani-foundation",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.adani.com/adani-foundation",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/company/adanifoundation/"
+        }
+      },
+      {
+        "name": "Infosys Foundation",
+        "type": "Corporate foundation comparable",
+        "priority": "P1",
+        "website": "https://www.infosys.org/infosys-foundation/about.html",
+        "evidence": {
+          "source": "Official foundation website",
+          "evidenceUrl": "https://www.infosys.org/infosys-foundation/about.html",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {
+          "linkedin": "https://www.linkedin.com/company/infosys-foundation"
+        }
+      },
+      {
+        "name": "Wipro Foundation",
+        "type": "Corporate foundation comparable",
+        "priority": "P1",
+        "website": "https://www.wiprofoundation.org/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.wiprofoundation.org/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "HCL Foundation",
+        "type": "Corporate foundation comparable",
+        "priority": "P1",
+        "website": "https://www.hclfoundation.org/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.hclfoundation.org/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "Mahindra Foundation",
+        "type": "Corporate foundation comparable",
+        "priority": "P2",
+        "website": "https://www.mahindra.com/our-story/sustainability",
+        "evidence": {
+          "source": "Official Mahindra sustainability website",
+          "evidenceUrl": "https://www.mahindra.com/our-story/sustainability",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "JSW Foundation",
+        "type": "Corporate foundation comparable",
+        "priority": "P2",
+        "website": "https://www.jswfoundation.org/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.jswfoundation.org/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      },
+      {
+        "name": "SBI Foundation",
+        "type": "Corporate foundation comparable",
+        "priority": "P2",
+        "website": "https://www.sbifoundation.in/",
+        "evidence": {
+          "source": "Official website",
+          "evidenceUrl": "https://www.sbifoundation.in/",
+          "method": "Public official website verification",
+          "confidence": "Verified public evidence"
+        },
+        "social": {}
+      }
+    ]
   }
 ]

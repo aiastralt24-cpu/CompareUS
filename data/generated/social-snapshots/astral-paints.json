@@ -1,0 +1,391 @@
+{
+  "generatedAt": "2026-05-05T19:35:34.488Z",
+  "monitoredSet": "astral-paints",
+  "ownedBrandSlug": "astral-paints",
+  "methodology": {
+    "mode": "public social evidence collector",
+    "collected": [
+      "Official social URL reachability and response metadata",
+      "Public title/description/canonical metadata where platforms allow access",
+      "YouTube public RSS latest-video cadence when channel id can be resolved",
+      "YouTube Data API statistics when YOUTUBE_API_KEY is configured",
+      "X API public metrics when X_BEARER_TOKEN is configured"
+    ],
+    "notCollectedWithoutAccess": [
+      "Follower count requires platform API, approved browser capture, or exported evidence.",
+      "Engagement rate requires post-level interactions from API/export/browser evidence.",
+      "Follower growth requires historical platform snapshots.",
+      "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+    ]
+  },
+  "brands": [
+    {
+      "name": "Astral Paints",
+      "website": "https://www.astralpaints.com/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Asian Paints",
+      "website": "https://www.asianpaints.com/",
+      "profiles": [
+        {
+          "brand": "Asian Paints",
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/asian-paints",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.linkedin.com/company/asian-paints",
+          "responseMs": 1061,
+          "title": "Asian Paints | LinkedIn",
+          "description": "Asian Paints | 720,469 followers on LinkedIn. They say home is where the heart is. Which is why, since 1942, we’ve been helping customers transform empty properties to homes by dressing them up in warm hues, pastel shades and cool colours, to create spaces that truly represent you.\nAsian Paints has a lot of identities.",
+          "canonical": "https://in.linkedin.com/company/asian-paints",
+          "collectionStatus": "Public profile reached"
+        },
+        {
+          "brand": "Asian Paints",
+          "platform": "youtube",
+          "url": "https://www.youtube.com/@asianpaints",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.youtube.com/@asianpaints",
+          "responseMs": 588,
+          "title": "Asian Paints - YouTube",
+          "description": "We aspire to partner with our consumers in their journey for a beautiful home and help them give expression to their creativity. Asian Paints aims to not onl...",
+          "canonical": "https://www.youtube.com/channel/UCIICvcFTHdlmlZAY2tpYiMQ",
+          "collectionStatus": "YouTube RSS collected",
+          "channelId": "UCIICvcFTHdlmlZAY2tpYiMQ",
+          "feedUrl": "https://www.youtube.com/feeds/videos.xml?channel_id=UCIICvcFTHdlmlZAY2tpYiMQ",
+          "feedStatus": 200,
+          "youtube": {
+            "status": "Active in last 30 days",
+            "videosIn30Days": 15,
+            "videosIn90Days": 15,
+            "lastVideoAt": "2026-05-05T07:47:19+00:00",
+            "latestVideos": [
+              {
+                "title": "Asian Paints Apex Dust Proof Emulsion | My Keralam Special Edition Pack",
+                "published": "2026-05-05T07:47:19+00:00",
+                "updated": "2026-05-05T07:47:20+00:00",
+                "link": "https://www.youtube.com/watch?v=4XySZWVTi5A",
+                "videoId": "4XySZWVTi5A"
+              },
+              {
+                "title": "Asian Paints Damp Proof - Superstar of Waterproofing | Tamil - 30 seconds",
+                "published": "2026-05-04T14:24:16+00:00",
+                "updated": "2026-05-04T14:24:18+00:00",
+                "link": "https://www.youtube.com/shorts/IfXhULAb18I",
+                "videoId": "IfXhULAb18I"
+              },
+              {
+                "title": "Asian Paints Damp Proof - Superstar of Waterproofing | Kannada - 30 seconds",
+                "published": "2026-05-04T14:24:13+00:00",
+                "updated": "2026-05-04T14:24:14+00:00",
+                "link": "https://www.youtube.com/shorts/oqQiGYIuOBw",
+                "videoId": "oqQiGYIuOBw"
+              },
+              {
+                "title": "Asian Paints Damp Proof - Superstar of Waterproofing | Kannada - 20 seconds",
+                "published": "2026-05-04T14:24:08+00:00",
+                "updated": "2026-05-04T14:24:11+00:00",
+                "link": "https://www.youtube.com/shorts/wCBy4aXOvEg",
+                "videoId": "wCBy4aXOvEg"
+              },
+              {
+                "title": "Asian Paints Damp Proof - Superstar of Waterproofing | Malayalam - 30 seconds",
+                "published": "2026-05-04T14:24:04+00:00",
+                "updated": "2026-05-04T14:24:07+00:00",
+                "link": "https://www.youtube.com/shorts/gqEHMY62bnU",
+                "videoId": "gqEHMY62bnU"
+              }
+            ],
+            "apiMetrics": null,
+            "latestVideoStats": []
+          }
+        },
+        {
+          "brand": "Asian Paints",
+          "platform": "instagram",
+          "url": "https://www.instagram.com/asianpaints",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.instagram.com/asianpaints",
+          "responseMs": 817,
+          "title": "Asian Paints (&#064;asianpaints) • Instagram photos and videos",
+          "description": "676K followers, 18 following, 5,433 posts &#x2013; Asian Paints (&#064;asianpaints) on Instagram: \"Adorning India&#x2019;s Homes Since 1942.\nFollow us to explore the latest colour trends, complete decor solutions and art that inspires.\n&#x1f4de; 1800-209-5678\"",
+          "canonical": "https://www.instagram.com/asianpaints/",
+          "collectionStatus": "Public profile reached"
+        },
+        {
+          "brand": "Asian Paints",
+          "platform": "facebook",
+          "url": "https://www.facebook.com/AsianPaints",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.facebook.com/asianpaints/",
+          "responseMs": 1503,
+          "title": "Asian Paints",
+          "description": "Asian Paints.20,89,207 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 1,04,613 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;.At Asian Paints, we aspire to partner with our consumers in their journey...",
+          "canonical": "https://www.facebook.com/asianpaints",
+          "collectionStatus": "Public profile reached"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 4,
+        "reachableProfiles": 4,
+        "youtubeVideos30d": 15,
+        "youtubeVideos90d": 15,
+        "lastYoutubeVideoAt": "2026-05-05T07:47:19+00:00",
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "Active in last 30 days"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Berger Paints",
+      "website": "https://www.bergerpaints.com/",
+      "profiles": [
+        {
+          "brand": "Berger Paints",
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/bergerpaintsindia",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.linkedin.com/company/bergerpaintsindia",
+          "responseMs": 1396,
+          "title": "Berger Paints India | LinkedIn",
+          "description": "Berger Paints India | 461,237 followers on LinkedIn. Welcome to the official LinkedIn page of Berger Paints India Limited. ‘A Legacy of Trust and Innovating for Future’ – the driving forces of Berger Paints – reflect the very spirit of its founder Lewis Berger – who laid the foundations of brand Berger way back in 1760 in the UK. With modest beginnings in India in 1923, we are celebrating a century of inspiring beautiful spaces.",
+          "canonical": "https://in.linkedin.com/company/bergerpaintsindia",
+          "collectionStatus": "Public profile reached"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 1,
+        "reachableProfiles": 1,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "Profiles tracked; post metrics restricted"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Kansai Nerolac",
+      "website": "https://www.nerolac.com/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Dulux / AkzoNobel",
+      "website": "https://www.dulux.in/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Indigo Paints",
+      "website": "https://indigopaints.com/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "JSW Paints",
+      "website": "https://www.jswpaints.in/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Birla Opus",
+      "website": "https://www.birlaopus.com/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Shalimar Paints",
+      "website": "https://www.shalimarpaints.com/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Nippon Paint India",
+      "website": "https://www.nipponpaint.co.in/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Jotun India",
+      "website": "https://www.jotun.com/in-en",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    }
+  ]
+}

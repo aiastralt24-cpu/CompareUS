@@ -1,0 +1,309 @@
+{
+  "generatedAt": "2026-05-05T19:37:00.822Z",
+  "monitoredSet": "astral-foundation",
+  "ownedBrandSlug": "astral-foundation",
+  "methodology": {
+    "mode": "public social evidence collector",
+    "collected": [
+      "Official social URL reachability and response metadata",
+      "Public title/description/canonical metadata where platforms allow access",
+      "YouTube public RSS latest-video cadence when channel id can be resolved",
+      "YouTube Data API statistics when YOUTUBE_API_KEY is configured",
+      "X API public metrics when X_BEARER_TOKEN is configured"
+    ],
+    "notCollectedWithoutAccess": [
+      "Follower count requires platform API, approved browser capture, or exported evidence.",
+      "Engagement rate requires post-level interactions from API/export/browser evidence.",
+      "Follower growth requires historical platform snapshots.",
+      "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+    ]
+  },
+  "brands": [
+    {
+      "name": "Astral Foundation",
+      "website": "https://www.astralltd.com/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Tata Trusts",
+      "website": "https://www.tatatrusts.org/",
+      "profiles": [
+        {
+          "brand": "Tata Trusts",
+          "platform": "facebook",
+          "url": "https://www.facebook.com/TataTrusts/",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.facebook.com/TataTrusts/",
+          "responseMs": 1347,
+          "title": "Tata Trusts",
+          "description": "Tata Trusts.52,110 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 358 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;.Catalysing transformational change in India with a focus on sustainable development...",
+          "canonical": "https://www.facebook.com/TataTrusts",
+          "collectionStatus": "Public profile reached"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 1,
+        "reachableProfiles": 1,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "Profiles tracked; post metrics restricted"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Reliance Foundation",
+      "website": "https://www.reliancefoundation.org/",
+      "profiles": [
+        {
+          "brand": "Reliance Foundation",
+          "platform": "facebook",
+          "url": "https://www.facebook.com/foundationRIL/",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.facebook.com/foundationRIL/",
+          "responseMs": 704,
+          "title": "Reliance Foundation",
+          "description": "Reliance Foundation.3,15,703 &#xaa8;&#xac7; &#xa97;&#xaae;&#xacd;&#xaaf;&#xac1;&#xa82; &#xb7; 11,278 &#xab2;&#xacb;&#xa95;&#xacb; &#xa86; &#xab5;&#xabf;&#xab7;&#xaaf; &#xaaa;&#xab0; &#xa9a;&#xab0;&#xacd;&#xa9a;&#xabe; &#xa95;&#xab0;&#xac0; &#xab0;&#xab9;&#xacd;&#xaaf;&#xabe; &#xa9b;&#xac7;.Reliance Foundation the philanthropic arm of Reliance Industries...",
+          "canonical": "https://www.facebook.com/foundationRIL",
+          "collectionStatus": "Public profile reached"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 1,
+        "reachableProfiles": 1,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "Profiles tracked; post metrics restricted"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Adani Foundation",
+      "website": "https://www.adani.com/adani-foundation",
+      "profiles": [
+        {
+          "brand": "Adani Foundation",
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/adanifoundation/",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.linkedin.com/company/adanifoundation/",
+          "responseMs": 995,
+          "title": "Adani Foundation | LinkedIn",
+          "description": "Adani Foundation | 140,211 followers on LinkedIn. Growth With Goodness | Established in 1996 as a tribute to the ideals of late Smt. Shantaba and late Shri Shantilal Adani, the Adani Foundation stands for the values of courage, trust and commitment. What began in a few rural communities around Mundra port, Gujarat, has now expanded to 22 states in India, going far beyond the regions where Adani Group companies are functioning.",
+          "canonical": "https://in.linkedin.com/company/adanifoundation",
+          "collectionStatus": "Public profile reached"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 1,
+        "reachableProfiles": 1,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "Profiles tracked; post metrics restricted"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Infosys Foundation",
+      "website": "https://www.infosys.org/infosys-foundation/about.html",
+      "profiles": [
+        {
+          "brand": "Infosys Foundation",
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/infosys-foundation",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.linkedin.com/company/infosys-foundation",
+          "responseMs": 1105,
+          "title": "Infosys Foundation | LinkedIn",
+          "description": "Infosys Foundation | 106,688 followers on LinkedIn. Towards supporting the underprivileged, creating opportunities, and striving towards a more equitable society. | Since 1996, Infosys Foundation has been trying to make communities and individuals stand on their feet. From helping communities affected by natural disasters, constructing toilets and building libraries for village schools, providing succor to Devadasi women, to donating funds for cancer treatment, scientific research and mid-day meals – if there is a worthy cause in sight, the Foundation is always there to support it.\n\nWe take great pride in working with all sections of society, selecting projects with infinite care, and working in areas that traditionally overlooked by society at large.",
+          "canonical": "https://www.linkedin.com/company/infosys-foundation",
+          "collectionStatus": "Public profile reached"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 1,
+        "reachableProfiles": 1,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "Profiles tracked; post metrics restricted"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Wipro Foundation",
+      "website": "https://www.wiprofoundation.org/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "HCL Foundation",
+      "website": "https://www.hclfoundation.org/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Mahindra Foundation",
+      "website": "https://www.mahindra.com/our-story/sustainability",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "JSW Foundation",
+      "website": "https://www.jswfoundation.org/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "SBI Foundation",
+      "website": "https://www.sbifoundation.in/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    }
+  ]
+}

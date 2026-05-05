@@ -1,0 +1,222 @@
+{
+  "generatedAt": "2026-05-05T19:26:01.445Z",
+  "monitoredSet": "astral-adhesives",
+  "ownedBrandSlug": "astral-adhesives",
+  "newEventCount": 11,
+  "telegram": {
+    "attempted": false,
+    "sent": 0,
+    "reason": "Telegram env vars missing or no events"
+  },
+  "events": [
+    {
+      "id": "e9ad1f3c2f5ecf3e",
+      "brand": "Loctite / Henkel",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Loctite / Henkel monitoring baseline created",
+      "detail": "418 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.henkel-adhesives.com/in/en.html",
+      "firstSeenAt": "2026-05-05T19:26:01.440Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 418,
+        "campaignLikeUrls": 153
+      }
+    },
+    {
+      "id": "2b59b2393a3c0b5d",
+      "brand": "Bostik India",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Bostik India monitoring baseline created",
+      "detail": "74 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.bostik.com/india/en/",
+      "firstSeenAt": "2026-05-05T19:26:00.664Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 403,
+        "trackedUrls": 74,
+        "campaignLikeUrls": 14
+      }
+    },
+    {
+      "id": "8be72a345dbf84b0",
+      "brand": "MYK Laticrete",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "MYK Laticrete monitoring baseline created",
+      "detail": "233 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.myklaticrete.com/",
+      "firstSeenAt": "2026-05-05T19:26:00.184Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 233,
+        "campaignLikeUrls": 172
+      }
+    },
+    {
+      "id": "d999c9b7b1ef429a",
+      "brand": "Fosroc",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Fosroc monitoring baseline created",
+      "detail": "1537 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.fosroc.com/about-fosroc-india",
+      "firstSeenAt": "2026-05-05T19:25:56.622Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 1537,
+        "campaignLikeUrls": 1339
+      }
+    },
+    {
+      "id": "c76033494a892219",
+      "brand": "Sika",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Sika monitoring baseline created",
+      "detail": "78 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://ind.sika.com/",
+      "firstSeenAt": "2026-05-05T19:25:52.379Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 404,
+        "trackedUrls": 78,
+        "campaignLikeUrls": 5
+      }
+    },
+    {
+      "id": "facd9bec9f6e56e4",
+      "brand": "Dr. Fixit",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Dr. Fixit monitoring baseline created",
+      "detail": "814 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.drfixit.co.in/",
+      "firstSeenAt": "2026-05-05T19:25:52.099Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 814,
+        "campaignLikeUrls": 567
+      }
+    },
+    {
+      "id": "cae9daafaabf8bc2",
+      "brand": "M-Seal",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "M-Seal monitoring baseline created",
+      "detail": "0 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.mseal.in/",
+      "firstSeenAt": "2026-05-05T19:25:50.932Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 0,
+        "sitemapStatus": 0,
+        "trackedUrls": 0,
+        "campaignLikeUrls": 0
+      }
+    },
+    {
+      "id": "9c7da5aa323dc77c",
+      "brand": "Araldite",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Araldite monitoring baseline created",
+      "detail": "0 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.araldite.com/en_IN/",
+      "firstSeenAt": "2026-05-05T19:25:50.743Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 0,
+        "sitemapStatus": 0,
+        "trackedUrls": 0,
+        "campaignLikeUrls": 0
+      }
+    },
+    {
+      "id": "f14f723b57274073",
+      "brand": "Fevicol",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Fevicol monitoring baseline created",
+      "detail": "33 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.fevicol.in/",
+      "firstSeenAt": "2026-05-05T19:25:40.422Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 33,
+        "campaignLikeUrls": 7
+      }
+    },
+    {
+      "id": "0b071bf3fe1333c2",
+      "brand": "Pidilite",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Pidilite monitoring baseline created",
+      "detail": "69 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.pidilite.com/",
+      "firstSeenAt": "2026-05-05T19:25:39.695Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 69,
+        "campaignLikeUrls": 5
+      }
+    },
+    {
+      "id": "fb36013923fd128c",
+      "brand": "Astral Adhesives",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Astral Adhesives monitoring baseline created",
+      "detail": "79 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.astraladhesives.com/",
+      "firstSeenAt": "2026-05-05T19:25:39.048Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 404,
+        "trackedUrls": 79,
+        "campaignLikeUrls": 2
+      }
+    }
+  ]
+}

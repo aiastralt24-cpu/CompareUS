@@ -1,0 +1,304 @@
+{
+  "generatedAt": "2026-05-05T19:28:43.317Z",
+  "monitoredSet": "astral-bathware",
+  "ownedBrandSlug": "astral-bathware",
+  "methodology": {
+    "mode": "public social evidence collector",
+    "collected": [
+      "Official social URL reachability and response metadata",
+      "Public title/description/canonical metadata where platforms allow access",
+      "YouTube public RSS latest-video cadence when channel id can be resolved",
+      "YouTube Data API statistics when YOUTUBE_API_KEY is configured",
+      "X API public metrics when X_BEARER_TOKEN is configured"
+    ],
+    "notCollectedWithoutAccess": [
+      "Follower count requires platform API, approved browser capture, or exported evidence.",
+      "Engagement rate requires post-level interactions from API/export/browser evidence.",
+      "Follower growth requires historical platform snapshots.",
+      "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+    ]
+  },
+  "brands": [
+    {
+      "name": "Astral Bathware",
+      "website": "https://www.astralbathware.com/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Jaquar",
+      "website": "https://www.jaquar.com/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Hindware",
+      "website": "https://hindware.com/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "CERA",
+      "website": "https://www.cera-india.com/",
+      "profiles": [
+        {
+          "brand": "CERA",
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/cera-sanitaryware-ltd",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.linkedin.com/company/cera-sanitaryware-ltd",
+          "responseMs": 1070,
+          "title": "CERA Sanitaryware Ltd. | LinkedIn",
+          "description": "CERA Sanitaryware Ltd. | 79,079 followers on LinkedIn. A leading brand in sanitaryware, faucets, tiles, and other wellness products' segment.  | Style. Innovation. Leadership\nThese three words truly capture the essence of CERA, India's fastest-growing company in the 'home solutions' segment.",
+          "canonical": "https://in.linkedin.com/company/cera-sanitaryware-ltd",
+          "collectionStatus": "Public profile reached"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 1,
+        "reachableProfiles": 1,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "Profiles tracked; post metrics restricted"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Parryware / Roca",
+      "website": "https://www.parryware.in/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Kohler India",
+      "website": "https://www.kohler.co.in/",
+      "profiles": [
+        {
+          "brand": "Kohler India",
+          "platform": "linkedin",
+          "url": "https://www.linkedin.com/company/kohler-india",
+          "ok": true,
+          "status": 200,
+          "finalUrl": "https://www.linkedin.com/company/kohler-india",
+          "responseMs": 1077,
+          "title": "KOHLER India | LinkedIn",
+          "description": "KOHLER India | 80,952 followers on LinkedIn. The Bold Look of Kohler | KOHLER® was founded in 1873 and is headquartered in Kohler, Wisconsin, USA. Kohler Co. is one of America’s oldest and largest privately held companies.\n\nKOHLER INDIA\nKohler has been shaping the design and innovation landscape in India since 2005, with a strong presence across the following business and service lines:\n\n• Kitchen &amp; Bath – A wholly owned subsidiary of Kohler Co., USA, this division was established in 2005 with its headquarters in Gurgaon.",
+          "canonical": "https://in.linkedin.com/company/kohler-india",
+          "collectionStatus": "Public profile reached"
+        }
+      ],
+      "summary": {
+        "profilesTracked": 1,
+        "reachableProfiles": 1,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "Profiles tracked; post metrics restricted"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Grohe India",
+      "website": "https://www.grohe.co.in/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "American Standard India",
+      "website": "https://www.americanstandard.in/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "TOTO India",
+      "website": "https://in.toto.com/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Vitra India",
+      "website": "https://www.vitra-india.com/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    },
+    {
+      "name": "Watertec",
+      "website": "https://www.watertecindia.com/",
+      "profiles": [],
+      "summary": {
+        "profilesTracked": 0,
+        "reachableProfiles": 0,
+        "youtubeVideos30d": null,
+        "youtubeVideos90d": null,
+        "lastYoutubeVideoAt": null,
+        "youtubeSubscriberCount": null,
+        "youtubeChannelViews": null,
+        "youtubeVideoCount": null,
+        "xFollowerCount": null,
+        "status": "No handles in registry"
+      },
+      "unavailableMetrics": [
+        "Follower count requires platform API, approved browser capture, or exported evidence.",
+        "Engagement rate requires post-level interactions from API/export/browser evidence.",
+        "Follower growth requires historical platform snapshots.",
+        "Paid-vs-organic classification requires ad-library collectors or campaign tagging evidence."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "generatedAt": "2026-05-05T19:35:34.612Z",
+  "monitoredSet": "astral-paints",
+  "ownedBrandSlug": "astral-paints",
+  "methodology": {
+    "mode": "Meta Ad Library active creative collector",
+    "source": "Meta Graph API ads_archive",
+    "method": "Search by brand name, country filter, active ads only",
+    "confidence": "Setup required"
+  },
+  "brands": [
+    {
+      "name": "Astral Paints",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Asian Paints",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Berger Paints",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Kansai Nerolac",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Dulux / AkzoNobel",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Indigo Paints",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "JSW Paints",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Birla Opus",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Shalimar Paints",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Nippon Paint India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Jotun India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    }
+  ]
+}

@@ -17,6 +17,7 @@ Periscope uses a single approved local credential gate for the current internal 
 
 ```bash
 npm run collect
+npm run collect:all
 npm run social:collect
 npm run ads:collect
 npm run browser-evidence:collect

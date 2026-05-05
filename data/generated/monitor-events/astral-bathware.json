@@ -1,0 +1,222 @@
+{
+  "generatedAt": "2026-05-05T19:29:08.207Z",
+  "monitoredSet": "astral-bathware",
+  "ownedBrandSlug": "astral-bathware",
+  "newEventCount": 11,
+  "telegram": {
+    "attempted": false,
+    "sent": 0,
+    "reason": "Telegram env vars missing or no events"
+  },
+  "events": [
+    {
+      "id": "63e78ddea764b76c",
+      "brand": "Watertec",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Watertec monitoring baseline created",
+      "detail": "874 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.watertecindia.com/",
+      "firstSeenAt": "2026-05-05T19:29:08.201Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 874,
+        "campaignLikeUrls": 792
+      }
+    },
+    {
+      "id": "cff59b8d0ae66958",
+      "brand": "Vitra India",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Vitra India monitoring baseline created",
+      "detail": "42 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.vitra-india.com/",
+      "firstSeenAt": "2026-05-05T19:29:07.855Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 404,
+        "trackedUrls": 42,
+        "campaignLikeUrls": 7
+      }
+    },
+    {
+      "id": "31d6fdfdb1ca590e",
+      "brand": "TOTO India",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "TOTO India monitoring baseline created",
+      "detail": "0 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://in.toto.com/",
+      "firstSeenAt": "2026-05-05T19:29:06.486Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 403,
+        "sitemapStatus": 403,
+        "trackedUrls": 0,
+        "campaignLikeUrls": 0
+      }
+    },
+    {
+      "id": "6416295f9bfb867d",
+      "brand": "American Standard India",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "American Standard India monitoring baseline created",
+      "detail": "92 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.americanstandard.in/",
+      "firstSeenAt": "2026-05-05T19:29:06.320Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 92,
+        "campaignLikeUrls": 52
+      }
+    },
+    {
+      "id": "d4791b1495527a66",
+      "brand": "Grohe India",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Grohe India monitoring baseline created",
+      "detail": "49 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.grohe.co.in/",
+      "firstSeenAt": "2026-05-05T19:29:05.382Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 404,
+        "trackedUrls": 49,
+        "campaignLikeUrls": 6
+      }
+    },
+    {
+      "id": "aa2e428a6e7494e2",
+      "brand": "Kohler India",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Kohler India monitoring baseline created",
+      "detail": "183 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.kohler.co.in/",
+      "firstSeenAt": "2026-05-05T19:29:04.204Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 183,
+        "campaignLikeUrls": 27
+      }
+    },
+    {
+      "id": "9fd3558cb5755433",
+      "brand": "Parryware / Roca",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Parryware / Roca monitoring baseline created",
+      "detail": "1509 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.parryware.in/",
+      "firstSeenAt": "2026-05-05T19:29:03.675Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 1509,
+        "campaignLikeUrls": 1134
+      }
+    },
+    {
+      "id": "36d359448a961c16",
+      "brand": "CERA",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "CERA monitoring baseline created",
+      "detail": "111 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.cera-india.com/",
+      "firstSeenAt": "2026-05-05T19:29:02.127Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 111,
+        "campaignLikeUrls": 7
+      }
+    },
+    {
+      "id": "ce86cb9b4ce65972",
+      "brand": "Hindware",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Hindware monitoring baseline created",
+      "detail": "3525 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://hindware.com/",
+      "firstSeenAt": "2026-05-05T19:29:00.824Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 3525,
+        "campaignLikeUrls": 268
+      }
+    },
+    {
+      "id": "f0e171a24e2f1b05",
+      "brand": "Jaquar",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Jaquar monitoring baseline created",
+      "detail": "80 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.jaquar.com/",
+      "firstSeenAt": "2026-05-05T19:29:00.616Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 0,
+        "trackedUrls": 80,
+        "campaignLikeUrls": 8
+      }
+    },
+    {
+      "id": "13ff612d3a99fb9f",
+      "brand": "Astral Bathware",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Astral Bathware monitoring baseline created",
+      "detail": "89 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.astralbathware.com/",
+      "firstSeenAt": "2026-05-05T19:28:45.606Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 89,
+        "campaignLikeUrls": 20
+      }
+    }
+  ]
+}

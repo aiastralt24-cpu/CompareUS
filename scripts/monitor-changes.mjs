@@ -5,9 +5,10 @@ import { performance } from "node:perf_hooks";
 import competitorSets from "../data/competitor-sets.json" with { type: "json" };
 
 const stateDir = path.resolve("data/monitor");
-const stateFile = path.join(stateDir, "state.json");
+const stateFile = path.join(stateDir, `${process.env.MONITOR_BRAND_SLUG || "astral-pipes"}.json`);
 const generatedDir = path.resolve("data/generated");
 const eventsFile = path.join(generatedDir, "monitor-events.json");
+const setEventsDir = path.join(generatedDir, "monitor-events");
 const socialSnapshotFile = path.join(generatedDir, "social-snapshot.json");
 const adSnapshotFile = path.join(generatedDir, "ad-library-snapshot.json");
 const activeSetSlug = process.env.MONITOR_BRAND_SLUG || "astral-pipes";
@@ -243,6 +244,8 @@ function createEvent({ brand, type, severity, title, detail, sourceUrl, evidence
   return {
     id: hash(`${brand.name}|${type}|${title}|${sourceUrl}|${JSON.stringify(evidence)}`).slice(0, 16),
     brand: brand.name,
+    monitoredSet: activeSetSlug,
+    ownedBrandSlug: activeSet.ownedBrandSlug,
     type,
     severity,
     title,
@@ -706,7 +709,8 @@ async function sendTelegram(events) {
 
 const resetBaseline = process.env.MONITOR_RESET === "1";
 const previousState = resetBaseline ? { brands: {} } : await readJson(stateFile, { brands: {} });
-const existingEvents = resetBaseline ? { events: [] } : await readJson(eventsFile, { events: [] });
+const setEventsFile = path.join(setEventsDir, `${activeSetSlug}.json`);
+const existingSetEvents = resetBaseline ? { events: [] } : await readJson(setEventsFile, { events: [] });
 const socialSnapshot = await readJson(socialSnapshotFile, { generatedAt: null, brands: [] });
 const adSnapshot = await readJson(adSnapshotFile, { generatedAt: null, brands: [] });
 const socialSnapshotByBrand = new Map(
@@ -742,19 +746,47 @@ for (const brand of brands) {
 }
 
 newEvents = dedupeEvents(newEvents);
-const allEvents = dedupeEvents([...newEvents, ...(existingEvents.events || [])])
+const allSetEvents = dedupeEvents([...newEvents, ...(existingSetEvents.events || [])])
   .sort((a, b) => new Date(b.firstSeenAt) - new Date(a.firstSeenAt))
   .slice(0, 500);
 
 const telegram = await sendTelegram(newEvents);
 await writeJson(stateFile, nextState);
-await writeJson(eventsFile, {
+await writeJson(setEventsFile, {
   generatedAt: new Date().toISOString(),
   monitoredSet: activeSetSlug,
+  ownedBrandSlug: activeSet.ownedBrandSlug,
   newEventCount: newEvents.length,
   telegram,
-  events: allEvents
+  events: allSetEvents
+});
+
+const setEventSnapshots = [];
+try {
+  for (const file of await fs.readdir(setEventsDir)) {
+    if (!file.endsWith(".json")) continue;
+    try {
+      const parsed = JSON.parse(await fs.readFile(path.join(setEventsDir, file), "utf8"));
+      if (parsed?.monitoredSet && Array.isArray(parsed.events)) setEventSnapshots.push(parsed);
+    } catch {
+      // Ignore malformed partial files.
+    }
+  }
+} catch {
+  // Directory is created by writeJson above.
+}
+const aggregateEvents = dedupeEvents(setEventSnapshots.flatMap((set) => set.events || []))
+  .sort((a, b) => new Date(b.firstSeenAt) - new Date(a.firstSeenAt))
+  .slice(0, 1000);
+await writeJson(eventsFile, {
+  generatedAt: new Date().toISOString(),
+  activeMonitoredSet: activeSetSlug,
+  newEventCount: newEvents.length,
+  telegram,
+  sets: setEventSnapshots.sort((a, b) => (a.monitoredSet || "").localeCompare(b.monitoredSet || "")),
+  events: aggregateEvents
 });
 
 console.log(`Detected ${newEvents.length} new event(s).`);
+console.log(`Wrote ${setEventsFile}`);
 console.log(`Wrote ${eventsFile}`);

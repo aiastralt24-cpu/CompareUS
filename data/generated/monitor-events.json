@@ -1,39 +1,1896 @@
 {
-  "generatedAt": "2026-05-05T08:25:00.534Z",
-  "monitoredSet": "astral-pipes",
-  "newEventCount": 1,
+  "generatedAt": "2026-05-05T19:37:08.465Z",
+  "activeMonitoredSet": "astral-foundation",
+  "newEventCount": 10,
   "telegram": {
     "attempted": false,
     "sent": 0,
     "reason": "Telegram env vars missing or no events"
   },
+  "sets": [
+    {
+      "generatedAt": "2026-05-05T19:26:01.445Z",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "newEventCount": 11,
+      "telegram": {
+        "attempted": false,
+        "sent": 0,
+        "reason": "Telegram env vars missing or no events"
+      },
+      "events": [
+        {
+          "id": "e9ad1f3c2f5ecf3e",
+          "brand": "Loctite / Henkel",
+          "monitoredSet": "astral-adhesives",
+          "ownedBrandSlug": "astral-adhesives",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Loctite / Henkel monitoring baseline created",
+          "detail": "418 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.henkel-adhesives.com/in/en.html",
+          "firstSeenAt": "2026-05-05T19:26:01.440Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 418,
+            "campaignLikeUrls": 153
+          }
+        },
+        {
+          "id": "2b59b2393a3c0b5d",
+          "brand": "Bostik India",
+          "monitoredSet": "astral-adhesives",
+          "ownedBrandSlug": "astral-adhesives",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Bostik India monitoring baseline created",
+          "detail": "74 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.bostik.com/india/en/",
+          "firstSeenAt": "2026-05-05T19:26:00.664Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 403,
+            "trackedUrls": 74,
+            "campaignLikeUrls": 14
+          }
+        },
+        {
+          "id": "8be72a345dbf84b0",
+          "brand": "MYK Laticrete",
+          "monitoredSet": "astral-adhesives",
+          "ownedBrandSlug": "astral-adhesives",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "MYK Laticrete monitoring baseline created",
+          "detail": "233 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.myklaticrete.com/",
+          "firstSeenAt": "2026-05-05T19:26:00.184Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 233,
+            "campaignLikeUrls": 172
+          }
+        },
+        {
+          "id": "d999c9b7b1ef429a",
+          "brand": "Fosroc",
+          "monitoredSet": "astral-adhesives",
+          "ownedBrandSlug": "astral-adhesives",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Fosroc monitoring baseline created",
+          "detail": "1537 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.fosroc.com/about-fosroc-india",
+          "firstSeenAt": "2026-05-05T19:25:56.622Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 1537,
+            "campaignLikeUrls": 1339
+          }
+        },
+        {
+          "id": "c76033494a892219",
+          "brand": "Sika",
+          "monitoredSet": "astral-adhesives",
+          "ownedBrandSlug": "astral-adhesives",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Sika monitoring baseline created",
+          "detail": "78 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://ind.sika.com/",
+          "firstSeenAt": "2026-05-05T19:25:52.379Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 404,
+            "trackedUrls": 78,
+            "campaignLikeUrls": 5
+          }
+        },
+        {
+          "id": "facd9bec9f6e56e4",
+          "brand": "Dr. Fixit",
+          "monitoredSet": "astral-adhesives",
+          "ownedBrandSlug": "astral-adhesives",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Dr. Fixit monitoring baseline created",
+          "detail": "814 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.drfixit.co.in/",
+          "firstSeenAt": "2026-05-05T19:25:52.099Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 814,
+            "campaignLikeUrls": 567
+          }
+        },
+        {
+          "id": "cae9daafaabf8bc2",
+          "brand": "M-Seal",
+          "monitoredSet": "astral-adhesives",
+          "ownedBrandSlug": "astral-adhesives",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "M-Seal monitoring baseline created",
+          "detail": "0 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.mseal.in/",
+          "firstSeenAt": "2026-05-05T19:25:50.932Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 0,
+            "sitemapStatus": 0,
+            "trackedUrls": 0,
+            "campaignLikeUrls": 0
+          }
+        },
+        {
+          "id": "9c7da5aa323dc77c",
+          "brand": "Araldite",
+          "monitoredSet": "astral-adhesives",
+          "ownedBrandSlug": "astral-adhesives",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Araldite monitoring baseline created",
+          "detail": "0 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.araldite.com/en_IN/",
+          "firstSeenAt": "2026-05-05T19:25:50.743Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 0,
+            "sitemapStatus": 0,
+            "trackedUrls": 0,
+            "campaignLikeUrls": 0
+          }
+        },
+        {
+          "id": "f14f723b57274073",
+          "brand": "Fevicol",
+          "monitoredSet": "astral-adhesives",
+          "ownedBrandSlug": "astral-adhesives",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Fevicol monitoring baseline created",
+          "detail": "33 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.fevicol.in/",
+          "firstSeenAt": "2026-05-05T19:25:40.422Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 33,
+            "campaignLikeUrls": 7
+          }
+        },
+        {
+          "id": "0b071bf3fe1333c2",
+          "brand": "Pidilite",
+          "monitoredSet": "astral-adhesives",
+          "ownedBrandSlug": "astral-adhesives",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Pidilite monitoring baseline created",
+          "detail": "69 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.pidilite.com/",
+          "firstSeenAt": "2026-05-05T19:25:39.695Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 69,
+            "campaignLikeUrls": 5
+          }
+        },
+        {
+          "id": "fb36013923fd128c",
+          "brand": "Astral Adhesives",
+          "monitoredSet": "astral-adhesives",
+          "ownedBrandSlug": "astral-adhesives",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Astral Adhesives monitoring baseline created",
+          "detail": "79 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.astraladhesives.com/",
+          "firstSeenAt": "2026-05-05T19:25:39.048Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 404,
+            "trackedUrls": 79,
+            "campaignLikeUrls": 2
+          }
+        }
+      ]
+    },
+    {
+      "generatedAt": "2026-05-05T19:29:08.207Z",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "newEventCount": 11,
+      "telegram": {
+        "attempted": false,
+        "sent": 0,
+        "reason": "Telegram env vars missing or no events"
+      },
+      "events": [
+        {
+          "id": "63e78ddea764b76c",
+          "brand": "Watertec",
+          "monitoredSet": "astral-bathware",
+          "ownedBrandSlug": "astral-bathware",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Watertec monitoring baseline created",
+          "detail": "874 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.watertecindia.com/",
+          "firstSeenAt": "2026-05-05T19:29:08.201Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 874,
+            "campaignLikeUrls": 792
+          }
+        },
+        {
+          "id": "cff59b8d0ae66958",
+          "brand": "Vitra India",
+          "monitoredSet": "astral-bathware",
+          "ownedBrandSlug": "astral-bathware",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Vitra India monitoring baseline created",
+          "detail": "42 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.vitra-india.com/",
+          "firstSeenAt": "2026-05-05T19:29:07.855Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 404,
+            "trackedUrls": 42,
+            "campaignLikeUrls": 7
+          }
+        },
+        {
+          "id": "31d6fdfdb1ca590e",
+          "brand": "TOTO India",
+          "monitoredSet": "astral-bathware",
+          "ownedBrandSlug": "astral-bathware",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "TOTO India monitoring baseline created",
+          "detail": "0 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://in.toto.com/",
+          "firstSeenAt": "2026-05-05T19:29:06.486Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 403,
+            "sitemapStatus": 403,
+            "trackedUrls": 0,
+            "campaignLikeUrls": 0
+          }
+        },
+        {
+          "id": "6416295f9bfb867d",
+          "brand": "American Standard India",
+          "monitoredSet": "astral-bathware",
+          "ownedBrandSlug": "astral-bathware",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "American Standard India monitoring baseline created",
+          "detail": "92 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.americanstandard.in/",
+          "firstSeenAt": "2026-05-05T19:29:06.320Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 92,
+            "campaignLikeUrls": 52
+          }
+        },
+        {
+          "id": "d4791b1495527a66",
+          "brand": "Grohe India",
+          "monitoredSet": "astral-bathware",
+          "ownedBrandSlug": "astral-bathware",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Grohe India monitoring baseline created",
+          "detail": "49 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.grohe.co.in/",
+          "firstSeenAt": "2026-05-05T19:29:05.382Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 404,
+            "trackedUrls": 49,
+            "campaignLikeUrls": 6
+          }
+        },
+        {
+          "id": "aa2e428a6e7494e2",
+          "brand": "Kohler India",
+          "monitoredSet": "astral-bathware",
+          "ownedBrandSlug": "astral-bathware",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Kohler India monitoring baseline created",
+          "detail": "183 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.kohler.co.in/",
+          "firstSeenAt": "2026-05-05T19:29:04.204Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 183,
+            "campaignLikeUrls": 27
+          }
+        },
+        {
+          "id": "9fd3558cb5755433",
+          "brand": "Parryware / Roca",
+          "monitoredSet": "astral-bathware",
+          "ownedBrandSlug": "astral-bathware",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Parryware / Roca monitoring baseline created",
+          "detail": "1509 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.parryware.in/",
+          "firstSeenAt": "2026-05-05T19:29:03.675Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 1509,
+            "campaignLikeUrls": 1134
+          }
+        },
+        {
+          "id": "36d359448a961c16",
+          "brand": "CERA",
+          "monitoredSet": "astral-bathware",
+          "ownedBrandSlug": "astral-bathware",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "CERA monitoring baseline created",
+          "detail": "111 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.cera-india.com/",
+          "firstSeenAt": "2026-05-05T19:29:02.127Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 111,
+            "campaignLikeUrls": 7
+          }
+        },
+        {
+          "id": "ce86cb9b4ce65972",
+          "brand": "Hindware",
+          "monitoredSet": "astral-bathware",
+          "ownedBrandSlug": "astral-bathware",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Hindware monitoring baseline created",
+          "detail": "3525 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://hindware.com/",
+          "firstSeenAt": "2026-05-05T19:29:00.824Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 3525,
+            "campaignLikeUrls": 268
+          }
+        },
+        {
+          "id": "f0e171a24e2f1b05",
+          "brand": "Jaquar",
+          "monitoredSet": "astral-bathware",
+          "ownedBrandSlug": "astral-bathware",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Jaquar monitoring baseline created",
+          "detail": "80 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.jaquar.com/",
+          "firstSeenAt": "2026-05-05T19:29:00.616Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 0,
+            "trackedUrls": 80,
+            "campaignLikeUrls": 8
+          }
+        },
+        {
+          "id": "13ff612d3a99fb9f",
+          "brand": "Astral Bathware",
+          "monitoredSet": "astral-bathware",
+          "ownedBrandSlug": "astral-bathware",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Astral Bathware monitoring baseline created",
+          "detail": "89 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.astralbathware.com/",
+          "firstSeenAt": "2026-05-05T19:28:45.606Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 89,
+            "campaignLikeUrls": 20
+          }
+        }
+      ]
+    },
+    {
+      "generatedAt": "2026-05-05T19:37:08.463Z",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "newEventCount": 10,
+      "telegram": {
+        "attempted": false,
+        "sent": 0,
+        "reason": "Telegram env vars missing or no events"
+      },
+      "events": [
+        {
+          "id": "b6c352463f3cbff5",
+          "brand": "SBI Foundation",
+          "monitoredSet": "astral-foundation",
+          "ownedBrandSlug": "astral-foundation",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "SBI Foundation monitoring baseline created",
+          "detail": "0 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.sbifoundation.in/",
+          "firstSeenAt": "2026-05-05T19:37:08.460Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 0,
+            "campaignLikeUrls": 0
+          }
+        },
+        {
+          "id": "24b01a344a430b0e",
+          "brand": "JSW Foundation",
+          "monitoredSet": "astral-foundation",
+          "ownedBrandSlug": "astral-foundation",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "JSW Foundation monitoring baseline created",
+          "detail": "0 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.jswfoundation.org/",
+          "firstSeenAt": "2026-05-05T19:37:08.254Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 0,
+            "sitemapStatus": 0,
+            "trackedUrls": 0,
+            "campaignLikeUrls": 0
+          }
+        },
+        {
+          "id": "fe6dd2daffdf5c18",
+          "brand": "Mahindra Foundation",
+          "monitoredSet": "astral-foundation",
+          "ownedBrandSlug": "astral-foundation",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Mahindra Foundation monitoring baseline created",
+          "detail": "2 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.mahindra.com/our-story/sustainability",
+          "firstSeenAt": "2026-05-05T19:37:08.248Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 404,
+            "sitemapStatus": 200,
+            "trackedUrls": 2,
+            "campaignLikeUrls": 0
+          }
+        },
+        {
+          "id": "1e2cc1d9d21669a0",
+          "brand": "HCL Foundation",
+          "monitoredSet": "astral-foundation",
+          "ownedBrandSlug": "astral-foundation",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "HCL Foundation monitoring baseline created",
+          "detail": "29 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.hclfoundation.org/",
+          "firstSeenAt": "2026-05-05T19:37:07.355Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 29,
+            "campaignLikeUrls": 0
+          }
+        },
+        {
+          "id": "7e34632ffaf501c4",
+          "brand": "Wipro Foundation",
+          "monitoredSet": "astral-foundation",
+          "ownedBrandSlug": "astral-foundation",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Wipro Foundation monitoring baseline created",
+          "detail": "43 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.wiprofoundation.org/",
+          "firstSeenAt": "2026-05-05T19:37:05.153Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 43,
+            "campaignLikeUrls": 4
+          }
+        },
+        {
+          "id": "b3340e8a595d6f9a",
+          "brand": "Infosys Foundation",
+          "monitoredSet": "astral-foundation",
+          "ownedBrandSlug": "astral-foundation",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Infosys Foundation monitoring baseline created",
+          "detail": "13 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.infosys.org/infosys-foundation/about.html",
+          "firstSeenAt": "2026-05-05T19:37:04.180Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 404,
+            "trackedUrls": 13,
+            "campaignLikeUrls": 1
+          }
+        },
+        {
+          "id": "0802b7cd738b05e3",
+          "brand": "Adani Foundation",
+          "monitoredSet": "astral-foundation",
+          "ownedBrandSlug": "astral-foundation",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Adani Foundation monitoring baseline created",
+          "detail": "821 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.adani.com/adani-foundation",
+          "firstSeenAt": "2026-05-05T19:37:03.289Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 821,
+            "campaignLikeUrls": 520
+          }
+        },
+        {
+          "id": "64cc3f8981339415",
+          "brand": "Reliance Foundation",
+          "monitoredSet": "astral-foundation",
+          "ownedBrandSlug": "astral-foundation",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Reliance Foundation monitoring baseline created",
+          "detail": "328 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.reliancefoundation.org/",
+          "firstSeenAt": "2026-05-05T19:37:02.489Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 328,
+            "campaignLikeUrls": 195
+          }
+        },
+        {
+          "id": "12fcb20c974beae5",
+          "brand": "Tata Trusts",
+          "monitoredSet": "astral-foundation",
+          "ownedBrandSlug": "astral-foundation",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Tata Trusts monitoring baseline created",
+          "detail": "1051 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.tatatrusts.org/",
+          "firstSeenAt": "2026-05-05T19:37:01.991Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 1051,
+            "campaignLikeUrls": 236
+          }
+        },
+        {
+          "id": "e0a7ae3bb5c4d318",
+          "brand": "Astral Foundation",
+          "monitoredSet": "astral-foundation",
+          "ownedBrandSlug": "astral-foundation",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Astral Foundation monitoring baseline created",
+          "detail": "26 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.astralltd.com/",
+          "firstSeenAt": "2026-05-05T19:37:01.680Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 26,
+            "campaignLikeUrls": 5
+          }
+        }
+      ]
+    },
+    {
+      "generatedAt": "2026-05-05T19:35:45.356Z",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "newEventCount": 11,
+      "telegram": {
+        "attempted": false,
+        "sent": 0,
+        "reason": "Telegram env vars missing or no events"
+      },
+      "events": [
+        {
+          "id": "16eb23c9f790c1fc",
+          "brand": "Jotun India",
+          "monitoredSet": "astral-paints",
+          "ownedBrandSlug": "astral-paints",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Jotun India monitoring baseline created",
+          "detail": "2934 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.jotun.com/in-en",
+          "firstSeenAt": "2026-05-05T19:35:45.349Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 2934,
+            "campaignLikeUrls": 2269
+          }
+        },
+        {
+          "id": "4be3613562344999",
+          "brand": "Nippon Paint India",
+          "monitoredSet": "astral-paints",
+          "ownedBrandSlug": "astral-paints",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Nippon Paint India monitoring baseline created",
+          "detail": "40 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.nipponpaint.co.in/",
+          "firstSeenAt": "2026-05-05T19:35:44.059Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 404,
+            "trackedUrls": 40,
+            "campaignLikeUrls": 14
+          }
+        },
+        {
+          "id": "811622cfcf21872e",
+          "brand": "Shalimar Paints",
+          "monitoredSet": "astral-paints",
+          "ownedBrandSlug": "astral-paints",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Shalimar Paints monitoring baseline created",
+          "detail": "106 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.shalimarpaints.com/",
+          "firstSeenAt": "2026-05-05T19:35:40.742Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 106,
+            "campaignLikeUrls": 29
+          }
+        },
+        {
+          "id": "4ef9a7fe68c92ef6",
+          "brand": "Birla Opus",
+          "monitoredSet": "astral-paints",
+          "ownedBrandSlug": "astral-paints",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Birla Opus monitoring baseline created",
+          "detail": "3066 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.birlaopus.com/",
+          "firstSeenAt": "2026-05-05T19:35:40.369Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 3066,
+            "campaignLikeUrls": 529
+          }
+        },
+        {
+          "id": "a79d937f8ae5955a",
+          "brand": "JSW Paints",
+          "monitoredSet": "astral-paints",
+          "ownedBrandSlug": "astral-paints",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "JSW Paints monitoring baseline created",
+          "detail": "470 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.jswpaints.in/",
+          "firstSeenAt": "2026-05-05T19:35:37.829Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 470,
+            "campaignLikeUrls": 113
+          }
+        },
+        {
+          "id": "7a7408da3d74a060",
+          "brand": "Indigo Paints",
+          "monitoredSet": "astral-paints",
+          "ownedBrandSlug": "astral-paints",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Indigo Paints monitoring baseline created",
+          "detail": "44 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://indigopaints.com/",
+          "firstSeenAt": "2026-05-05T19:35:37.671Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 44,
+            "campaignLikeUrls": 31
+          }
+        },
+        {
+          "id": "2e6adda42eb9b724",
+          "brand": "Dulux / AkzoNobel",
+          "monitoredSet": "astral-paints",
+          "ownedBrandSlug": "astral-paints",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Dulux / AkzoNobel monitoring baseline created",
+          "detail": "51 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.dulux.in/",
+          "firstSeenAt": "2026-05-05T19:35:37.068Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 51,
+            "campaignLikeUrls": 14
+          }
+        },
+        {
+          "id": "3b1659d1d051206a",
+          "brand": "Kansai Nerolac",
+          "monitoredSet": "astral-paints",
+          "ownedBrandSlug": "astral-paints",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Kansai Nerolac monitoring baseline created",
+          "detail": "190 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.nerolac.com/",
+          "firstSeenAt": "2026-05-05T19:35:36.378Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 190,
+            "campaignLikeUrls": 47
+          }
+        },
+        {
+          "id": "8dcd85afadcaf557",
+          "brand": "Berger Paints",
+          "monitoredSet": "astral-paints",
+          "ownedBrandSlug": "astral-paints",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Berger Paints monitoring baseline created",
+          "detail": "965 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.bergerpaints.com/",
+          "firstSeenAt": "2026-05-05T19:35:35.840Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 965,
+            "campaignLikeUrls": 850
+          }
+        },
+        {
+          "id": "a59da3799125af45",
+          "brand": "Asian Paints",
+          "monitoredSet": "astral-paints",
+          "ownedBrandSlug": "astral-paints",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Asian Paints monitoring baseline created",
+          "detail": "117 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.asianpaints.com/",
+          "firstSeenAt": "2026-05-05T19:35:35.449Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 117,
+            "campaignLikeUrls": 30
+          }
+        },
+        {
+          "id": "970f613132b3cd01",
+          "brand": "Astral Paints",
+          "monitoredSet": "astral-paints",
+          "ownedBrandSlug": "astral-paints",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Astral Paints monitoring baseline created",
+          "detail": "500 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.astralpaints.com/",
+          "firstSeenAt": "2026-05-05T19:35:35.133Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 500,
+            "campaignLikeUrls": 36
+          }
+        }
+      ]
+    },
+    {
+      "generatedAt": "2026-05-05T19:23:22.141Z",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
+      "newEventCount": 9,
+      "telegram": {
+        "attempted": false,
+        "sent": 0,
+        "reason": "Telegram env vars missing or no events"
+      },
+      "events": [
+        {
+          "id": "84c200db40354634",
+          "brand": "REHAU India",
+          "monitoredSet": "astral-pipes",
+          "ownedBrandSlug": "astral-pipes",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "REHAU India monitoring baseline created",
+          "detail": "48 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.rehau.com/in-en",
+          "firstSeenAt": "2026-05-05T19:23:22.134Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 48,
+            "campaignLikeUrls": 16
+          }
+        },
+        {
+          "id": "2b95b3c0619c654f",
+          "brand": "POLOPLAST",
+          "monitoredSet": "astral-pipes",
+          "ownedBrandSlug": "astral-pipes",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "POLOPLAST monitoring baseline created",
+          "detail": "43 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.poloplast.com/en-at.html",
+          "firstSeenAt": "2026-05-05T19:23:21.970Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 43,
+            "campaignLikeUrls": 21
+          }
+        },
+        {
+          "id": "7ed142ba3df4f98c",
+          "brand": "KPT Pipes",
+          "monitoredSet": "astral-pipes",
+          "ownedBrandSlug": "astral-pipes",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "KPT Pipes monitoring baseline created",
+          "detail": "302 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.kptpipes.com",
+          "firstSeenAt": "2026-05-05T19:23:20.615Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 302,
+            "campaignLikeUrls": 302
+          }
+        },
+        {
+          "id": "04de2ded43859d42",
+          "brand": "Wavin India",
+          "monitoredSet": "astral-pipes",
+          "ownedBrandSlug": "astral-pipes",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Wavin India monitoring baseline created",
+          "detail": "34 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://wavin.com/in",
+          "firstSeenAt": "2026-05-05T19:23:17.466Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 404,
+            "trackedUrls": 34,
+            "campaignLikeUrls": 9
+          }
+        },
+        {
+          "id": "78b483f064d86063",
+          "brand": "Ashirvad by Aliaxis",
+          "monitoredSet": "astral-pipes",
+          "ownedBrandSlug": "astral-pipes",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Ashirvad by Aliaxis monitoring baseline created",
+          "detail": "99 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.ashirvad.com/",
+          "firstSeenAt": "2026-05-05T19:23:16.108Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 99,
+            "campaignLikeUrls": 25
+          }
+        },
+        {
+          "id": "a6a9a716ce933efe",
+          "brand": "Apollo Pipes",
+          "monitoredSet": "astral-pipes",
+          "ownedBrandSlug": "astral-pipes",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Apollo Pipes monitoring baseline created",
+          "detail": "171 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.apollopipes.com/",
+          "firstSeenAt": "2026-05-05T19:23:14.042Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 171,
+            "campaignLikeUrls": 171
+          }
+        },
+        {
+          "id": "01f25fecdcca61d5",
+          "brand": "Prince Pipes",
+          "monitoredSet": "astral-pipes",
+          "ownedBrandSlug": "astral-pipes",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Prince Pipes monitoring baseline created",
+          "detail": "66 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.princepipes.com/",
+          "firstSeenAt": "2026-05-05T19:23:12.119Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 66,
+            "campaignLikeUrls": 66
+          }
+        },
+        {
+          "id": "86e796826949874b",
+          "brand": "Supreme Pipes",
+          "monitoredSet": "astral-pipes",
+          "ownedBrandSlug": "astral-pipes",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Supreme Pipes monitoring baseline created",
+          "detail": "2349 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.supreme.co.in/",
+          "firstSeenAt": "2026-05-05T19:23:11.902Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 2349,
+            "campaignLikeUrls": 2263
+          }
+        },
+        {
+          "id": "1cc03dcd22e8e144",
+          "brand": "Astral Pipes",
+          "monitoredSet": "astral-pipes",
+          "ownedBrandSlug": "astral-pipes",
+          "type": "baseline_created",
+          "severity": "Info",
+          "title": "Astral Pipes monitoring baseline created",
+          "detail": "99 public URLs are now tracked for future change alerts.",
+          "sourceUrl": "https://www.astralpipes.com/",
+          "firstSeenAt": "2026-05-05T19:23:09.502Z",
+          "confidence": "Verified public evidence",
+          "evidence": {
+            "homepageStatus": 200,
+            "sitemapStatus": 200,
+            "trackedUrls": 99,
+            "campaignLikeUrls": 99
+          }
+        }
+      ]
+    }
+  ],
   "events": [
     {
-      "id": "782cdabc8e46e321",
-      "brand": "REHAU India",
-      "type": "llms_txt_changed",
-      "severity": "Medium",
-      "title": "REHAU India changed llms.txt",
-      "detail": "llms.txt availability or content changed. Review AI crawler guidance.",
-      "sourceUrl": "https://www.rehau.com/llms.txt",
-      "firstSeenAt": "2026-05-05T08:25:00.524Z",
+      "id": "b6c352463f3cbff5",
+      "brand": "SBI Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "SBI Foundation monitoring baseline created",
+      "detail": "0 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.sbifoundation.in/",
+      "firstSeenAt": "2026-05-05T19:37:08.460Z",
       "confidence": "Verified public evidence",
       "evidence": {
-        "beforeStatus": 200,
-        "afterStatus": 200,
-        "beforeHash": "13a9dad6bd9634dbe2609578d978f3dc40ee50eccea35316bc7977ce676f5722",
-        "afterHash": "c73e31e2f52e5d4548518441e4bfebf30dc75b9702110f71c8a1e26332ee1c98"
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 0,
+        "campaignLikeUrls": 0
+      }
+    },
+    {
+      "id": "24b01a344a430b0e",
+      "brand": "JSW Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "JSW Foundation monitoring baseline created",
+      "detail": "0 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.jswfoundation.org/",
+      "firstSeenAt": "2026-05-05T19:37:08.254Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 0,
+        "sitemapStatus": 0,
+        "trackedUrls": 0,
+        "campaignLikeUrls": 0
+      }
+    },
+    {
+      "id": "fe6dd2daffdf5c18",
+      "brand": "Mahindra Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Mahindra Foundation monitoring baseline created",
+      "detail": "2 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.mahindra.com/our-story/sustainability",
+      "firstSeenAt": "2026-05-05T19:37:08.248Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 404,
+        "sitemapStatus": 200,
+        "trackedUrls": 2,
+        "campaignLikeUrls": 0
+      }
+    },
+    {
+      "id": "1e2cc1d9d21669a0",
+      "brand": "HCL Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "HCL Foundation monitoring baseline created",
+      "detail": "29 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.hclfoundation.org/",
+      "firstSeenAt": "2026-05-05T19:37:07.355Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 29,
+        "campaignLikeUrls": 0
+      }
+    },
+    {
+      "id": "7e34632ffaf501c4",
+      "brand": "Wipro Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Wipro Foundation monitoring baseline created",
+      "detail": "43 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.wiprofoundation.org/",
+      "firstSeenAt": "2026-05-05T19:37:05.153Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 43,
+        "campaignLikeUrls": 4
+      }
+    },
+    {
+      "id": "b3340e8a595d6f9a",
+      "brand": "Infosys Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Infosys Foundation monitoring baseline created",
+      "detail": "13 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.infosys.org/infosys-foundation/about.html",
+      "firstSeenAt": "2026-05-05T19:37:04.180Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 404,
+        "trackedUrls": 13,
+        "campaignLikeUrls": 1
+      }
+    },
+    {
+      "id": "0802b7cd738b05e3",
+      "brand": "Adani Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Adani Foundation monitoring baseline created",
+      "detail": "821 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.adani.com/adani-foundation",
+      "firstSeenAt": "2026-05-05T19:37:03.289Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 821,
+        "campaignLikeUrls": 520
+      }
+    },
+    {
+      "id": "64cc3f8981339415",
+      "brand": "Reliance Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Reliance Foundation monitoring baseline created",
+      "detail": "328 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.reliancefoundation.org/",
+      "firstSeenAt": "2026-05-05T19:37:02.489Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 328,
+        "campaignLikeUrls": 195
+      }
+    },
+    {
+      "id": "12fcb20c974beae5",
+      "brand": "Tata Trusts",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Tata Trusts monitoring baseline created",
+      "detail": "1051 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.tatatrusts.org/",
+      "firstSeenAt": "2026-05-05T19:37:01.991Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 1051,
+        "campaignLikeUrls": 236
+      }
+    },
+    {
+      "id": "e0a7ae3bb5c4d318",
+      "brand": "Astral Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Astral Foundation monitoring baseline created",
+      "detail": "26 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.astralltd.com/",
+      "firstSeenAt": "2026-05-05T19:37:01.680Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 26,
+        "campaignLikeUrls": 5
+      }
+    },
+    {
+      "id": "16eb23c9f790c1fc",
+      "brand": "Jotun India",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Jotun India monitoring baseline created",
+      "detail": "2934 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.jotun.com/in-en",
+      "firstSeenAt": "2026-05-05T19:35:45.349Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 2934,
+        "campaignLikeUrls": 2269
+      }
+    },
+    {
+      "id": "4be3613562344999",
+      "brand": "Nippon Paint India",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Nippon Paint India monitoring baseline created",
+      "detail": "40 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.nipponpaint.co.in/",
+      "firstSeenAt": "2026-05-05T19:35:44.059Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 404,
+        "trackedUrls": 40,
+        "campaignLikeUrls": 14
+      }
+    },
+    {
+      "id": "811622cfcf21872e",
+      "brand": "Shalimar Paints",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Shalimar Paints monitoring baseline created",
+      "detail": "106 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.shalimarpaints.com/",
+      "firstSeenAt": "2026-05-05T19:35:40.742Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 106,
+        "campaignLikeUrls": 29
+      }
+    },
+    {
+      "id": "4ef9a7fe68c92ef6",
+      "brand": "Birla Opus",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Birla Opus monitoring baseline created",
+      "detail": "3066 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.birlaopus.com/",
+      "firstSeenAt": "2026-05-05T19:35:40.369Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 3066,
+        "campaignLikeUrls": 529
+      }
+    },
+    {
+      "id": "a79d937f8ae5955a",
+      "brand": "JSW Paints",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "JSW Paints monitoring baseline created",
+      "detail": "470 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.jswpaints.in/",
+      "firstSeenAt": "2026-05-05T19:35:37.829Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 470,
+        "campaignLikeUrls": 113
+      }
+    },
+    {
+      "id": "7a7408da3d74a060",
+      "brand": "Indigo Paints",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Indigo Paints monitoring baseline created",
+      "detail": "44 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://indigopaints.com/",
+      "firstSeenAt": "2026-05-05T19:35:37.671Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 44,
+        "campaignLikeUrls": 31
+      }
+    },
+    {
+      "id": "2e6adda42eb9b724",
+      "brand": "Dulux / AkzoNobel",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Dulux / AkzoNobel monitoring baseline created",
+      "detail": "51 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.dulux.in/",
+      "firstSeenAt": "2026-05-05T19:35:37.068Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 51,
+        "campaignLikeUrls": 14
+      }
+    },
+    {
+      "id": "3b1659d1d051206a",
+      "brand": "Kansai Nerolac",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Kansai Nerolac monitoring baseline created",
+      "detail": "190 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.nerolac.com/",
+      "firstSeenAt": "2026-05-05T19:35:36.378Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 190,
+        "campaignLikeUrls": 47
+      }
+    },
+    {
+      "id": "8dcd85afadcaf557",
+      "brand": "Berger Paints",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Berger Paints monitoring baseline created",
+      "detail": "965 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.bergerpaints.com/",
+      "firstSeenAt": "2026-05-05T19:35:35.840Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 965,
+        "campaignLikeUrls": 850
+      }
+    },
+    {
+      "id": "a59da3799125af45",
+      "brand": "Asian Paints",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Asian Paints monitoring baseline created",
+      "detail": "117 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.asianpaints.com/",
+      "firstSeenAt": "2026-05-05T19:35:35.449Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 117,
+        "campaignLikeUrls": 30
+      }
+    },
+    {
+      "id": "970f613132b3cd01",
+      "brand": "Astral Paints",
+      "monitoredSet": "astral-paints",
+      "ownedBrandSlug": "astral-paints",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Astral Paints monitoring baseline created",
+      "detail": "500 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.astralpaints.com/",
+      "firstSeenAt": "2026-05-05T19:35:35.133Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 500,
+        "campaignLikeUrls": 36
+      }
+    },
+    {
+      "id": "63e78ddea764b76c",
+      "brand": "Watertec",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Watertec monitoring baseline created",
+      "detail": "874 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.watertecindia.com/",
+      "firstSeenAt": "2026-05-05T19:29:08.201Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 874,
+        "campaignLikeUrls": 792
+      }
+    },
+    {
+      "id": "cff59b8d0ae66958",
+      "brand": "Vitra India",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Vitra India monitoring baseline created",
+      "detail": "42 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.vitra-india.com/",
+      "firstSeenAt": "2026-05-05T19:29:07.855Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 404,
+        "trackedUrls": 42,
+        "campaignLikeUrls": 7
+      }
+    },
+    {
+      "id": "31d6fdfdb1ca590e",
+      "brand": "TOTO India",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "TOTO India monitoring baseline created",
+      "detail": "0 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://in.toto.com/",
+      "firstSeenAt": "2026-05-05T19:29:06.486Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 403,
+        "sitemapStatus": 403,
+        "trackedUrls": 0,
+        "campaignLikeUrls": 0
+      }
+    },
+    {
+      "id": "6416295f9bfb867d",
+      "brand": "American Standard India",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "American Standard India monitoring baseline created",
+      "detail": "92 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.americanstandard.in/",
+      "firstSeenAt": "2026-05-05T19:29:06.320Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 92,
+        "campaignLikeUrls": 52
+      }
+    },
+    {
+      "id": "d4791b1495527a66",
+      "brand": "Grohe India",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Grohe India monitoring baseline created",
+      "detail": "49 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.grohe.co.in/",
+      "firstSeenAt": "2026-05-05T19:29:05.382Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 404,
+        "trackedUrls": 49,
+        "campaignLikeUrls": 6
+      }
+    },
+    {
+      "id": "aa2e428a6e7494e2",
+      "brand": "Kohler India",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Kohler India monitoring baseline created",
+      "detail": "183 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.kohler.co.in/",
+      "firstSeenAt": "2026-05-05T19:29:04.204Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 183,
+        "campaignLikeUrls": 27
+      }
+    },
+    {
+      "id": "9fd3558cb5755433",
+      "brand": "Parryware / Roca",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Parryware / Roca monitoring baseline created",
+      "detail": "1509 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.parryware.in/",
+      "firstSeenAt": "2026-05-05T19:29:03.675Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 1509,
+        "campaignLikeUrls": 1134
+      }
+    },
+    {
+      "id": "36d359448a961c16",
+      "brand": "CERA",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "CERA monitoring baseline created",
+      "detail": "111 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.cera-india.com/",
+      "firstSeenAt": "2026-05-05T19:29:02.127Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 111,
+        "campaignLikeUrls": 7
+      }
+    },
+    {
+      "id": "ce86cb9b4ce65972",
+      "brand": "Hindware",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Hindware monitoring baseline created",
+      "detail": "3525 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://hindware.com/",
+      "firstSeenAt": "2026-05-05T19:29:00.824Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 3525,
+        "campaignLikeUrls": 268
+      }
+    },
+    {
+      "id": "f0e171a24e2f1b05",
+      "brand": "Jaquar",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Jaquar monitoring baseline created",
+      "detail": "80 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.jaquar.com/",
+      "firstSeenAt": "2026-05-05T19:29:00.616Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 0,
+        "trackedUrls": 80,
+        "campaignLikeUrls": 8
+      }
+    },
+    {
+      "id": "13ff612d3a99fb9f",
+      "brand": "Astral Bathware",
+      "monitoredSet": "astral-bathware",
+      "ownedBrandSlug": "astral-bathware",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Astral Bathware monitoring baseline created",
+      "detail": "89 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.astralbathware.com/",
+      "firstSeenAt": "2026-05-05T19:28:45.606Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 89,
+        "campaignLikeUrls": 20
+      }
+    },
+    {
+      "id": "e9ad1f3c2f5ecf3e",
+      "brand": "Loctite / Henkel",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Loctite / Henkel monitoring baseline created",
+      "detail": "418 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.henkel-adhesives.com/in/en.html",
+      "firstSeenAt": "2026-05-05T19:26:01.440Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 418,
+        "campaignLikeUrls": 153
+      }
+    },
+    {
+      "id": "2b59b2393a3c0b5d",
+      "brand": "Bostik India",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Bostik India monitoring baseline created",
+      "detail": "74 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.bostik.com/india/en/",
+      "firstSeenAt": "2026-05-05T19:26:00.664Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 403,
+        "trackedUrls": 74,
+        "campaignLikeUrls": 14
+      }
+    },
+    {
+      "id": "8be72a345dbf84b0",
+      "brand": "MYK Laticrete",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "MYK Laticrete monitoring baseline created",
+      "detail": "233 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.myklaticrete.com/",
+      "firstSeenAt": "2026-05-05T19:26:00.184Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 233,
+        "campaignLikeUrls": 172
+      }
+    },
+    {
+      "id": "d999c9b7b1ef429a",
+      "brand": "Fosroc",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Fosroc monitoring baseline created",
+      "detail": "1537 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.fosroc.com/about-fosroc-india",
+      "firstSeenAt": "2026-05-05T19:25:56.622Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 1537,
+        "campaignLikeUrls": 1339
+      }
+    },
+    {
+      "id": "c76033494a892219",
+      "brand": "Sika",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Sika monitoring baseline created",
+      "detail": "78 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://ind.sika.com/",
+      "firstSeenAt": "2026-05-05T19:25:52.379Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 404,
+        "trackedUrls": 78,
+        "campaignLikeUrls": 5
+      }
+    },
+    {
+      "id": "facd9bec9f6e56e4",
+      "brand": "Dr. Fixit",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Dr. Fixit monitoring baseline created",
+      "detail": "814 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.drfixit.co.in/",
+      "firstSeenAt": "2026-05-05T19:25:52.099Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 814,
+        "campaignLikeUrls": 567
+      }
+    },
+    {
+      "id": "cae9daafaabf8bc2",
+      "brand": "M-Seal",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "M-Seal monitoring baseline created",
+      "detail": "0 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.mseal.in/",
+      "firstSeenAt": "2026-05-05T19:25:50.932Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 0,
+        "sitemapStatus": 0,
+        "trackedUrls": 0,
+        "campaignLikeUrls": 0
+      }
+    },
+    {
+      "id": "9c7da5aa323dc77c",
+      "brand": "Araldite",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Araldite monitoring baseline created",
+      "detail": "0 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.araldite.com/en_IN/",
+      "firstSeenAt": "2026-05-05T19:25:50.743Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 0,
+        "sitemapStatus": 0,
+        "trackedUrls": 0,
+        "campaignLikeUrls": 0
+      }
+    },
+    {
+      "id": "f14f723b57274073",
+      "brand": "Fevicol",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Fevicol monitoring baseline created",
+      "detail": "33 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.fevicol.in/",
+      "firstSeenAt": "2026-05-05T19:25:40.422Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 33,
+        "campaignLikeUrls": 7
+      }
+    },
+    {
+      "id": "0b071bf3fe1333c2",
+      "brand": "Pidilite",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Pidilite monitoring baseline created",
+      "detail": "69 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.pidilite.com/",
+      "firstSeenAt": "2026-05-05T19:25:39.695Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 69,
+        "campaignLikeUrls": 5
+      }
+    },
+    {
+      "id": "fb36013923fd128c",
+      "brand": "Astral Adhesives",
+      "monitoredSet": "astral-adhesives",
+      "ownedBrandSlug": "astral-adhesives",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Astral Adhesives monitoring baseline created",
+      "detail": "79 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.astraladhesives.com/",
+      "firstSeenAt": "2026-05-05T19:25:39.048Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 404,
+        "trackedUrls": 79,
+        "campaignLikeUrls": 2
       }
     },
     {
       "id": "84c200db40354634",
       "brand": "REHAU India",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
       "type": "baseline_created",
       "severity": "Info",
       "title": "REHAU India monitoring baseline created",
       "detail": "48 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.rehau.com/in-en",
-      "firstSeenAt": "2026-05-05T07:39:38.572Z",
+      "firstSeenAt": "2026-05-05T19:23:22.134Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -45,12 +1902,14 @@
     {
       "id": "2b95b3c0619c654f",
       "brand": "POLOPLAST",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
       "type": "baseline_created",
       "severity": "Info",
       "title": "POLOPLAST monitoring baseline created",
       "detail": "43 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.poloplast.com/en-at.html",
-      "firstSeenAt": "2026-05-05T07:39:35.956Z",
+      "firstSeenAt": "2026-05-05T19:23:21.970Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -62,12 +1921,14 @@
     {
       "id": "7ed142ba3df4f98c",
       "brand": "KPT Pipes",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
       "type": "baseline_created",
       "severity": "Info",
       "title": "KPT Pipes monitoring baseline created",
       "detail": "302 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.kptpipes.com",
-      "firstSeenAt": "2026-05-05T07:39:34.801Z",
+      "firstSeenAt": "2026-05-05T19:23:20.615Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -79,12 +1940,14 @@
     {
       "id": "04de2ded43859d42",
       "brand": "Wavin India",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
       "type": "baseline_created",
       "severity": "Info",
       "title": "Wavin India monitoring baseline created",
       "detail": "34 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://wavin.com/in",
-      "firstSeenAt": "2026-05-05T07:39:31.925Z",
+      "firstSeenAt": "2026-05-05T19:23:17.466Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -96,12 +1959,14 @@
     {
       "id": "78b483f064d86063",
       "brand": "Ashirvad by Aliaxis",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
       "type": "baseline_created",
       "severity": "Info",
       "title": "Ashirvad by Aliaxis monitoring baseline created",
       "detail": "99 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.ashirvad.com/",
-      "firstSeenAt": "2026-05-05T07:39:30.832Z",
+      "firstSeenAt": "2026-05-05T19:23:16.108Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -113,12 +1978,14 @@
     {
       "id": "a6a9a716ce933efe",
       "brand": "Apollo Pipes",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
       "type": "baseline_created",
       "severity": "Info",
       "title": "Apollo Pipes monitoring baseline created",
       "detail": "171 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.apollopipes.com/",
-      "firstSeenAt": "2026-05-05T07:39:28.777Z",
+      "firstSeenAt": "2026-05-05T19:23:14.042Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -130,12 +1997,14 @@
     {
       "id": "01f25fecdcca61d5",
       "brand": "Prince Pipes",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
       "type": "baseline_created",
       "severity": "Info",
       "title": "Prince Pipes monitoring baseline created",
       "detail": "66 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.princepipes.com/",
-      "firstSeenAt": "2026-05-05T07:39:27.461Z",
+      "firstSeenAt": "2026-05-05T19:23:12.119Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -147,12 +2016,14 @@
     {
       "id": "86e796826949874b",
       "brand": "Supreme Pipes",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
       "type": "baseline_created",
       "severity": "Info",
       "title": "Supreme Pipes monitoring baseline created",
       "detail": "2349 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.supreme.co.in/",
-      "firstSeenAt": "2026-05-05T07:39:27.173Z",
+      "firstSeenAt": "2026-05-05T19:23:11.902Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,
@@ -164,12 +2035,14 @@
     {
       "id": "1cc03dcd22e8e144",
       "brand": "Astral Pipes",
+      "monitoredSet": "astral-pipes",
+      "ownedBrandSlug": "astral-pipes",
       "type": "baseline_created",
       "severity": "Info",
       "title": "Astral Pipes monitoring baseline created",
       "detail": "99 public URLs are now tracked for future change alerts.",
       "sourceUrl": "https://www.astralpipes.com/",
-      "firstSeenAt": "2026-05-05T07:39:25.158Z",
+      "firstSeenAt": "2026-05-05T19:23:09.502Z",
       "confidence": "Verified public evidence",
       "evidence": {
         "homepageStatus": 200,

@@ -1,0 +1,94 @@
+{
+  "generatedAt": "2026-05-05T19:23:09.007Z",
+  "monitoredSet": "astral-pipes",
+  "ownedBrandSlug": "astral-pipes",
+  "methodology": {
+    "mode": "Meta Ad Library active creative collector",
+    "source": "Meta Graph API ads_archive",
+    "method": "Search by brand name, country filter, active ads only",
+    "confidence": "Setup required"
+  },
+  "brands": [
+    {
+      "name": "Astral Pipes",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Supreme Pipes",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Prince Pipes",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Apollo Pipes",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Ashirvad by Aliaxis",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Wavin India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "KPT Pipes",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "POLOPLAST",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "REHAU India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    }
+  ]
+}

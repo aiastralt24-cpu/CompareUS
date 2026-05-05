@@ -254,7 +254,40 @@ const brandColors = {
   "REHAU India": "#263238"
 };
 
-const socialByBrand = new Map((socialSnapshot.brands || []).map((brand) => [brand.name, brand]));
+const snapshotSets = snapshot?.sets?.length
+  ? snapshot.sets
+  : [
+      {
+        generatedAt: snapshot?.generatedAt,
+        monitoredSet: snapshot?.monitoredSet || "astral-pipes",
+        ownedBrandSlug: snapshot?.ownedBrandSlug || "astral-pipes",
+        brands: snapshot?.brands || []
+      }
+    ];
+const snapshotBySetSlug = new Map(snapshotSets.map((set) => [set.monitoredSet, set]));
+const socialSets = socialSnapshot?.sets?.length
+  ? socialSnapshot.sets
+  : [
+      {
+        generatedAt: socialSnapshot?.generatedAt,
+        monitoredSet: socialSnapshot?.monitoredSet || "astral-pipes",
+        ownedBrandSlug: socialSnapshot?.ownedBrandSlug || "astral-pipes",
+        brands: socialSnapshot?.brands || []
+      }
+    ];
+const socialByBrand = new Map(
+  socialSets.flatMap((set) =>
+    (set.brands || []).map((brand) => [
+      `${set.monitoredSet}:${brand.name}`,
+      {
+        ...brand,
+        monitoredSet: set.monitoredSet,
+        ownedBrandSlug: set.ownedBrandSlug,
+        generatedAt: set.generatedAt
+      }
+    ])
+  )
+);
 const taxonomyByBrandSlug = new Map(competitorTaxonomy.map((entry) => [entry.ownedBrandSlug, entry]));
 
 const metricHelp = {
@@ -293,8 +326,8 @@ const metricHelp = {
   "Search UI": "Visible search-form or search-input signal detected in public HTML."
 };
 
-function toDashboardBrand(brand) {
-  const socialData = socialByBrand.get(brand.name);
+function toDashboardBrand(brand, monitoredSet = snapshot.activeMonitoredSet || snapshot.monitoredSet || "astral-pipes") {
+  const socialData = socialByBrand.get(`${monitoredSet}:${brand.name}`) || socialByBrand.get(`astral-pipes:${brand.name}`);
   const scores = brand.scores || {};
   const publicWebsite = scores.publicWebsite ?? 0;
   const aeoReadiness = scores.aeoReadiness ?? 0;
@@ -350,7 +383,20 @@ function toDashboardBrand(brand) {
   };
 }
 
-const brands = snapshot?.brands?.length ? snapshot.brands.map(toDashboardBrand) : seedBrands;
+function getSnapshotForOwnedBrand(ownedBrand) {
+  return snapshotBySetSlug.get(ownedBrand.competitorSetSlug) || null;
+}
+
+function getBrandsForOwnedBrand(ownedBrand) {
+  const setSnapshot = getSnapshotForOwnedBrand(ownedBrand);
+  if (setSnapshot?.brands?.length) return setSnapshot.brands.map((brand) => toDashboardBrand(brand, setSnapshot.monitoredSet));
+  if (ownedBrand.slug === "astral-pipes") return seedBrands;
+  return [];
+}
+
+const brands = snapshotSets.flatMap((set) =>
+  (set.brands || []).map((brand) => toDashboardBrand(brand, set.monitoredSet))
+);
 
 const socialGeneratedAt = socialSnapshot?.generatedAt
   ? new Intl.DateTimeFormat("en-IN", {
@@ -360,6 +406,16 @@ const socialGeneratedAt = socialSnapshot?.generatedAt
     }).format(new Date(socialSnapshot.generatedAt))
   : "Not collected";
 
+function formatSnapshotTime(value) {
+  return value
+    ? new Intl.DateTimeFormat("en-IN", {
+        dateStyle: "medium",
+        timeStyle: "short",
+        timeZone: "Asia/Kolkata"
+      }).format(new Date(value))
+    : "Not collected";
+}
+
 const generatedAt = snapshot?.generatedAt
   ? new Intl.DateTimeFormat("en-IN", {
       dateStyle: "medium",
@@ -368,21 +424,17 @@ const generatedAt = snapshot?.generatedAt
     }).format(new Date(snapshot.generatedAt))
   : "Not collected";
 
-const alerts = (monitorEvents.events || []).slice(0, 5).map((event) => ({
-  level: event.severity,
-  title: event.title,
-  detail: event.detail,
-  time: event.firstSeenAt
-    ? new Intl.DateTimeFormat("en-IN", {
-        dateStyle: "medium",
-        timeStyle: "short",
-        timeZone: "Asia/Kolkata"
-      }).format(new Date(event.firstSeenAt))
-    : "Not run",
-  sourceUrl: event.sourceUrl,
-  brand: event.brand,
-  confidence: event.confidence
-}));
+function toAlert(event) {
+  return {
+    level: event.severity,
+    title: event.title,
+    detail: event.detail,
+    time: event.firstSeenAt ? formatSnapshotTime(event.firstSeenAt) : "Not run",
+    sourceUrl: event.sourceUrl,
+    brand: event.brand,
+    confidence: event.confidence
+  };
+}
 
 const recommendations = [
   "Run the approved AEO prompt bank and attach cited answer evidence.",
@@ -405,7 +457,8 @@ const campaigns = (monitorEvents.events || [])
   }));
 
 const ownedBrandHealth = astralBrands.map((ownedBrand) => {
-  const primary = ownedBrand.slug === "astral-pipes" ? brands.find((brand) => brand.name === "Astral Pipes") : null;
+  const ownedBrands = getBrandsForOwnedBrand(ownedBrand);
+  const primary = ownedBrands.find((brand) => brand.name === ownedBrand.name) || ownedBrands[0] || null;
   const taxonomy = taxonomyByBrandSlug.get(ownedBrand.slug);
   const pointers = generateTopPointers({ ownedBrand, primary, taxonomy });
   return {
@@ -768,40 +821,40 @@ function BrandDashboard({ ownedBrand, user, onHome, onLogout }) {
     const requested = new URLSearchParams(window.location.search).get("module");
     return moduleHeaders[requested] ? requested : "overview";
   });
-  const [selectedBrand, setSelectedBrand] = useState("Astral Pipes");
+  const activeSnapshot = getSnapshotForOwnedBrand(ownedBrand);
+  const activeBrands = useMemo(() => getBrandsForOwnedBrand(ownedBrand), [ownedBrand.slug]);
+  const [selectedBrand, setSelectedBrand] = useState(ownedBrand.name);
   const [range, setRange] = useState("Last 90 days");
   const [query, setQuery] = useState("");
 
   const filteredBrands = useMemo(() => {
     const value = query.trim().toLowerCase();
-    if (!value) return brands;
-    return brands.filter((brand) =>
+    if (!value) return activeBrands;
+    return activeBrands.filter((brand) =>
       [brand.name, brand.type, brand.website, brand.threat].some((field) =>
         field.toLowerCase().includes(value)
       )
     );
-  }, [query]);
+  }, [activeBrands, query]);
 
-  const selected = brands.find((brand) => brand.name === selectedBrand) || brands[0];
+  const selected = activeBrands.find((brand) => brand.name === selectedBrand) || activeBrands[0];
   const ranked = [...filteredBrands].sort((a, b) => b.score - a.score);
-  const leader = [...brands].sort((a, b) => b.score - a.score)[0];
-  const average = Math.round(brands.reduce((sum, brand) => sum + brand.score, 0) / brands.length);
-  const dataGaps = snapshot.brands.reduce(
+  const leader = [...activeBrands].sort((a, b) => b.score - a.score)[0];
+  const average = activeBrands.length ? Math.round(activeBrands.reduce((sum, brand) => sum + brand.score, 0) / activeBrands.length) : 0;
+  const dataGaps = (activeSnapshot?.brands || []).reduce(
     (sum, brand) => sum + (brand.unavailableMetrics?.length || 0),
     0
   );
-  const eventCount = monitorEvents.events?.length || 0;
-  const latestMonitorRun = monitorEvents.generatedAt
-    ? new Intl.DateTimeFormat("en-IN", {
-        dateStyle: "medium",
-        timeStyle: "short",
-        timeZone: "Asia/Kolkata"
-      }).format(new Date(monitorEvents.generatedAt))
-    : "Not run yet";
+  const activeBrandNames = new Set(activeBrands.map((brand) => brand.name));
+  const activeEvents = (monitorEvents.events || []).filter((event) => activeBrandNames.has(event.brand));
+  const activeAlerts = activeEvents.slice(0, 5).map(toAlert);
+  const eventCount = activeEvents.length;
+  const latestMonitorRun = monitorEvents.generatedAt ? formatSnapshotTime(monitorEvents.generatedAt) : "Not run yet";
+  const activeGeneratedAt = formatSnapshotTime(activeSnapshot?.generatedAt);
   const isOverview = activeModule === "overview";
   const header = moduleHeaders[activeModule] || moduleHeaders.overview;
 
-  if (ownedBrand.slug !== "astral-pipes") {
+  if (!activeBrands.length || !selected) {
     return (
       <SetupBrandDashboard
         ownedBrand={ownedBrand}
@@ -834,8 +887,8 @@ function BrandDashboard({ ownedBrand, user, onHome, onLogout }) {
               ownedBrand,
               selectedBrand: selected,
               ranked,
-              alerts,
-              monitorEvents: monitorEvents.events || []
+              alerts: activeAlerts,
+              monitorEvents: activeEvents
             })
           }
         />
@@ -851,7 +904,7 @@ function BrandDashboard({ ownedBrand, user, onHome, onLogout }) {
               <div className="brand-select">
                 <span>Focus brand</span>
                 <select value={selectedBrand} onChange={(event) => setSelectedBrand(event.target.value)}>
-                  {brands.map((brand) => (
+                  {activeBrands.map((brand) => (
                     <option key={brand.name}>{brand.name}</option>
                   ))}
                 </select>
@@ -880,7 +933,7 @@ function BrandDashboard({ ownedBrand, user, onHome, onLogout }) {
                     label="Market average"
                     value={average}
                     suffix="/100"
-                    delta={`${brands.length} tracked brands`}
+                    delta={`${activeBrands.length} tracked brands`}
                   />
                   <MetricCard
                     icon={<Sparkles size={19} />}
@@ -896,7 +949,7 @@ function BrandDashboard({ ownedBrand, user, onHome, onLogout }) {
                   <div>
                     <strong>Live public monitor</strong>
                     <span>
-                      Latest collection: {generatedAt}. {dataGaps} restricted metrics remain pending
+                      Latest collection: {activeGeneratedAt}. {dataGaps} restricted metrics remain pending
                       until APIs, exports, or browser evidence are connected.
                     </span>
                   </div>
@@ -912,6 +965,7 @@ function BrandDashboard({ ownedBrand, user, onHome, onLogout }) {
               selectedBrand={selectedBrand}
               setSelectedBrand={setSelectedBrand}
               selected={selected}
+              events={activeEvents}
             />
           </section>
 
@@ -935,7 +989,7 @@ function BrandDashboard({ ownedBrand, user, onHome, onLogout }) {
                 <Bell size={17} />
               </div>
               <div className="alert-list">
-                {alerts.map((alert) => (
+                {activeAlerts.map((alert) => (
                   <article className="alert-item" key={alert.title}>
                     <span className={`alert-level ${alert.level.toLowerCase()}`}>{alert.level}</span>
                     <h3>{alert.title}</h3>
@@ -948,7 +1002,7 @@ function BrandDashboard({ ownedBrand, user, onHome, onLogout }) {
                     <time>{alert.time}</time>
                   </article>
                 ))}
-                {alerts.length === 0 ? (
+                {activeAlerts.length === 0 ? (
                   <article className="alert-item">
                     <span className="alert-level info">Ready</span>
                     <h3>No monitor events yet</h3>
@@ -1366,7 +1420,7 @@ function ModuleTabs({ activeModule, setActiveModule }) {
   );
 }
 
-function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand, selected }) {
+function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand, selected, events = [] }) {
   if (activeModule === "aeo") {
     return (
       <>
@@ -1519,8 +1573,11 @@ function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand
   if (activeModule === "campaigns") {
     return (
       <>
-        <CampaignPanel />
-        <MonitorTimeline eventTypes={["campaign_page", "category_or_product_page", "new_url_detected", "campaign_terms_detected", "homepage_content_changed", "social_post_detected", "ad_library_creative_detected"]} />
+        <CampaignPanel events={events} />
+        <MonitorTimeline
+          events={events}
+          eventTypes={["campaign_page", "category_or_product_page", "new_url_detected", "campaign_terms_detected", "homepage_content_changed", "social_post_detected", "ad_library_creative_detected"]}
+        />
       </>
     );
   }
@@ -1530,9 +1587,9 @@ function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand
       <RankPanel ranked={ranked} selectedBrand={selectedBrand} setSelectedBrand={setSelectedBrand} />
       <section className="split-grid">
         <ScoreBreakdown brand={selected} activeModule={activeModule} />
-        <CampaignPanel />
+        <CampaignPanel events={events} />
       </section>
-      <MonitorTimeline />
+      <MonitorTimeline events={events} />
     </>
   );
 }
@@ -2195,7 +2252,18 @@ function ScoreBreakdown({ brand, activeModule }) {
   );
 }
 
-function CampaignPanel() {
+function CampaignPanel({ events = [] }) {
+  const scopedCampaigns = events
+    .filter((event) =>
+      ["campaign_page", "category_or_product_page", "new_url_detected", "campaign_terms_detected", "social_post_detected", "ad_library_creative_detected"].includes(event.type)
+    )
+    .slice(0, 5)
+    .map((event) => ({
+      brand: event.brand,
+      name: event.title,
+      channel: event.type === "social_post_detected" ? "YouTube RSS" : event.type === "ad_library_creative_detected" ? "Meta Ad Library" : "Public monitor",
+      impact: event.severity
+    }));
   return (
     <section className="panel campaign-panel">
       <div className="panel-heading">
@@ -2209,7 +2277,7 @@ function CampaignPanel() {
         <AlertTriangle size={18} />
       </div>
       <div className="campaign-list">
-        {campaigns.map((campaign) => (
+        {scopedCampaigns.map((campaign) => (
           <article key={`${campaign.brand}-${campaign.name}`}>
             <div>
               <strong>{campaign.name}</strong>
@@ -2218,7 +2286,7 @@ function CampaignPanel() {
             <span className={`impact ${campaign.impact.toLowerCase()}`}>{campaign.impact}</span>
           </article>
         ))}
-        {campaigns.length === 0 ? (
+        {scopedCampaigns.length === 0 ? (
           <article className="campaign-empty">
             <div>
               <strong>No confirmed campaign-change events yet</strong>
@@ -2234,12 +2302,10 @@ function CampaignPanel() {
   );
 }
 
-function MonitorTimeline({ eventTypes = null }) {
-  const events = eventTypes
-    ? (monitorEvents.events || []).filter((event) => eventTypes.includes(event.type))
-    : monitorEvents.events || [];
-  const visibleEvents = events.slice(0, 8);
-  const scopedNewCount = eventTypes ? Math.min(monitorEvents.newEventCount || 0, events.length) : monitorEvents.newEventCount || 0;
+function MonitorTimeline({ events = [], eventTypes = null }) {
+  const scopedEvents = eventTypes ? events.filter((event) => eventTypes.includes(event.type)) : events;
+  const visibleEvents = scopedEvents.slice(0, 8);
+  const scopedNewCount = scopedEvents.filter((event) => event.firstSeenAt && Date.now() - new Date(event.firstSeenAt).getTime() < 24 * 60 * 60 * 1000).length;
   return (
     <section className="panel monitor-panel">
       <div className="panel-heading">
@@ -2248,7 +2314,7 @@ function MonitorTimeline({ eventTypes = null }) {
           <p>Verified public changes, newest first.</p>
         </div>
         <div className="timeline-summary">
-          <span>{events.length} events</span>
+          <span>{scopedEvents.length} events</span>
           <span>{scopedNewCount} new</span>
         </div>
       </div>
@@ -2283,7 +2349,7 @@ function MonitorTimeline({ eventTypes = null }) {
             </div>
           </details>
         ))}
-        {events.length === 0 ? (
+        {scopedEvents.length === 0 ? (
           <article className="timeline-empty">
             <strong>No changes captured yet</strong>
             <p>Run the monitor once to create a baseline. Every later run compares against it and creates evidence-backed alerts.</p>

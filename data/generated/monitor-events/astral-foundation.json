@@ -1,0 +1,203 @@
+{
+  "generatedAt": "2026-05-05T19:37:08.463Z",
+  "monitoredSet": "astral-foundation",
+  "ownedBrandSlug": "astral-foundation",
+  "newEventCount": 10,
+  "telegram": {
+    "attempted": false,
+    "sent": 0,
+    "reason": "Telegram env vars missing or no events"
+  },
+  "events": [
+    {
+      "id": "b6c352463f3cbff5",
+      "brand": "SBI Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "SBI Foundation monitoring baseline created",
+      "detail": "0 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.sbifoundation.in/",
+      "firstSeenAt": "2026-05-05T19:37:08.460Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 0,
+        "campaignLikeUrls": 0
+      }
+    },
+    {
+      "id": "24b01a344a430b0e",
+      "brand": "JSW Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "JSW Foundation monitoring baseline created",
+      "detail": "0 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.jswfoundation.org/",
+      "firstSeenAt": "2026-05-05T19:37:08.254Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 0,
+        "sitemapStatus": 0,
+        "trackedUrls": 0,
+        "campaignLikeUrls": 0
+      }
+    },
+    {
+      "id": "fe6dd2daffdf5c18",
+      "brand": "Mahindra Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Mahindra Foundation monitoring baseline created",
+      "detail": "2 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.mahindra.com/our-story/sustainability",
+      "firstSeenAt": "2026-05-05T19:37:08.248Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 404,
+        "sitemapStatus": 200,
+        "trackedUrls": 2,
+        "campaignLikeUrls": 0
+      }
+    },
+    {
+      "id": "1e2cc1d9d21669a0",
+      "brand": "HCL Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "HCL Foundation monitoring baseline created",
+      "detail": "29 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.hclfoundation.org/",
+      "firstSeenAt": "2026-05-05T19:37:07.355Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 29,
+        "campaignLikeUrls": 0
+      }
+    },
+    {
+      "id": "7e34632ffaf501c4",
+      "brand": "Wipro Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Wipro Foundation monitoring baseline created",
+      "detail": "43 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.wiprofoundation.org/",
+      "firstSeenAt": "2026-05-05T19:37:05.153Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 43,
+        "campaignLikeUrls": 4
+      }
+    },
+    {
+      "id": "b3340e8a595d6f9a",
+      "brand": "Infosys Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Infosys Foundation monitoring baseline created",
+      "detail": "13 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.infosys.org/infosys-foundation/about.html",
+      "firstSeenAt": "2026-05-05T19:37:04.180Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 404,
+        "trackedUrls": 13,
+        "campaignLikeUrls": 1
+      }
+    },
+    {
+      "id": "0802b7cd738b05e3",
+      "brand": "Adani Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Adani Foundation monitoring baseline created",
+      "detail": "821 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.adani.com/adani-foundation",
+      "firstSeenAt": "2026-05-05T19:37:03.289Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 821,
+        "campaignLikeUrls": 520
+      }
+    },
+    {
+      "id": "64cc3f8981339415",
+      "brand": "Reliance Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Reliance Foundation monitoring baseline created",
+      "detail": "328 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.reliancefoundation.org/",
+      "firstSeenAt": "2026-05-05T19:37:02.489Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 328,
+        "campaignLikeUrls": 195
+      }
+    },
+    {
+      "id": "12fcb20c974beae5",
+      "brand": "Tata Trusts",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Tata Trusts monitoring baseline created",
+      "detail": "1051 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.tatatrusts.org/",
+      "firstSeenAt": "2026-05-05T19:37:01.991Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 1051,
+        "campaignLikeUrls": 236
+      }
+    },
+    {
+      "id": "e0a7ae3bb5c4d318",
+      "brand": "Astral Foundation",
+      "monitoredSet": "astral-foundation",
+      "ownedBrandSlug": "astral-foundation",
+      "type": "baseline_created",
+      "severity": "Info",
+      "title": "Astral Foundation monitoring baseline created",
+      "detail": "26 public URLs are now tracked for future change alerts.",
+      "sourceUrl": "https://www.astralltd.com/",
+      "firstSeenAt": "2026-05-05T19:37:01.680Z",
+      "confidence": "Verified public evidence",
+      "evidence": {
+        "homepageStatus": 200,
+        "sitemapStatus": 200,
+        "trackedUrls": 26,
+        "campaignLikeUrls": 5
+      }
+    }
+  ]
+}

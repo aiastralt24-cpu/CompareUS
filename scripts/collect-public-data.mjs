@@ -5,6 +5,7 @@ import competitorSets from "../data/competitor-sets.json" with { type: "json" };
 
 const outDir = path.resolve("data/generated");
 const outFile = path.join(outDir, "competitive-snapshot.json");
+const setOutDir = path.join(outDir, "competitive-snapshots");
 const activeSetSlug = process.env.MONITOR_BRAND_SLUG || "astral-pipes";
 const activeSet = competitorSets.find((set) => set.slug === activeSetSlug) || competitorSets[0];
 const brands = activeSet.brands || [];
@@ -372,6 +373,16 @@ function scoreSecurityPrivacy({ response, page }) {
   return Math.min(score, 100);
 }
 
+function metricEvidence({ brand, collectedAt, method = "Public website collector" }) {
+  return {
+    source: "Public website crawl",
+    evidenceUrl: brand.website,
+    collectedAt,
+    method,
+    confidence: "Verified public evidence"
+  };
+}
+
 function aggregatePageAudit(pages) {
   const okPages = pages.filter((item) => item.ok);
   const schemaTypes = [...new Set(okPages.flatMap((item) => item.schemaTypes || []))].sort();
@@ -450,6 +461,7 @@ function scoreAeoFromAudit({ page, audit, robots, llms }) {
 async function collectBrand(brand) {
   const website = brand.website;
   const origin = new URL(website).origin;
+  const collectedAt = new Date().toISOString();
   const [home, robots, sitemap, llms] = await Promise.all([
     fetchText(website),
     fetchText(`${origin}/robots.txt`, { timeout: 10000 }),
@@ -496,7 +508,7 @@ async function collectBrand(brand) {
     type: brand.type,
     priority: brand.priority,
     website,
-    collectedAt: new Date().toISOString(),
+    collectedAt,
     dataMode: "collected_public_web",
     homepage: {
       ok: home.ok,
@@ -575,6 +587,43 @@ async function collectBrand(brand) {
       campaignActivity: null,
       reputation: null
     },
+    metricEvidence: {
+      publicWebsite: metricEvidence({ brand, collectedAt }),
+      aeoReadiness: metricEvidence({ brand, collectedAt, method: "Public website collector: schema, robots, sitemap, content audit, llms.txt" }),
+      technicalSeo: metricEvidence({ brand, collectedAt, method: "Public website collector: HTML metadata, robots, sitemap, canonical, social tags" }),
+      contentExtraction: metricEvidence({ brand, collectedAt, method: "Public website collector: headings, FAQ text, answer-friendly blocks, freshness and trust signals" }),
+      accessibilityProxy: metricEvidence({ brand, collectedAt, method: "Public website collector: HTML lang, viewport, headings, image alt proxy, forms and labels" }),
+      securityPrivacy: metricEvidence({ brand, collectedAt, method: "Public website collector: HTTPS, response headers, privacy/terms/cookie signals" }),
+      registryCompleteness: metricEvidence({ brand, collectedAt, method: "Registry completeness from verified website and social handle fields" }),
+      seoVisibility: {
+        source: "Need Collector",
+        evidenceUrl: brand.website,
+        collectedAt,
+        method: "Requires SEO rank/backlink source",
+        confidence: "Not collected"
+      },
+      socialPerformance: {
+        source: "Need Collector",
+        evidenceUrl: brand.website,
+        collectedAt,
+        method: "Requires platform API, approved browser evidence, or export",
+        confidence: "Not collected"
+      },
+      campaignActivity: {
+        source: "Need Collector",
+        evidenceUrl: brand.website,
+        collectedAt,
+        method: "Requires monitor diff, ad library, or campaign collector evidence",
+        confidence: "Not collected"
+      },
+      reputation: {
+        source: "Need Collector",
+        evidenceUrl: brand.website,
+        collectedAt,
+        method: "Requires review/news/listening collector",
+        confidence: "Not collected"
+      }
+    },
     scoreEvidence: websiteScore.evidence,
     unavailableMetrics: [
       "Organic keyword ranks require an SEO source or search API.",
@@ -596,6 +645,7 @@ const snapshot = {
   generatedAt: new Date().toISOString(),
   startedAt,
   monitoredSet: activeSetSlug,
+  ownedBrandSlug: activeSet.ownedBrandSlug,
   dataMode: "collected_public_web",
   methodology:
     "Public website fetch of homepage, robots.txt, and sitemap.xml. Restricted social, SEO, AEO, and paid metrics are intentionally left null until approved sources are connected.",
@@ -603,5 +653,34 @@ const snapshot = {
 };
 
 await fs.mkdir(outDir, { recursive: true });
-await fs.writeFile(outFile, `${JSON.stringify(snapshot, null, 2)}\n`);
+await fs.mkdir(setOutDir, { recursive: true });
+await fs.writeFile(path.join(setOutDir, `${activeSetSlug}.json`), `${JSON.stringify(snapshot, null, 2)}\n`);
+
+const setSnapshots = [];
+for (const file of await fs.readdir(setOutDir)) {
+  if (!file.endsWith(".json")) continue;
+  try {
+    const parsed = JSON.parse(await fs.readFile(path.join(setOutDir, file), "utf8"));
+    if (parsed?.monitoredSet && Array.isArray(parsed.brands)) setSnapshots.push(parsed);
+  } catch {
+    // Ignore malformed partial files so one failed run does not break the aggregate.
+  }
+}
+setSnapshots.sort((a, b) => (a.monitoredSet || "").localeCompare(b.monitoredSet || ""));
+const aggregate = {
+  generatedAt: new Date().toISOString(),
+  activeMonitoredSet: activeSetSlug,
+  dataMode: "multi_brand_public_web",
+  methodology: snapshot.methodology,
+  sets: setSnapshots,
+  brands: setSnapshots.flatMap((set) =>
+    (set.brands || []).map((brand) => ({
+      ...brand,
+      monitoredSet: set.monitoredSet,
+      ownedBrandSlug: set.ownedBrandSlug
+    }))
+  )
+};
+await fs.writeFile(outFile, `${JSON.stringify(aggregate, null, 2)}\n`);
+console.log(`Wrote ${path.join(setOutDir, `${activeSetSlug}.json`)}`);
 console.log(`Wrote ${outFile}`);

@@ -1,0 +1,112 @@
+{
+  "generatedAt": "2026-05-05T19:28:43.442Z",
+  "monitoredSet": "astral-bathware",
+  "ownedBrandSlug": "astral-bathware",
+  "methodology": {
+    "mode": "Meta Ad Library active creative collector",
+    "source": "Meta Graph API ads_archive",
+    "method": "Search by brand name, country filter, active ads only",
+    "confidence": "Setup required"
+  },
+  "brands": [
+    {
+      "name": "Astral Bathware",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Jaquar",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Hindware",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "CERA",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Parryware / Roca",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Kohler India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Grohe India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "American Standard India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "TOTO India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Vitra India",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    },
+    {
+      "name": "Watertec",
+      "status": "Setup Required",
+      "summary": {
+        "activeAds": null
+      },
+      "ads": [],
+      "unavailableReason": "META_AD_LIBRARY_ACCESS_TOKEN is not configured."
+    }
+  ]
+}

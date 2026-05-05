@@ -3,6 +3,7 @@
     "dev": "vite --host 127.0.0.1",
     "build": "vite build",
     "collect": "node scripts/collect-public-data.mjs",
+    "collect:all": "node scripts/collect-all-brand-sets.mjs",
     "social:collect": "node scripts/collect-social-data.mjs",
     "ads:collect": "node scripts/collect-ad-library-data.mjs",
     "browser-evidence:collect": "node scripts/collect-browser-evidence.mjs",
