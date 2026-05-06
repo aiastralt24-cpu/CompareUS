@@ -330,6 +330,14 @@ const metricHelp = {
   "Lazy images": "Images with lazy loading detected in public HTML.",
   "Preconnect hints": "Preconnect or DNS-prefetch hints found in the page head.",
   "Search UI": "Visible search-form or search-input signal detected in public HTML.",
+  Brand: "The selected Astral brand or competitor being compared in this table. Click a row to change the focus brand.",
+  "SEO score": "Composite public SEO score from collected evidence: title, meta description, H1, canonical, sitemap, robots, schema, Open Graph/Twitter card, and internal linking.",
+  "Title chars": "Number of characters in the homepage title tag. Very short, missing, or overly long titles can weaken search result clarity.",
+  "Meta chars": "Number of characters in the homepage meta description. This is a snippet-quality proxy, not a direct ranking score.",
+  "H1 count": "Number of H1 headings found on the homepage. Usually one clear H1 is preferred for page-topic clarity.",
+  Canonical: "Whether a canonical URL is declared on the homepage. Canonical tags help search engines understand the preferred version of a page.",
+  Sitemap: "HTTP status or availability of the public sitemap. A working sitemap helps search engines discover important URLs.",
+  "Internal links": "Number of internal links detected on the homepage. This is a crawl-depth and site architecture proxy.",
   "GSC clicks": "First-party Google Search Console clicks for the Astral-owned property over the collector date range.",
   "GSC impressions": "First-party Google Search Console impressions for the Astral-owned property. This is search impression data, not competitor traffic.",
   "Average position": "Google Search Console weighted average position for collected queries.",
@@ -1810,7 +1818,12 @@ function DisciplineTable({ title, description, rows, columns, selectedBrand, set
         <table>
           <thead>
             <tr>
-              <th>Brand</th>
+              <th>
+                <span className="table-heading-help">
+                  Brand
+                  <HelpTip label="Brand" />
+                </span>
+              </th>
               {columns.map(([label]) => (
                 <th key={label}>
                   <span className="table-heading-help">

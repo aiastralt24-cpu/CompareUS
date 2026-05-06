@@ -1449,9 +1449,12 @@ th {
 }
 
 .table-heading-help .help-tip {
-  width: 16px;
-  height: 16px;
-  font-size: 10px;
+  width: 18px;
+  height: 18px;
+  background: rgba(20, 115, 230, 0.14);
+  color: #1459ba;
+  font-size: 11px;
+  opacity: 1;
 }
 
 td {
