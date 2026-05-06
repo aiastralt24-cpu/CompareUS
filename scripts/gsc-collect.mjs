@@ -34,6 +34,7 @@ function setupRequired(config, reason) {
     keywordMovement: [],
     brandVsNonBrand: [],
     ctrIssues: [],
+    queryPages: [],
     positionBuckets: [],
     devices: [],
     countries: [],
@@ -128,9 +129,10 @@ async function collectBrand(config, token) {
   }
 
   try {
-    const [queryRows, pageRows, deviceRows, countryRows] = await Promise.all([
+    const [queryRows, pageRows, queryPageRows, deviceRows, countryRows] = await Promise.all([
       querySearchAnalytics({ accessToken: token.accessToken, siteUrl: config.gscPropertyUrl, dimensions: ["query"], rowLimit: 100 }),
       querySearchAnalytics({ accessToken: token.accessToken, siteUrl: config.gscPropertyUrl, dimensions: ["page"], rowLimit: 50 }),
+      querySearchAnalytics({ accessToken: token.accessToken, siteUrl: config.gscPropertyUrl, dimensions: ["query", "page"], rowLimit: 500 }),
       querySearchAnalytics({ accessToken: token.accessToken, siteUrl: config.gscPropertyUrl, dimensions: ["device"], rowLimit: 10 }),
       querySearchAnalytics({ accessToken: token.accessToken, siteUrl: config.gscPropertyUrl, dimensions: ["country"], rowLimit: 20 })
     ]);
@@ -161,6 +163,7 @@ async function collectBrand(config, token) {
       ctrIssues: queryRows
         .filter((row) => row.impressions >= 100 && row.ctr < 0.02)
         .slice(0, 12),
+      queryPages: queryPageRows,
       positionBuckets: buildPositionBuckets(queryRows),
       devices: deviceRows,
       countries: countryRows,

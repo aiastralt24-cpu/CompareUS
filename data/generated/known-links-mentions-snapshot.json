@@ -1,0 +1,138 @@
+{
+  "generatedAt": "2026-05-06T17:18:43.072Z",
+  "source": "Known Links and Mentions",
+  "dataMode": "known_evidence_only",
+  "warning": "This is not total backlinks. It only includes first-party, imported, or public evidence rows.",
+  "importNotes": {
+    "manualLinks": "Optional CSV: data/imports/manual-links-mentions.csv",
+    "gscLinks": "Optional CSV: data/imports/gsc-links.csv",
+    "outreachProspects": "Optional CSV: data/imports/outreach-prospects.csv"
+  },
+  "brands": [
+    {
+      "ownedBrandSlug": "astral-pipes",
+      "brandName": "Astral Pipes",
+      "status": "Setup Required",
+      "label": "Known Links and Mentions",
+      "summary": {
+        "knownSourceCount": 0,
+        "confirmedCount": 0,
+        "unlinkedMentionCount": 0,
+        "lostKnownLinkCount": 0,
+        "outreachProspectCount": 0,
+        "rejectedImportCount": 0
+      },
+      "knownLinksAndMentions": [],
+      "unlinkedMentions": [],
+      "outreachQueue": [],
+      "rejectedImports": [],
+      "evidence": {
+        "source": "Manual imports, GA4 referral evidence, and public monitor events",
+        "evidenceUrl": "https://www.astralpipes.com/",
+        "collectedAt": "2026-05-06T17:18:43.072Z",
+        "method": "Known links and mentions only; not a full backlink index",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-adhesives",
+      "brandName": "Astral Adhesives",
+      "status": "Setup Required",
+      "label": "Known Links and Mentions",
+      "summary": {
+        "knownSourceCount": 0,
+        "confirmedCount": 0,
+        "unlinkedMentionCount": 0,
+        "lostKnownLinkCount": 0,
+        "outreachProspectCount": 0,
+        "rejectedImportCount": 0
+      },
+      "knownLinksAndMentions": [],
+      "unlinkedMentions": [],
+      "outreachQueue": [],
+      "rejectedImports": [],
+      "evidence": {
+        "source": "Manual imports, GA4 referral evidence, and public monitor events",
+        "evidenceUrl": "https://www.astraladhesives.com/",
+        "collectedAt": "2026-05-06T17:18:43.072Z",
+        "method": "Known links and mentions only; not a full backlink index",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-bathware",
+      "brandName": "Astral Bathware",
+      "status": "Setup Required",
+      "label": "Known Links and Mentions",
+      "summary": {
+        "knownSourceCount": 0,
+        "confirmedCount": 0,
+        "unlinkedMentionCount": 0,
+        "lostKnownLinkCount": 0,
+        "outreachProspectCount": 0,
+        "rejectedImportCount": 0
+      },
+      "knownLinksAndMentions": [],
+      "unlinkedMentions": [],
+      "outreachQueue": [],
+      "rejectedImports": [],
+      "evidence": {
+        "source": "Manual imports, GA4 referral evidence, and public monitor events",
+        "evidenceUrl": "https://www.astralbathware.com/",
+        "collectedAt": "2026-05-06T17:18:43.072Z",
+        "method": "Known links and mentions only; not a full backlink index",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-paints",
+      "brandName": "Astral Paints",
+      "status": "Setup Required",
+      "label": "Known Links and Mentions",
+      "summary": {
+        "knownSourceCount": 0,
+        "confirmedCount": 0,
+        "unlinkedMentionCount": 0,
+        "lostKnownLinkCount": 0,
+        "outreachProspectCount": 0,
+        "rejectedImportCount": 0
+      },
+      "knownLinksAndMentions": [],
+      "unlinkedMentions": [],
+      "outreachQueue": [],
+      "rejectedImports": [],
+      "evidence": {
+        "source": "Manual imports, GA4 referral evidence, and public monitor events",
+        "evidenceUrl": "https://www.astralpaints.com/",
+        "collectedAt": "2026-05-06T17:18:43.072Z",
+        "method": "Known links and mentions only; not a full backlink index",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-foundation",
+      "brandName": "Astral Foundation",
+      "status": "Setup Required",
+      "label": "Known Links and Mentions",
+      "summary": {
+        "knownSourceCount": 0,
+        "confirmedCount": 0,
+        "unlinkedMentionCount": 0,
+        "lostKnownLinkCount": 0,
+        "outreachProspectCount": 0,
+        "rejectedImportCount": 0
+      },
+      "knownLinksAndMentions": [],
+      "unlinkedMentions": [],
+      "outreachQueue": [],
+      "rejectedImports": [],
+      "evidence": {
+        "source": "Manual imports, GA4 referral evidence, and public monitor events",
+        "evidenceUrl": "https://www.astralltd.com/",
+        "collectedAt": "2026-05-06T17:18:43.072Z",
+        "method": "Known links and mentions only; not a full backlink index",
+        "confidence": "Setup Required"
+      }
+    }
+  ]
+}

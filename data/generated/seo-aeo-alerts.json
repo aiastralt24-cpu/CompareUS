@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-05-06T17:18:43.078Z",
+  "source": "No-paid-API SEO/AEO alert payloads",
+  "alertCount": 6,
+  "alerts": [
+    {
+      "brand": "Astral Adhesives",
+      "module": "AEO",
+      "severity": "High",
+      "changeDetected": "Add FAQ schema to answer-led pages",
+      "evidenceUrl": "https://www.astraladhesives.com/",
+      "recommendedAction": "FAQ block + FAQPage schema"
+    },
+    {
+      "brand": "Astral Adhesives",
+      "module": "AEO",
+      "severity": "High",
+      "changeDetected": "Add product/category schema",
+      "evidenceUrl": "https://www.astraladhesives.com/",
+      "recommendedAction": "Product schema"
+    },
+    {
+      "brand": "Astral Adhesives",
+      "module": "AEO",
+      "severity": "High",
+      "changeDetected": "Competitors expose FAQ schema that Astral does not",
+      "evidenceUrl": "https://www.astraladhesives.com/",
+      "recommendedAction": "FAQPage schema"
+    },
+    {
+      "brand": "Astral Bathware",
+      "module": "AEO",
+      "severity": "High",
+      "changeDetected": "Add product/category schema",
+      "evidenceUrl": "https://www.astralbathware.com/",
+      "recommendedAction": "Product schema"
+    },
+    {
+      "brand": "Astral Foundation",
+      "module": "AEO",
+      "severity": "High",
+      "changeDetected": "Add FAQ schema to answer-led pages",
+      "evidenceUrl": "https://www.astralltd.com/",
+      "recommendedAction": "FAQ block + FAQPage schema"
+    },
+    {
+      "brand": "Astral Foundation",
+      "module": "AEO",
+      "severity": "High",
+      "changeDetected": "Add product/category schema",
+      "evidenceUrl": "https://www.astralltd.com/",
+      "recommendedAction": "Product schema"
+    }
+  ],
+  "evidence": {
+    "source": "Keyword map, content opportunities, internal link graph, known links and mentions",
+    "evidenceUrl": "data/generated",
+    "collectedAt": "2026-05-06T17:18:43.078Z",
+    "method": "Telegram-ready payload generation",
+    "confidence": "Evidence-backed payloads"
+  }
+}

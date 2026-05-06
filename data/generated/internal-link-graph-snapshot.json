@@ -1,0 +1,138 @@
+{
+  "generatedAt": "2026-05-06T17:18:42.989Z",
+  "source": "No-paid-API internal link graph",
+  "dataMode": "public_crawl_proxy",
+  "ruleBasis": "Crawlable <a href> links and descriptive anchor text guidance",
+  "brands": [
+    {
+      "ownedBrandSlug": "astral-pipes",
+      "brandName": "Astral Pipes",
+      "status": "Live",
+      "summary": {
+        "discoveredUrlCount": 99,
+        "sitemapUrlCount": 96,
+        "orphanPageCount": 0,
+        "priorityPageCount": 0,
+        "homepageInternalLinks": 200,
+        "auditedInternalLinks": 2166,
+        "genericAnchorProxyCount": 0,
+        "recommendationCount": 0
+      },
+      "orphanPages": [],
+      "weakPages": [],
+      "genericAnchors": [],
+      "recommendations": [],
+      "evidence": {
+        "source": "Public crawl, sitemap, and keyword map",
+        "evidenceUrl": "https://www.astralpipes.com/",
+        "collectedAt": "2026-05-06T17:18:42.989Z",
+        "method": "Internal link graph proxy from public crawl evidence",
+        "confidence": "Public crawl proxy"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-adhesives",
+      "brandName": "Astral Adhesives",
+      "status": "Live",
+      "summary": {
+        "discoveredUrlCount": 79,
+        "sitemapUrlCount": 0,
+        "orphanPageCount": 0,
+        "priorityPageCount": 0,
+        "homepageInternalLinks": 161,
+        "auditedInternalLinks": 993,
+        "genericAnchorProxyCount": 0,
+        "recommendationCount": 0
+      },
+      "orphanPages": [],
+      "weakPages": [],
+      "genericAnchors": [],
+      "recommendations": [],
+      "evidence": {
+        "source": "Public crawl, sitemap, and keyword map",
+        "evidenceUrl": "https://www.astraladhesives.com/",
+        "collectedAt": "2026-05-06T17:18:42.989Z",
+        "method": "Internal link graph proxy from public crawl evidence",
+        "confidence": "Public crawl proxy"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-bathware",
+      "brandName": "Astral Bathware",
+      "status": "Live",
+      "summary": {
+        "discoveredUrlCount": 89,
+        "sitemapUrlCount": 7,
+        "orphanPageCount": 0,
+        "priorityPageCount": 0,
+        "homepageInternalLinks": 157,
+        "auditedInternalLinks": 2633,
+        "genericAnchorProxyCount": 0,
+        "recommendationCount": 0
+      },
+      "orphanPages": [],
+      "weakPages": [],
+      "genericAnchors": [],
+      "recommendations": [],
+      "evidence": {
+        "source": "Public crawl, sitemap, and keyword map",
+        "evidenceUrl": "https://www.astralbathware.com/",
+        "collectedAt": "2026-05-06T17:18:42.989Z",
+        "method": "Internal link graph proxy from public crawl evidence",
+        "confidence": "Public crawl proxy"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-paints",
+      "brandName": "Astral Paints",
+      "status": "Live",
+      "summary": {
+        "discoveredUrlCount": 500,
+        "sitemapUrlCount": 500,
+        "orphanPageCount": 0,
+        "priorityPageCount": 0,
+        "homepageInternalLinks": 26,
+        "auditedInternalLinks": 497,
+        "genericAnchorProxyCount": 0,
+        "recommendationCount": 0
+      },
+      "orphanPages": [],
+      "weakPages": [],
+      "genericAnchors": [],
+      "recommendations": [],
+      "evidence": {
+        "source": "Public crawl, sitemap, and keyword map",
+        "evidenceUrl": "https://www.astralpaints.com/",
+        "collectedAt": "2026-05-06T17:18:42.989Z",
+        "method": "Internal link graph proxy from public crawl evidence",
+        "confidence": "Public crawl proxy"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-foundation",
+      "brandName": "Astral Foundation",
+      "status": "Live",
+      "summary": {
+        "discoveredUrlCount": 26,
+        "sitemapUrlCount": 7,
+        "orphanPageCount": 0,
+        "priorityPageCount": 0,
+        "homepageInternalLinks": 43,
+        "auditedInternalLinks": 563,
+        "genericAnchorProxyCount": 0,
+        "recommendationCount": 0
+      },
+      "orphanPages": [],
+      "weakPages": [],
+      "genericAnchors": [],
+      "recommendations": [],
+      "evidence": {
+        "source": "Public crawl, sitemap, and keyword map",
+        "evidenceUrl": "https://www.astralltd.com/",
+        "collectedAt": "2026-05-06T17:18:42.989Z",
+        "method": "Internal link graph proxy from public crawl evidence",
+        "confidence": "Public crawl proxy"
+      }
+    }
+  ]
+}

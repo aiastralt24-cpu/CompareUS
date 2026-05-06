@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-06T15:11:00.782Z",
+  "generatedAt": "2026-05-06T17:18:35.793Z",
   "source": "Google Search Console",
   "dataMode": "setup_required",
   "brands": [
@@ -22,13 +22,14 @@
       "keywordMovement": [],
       "brandVsNonBrand": [],
       "ctrIssues": [],
+      "queryPages": [],
       "positionBuckets": [],
       "devices": [],
       "countries": [],
       "evidence": {
         "source": "Google Search Console",
         "evidenceUrl": "https://www.astralpipes.com/",
-        "collectedAt": "2026-05-06T15:11:00.782Z",
+        "collectedAt": "2026-05-06T17:18:35.793Z",
         "method": "Setup check",
         "confidence": "Setup Required"
       }
@@ -52,13 +53,14 @@
       "keywordMovement": [],
       "brandVsNonBrand": [],
       "ctrIssues": [],
+      "queryPages": [],
       "positionBuckets": [],
       "devices": [],
       "countries": [],
       "evidence": {
         "source": "Google Search Console",
         "evidenceUrl": "https://www.astraladhesives.com/",
-        "collectedAt": "2026-05-06T15:11:00.782Z",
+        "collectedAt": "2026-05-06T17:18:35.793Z",
         "method": "Setup check",
         "confidence": "Setup Required"
       }
@@ -82,13 +84,14 @@
       "keywordMovement": [],
       "brandVsNonBrand": [],
       "ctrIssues": [],
+      "queryPages": [],
       "positionBuckets": [],
       "devices": [],
       "countries": [],
       "evidence": {
         "source": "Google Search Console",
         "evidenceUrl": "https://www.astralbathware.com/",
-        "collectedAt": "2026-05-06T15:11:00.782Z",
+        "collectedAt": "2026-05-06T17:18:35.793Z",
         "method": "Setup check",
         "confidence": "Setup Required"
       }
@@ -112,13 +115,14 @@
       "keywordMovement": [],
       "brandVsNonBrand": [],
       "ctrIssues": [],
+      "queryPages": [],
       "positionBuckets": [],
       "devices": [],
       "countries": [],
       "evidence": {
         "source": "Google Search Console",
         "evidenceUrl": "https://www.astralpaints.com/",
-        "collectedAt": "2026-05-06T15:11:00.782Z",
+        "collectedAt": "2026-05-06T17:18:35.793Z",
         "method": "Setup check",
         "confidence": "Setup Required"
       }
@@ -142,13 +146,14 @@
       "keywordMovement": [],
       "brandVsNonBrand": [],
       "ctrIssues": [],
+      "queryPages": [],
       "positionBuckets": [],
       "devices": [],
       "countries": [],
       "evidence": {
         "source": "Google Search Console",
         "evidenceUrl": "https://www.astralltd.com/",
-        "collectedAt": "2026-05-06T15:11:00.782Z",
+        "collectedAt": "2026-05-06T17:18:35.793Z",
         "method": "Setup check",
         "confidence": "Setup Required"
       }

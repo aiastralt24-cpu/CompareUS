@@ -1,0 +1,1040 @@
+{
+  "generatedAt": "2026-05-06T17:18:42.958Z",
+  "source": "No-paid-API keyword mapping",
+  "dataMode": "setup_required",
+  "importNotes": {
+    "targetKeywordBank": "Optional CSV: data/imports/target-keywords.csv with ownedBrandSlug,keyword,cluster,intent,funnelStage,targetPage,priority,evidenceUrl"
+  },
+  "brands": [
+    {
+      "ownedBrandSlug": "astral-pipes",
+      "brandName": "Astral Pipes",
+      "status": "Setup Required",
+      "reason": "GSC_ENABLED is not set to 1.",
+      "summary": {
+        "keywordCount": 11,
+        "gscKeywordCount": 0,
+        "importedKeywordCount": 0,
+        "seedKeywordCount": 11,
+        "brandKeywordCount": 0,
+        "nonBrandKeywordCount": 11,
+        "ctrOpportunityCount": 0,
+        "cannibalizationCount": 0
+      },
+      "clusters": [
+        {
+          "cluster": "pipes",
+          "keywordCount": 5,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "pipes"
+        },
+        {
+          "cluster": "water_tanks",
+          "keywordCount": 3,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "water-tanks"
+        },
+        {
+          "cluster": "trade",
+          "keywordCount": 3,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "trade"
+        }
+      ],
+      "mappings": [
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "pvc pipes",
+          "cluster": "pipes",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "cpvc pipes",
+          "cluster": "pipes",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "upvc pipes",
+          "cluster": "pipes",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "swr pipes",
+          "cluster": "pipes",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "plumbing pipes",
+          "cluster": "pipes",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "water tank",
+          "cluster": "water_tanks",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "plastic water tank",
+          "cluster": "water_tanks",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "overhead water tank",
+          "cluster": "water_tanks",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "pipe fittings",
+          "cluster": "trade",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "plumber pipe brand",
+          "cluster": "trade",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "agriculture pipe",
+          "cluster": "trade",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        }
+      ],
+      "ctrOpportunities": [],
+      "cannibalization": [],
+      "promptMappings": [
+        {
+          "promptId": "pipes-best-brands-india",
+          "prompt": "Which are the best PVC and CPVC pipe brands in India for home plumbing?",
+          "category": "Category consideration",
+          "mappedCluster": "which_best"
+        },
+        {
+          "promptId": "pipes-plumber-recommendation",
+          "prompt": "Which pipe brand should a plumber recommend for reliable residential water supply in India?",
+          "category": "Trade recommendation",
+          "mappedCluster": "which_pipe"
+        },
+        {
+          "promptId": "pipes-drainage-swr",
+          "prompt": "What are the leading SWR drainage pipe brands in India?",
+          "category": "Product category",
+          "mappedCluster": "what_leading"
+        },
+        {
+          "promptId": "pipes-water-tanks",
+          "prompt": "Which plastic water tank brands in India are trusted for household use?",
+          "category": "Adjacent category",
+          "mappedCluster": "water_tanks"
+        },
+        {
+          "promptId": "pipes-agriculture",
+          "prompt": "Which PVC pipe brands are commonly used for agriculture irrigation in India?",
+          "category": "Agriculture",
+          "mappedCluster": "which_pipe"
+        }
+      ],
+      "evidence": {
+        "source": "Configured keyword seed",
+        "evidenceUrl": "https://www.astralpipes.com/",
+        "collectedAt": "2026-05-06T17:18:42.958Z",
+        "method": "Setup-safe keyword mapping",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-adhesives",
+      "brandName": "Astral Adhesives",
+      "status": "Setup Required",
+      "reason": "GSC_ENABLED is not set to 1.",
+      "summary": {
+        "keywordCount": 10,
+        "gscKeywordCount": 0,
+        "importedKeywordCount": 0,
+        "seedKeywordCount": 10,
+        "brandKeywordCount": 0,
+        "nonBrandKeywordCount": 10,
+        "ctrOpportunityCount": 0,
+        "cannibalizationCount": 0
+      },
+      "clusters": [
+        {
+          "cluster": "adhesives",
+          "keywordCount": 4,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "adhesives"
+        },
+        {
+          "cluster": "construction_chemicals",
+          "keywordCount": 3,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "construction-chemicals"
+        },
+        {
+          "cluster": "plumbing",
+          "keywordCount": 3,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "plumbing"
+        }
+      ],
+      "mappings": [
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "adhesive brands",
+          "cluster": "adhesives",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "epoxy adhesive",
+          "cluster": "adhesives",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "instant adhesive",
+          "cluster": "adhesives",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "wood adhesive",
+          "cluster": "adhesives",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "tile adhesive",
+          "cluster": "construction_chemicals",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "waterproofing chemical",
+          "cluster": "construction_chemicals",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "sealant",
+          "cluster": "construction_chemicals",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "solvent cement",
+          "cluster": "plumbing",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "cpvc solvent cement",
+          "cluster": "plumbing",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "pvc pipe adhesive",
+          "cluster": "plumbing",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        }
+      ],
+      "ctrOpportunities": [],
+      "cannibalization": [],
+      "promptMappings": [
+        {
+          "promptId": "adhesives-best-brands",
+          "prompt": "Which adhesive brands in India are reliable for household and construction use?",
+          "category": "Category consideration",
+          "mappedCluster": "adhesives"
+        },
+        {
+          "promptId": "adhesives-solvent-cement",
+          "prompt": "Which solvent cement brands are recommended for PVC and CPVC plumbing pipes in India?",
+          "category": "Plumbing adhesive",
+          "mappedCluster": "plumbing"
+        },
+        {
+          "promptId": "adhesives-epoxy",
+          "prompt": "What are the best epoxy adhesive brands for repair work in India?",
+          "category": "Epoxy repair",
+          "mappedCluster": "adhesives"
+        },
+        {
+          "promptId": "adhesives-waterproofing",
+          "prompt": "Which waterproofing chemical brands should be considered for Indian homes?",
+          "category": "Construction chemical",
+          "mappedCluster": "construction_chemicals"
+        },
+        {
+          "promptId": "adhesives-sealants",
+          "prompt": "Which silicone sealant brands are popular in India for kitchens and bathrooms?",
+          "category": "Sealants",
+          "mappedCluster": "construction_chemicals"
+        }
+      ],
+      "evidence": {
+        "source": "Configured keyword seed",
+        "evidenceUrl": "https://www.astraladhesives.com/",
+        "collectedAt": "2026-05-06T17:18:42.958Z",
+        "method": "Setup-safe keyword mapping",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-bathware",
+      "brandName": "Astral Bathware",
+      "status": "Setup Required",
+      "reason": "GSC_ENABLED is not set to 1.",
+      "summary": {
+        "keywordCount": 8,
+        "gscKeywordCount": 0,
+        "importedKeywordCount": 0,
+        "seedKeywordCount": 8,
+        "brandKeywordCount": 0,
+        "nonBrandKeywordCount": 8,
+        "ctrOpportunityCount": 0,
+        "cannibalizationCount": 0
+      },
+      "clusters": [
+        {
+          "cluster": "bathware",
+          "keywordCount": 3,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "bathware"
+        },
+        {
+          "cluster": "faucets",
+          "keywordCount": 3,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "faucets"
+        },
+        {
+          "cluster": "showers",
+          "keywordCount": 2,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "showers"
+        }
+      ],
+      "mappings": [
+        {
+          "ownedBrandSlug": "astral-bathware",
+          "keyword": "bathware brands",
+          "cluster": "bathware",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-bathware",
+          "keyword": "bathroom fittings",
+          "cluster": "bathware",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-bathware",
+          "keyword": "sanitaryware brands",
+          "cluster": "bathware",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-bathware",
+          "keyword": "faucet brands",
+          "cluster": "faucets",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-bathware",
+          "keyword": "tap brands",
+          "cluster": "faucets",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-bathware",
+          "keyword": "premium faucets",
+          "cluster": "faucets",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-bathware",
+          "keyword": "shower brands",
+          "cluster": "showers",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-bathware",
+          "keyword": "bathroom accessories",
+          "cluster": "showers",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        }
+      ],
+      "ctrOpportunities": [],
+      "cannibalization": [],
+      "promptMappings": [
+        {
+          "promptId": "bathware-best-brands",
+          "prompt": "Which bathware brands in India are best for faucets and sanitaryware?",
+          "category": "Category consideration",
+          "mappedCluster": "bathware"
+        },
+        {
+          "promptId": "bathware-faucets",
+          "prompt": "What are the leading faucet brands in India for modern bathrooms?",
+          "category": "Faucets",
+          "mappedCluster": "faucets"
+        },
+        {
+          "promptId": "bathware-sanitaryware",
+          "prompt": "Which sanitaryware brands are trusted in India for toilets and basins?",
+          "category": "Sanitaryware",
+          "mappedCluster": "bathware"
+        },
+        {
+          "promptId": "bathware-premium",
+          "prompt": "Which premium bathroom fittings brands are available in India?",
+          "category": "Premium",
+          "mappedCluster": "bathware"
+        },
+        {
+          "promptId": "bathware-accessories",
+          "prompt": "Which brands offer reliable bathroom accessories and showers in India?",
+          "category": "Accessories",
+          "mappedCluster": "showers"
+        }
+      ],
+      "evidence": {
+        "source": "Configured keyword seed",
+        "evidenceUrl": "https://www.astralbathware.com/",
+        "collectedAt": "2026-05-06T17:18:42.958Z",
+        "method": "Setup-safe keyword mapping",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-paints",
+      "brandName": "Astral Paints",
+      "status": "Setup Required",
+      "reason": "GSC_ENABLED is not set to 1.",
+      "summary": {
+        "keywordCount": 10,
+        "gscKeywordCount": 0,
+        "importedKeywordCount": 0,
+        "seedKeywordCount": 10,
+        "brandKeywordCount": 0,
+        "nonBrandKeywordCount": 10,
+        "ctrOpportunityCount": 0,
+        "cannibalizationCount": 0
+      },
+      "clusters": [
+        {
+          "cluster": "decorative_paints",
+          "keywordCount": 4,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "decorative-paints"
+        },
+        {
+          "cluster": "waterproofing",
+          "keywordCount": 3,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "waterproofing"
+        },
+        {
+          "cluster": "industrial",
+          "keywordCount": 3,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "industrial"
+        }
+      ],
+      "mappings": [
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "paint brands",
+          "cluster": "decorative_paints",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "interior paint",
+          "cluster": "decorative_paints",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "exterior paint",
+          "cluster": "decorative_paints",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "wall paint",
+          "cluster": "decorative_paints",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "waterproof paint",
+          "cluster": "waterproofing",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "damp proof paint",
+          "cluster": "waterproofing",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "roof coating",
+          "cluster": "waterproofing",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "industrial paint",
+          "cluster": "industrial",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "protective coating",
+          "cluster": "industrial",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "primer paint",
+          "cluster": "industrial",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        }
+      ],
+      "ctrOpportunities": [],
+      "cannibalization": [],
+      "promptMappings": [
+        {
+          "promptId": "paints-best-brands",
+          "prompt": "Which paint brands in India are best for home interiors and exteriors?",
+          "category": "Category consideration",
+          "mappedCluster": "decorative_paints"
+        },
+        {
+          "promptId": "paints-exterior",
+          "prompt": "Which exterior paint brands perform well in Indian weather conditions?",
+          "category": "Exterior",
+          "mappedCluster": "decorative_paints"
+        },
+        {
+          "promptId": "paints-waterproof",
+          "prompt": "Which waterproof wall paint or damp-proof coating brands are recommended in India?",
+          "category": "Waterproofing",
+          "mappedCluster": "decorative_paints"
+        },
+        {
+          "promptId": "paints-premium",
+          "prompt": "What are the premium decorative paint options available in India?",
+          "category": "Premium",
+          "mappedCluster": "what_premium"
+        },
+        {
+          "promptId": "paints-industrial",
+          "prompt": "Which industrial protective coating brands operate in India?",
+          "category": "Industrial",
+          "mappedCluster": "industrial"
+        }
+      ],
+      "evidence": {
+        "source": "Configured keyword seed",
+        "evidenceUrl": "https://www.astralpaints.com/",
+        "collectedAt": "2026-05-06T17:18:42.958Z",
+        "method": "Setup-safe keyword mapping",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-foundation",
+      "brandName": "Astral Foundation",
+      "status": "Setup Required",
+      "reason": "GSC_ENABLED is not set to 1.",
+      "summary": {
+        "keywordCount": 8,
+        "gscKeywordCount": 0,
+        "importedKeywordCount": 0,
+        "seedKeywordCount": 8,
+        "brandKeywordCount": 0,
+        "nonBrandKeywordCount": 8,
+        "ctrOpportunityCount": 0,
+        "cannibalizationCount": 0
+      },
+      "clusters": [
+        {
+          "cluster": "csr",
+          "keywordCount": 3,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "csr"
+        },
+        {
+          "cluster": "impact",
+          "keywordCount": 3,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "impact"
+        },
+        {
+          "cluster": "trust",
+          "keywordCount": 2,
+          "clicks": 0,
+          "impressions": 0,
+          "bestAveragePosition": null,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Target page mapping"
+          ],
+          "slug": "trust"
+        }
+      ],
+      "mappings": [
+        {
+          "ownedBrandSlug": "astral-foundation",
+          "keyword": "corporate foundation",
+          "cluster": "csr",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-foundation",
+          "keyword": "csr initiatives",
+          "cluster": "csr",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-foundation",
+          "keyword": "csr impact report",
+          "cluster": "csr",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-foundation",
+          "keyword": "education csr",
+          "cluster": "impact",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-foundation",
+          "keyword": "water sanitation csr",
+          "cluster": "impact",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-foundation",
+          "keyword": "rural development foundation",
+          "cluster": "impact",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-foundation",
+          "keyword": "corporate social responsibility India",
+          "cluster": "trust",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        },
+        {
+          "ownedBrandSlug": "astral-foundation",
+          "keyword": "foundation impact report",
+          "cluster": "trust",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "targetPage": "",
+          "priority": "Medium",
+          "source": "Configured category keyword seed"
+        }
+      ],
+      "ctrOpportunities": [],
+      "cannibalization": [],
+      "promptMappings": [
+        {
+          "promptId": "foundation-csr-india",
+          "prompt": "Which Indian corporate foundations are known for strong CSR and social impact work?",
+          "category": "CSR visibility",
+          "mappedCluster": "csr"
+        },
+        {
+          "promptId": "foundation-water-sanitation",
+          "prompt": "Which corporate foundations in India work on water, sanitation, or rural development?",
+          "category": "Water and sanitation",
+          "mappedCluster": "csr"
+        },
+        {
+          "promptId": "foundation-education",
+          "prompt": "Which Indian corporate foundations are active in education and skill development?",
+          "category": "Education",
+          "mappedCluster": "csr"
+        },
+        {
+          "promptId": "foundation-impact-reporting",
+          "prompt": "Which Indian corporate foundations publish strong impact reports and CSR stories?",
+          "category": "Impact reporting",
+          "mappedCluster": "csr"
+        },
+        {
+          "promptId": "foundation-healthcare",
+          "prompt": "Which corporate foundations in India are visible for healthcare and community welfare initiatives?",
+          "category": "Healthcare",
+          "mappedCluster": "csr"
+        }
+      ],
+      "evidence": {
+        "source": "Configured keyword seed",
+        "evidenceUrl": "https://www.astralltd.com/",
+        "collectedAt": "2026-05-06T17:18:42.958Z",
+        "method": "Setup-safe keyword mapping",
+        "confidence": "Setup Required"
+      }
+    }
+  ]
+}

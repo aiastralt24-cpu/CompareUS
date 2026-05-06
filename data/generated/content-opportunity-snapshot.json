@@ -1,0 +1,359 @@
+{
+  "generatedAt": "2026-05-06T17:18:43.038Z",
+  "source": "No-paid-API content and AEO opportunity engine",
+  "dataMode": "public_and_first_party_evidence",
+  "brands": [
+    {
+      "ownedBrandSlug": "astral-pipes",
+      "brandName": "Astral Pipes",
+      "status": "Live",
+      "summary": {
+        "opportunityCount": 1,
+        "highPriorityCount": 0,
+        "keywordBackedCount": 0,
+        "aiCitationGapCount": 0
+      },
+      "opportunities": [
+        {
+          "id": "astral-pipes-missing-freshness-signals-add-visible-freshness-signals",
+          "ownedBrandSlug": "astral-pipes",
+          "brandName": "Astral Pipes",
+          "type": "missing_freshness_signals",
+          "priority": "Medium",
+          "severity": "Medium",
+          "title": "Add visible freshness signals",
+          "detail": "No visible last-updated, dateModified, or freshness proxy was detected in the current public crawl.",
+          "sourceQuery": "",
+          "currentRankingPage": "",
+          "recommendedTargetPage": "",
+          "recommendedContentFormat": "Updated date + reviewed content",
+          "evidence": {
+            "source": "Public crawl, GSC keyword map, or AI prompt visibility",
+            "evidenceUrl": "https://www.astralpipes.com/",
+            "collectedAt": "2026-05-06T17:18:43.038Z",
+            "method": "Rule-based SEO/AEO opportunity detection",
+            "confidence": "Evidence-backed recommendation"
+          }
+        }
+      ],
+      "evidence": {
+        "source": "Public crawl + keyword map + AI visibility",
+        "evidenceUrl": "https://www.astralpipes.com/",
+        "collectedAt": "2026-05-06T17:18:43.038Z",
+        "method": "Rule-based opportunity engine",
+        "confidence": "Verified public/first-party evidence"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-adhesives",
+      "brandName": "Astral Adhesives",
+      "status": "Live",
+      "summary": {
+        "opportunityCount": 4,
+        "highPriorityCount": 3,
+        "keywordBackedCount": 0,
+        "aiCitationGapCount": 0
+      },
+      "opportunities": [
+        {
+          "id": "astral-adhesives-missing-faq-schema-add-faq-schema-to-answer-led-pages",
+          "ownedBrandSlug": "astral-adhesives",
+          "brandName": "Astral Adhesives",
+          "type": "missing_faq_schema",
+          "priority": "High",
+          "severity": "High",
+          "title": "Add FAQ schema to answer-led pages",
+          "detail": "FAQ text or question-style content exists, but FAQPage schema is not consistently detected.",
+          "sourceQuery": "",
+          "currentRankingPage": "",
+          "recommendedTargetPage": "",
+          "recommendedContentFormat": "FAQ block + FAQPage schema",
+          "evidence": {
+            "source": "Public crawl, GSC keyword map, or AI prompt visibility",
+            "evidenceUrl": "https://www.astraladhesives.com/",
+            "collectedAt": "2026-05-06T17:18:43.038Z",
+            "method": "Rule-based SEO/AEO opportunity detection",
+            "confidence": "Evidence-backed recommendation"
+          }
+        },
+        {
+          "id": "astral-adhesives-missing-product-schema-add-product-category-schema",
+          "ownedBrandSlug": "astral-adhesives",
+          "brandName": "Astral Adhesives",
+          "type": "missing_product_schema",
+          "priority": "High",
+          "severity": "High",
+          "title": "Add product/category schema",
+          "detail": "Product schema is not detected in the current public audit. Product/category pages should expose machine-readable product entities where appropriate.",
+          "sourceQuery": "",
+          "currentRankingPage": "",
+          "recommendedTargetPage": "",
+          "recommendedContentFormat": "Product schema",
+          "evidence": {
+            "source": "Public crawl, GSC keyword map, or AI prompt visibility",
+            "evidenceUrl": "https://www.astraladhesives.com/",
+            "collectedAt": "2026-05-06T17:18:43.038Z",
+            "method": "Rule-based SEO/AEO opportunity detection",
+            "confidence": "Evidence-backed recommendation"
+          }
+        },
+        {
+          "id": "astral-adhesives-missing-freshness-signals-add-visible-freshness-signals",
+          "ownedBrandSlug": "astral-adhesives",
+          "brandName": "Astral Adhesives",
+          "type": "missing_freshness_signals",
+          "priority": "Medium",
+          "severity": "Medium",
+          "title": "Add visible freshness signals",
+          "detail": "No visible last-updated, dateModified, or freshness proxy was detected in the current public crawl.",
+          "sourceQuery": "",
+          "currentRankingPage": "",
+          "recommendedTargetPage": "",
+          "recommendedContentFormat": "Updated date + reviewed content",
+          "evidence": {
+            "source": "Public crawl, GSC keyword map, or AI prompt visibility",
+            "evidenceUrl": "https://www.astraladhesives.com/",
+            "collectedAt": "2026-05-06T17:18:43.038Z",
+            "method": "Rule-based SEO/AEO opportunity detection",
+            "confidence": "Evidence-backed recommendation"
+          }
+        },
+        {
+          "id": "astral-adhesives-competitor-content-gap-competitors-expose-faq-schema-that-astral-does-not",
+          "ownedBrandSlug": "astral-adhesives",
+          "brandName": "Astral Adhesives",
+          "type": "competitor_content_gap",
+          "priority": "High",
+          "severity": "High",
+          "title": "Competitors expose FAQ schema that Astral does not",
+          "detail": "Public competitor crawl found FAQ schema where the Astral-owned baseline did not.",
+          "sourceQuery": "",
+          "currentRankingPage": "",
+          "recommendedTargetPage": "",
+          "recommendedContentFormat": "FAQPage schema",
+          "evidence": {
+            "source": "Public crawl, GSC keyword map, or AI prompt visibility",
+            "evidenceUrl": "https://www.astraladhesives.com/",
+            "collectedAt": "2026-05-06T17:18:43.038Z",
+            "method": "Rule-based SEO/AEO opportunity detection",
+            "confidence": "Evidence-backed recommendation"
+          }
+        }
+      ],
+      "evidence": {
+        "source": "Public crawl + keyword map + AI visibility",
+        "evidenceUrl": "https://www.astraladhesives.com/",
+        "collectedAt": "2026-05-06T17:18:43.038Z",
+        "method": "Rule-based opportunity engine",
+        "confidence": "Verified public/first-party evidence"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-bathware",
+      "brandName": "Astral Bathware",
+      "status": "Live",
+      "summary": {
+        "opportunityCount": 3,
+        "highPriorityCount": 1,
+        "keywordBackedCount": 0,
+        "aiCitationGapCount": 0
+      },
+      "opportunities": [
+        {
+          "id": "astral-bathware-missing-product-schema-add-product-category-schema",
+          "ownedBrandSlug": "astral-bathware",
+          "brandName": "Astral Bathware",
+          "type": "missing_product_schema",
+          "priority": "High",
+          "severity": "High",
+          "title": "Add product/category schema",
+          "detail": "Product schema is not detected in the current public audit. Product/category pages should expose machine-readable product entities where appropriate.",
+          "sourceQuery": "",
+          "currentRankingPage": "",
+          "recommendedTargetPage": "",
+          "recommendedContentFormat": "Product schema",
+          "evidence": {
+            "source": "Public crawl, GSC keyword map, or AI prompt visibility",
+            "evidenceUrl": "https://www.astralbathware.com/",
+            "collectedAt": "2026-05-06T17:18:43.038Z",
+            "method": "Rule-based SEO/AEO opportunity detection",
+            "confidence": "Evidence-backed recommendation"
+          }
+        },
+        {
+          "id": "astral-bathware-weak-direct-answer-coverage-increase-direct-answer-intros",
+          "ownedBrandSlug": "astral-bathware",
+          "brandName": "Astral Bathware",
+          "type": "weak_direct_answer_coverage",
+          "priority": "Medium",
+          "severity": "Medium",
+          "title": "Increase direct-answer intros",
+          "detail": "Several audited pages do not appear to start with short answer-first copy.",
+          "sourceQuery": "",
+          "currentRankingPage": "",
+          "recommendedTargetPage": "",
+          "recommendedContentFormat": "80-120 word answer block",
+          "evidence": {
+            "source": "Public crawl, GSC keyword map, or AI prompt visibility",
+            "evidenceUrl": "https://www.astralbathware.com/",
+            "collectedAt": "2026-05-06T17:18:43.038Z",
+            "method": "Rule-based SEO/AEO opportunity detection",
+            "confidence": "Evidence-backed recommendation"
+          }
+        },
+        {
+          "id": "astral-bathware-missing-freshness-signals-add-visible-freshness-signals",
+          "ownedBrandSlug": "astral-bathware",
+          "brandName": "Astral Bathware",
+          "type": "missing_freshness_signals",
+          "priority": "Medium",
+          "severity": "Medium",
+          "title": "Add visible freshness signals",
+          "detail": "No visible last-updated, dateModified, or freshness proxy was detected in the current public crawl.",
+          "sourceQuery": "",
+          "currentRankingPage": "",
+          "recommendedTargetPage": "",
+          "recommendedContentFormat": "Updated date + reviewed content",
+          "evidence": {
+            "source": "Public crawl, GSC keyword map, or AI prompt visibility",
+            "evidenceUrl": "https://www.astralbathware.com/",
+            "collectedAt": "2026-05-06T17:18:43.038Z",
+            "method": "Rule-based SEO/AEO opportunity detection",
+            "confidence": "Evidence-backed recommendation"
+          }
+        }
+      ],
+      "evidence": {
+        "source": "Public crawl + keyword map + AI visibility",
+        "evidenceUrl": "https://www.astralbathware.com/",
+        "collectedAt": "2026-05-06T17:18:43.038Z",
+        "method": "Rule-based opportunity engine",
+        "confidence": "Verified public/first-party evidence"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-paints",
+      "brandName": "Astral Paints",
+      "status": "Live",
+      "summary": {
+        "opportunityCount": 1,
+        "highPriorityCount": 0,
+        "keywordBackedCount": 0,
+        "aiCitationGapCount": 0
+      },
+      "opportunities": [
+        {
+          "id": "astral-paints-weak-direct-answer-coverage-increase-direct-answer-intros",
+          "ownedBrandSlug": "astral-paints",
+          "brandName": "Astral Paints",
+          "type": "weak_direct_answer_coverage",
+          "priority": "Medium",
+          "severity": "Medium",
+          "title": "Increase direct-answer intros",
+          "detail": "Several audited pages do not appear to start with short answer-first copy.",
+          "sourceQuery": "",
+          "currentRankingPage": "",
+          "recommendedTargetPage": "",
+          "recommendedContentFormat": "80-120 word answer block",
+          "evidence": {
+            "source": "Public crawl, GSC keyword map, or AI prompt visibility",
+            "evidenceUrl": "https://www.astralpaints.com/",
+            "collectedAt": "2026-05-06T17:18:43.038Z",
+            "method": "Rule-based SEO/AEO opportunity detection",
+            "confidence": "Evidence-backed recommendation"
+          }
+        }
+      ],
+      "evidence": {
+        "source": "Public crawl + keyword map + AI visibility",
+        "evidenceUrl": "https://www.astralpaints.com/",
+        "collectedAt": "2026-05-06T17:18:43.038Z",
+        "method": "Rule-based opportunity engine",
+        "confidence": "Verified public/first-party evidence"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-foundation",
+      "brandName": "Astral Foundation",
+      "status": "Live",
+      "summary": {
+        "opportunityCount": 3,
+        "highPriorityCount": 2,
+        "keywordBackedCount": 0,
+        "aiCitationGapCount": 0
+      },
+      "opportunities": [
+        {
+          "id": "astral-foundation-missing-faq-schema-add-faq-schema-to-answer-led-pages",
+          "ownedBrandSlug": "astral-foundation",
+          "brandName": "Astral Foundation",
+          "type": "missing_faq_schema",
+          "priority": "High",
+          "severity": "High",
+          "title": "Add FAQ schema to answer-led pages",
+          "detail": "FAQ text or question-style content exists, but FAQPage schema is not consistently detected.",
+          "sourceQuery": "",
+          "currentRankingPage": "",
+          "recommendedTargetPage": "",
+          "recommendedContentFormat": "FAQ block + FAQPage schema",
+          "evidence": {
+            "source": "Public crawl, GSC keyword map, or AI prompt visibility",
+            "evidenceUrl": "https://www.astralltd.com/",
+            "collectedAt": "2026-05-06T17:18:43.038Z",
+            "method": "Rule-based SEO/AEO opportunity detection",
+            "confidence": "Evidence-backed recommendation"
+          }
+        },
+        {
+          "id": "astral-foundation-missing-product-schema-add-product-category-schema",
+          "ownedBrandSlug": "astral-foundation",
+          "brandName": "Astral Foundation",
+          "type": "missing_product_schema",
+          "priority": "High",
+          "severity": "High",
+          "title": "Add product/category schema",
+          "detail": "Product schema is not detected in the current public audit. Product/category pages should expose machine-readable product entities where appropriate.",
+          "sourceQuery": "",
+          "currentRankingPage": "",
+          "recommendedTargetPage": "",
+          "recommendedContentFormat": "Product schema",
+          "evidence": {
+            "source": "Public crawl, GSC keyword map, or AI prompt visibility",
+            "evidenceUrl": "https://www.astralltd.com/",
+            "collectedAt": "2026-05-06T17:18:43.038Z",
+            "method": "Rule-based SEO/AEO opportunity detection",
+            "confidence": "Evidence-backed recommendation"
+          }
+        },
+        {
+          "id": "astral-foundation-weak-direct-answer-coverage-increase-direct-answer-intros",
+          "ownedBrandSlug": "astral-foundation",
+          "brandName": "Astral Foundation",
+          "type": "weak_direct_answer_coverage",
+          "priority": "Medium",
+          "severity": "Medium",
+          "title": "Increase direct-answer intros",
+          "detail": "Several audited pages do not appear to start with short answer-first copy.",
+          "sourceQuery": "",
+          "currentRankingPage": "",
+          "recommendedTargetPage": "",
+          "recommendedContentFormat": "80-120 word answer block",
+          "evidence": {
+            "source": "Public crawl, GSC keyword map, or AI prompt visibility",
+            "evidenceUrl": "https://www.astralltd.com/",
+            "collectedAt": "2026-05-06T17:18:43.038Z",
+            "method": "Rule-based SEO/AEO opportunity detection",
+            "confidence": "Evidence-backed recommendation"
+          }
+        }
+      ],
+      "evidence": {
+        "source": "Public crawl + keyword map + AI visibility",
+        "evidenceUrl": "https://www.astralltd.com/",
+        "collectedAt": "2026-05-06T17:18:43.038Z",
+        "method": "Rule-based opportunity engine",
+        "confidence": "Verified public/first-party evidence"
+      }
+    }
+  ]
+}

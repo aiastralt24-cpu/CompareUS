@@ -1123,6 +1123,10 @@ h1 {
   margin-top: 14px;
 }
 
+.measurement-metrics.two-up {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .metric-mini {
   position: relative;
   min-height: 76px;
@@ -1256,6 +1260,39 @@ h1 {
   color: #516074;
   font-size: 13px;
   line-height: 1.45;
+}
+
+.report-export-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.report-export-card {
+  display: grid;
+  gap: 10px;
+  min-height: 172px;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(20, 31, 46, 0.06);
+}
+
+.report-export-card h3 {
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.report-export-card p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.report-export-card .text-button {
+  align-self: end;
+  justify-self: start;
 }
 
 .handle-list a {
@@ -2107,6 +2144,10 @@ tbody tr.selected-row {
     grid-template-columns: 1fr;
   }
 
+  .report-export-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .checklist-items {
     grid-template-columns: 1fr;
   }
@@ -2251,6 +2292,7 @@ tbody tr.selected-row {
   .split-grid,
   .measurement-grid,
   .measurement-metrics,
+  .report-export-grid,
   .insight-rail,
   .aeo-score-grid {
     grid-template-columns: 1fr;

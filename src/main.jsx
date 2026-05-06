@@ -38,6 +38,11 @@ import socialSnapshot from "../data/generated/social-snapshot.json";
 import searchConsoleSnapshot from "../data/generated/search-console-snapshot.json";
 import aiReferralSnapshot from "../data/generated/ai-referral-traffic-snapshot.json";
 import aiVisibilitySnapshot from "../data/generated/ai-visibility-snapshot.json";
+import keywordMapSnapshot from "../data/generated/keyword-map-snapshot.json";
+import contentOpportunitySnapshot from "../data/generated/content-opportunity-snapshot.json";
+import internalLinkGraphSnapshot from "../data/generated/internal-link-graph-snapshot.json";
+import knownLinksMentionsSnapshot from "../data/generated/known-links-mentions-snapshot.json";
+import seoAeoAlertsSnapshot from "../data/generated/seo-aeo-alerts.json";
 import "./styles.css";
 
 const PERISCOPE_USER_ID = "digital@astral";
@@ -294,6 +299,10 @@ const socialByBrand = new Map(
 const searchConsoleBySlug = new Map((searchConsoleSnapshot.brands || []).map((brand) => [brand.ownedBrandSlug, brand]));
 const aiReferralBySlug = new Map((aiReferralSnapshot.brands || []).map((brand) => [brand.ownedBrandSlug, brand]));
 const aiVisibilityBySlug = new Map((aiVisibilitySnapshot.brands || []).map((brand) => [brand.ownedBrandSlug, brand]));
+const keywordMapBySlug = new Map((keywordMapSnapshot.brands || []).map((brand) => [brand.ownedBrandSlug, brand]));
+const contentOpportunityBySlug = new Map((contentOpportunitySnapshot.brands || []).map((brand) => [brand.ownedBrandSlug, brand]));
+const internalLinkGraphBySlug = new Map((internalLinkGraphSnapshot.brands || []).map((brand) => [brand.ownedBrandSlug, brand]));
+const knownLinksMentionsBySlug = new Map((knownLinksMentionsSnapshot.brands || []).map((brand) => [brand.ownedBrandSlug, brand]));
 const taxonomyByBrandSlug = new Map(competitorTaxonomy.map((entry) => [entry.ownedBrandSlug, entry]));
 
 const metricHelp = {
@@ -344,6 +353,16 @@ const metricHelp = {
   "AI referral sessions": "GA4 sessions where the traffic source matches known AI referrers such as ChatGPT, Perplexity, Gemini, Claude, Copilot, Poe, or You.com.",
   "AI visibility": "Prompt-bank visibility score from approved AI provider captures. This measures mentions/citations, not platform impressions.",
   "Citation share": "Share of collected AI answer citations that point to the Astral-owned domain."
+  ,
+  "Mapped keywords": "Keywords currently mapped from GSC, manual imports, or configured category seed terms. Setup seed terms do not represent rank.",
+  "Content opportunities": "Evidence-backed SEO/AEO recommendations from public crawl, GSC, and AI prompt captures.",
+  "Internal recommendations": "Suggested internal links from public crawl and keyword evidence, based on crawlable link and anchor-text rules.",
+  "Known sources": "Known links and mentions from imports, GA4 referrers, and public monitor evidence. This is not total backlinks."
+  ,
+  "AI citation gaps": "Live AI prompt results where Astral was not cited. This stays zero/setup until prompt evidence exists.",
+  "Unlinked mentions": "Known mentions where a link is missing or not confirmed.",
+  "Outreach prospects": "Imported or detected sources queued for review/outreach.",
+  "Rejected imports": "CSV rows rejected because required evidence fields were missing."
 };
 
 function toDashboardBrand(brand, monitoredSet = snapshot.activeMonitoredSet || snapshot.monitoredSet || "astral-pipes") {
@@ -352,6 +371,10 @@ function toDashboardBrand(brand, monitoredSet = snapshot.activeMonitoredSet || s
   const searchConsoleData = searchConsoleBySlug.get(ownedBrandSlug) || null;
   const aiReferralData = aiReferralBySlug.get(ownedBrandSlug) || null;
   const aiVisibilityData = aiVisibilityBySlug.get(ownedBrandSlug) || null;
+  const keywordMapData = keywordMapBySlug.get(ownedBrandSlug) || null;
+  const contentOpportunityData = contentOpportunityBySlug.get(ownedBrandSlug) || null;
+  const internalLinkGraphData = internalLinkGraphBySlug.get(ownedBrandSlug) || null;
+  const knownLinksMentionsData = knownLinksMentionsBySlug.get(ownedBrandSlug) || null;
   const scores = brand.scores || {};
   const publicWebsite = scores.publicWebsite ?? 0;
   const aeoReadiness = scores.aeoReadiness ?? 0;
@@ -408,6 +431,10 @@ function toDashboardBrand(brand, monitoredSet = snapshot.activeMonitoredSet || s
     searchConsoleData,
     aiReferralData,
     aiVisibilityData,
+    keywordMapData,
+    contentOpportunityData,
+    internalLinkGraphData,
+    knownLinksMentionsData,
     dataMode: "Collected"
   };
 }
@@ -615,6 +642,11 @@ const moduleHeaders = {
     label: "Campaign watch",
     title: "Campaign Monitor",
     copy: "Public campaign-like URLs, category launches, homepage changes, schema shifts, and evidence-backed alerts."
+  },
+  reports: {
+    label: "Evidence reports",
+    title: "SEO/AEO Reports",
+    copy: "No-paid-API keyword, content, internal linking, and known-link reports for Astral-owned growth work."
   }
 };
 
@@ -1534,6 +1566,12 @@ function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand
           />
         </section>
         <SearchConsolePanel brand={selected} ownedBrand={ownedBrand} />
+        <KeywordMapPanel brand={selected} />
+        <section className="split-grid">
+          <ContentOpportunityPanel brand={selected} />
+          <InternalLinkPanel brand={selected} />
+        </section>
+        <KnownLinksPanel brand={selected} />
       </>
     );
   }
@@ -1616,6 +1654,10 @@ function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand
         />
       </>
     );
+  }
+
+  if (activeModule === "reports") {
+    return <SeoAeoReportsPanel brand={selected} ownedBrand={ownedBrand} events={events} />;
   }
 
   return (
@@ -2086,6 +2128,168 @@ function AIVisibilityPanel({ brand, compact = false }) {
   );
 }
 
+function KeywordMapPanel({ brand }) {
+  const data = brand.keywordMapData;
+  const summary = data?.summary || {};
+  const live = data?.status === "Live";
+  return (
+    <section className="panel measurement-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>Keyword mapping</h2>
+          <p>GSC-first query mapping with configured/manual keyword banks. Seed terms do not represent rank.</p>
+        </div>
+        <span className={`monitor-count ${live ? "" : "setup"}`}>{data?.status || "Setup Required"}</span>
+      </div>
+      <div className="measurement-metrics">
+        <MetricMini label="Mapped keywords" value={formatCompactNumber(summary.keywordCount)} />
+        <MetricMini label="GSC clicks" value={formatCompactNumber(summary.gscKeywordCount)} />
+        <MetricMini label="Content opportunities" value={formatCompactNumber(summary.ctrOpportunityCount)} />
+        <MetricMini label="Internal recommendations" value={formatCompactNumber(summary.cannibalizationCount)} />
+      </div>
+      {!live ? (
+        <div className="setup-measurement">
+          <strong>{data?.status || "Setup Required"}</strong>
+          <p>{data?.reason || "Connect GSC or import a target keyword bank to activate factual keyword mapping."}</p>
+          <span>{data?.summary?.seedKeywordCount || 0} configured seed keywords are ready for planning.</span>
+        </div>
+      ) : null}
+      <div className="measurement-grid">
+        <MeasurementList title="Keyword clusters" rows={(data?.clusters || []).slice(0, 8)} primaryKey="cluster" />
+        <MeasurementList title="Keyword map" rows={(data?.mappings || []).slice(0, 8)} primaryKey="keyword" />
+        <MeasurementList title="CTR opportunities" rows={(data?.ctrOpportunities || []).slice(0, 8)} primaryKey="keyword" />
+        <MeasurementList title="Cannibalization" rows={(data?.cannibalization || []).slice(0, 8)} primaryKey="keywordFamily" />
+      </div>
+    </section>
+  );
+}
+
+function ContentOpportunityPanel({ brand }) {
+  const data = brand.contentOpportunityData;
+  const summary = data?.summary || {};
+  return (
+    <section className="panel measurement-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>Content and AEO opportunities</h2>
+          <p>Recommendations tied to public crawl, GSC, or live AI prompt evidence.</p>
+        </div>
+        <span className={`monitor-count ${data?.status === "Live" ? "" : "setup"}`}>{data?.status || "Setup Required"}</span>
+      </div>
+      <div className="measurement-metrics two-up">
+        <MetricMini label="Content opportunities" value={formatCompactNumber(summary.opportunityCount)} />
+        <MetricMini label="AI citation gaps" value={formatCompactNumber(summary.aiCitationGapCount)} />
+      </div>
+      <MeasurementList title="Recommended actions" rows={(data?.opportunities || []).slice(0, 10)} primaryKey="title" />
+    </section>
+  );
+}
+
+function InternalLinkPanel({ brand }) {
+  const data = brand.internalLinkGraphData;
+  const summary = data?.summary || {};
+  return (
+    <section className="panel measurement-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>Internal linking</h2>
+          <p>Public crawl proxy for crawlable links, orphan URLs, and contextual link recommendations.</p>
+        </div>
+        <span className={`monitor-count ${data?.status === "Live" ? "" : "setup"}`}>{data?.status || "Setup Required"}</span>
+      </div>
+      <div className="measurement-metrics two-up">
+        <MetricMini label="Internal links" value={formatCompactNumber(summary.auditedInternalLinks)} />
+        <MetricMini label="Internal recommendations" value={formatCompactNumber(summary.recommendationCount)} />
+      </div>
+      <MeasurementList title="Link recommendations" rows={(data?.recommendations || []).slice(0, 10)} primaryKey="reason" />
+    </section>
+  );
+}
+
+function KnownLinksPanel({ brand }) {
+  const data = brand.knownLinksMentionsData;
+  const summary = data?.summary || {};
+  return (
+    <section className="panel measurement-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>Known Links and Mentions</h2>
+          <p>Known evidence only from imports, GA4 referrers, and public monitor events. This is not total backlinks.</p>
+        </div>
+        <span className={`monitor-count ${data?.status === "Live" ? "" : "setup"}`}>{data?.status || "Setup Required"}</span>
+      </div>
+      <div className="measurement-metrics">
+        <MetricMini label="Known sources" value={formatCompactNumber(summary.knownSourceCount)} />
+        <MetricMini label="Unlinked mentions" value={formatCompactNumber(summary.unlinkedMentionCount)} />
+        <MetricMini label="Outreach prospects" value={formatCompactNumber(summary.outreachProspectCount)} />
+        <MetricMini label="Rejected imports" value={formatCompactNumber(summary.rejectedImportCount)} />
+      </div>
+      {(data?.status !== "Live") ? (
+        <div className="setup-measurement">
+          <strong>Setup Required</strong>
+          <p>Import GSC Links, manual mention evidence, or outreach prospects to activate this CRM.</p>
+          <span>No full-web backlink totals are shown without a backlink index.</span>
+        </div>
+      ) : null}
+      <div className="measurement-grid">
+        <MeasurementList title="Known evidence" rows={(data?.knownLinksAndMentions || []).slice(0, 8)} primaryKey="sourceDomain" />
+        <MeasurementList title="Outreach queue" rows={(data?.outreachQueue || []).slice(0, 8)} primaryKey="sourceDomain" />
+      </div>
+    </section>
+  );
+}
+
+function SeoAeoReportsPanel({ brand, ownedBrand, events = [] }) {
+  const reports = [
+    ["Keyword Mapping Report", brand.keywordMapData],
+    ["Internal Linking Report", brand.internalLinkGraphData],
+    ["AEO Opportunity Report", brand.contentOpportunityData],
+    ["Known Links and Mentions Report", brand.knownLinksMentionsData],
+    ["Weekly SEO/AEO Action Plan", { alerts: seoAeoAlertsSnapshot.alerts || [] }],
+    ["Brand-level Executive Summary", { brand, ownedBrand, events }]
+  ];
+  return (
+    <section className="panel measurement-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>Report exports</h2>
+          <p>Evidence-backed reports for Astral-owned SEO/AEO growth without paid intelligence APIs.</p>
+        </div>
+        <span className="monitor-count">{seoAeoAlertsSnapshot.alertCount || 0} alerts</span>
+      </div>
+      <div className="report-export-grid">
+        {reports.map(([title, data]) => (
+          <article className="report-export-card" key={title}>
+            <h3>{title}</h3>
+            <p>{reportDescription(title)}</p>
+            <button className="text-button" onClick={() => downloadJson(`${brand.ownedBrandSlug}-${title.toLowerCase().replaceAll(" ", "-")}.json`, {
+              generatedAt: new Date().toISOString(),
+              brand: brand.name,
+              report: title,
+              data
+            })}>
+              <Download size={16} />
+              Export JSON
+            </button>
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function reportDescription(title) {
+  const copy = {
+    "Keyword Mapping Report": "Query clusters, intent, funnel stage, CTR issues, and cannibalization.",
+    "Internal Linking Report": "Crawl graph proxy, orphan URLs, weak pages, and link recommendations.",
+    "AEO Opportunity Report": "Schema, answer-block, FAQ, content, and AI citation opportunities.",
+    "Known Links and Mentions Report": "Known evidence CRM only, never total backlink counts.",
+    "Weekly SEO/AEO Action Plan": "Telegram-ready actions created from evidence-backed snapshots.",
+    "Brand-level Executive Summary": "Current brand score, monitor events, and selected dashboard evidence."
+  };
+  return copy[title] || "Evidence-backed report.";
+}
+
 function MetricMini({ label, value }) {
   return (
     <div className="metric-mini">
@@ -2121,6 +2325,10 @@ function MeasurementList({ title, rows, primaryKey }) {
                 {row.sessions != null ? `${formatCompactNumber(row.sessions)} sessions` : null}
                 {row.ownedMentioned != null ? (row.ownedMentioned ? "Mentioned" : "Not mentioned") : null}
                 {row.reason ? row.reason : null}
+                {row.detail ? row.detail : null}
+                {row.recommendedContentFormat ? ` · Action: ${row.recommendedContentFormat}` : null}
+                {row.suggestedAnchorText ? ` · Anchor: ${row.suggestedAnchorText}` : null}
+                {row.linkStatus ? ` · Status: ${row.linkStatus}` : null}
               </span>
             </div>
           );
