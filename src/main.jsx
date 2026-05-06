@@ -35,6 +35,9 @@ import competitorTaxonomy from "../data/competitor-taxonomy.json";
 import snapshot from "../data/generated/competitive-snapshot.json";
 import monitorEvents from "../data/generated/monitor-events.json";
 import socialSnapshot from "../data/generated/social-snapshot.json";
+import searchConsoleSnapshot from "../data/generated/search-console-snapshot.json";
+import aiReferralSnapshot from "../data/generated/ai-referral-traffic-snapshot.json";
+import aiVisibilitySnapshot from "../data/generated/ai-visibility-snapshot.json";
 import "./styles.css";
 
 const PERISCOPE_USER_ID = "digital@astral";
@@ -288,6 +291,9 @@ const socialByBrand = new Map(
     ])
   )
 );
+const searchConsoleBySlug = new Map((searchConsoleSnapshot.brands || []).map((brand) => [brand.ownedBrandSlug, brand]));
+const aiReferralBySlug = new Map((aiReferralSnapshot.brands || []).map((brand) => [brand.ownedBrandSlug, brand]));
+const aiVisibilityBySlug = new Map((aiVisibilitySnapshot.brands || []).map((brand) => [brand.ownedBrandSlug, brand]));
 const taxonomyByBrandSlug = new Map(competitorTaxonomy.map((entry) => [entry.ownedBrandSlug, entry]));
 
 const metricHelp = {
@@ -323,11 +329,21 @@ const metricHelp = {
   "Q headings": "Count of public H2/H3 headings phrased as questions. Higher counts usually mean the content is easier for answer engines to extract.",
   "Lazy images": "Images with lazy loading detected in public HTML.",
   "Preconnect hints": "Preconnect or DNS-prefetch hints found in the page head.",
-  "Search UI": "Visible search-form or search-input signal detected in public HTML."
+  "Search UI": "Visible search-form or search-input signal detected in public HTML.",
+  "GSC clicks": "First-party Google Search Console clicks for the Astral-owned property over the collector date range.",
+  "GSC impressions": "First-party Google Search Console impressions for the Astral-owned property. This is search impression data, not competitor traffic.",
+  "Average position": "Google Search Console weighted average position for collected queries.",
+  "AI referral sessions": "GA4 sessions where the traffic source matches known AI referrers such as ChatGPT, Perplexity, Gemini, Claude, Copilot, Poe, or You.com.",
+  "AI visibility": "Prompt-bank visibility score from approved AI provider captures. This measures mentions/citations, not platform impressions.",
+  "Citation share": "Share of collected AI answer citations that point to the Astral-owned domain."
 };
 
 function toDashboardBrand(brand, monitoredSet = snapshot.activeMonitoredSet || snapshot.monitoredSet || "astral-pipes") {
   const socialData = socialByBrand.get(`${monitoredSet}:${brand.name}`) || socialByBrand.get(`astral-pipes:${brand.name}`);
+  const ownedBrandSlug = brand.ownedBrandSlug || monitoredSet;
+  const searchConsoleData = searchConsoleBySlug.get(ownedBrandSlug) || null;
+  const aiReferralData = aiReferralBySlug.get(ownedBrandSlug) || null;
+  const aiVisibilityData = aiVisibilityBySlug.get(ownedBrandSlug) || null;
   const scores = brand.scores || {};
   const publicWebsite = scores.publicWebsite ?? 0;
   const aeoReadiness = scores.aeoReadiness ?? 0;
@@ -369,6 +385,8 @@ function toDashboardBrand(brand, monitoredSet = snapshot.activeMonitoredSet || s
     threat: brand.name === "Astral Pipes" ? "Reference" : "Watch",
     color: brandColors[brand.name] || "#6b7280",
     collected: brand,
+    ownedBrandSlug,
+    monitoredSet,
     auditScores: {
       publicWebsite,
       aeoReadiness,
@@ -379,6 +397,9 @@ function toDashboardBrand(brand, monitoredSet = snapshot.activeMonitoredSet || s
       registryCompleteness
     },
     socialData,
+    searchConsoleData,
+    aiReferralData,
+    aiVisibilityData,
     dataMode: "Collected"
   };
 }
@@ -593,14 +614,14 @@ const aeoChecklistSections = [
   {
     title: "1.1 Brand presence in AI answers",
     items: [
-      ["Brand is named in top category-defining AI answers", "pending", "Needs scheduled AI prompt testing"],
-      ["Brand cited with source link in Perplexity", "pending", "Needs Perplexity capture"],
+      ["Brand is named in top category-defining AI answers", "aiBrandMention", "Needs scheduled AI prompt testing"],
+      ["Brand cited with source link in Perplexity", "aiPerplexityCitation", "Needs Perplexity capture"],
       ["Brand appears in Google AI Overviews / AI Mode", "pending", "Needs SERP/AI Overview capture"],
-      ["Brand mentioned in ChatGPT search results", "pending", "Needs browser-enabled prompt capture"],
-      ["Brand surfaces in Gemini, Copilot, and Claude", "pending", "Needs multi-engine prompt run"],
-      ["AI answer share of voice vs competitors", "pending", "Needs fixed query set"],
-      ["Sentiment of AI mentions", "pending", "Needs answer text classification"],
-      ["Unprompted brand mention frequency", "pending", "Needs category prompt bank"]
+      ["Brand mentioned in ChatGPT search results", "aiOpenAiMention", "Needs browser-enabled prompt capture"],
+      ["Brand surfaces in Gemini, Copilot, and Claude", "aiMultiEngine", "Needs multi-engine prompt run"],
+      ["AI answer share of voice vs competitors", "aiShareOfVoice", "Needs fixed query set"],
+      ["Sentiment of AI mentions", "aiSentiment", "Needs answer text classification"],
+      ["Unprompted brand mention frequency", "aiPromptBank", "Needs category prompt bank"]
     ]
   },
   {
@@ -688,11 +709,11 @@ const aeoChecklistSections = [
   {
     title: "1.8 AEO measurement and tracking",
     items: [
-      ["AEO tracking tool connected", "pending", "Needs Profound/Otterly/Peec/etc."],
-      ["Defined query set tested monthly", "pending", "Needs prompt runner"],
-      ["Citation count and share-of-voice tracked", "pending", "Needs AEO results table"],
-      ["AI referral traffic isolated in GA4", "pending", "First-party only"],
-      ["AI referral conversion rate tracked", "pending", "First-party only"]
+      ["AEO tracking tool connected", "aiVisibilityTracking", "Needs Profound/Otterly/Peec/etc."],
+      ["Defined query set tested monthly", "aiPromptRunner", "Needs prompt runner"],
+      ["Citation count and share-of-voice tracked", "aiCitationShare", "Needs AEO results table"],
+      ["AI referral traffic isolated in GA4", "aiReferralTraffic", "First-party only"],
+      ["AI referral conversion rate tracked", "aiReferralConversion", "First-party only"]
     ]
   }
 ];
@@ -954,6 +975,10 @@ function BrandDashboard({ ownedBrand, user, onHome, onLogout }) {
                     </span>
                   </div>
                 </section>
+                <section className="split-grid">
+                  <AIReferralPanel brand={selected} compact />
+                  <AIVisibilityPanel brand={selected} compact />
+                </section>
               </>
             ) : null}
 
@@ -965,6 +990,7 @@ function BrandDashboard({ ownedBrand, user, onHome, onLogout }) {
               selectedBrand={selectedBrand}
               setSelectedBrand={setSelectedBrand}
               selected={selected}
+              ownedBrand={ownedBrand}
               events={activeEvents}
             />
           </section>
@@ -1420,11 +1446,12 @@ function ModuleTabs({ activeModule, setActiveModule }) {
   );
 }
 
-function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand, selected, events = [] }) {
+function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand, selected, ownedBrand, events = [] }) {
   if (activeModule === "aeo") {
     return (
       <>
         <AEOCommandCenter brand={selected} competitors={ranked} />
+        <AIVisibilityPanel brand={selected} />
         <DisciplineTable
           title="AEO comparison"
           description="AI crawler readiness, schema coverage, extractable content, E-E-A-T proxies, and llms.txt evidence."
@@ -1494,10 +1521,11 @@ function ModuleWorkspace({ activeModule, ranked, selectedBrand, setSelectedBrand
             ]}
           />
           <PendingPanel
-            title="SEO data still pending"
-            items={["Keyword rank distribution", "Non-brand query share", "Backlinks/referring domains", "SERP feature ownership", "Organic traffic estimates"]}
+            title="External SEO data still pending"
+            items={["Backlinks/referring domains", "SERP feature ownership", "Third-party rank tracking", "Competitor organic traffic estimates"]}
           />
         </section>
+        <SearchConsolePanel brand={selected} ownedBrand={ownedBrand} />
       </>
     );
   }
@@ -1674,12 +1702,30 @@ function getAeoSectionSummaries(brand) {
   const homepage = brand.collected.homepage;
   const schema = audit.schemaCoverage || {};
   const aiPolicy = brand.collected.robots.aiCrawlerPolicy || {};
+  const aiVisibility = brand.aiVisibilityData || {};
+  const aiReferral = brand.aiReferralData || {};
+  const aiSummary = aiVisibility.summary || {};
+  const referralSummary = aiReferral.summary || {};
+  const hasAiVisibility = aiVisibility.status === "Live" && (aiSummary.promptRuns || 0) > 0;
+  const hasAiReferral = aiReferral.status === "Live";
   const promptPending = {
     title: "AI answers",
-    score: 0,
-    status: "Pending prompt data",
-    gap: "AI answer presence is not collected yet.",
-    actions: ["Connect the scheduled AEO prompt runner for ChatGPT, Perplexity, Gemini, Claude, Copilot, and Google AI Overviews."]
+    score: hasAiVisibility
+      ? scoreToFive(
+          (aiSummary.promptRuns || 0) > 0,
+          (aiSummary.ownedMentionRate || 0) > 0,
+          (aiSummary.citationShare || 0) > 0,
+          (aiVisibility.providers || []).length > 1,
+          (aiSummary.competitorMentionCount || 0) > 0
+        )
+      : 0,
+    status: hasAiVisibility
+      ? `${Math.round((aiSummary.ownedMentionRate || 0) * 100)}% mention rate · ${Math.round((aiSummary.citationShare || 0) * 100)}% citation share`
+      : "Pending prompt data",
+    gap: hasAiVisibility ? "AI answer prompt data is live; review missing citations." : "AI answer presence is not collected yet.",
+    actions: hasAiVisibility
+      ? ["Review missing citations and update pages that AI answers should cite."]
+      : ["Connect the scheduled AEO prompt runner for ChatGPT, Perplexity, Gemini, Claude, Copilot, and Google AI Overviews."]
   };
   return [
     promptPending,
@@ -1727,10 +1773,18 @@ function getAeoSectionSummaries(brand) {
     },
     {
       title: "Measurement",
-      score: 0,
-      status: "Pending AEO measurement",
-      gap: "Citation share, sentiment, and AI referral conversion data are not connected yet.",
-      actions: ["Store prompt results, citation URLs, mention order, sentiment, and share-of-voice monthly."]
+      score: scoreToFive(
+        hasAiVisibility,
+        hasAiReferral,
+        (aiSummary.citationShare || 0) > 0,
+        (referralSummary.sessions || 0) > 0,
+        referralSummary.conversions != null
+      ),
+      status: hasAiReferral
+        ? `${formatCompactNumber(referralSummary.sessions || 0)} AI referral sessions`
+        : "Pending AEO measurement",
+      gap: "Citation share, sentiment, and AI referral conversion data need live first-party sources.",
+      actions: ["Store prompt results, citation URLs, mention order, sentiment, GA4 AI referral sessions, and conversion evidence monthly."]
     }
   ];
 }
@@ -1894,6 +1948,190 @@ function SchemaPanel({ brand }) {
   );
 }
 
+function SearchConsolePanel({ brand, ownedBrand }) {
+  const data = brand.searchConsoleData;
+  const summary = data?.summary || {};
+  const isOwnedFocus = brand.name === ownedBrand?.name;
+  const live = data?.status === "Live";
+  return (
+    <section className="panel measurement-panel">
+      <div className="panel-heading">
+        <div>
+          <h2>Google Search Console</h2>
+          <p>
+            {isOwnedFocus
+              ? "First-party keyword and page performance for the Astral-owned property."
+              : `First-party GSC data belongs to ${ownedBrand?.name}; competitor keyword data is not available from Astral Search Console.`}
+          </p>
+        </div>
+        <span className={`monitor-count ${live ? "" : "setup"}`}>{data?.status || "Setup Required"}</span>
+      </div>
+      {!live ? (
+        <div className="setup-measurement">
+          <strong>Setup Required</strong>
+          <p>{data?.reason || "Connect the Astral-owned Search Console property with service-account access."}</p>
+          <span>{data?.evidence?.method || "No GSC evidence collected yet."}</span>
+        </div>
+      ) : (
+        <>
+          <div className="measurement-metrics">
+            <MetricMini label="GSC clicks" value={formatCompactNumber(summary.clicks)} />
+            <MetricMini label="GSC impressions" value={formatCompactNumber(summary.impressions)} />
+            <MetricMini label="Average position" value={summary.averagePosition ? summary.averagePosition.toFixed(1) : "--"} />
+            <MetricMini label="CTR" value={formatPercent(summary.ctr)} />
+          </div>
+          <div className="measurement-grid">
+            <MeasurementList title="Top queries" rows={(data.topQueries || []).slice(0, 8)} primaryKey="query" />
+            <MeasurementList title="Top pages" rows={(data.topPages || []).slice(0, 8)} primaryKey="page" />
+            <MeasurementList title="Brand vs non-brand" rows={data.brandVsNonBrand || []} primaryKey="segment" />
+            <MeasurementList title="Position buckets" rows={data.positionBuckets || []} primaryKey="bucket" />
+          </div>
+          {(data.ctrIssues || []).length ? (
+            <MeasurementList title="CTR issues" rows={data.ctrIssues.slice(0, 8)} primaryKey="query" />
+          ) : null}
+        </>
+      )}
+    </section>
+  );
+}
+
+function AIReferralPanel({ brand, compact = false }) {
+  const data = brand.aiReferralData;
+  const summary = data?.summary || {};
+  const live = data?.status === "Live";
+  return (
+    <section className={`panel measurement-panel ${compact ? "compact-measurement" : ""}`}>
+      <div className="panel-heading">
+        <div>
+          <h2>AI referral traffic</h2>
+          <p>GA4 sessions from known AI referrers. This is traffic evidence, not AI-platform impressions.</p>
+        </div>
+        <span className={`monitor-count ${live ? "" : "setup"}`}>{data?.status || "Setup Required"}</span>
+      </div>
+      {!live ? (
+        <div className="setup-measurement">
+          <strong>Setup Required</strong>
+          <p>{data?.reason || "Connect GA4 property access for this Astral-owned brand."}</p>
+          <span>{data?.evidence?.method || "No GA4 evidence collected yet."}</span>
+        </div>
+      ) : (
+        <>
+          <div className="measurement-metrics">
+            <MetricMini label="AI referral sessions" value={formatCompactNumber(summary.sessions)} />
+            <MetricMini label="Users" value={formatCompactNumber(summary.totalUsers)} />
+            <MetricMini label="Events" value={formatCompactNumber(summary.eventCount)} />
+            <MetricMini label="Top source" value={summary.topSource || "--"} />
+          </div>
+          {!compact ? (
+            <div className="measurement-grid">
+              <MeasurementList title="AI sources" rows={data.sources || []} primaryKey="source" />
+              <MeasurementList title="Landing pages" rows={data.landingPages || []} primaryKey="landingPage" />
+            </div>
+          ) : null}
+        </>
+      )}
+    </section>
+  );
+}
+
+function AIVisibilityPanel({ brand, compact = false }) {
+  const data = brand.aiVisibilityData;
+  const summary = data?.summary || {};
+  const live = data?.status === "Live";
+  return (
+    <section className={`panel measurement-panel ${compact ? "compact-measurement" : ""}`}>
+      <div className="panel-heading">
+        <div>
+          <h2>AI visibility</h2>
+          <p>Prompt-bank monitoring for mentions, competitor mentions, citations, and sentiment proxy.</p>
+        </div>
+        <span className={`monitor-count ${live ? "" : "setup"}`}>{data?.status || "Setup Required"}</span>
+      </div>
+      {!live ? (
+        <div className="setup-measurement">
+          <strong>Setup Required</strong>
+          <p>{data?.reason || "Connect an approved AI provider key and enable prompt monitoring."}</p>
+          <span>{data?.promptCount || 0} prompts ready · No impressions invented</span>
+        </div>
+      ) : (
+        <>
+          <div className="measurement-metrics">
+            <MetricMini label="AI visibility" value={formatPercent(summary.ownedMentionRate)} />
+            <MetricMini label="Citation share" value={formatPercent(summary.citationShare)} />
+            <MetricMini label="Prompt runs" value={formatCompactNumber(summary.promptRuns)} />
+            <MetricMini label="Providers" value={(data.providers || []).join(", ") || "--"} />
+          </div>
+          {!compact ? (
+            <div className="measurement-grid">
+              <MeasurementList title="Prompt results" rows={(data.promptResults || []).slice(0, 8)} primaryKey="promptId" />
+              <MeasurementList title="Missing citations" rows={(data.missingCitations || []).slice(0, 8)} primaryKey="promptId" />
+            </div>
+          ) : null}
+        </>
+      )}
+    </section>
+  );
+}
+
+function MetricMini({ label, value }) {
+  return (
+    <div className="metric-mini">
+      <span>{label}</span>
+      <strong>{value ?? "--"}</strong>
+      <InfoTooltip label={label} />
+    </div>
+  );
+}
+
+function InfoTooltip({ label }) {
+  return (
+    <span className="info-tooltip" tabIndex="0" aria-label={metricHelp[label] || label}>
+      i
+      <span role="tooltip">{metricHelp[label] || "Evidence-backed metric detail."}</span>
+    </span>
+  );
+}
+
+function MeasurementList({ title, rows, primaryKey }) {
+  return (
+    <article className="measurement-list">
+      <h3>{title}</h3>
+      {rows?.length ? (
+        rows.map((row, index) => {
+          const primary = row.dimensions?.[primaryKey] || row[primaryKey] || row.prompt || row.reason || "Item";
+          return (
+            <div className="measurement-row" key={`${title}-${primary}-${index}`}>
+              <strong>{primary}</strong>
+              <span>
+                {row.clicks != null ? `${formatCompactNumber(row.clicks)} clicks` : null}
+                {row.impressions != null ? ` · ${formatCompactNumber(row.impressions)} impressions` : null}
+                {row.sessions != null ? `${formatCompactNumber(row.sessions)} sessions` : null}
+                {row.ownedMentioned != null ? (row.ownedMentioned ? "Mentioned" : "Not mentioned") : null}
+                {row.reason ? row.reason : null}
+              </span>
+            </div>
+          );
+        })
+      ) : (
+        <div className="measurement-row empty">
+          <strong>No evidence yet</strong>
+          <span>This table fills only after the collector returns factual data.</span>
+        </div>
+      )}
+    </article>
+  );
+}
+
+function formatCompactNumber(value) {
+  if (value == null || Number.isNaN(Number(value))) return "--";
+  return new Intl.NumberFormat("en-IN", { notation: "compact", maximumFractionDigits: 1 }).format(Number(value));
+}
+
+function formatPercent(value) {
+  if (value == null || Number.isNaN(Number(value))) return "--";
+  return `${Math.round(Number(value) * 100)}%`;
+}
+
 function AEOChecklistPanel({ brand }) {
   const [activeItem, setActiveItem] = useState(null);
   return (
@@ -2019,6 +2257,13 @@ function resolveAeoChecklistItem(brand, key, note) {
   const aiPolicy = robots.aiCrawlerPolicy || {};
   const answerBlocks = brand.collected.homepage.contentStructure.answerFriendlyBlocks;
   const schemaTypes = brand.collected.homepage.schemaTypes || [];
+  const aiVisibility = brand.aiVisibilityData || {};
+  const aiReferral = brand.aiReferralData || {};
+  const aiSummary = aiVisibility.summary || {};
+  const referralSummary = aiReferral.summary || {};
+  const aiLive = aiVisibility.status === "Live" && (aiSummary.promptRuns || 0) > 0;
+  const aiProviders = aiVisibility.providers || [];
+  const aiPromptCount = aiVisibility.promptCount || 0;
   const map = {
     directAnswer: [signals.hasDirectAnswerIntro, "Public HTML intro checked"],
     questionHeadings: [(audit.totals?.questionHeadings || counts.questionHeadings) > 0, `${audit.totals?.questionHeadings || counts.questionHeadings} question headings`],
@@ -2047,7 +2292,28 @@ function resolveAeoChecklistItem(brand, key, note) {
     homepageReachable: [brand.collected.homepage.ok, `Homepage status ${brand.collected.homepage.status}`],
     resourceHub: [(audit.pagesWithResourceHubSignals || 0) > 0 || signals.hasResourceHub, `${audit.pagesWithResourceHubSignals || 0} audited pages with resource signal`],
     internalLinks: [(audit.totals?.internalLinks || counts.internalLinks) >= 20, `${audit.totals?.internalLinks || counts.internalLinks} internal links`],
-    contactSignals: [signals.hasPhoneOrWhatsapp || signals.hasEmailLink, "Contact/NAP proxy"]
+    contactSignals: [signals.hasPhoneOrWhatsapp || signals.hasEmailLink, "Contact/NAP proxy"],
+    aiBrandMention: [aiLive && (aiSummary.ownedMentionRate || 0) > 0, aiLive ? `${formatPercent(aiSummary.ownedMentionRate)} mention rate` : "Need prompt runner"],
+    aiPerplexityCitation: [
+      aiLive && aiProviders.includes("Perplexity") && (aiSummary.citationShare || 0) > 0,
+      aiProviders.includes("Perplexity") ? `${formatPercent(aiSummary.citationShare)} citation share` : "Need Perplexity capture"
+    ],
+    aiOpenAiMention: [
+      aiLive && aiProviders.includes("OpenAI") && (aiSummary.ownedMentionRate || 0) > 0,
+      aiProviders.includes("OpenAI") ? `${formatPercent(aiSummary.ownedMentionRate)} mention rate` : "Need OpenAI/browser capture"
+    ],
+    aiMultiEngine: [aiLive && aiProviders.length >= 2, `${aiProviders.length} provider(s) captured`],
+    aiShareOfVoice: [aiLive && aiSummary.ownedMentionRate != null, aiLive ? `${formatPercent(aiSummary.ownedMentionRate)} owned mention rate` : "Need fixed query set"],
+    aiSentiment: [aiLive && Boolean(aiSummary.sentimentProxy), aiSummary.sentimentProxy || "Need answer classification"],
+    aiPromptBank: [aiPromptCount > 0, `${aiPromptCount} approved prompts ready`],
+    aiVisibilityTracking: [aiLive, aiLive ? `${aiSummary.promptRuns} prompt runs collected` : "Need AI visibility collector"],
+    aiPromptRunner: [aiLive, aiLive ? `${aiSummary.promptRuns} prompt runs collected` : `${aiPromptCount} prompts ready; not run`],
+    aiCitationShare: [aiLive && aiSummary.citationShare != null, aiLive ? `${formatPercent(aiSummary.citationShare)} citation share` : "Need AEO results table"],
+    aiReferralTraffic: [aiReferral.status === "Live", aiReferral.status === "Live" ? `${formatCompactNumber(referralSummary.sessions || 0)} AI referral sessions` : "Need GA4 collector"],
+    aiReferralConversion: [
+      aiReferral.status === "Live" && referralSummary.conversions != null,
+      referralSummary.conversions != null ? `${formatCompactNumber(referralSummary.conversions)} conversions` : "Need GA4 conversion/key-event mapping"
+    ]
   };
   if (key === "pending") return { status: "pending", label: note || "Pending collector" };
   const [passed, label] = map[key] || [false, "Not collected"];

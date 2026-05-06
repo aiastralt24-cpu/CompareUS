@@ -1,0 +1,157 @@
+{
+  "generatedAt": "2026-05-06T15:11:00.782Z",
+  "source": "Google Search Console",
+  "dataMode": "setup_required",
+  "brands": [
+    {
+      "ownedBrandSlug": "astral-pipes",
+      "brandName": "Astral Pipes",
+      "status": "Setup Required",
+      "reason": "GSC_ENABLED is not set to 1.",
+      "property": "https://www.astralpipes.com/",
+      "summary": {
+        "clicks": null,
+        "impressions": null,
+        "ctr": null,
+        "averagePosition": null,
+        "brandQueryShare": null,
+        "nonBrandQueryShare": null
+      },
+      "topQueries": [],
+      "topPages": [],
+      "keywordMovement": [],
+      "brandVsNonBrand": [],
+      "ctrIssues": [],
+      "positionBuckets": [],
+      "devices": [],
+      "countries": [],
+      "evidence": {
+        "source": "Google Search Console",
+        "evidenceUrl": "https://www.astralpipes.com/",
+        "collectedAt": "2026-05-06T15:11:00.782Z",
+        "method": "Setup check",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-adhesives",
+      "brandName": "Astral Adhesives",
+      "status": "Setup Required",
+      "reason": "GSC_ENABLED is not set to 1.",
+      "property": "https://www.astraladhesives.com/",
+      "summary": {
+        "clicks": null,
+        "impressions": null,
+        "ctr": null,
+        "averagePosition": null,
+        "brandQueryShare": null,
+        "nonBrandQueryShare": null
+      },
+      "topQueries": [],
+      "topPages": [],
+      "keywordMovement": [],
+      "brandVsNonBrand": [],
+      "ctrIssues": [],
+      "positionBuckets": [],
+      "devices": [],
+      "countries": [],
+      "evidence": {
+        "source": "Google Search Console",
+        "evidenceUrl": "https://www.astraladhesives.com/",
+        "collectedAt": "2026-05-06T15:11:00.782Z",
+        "method": "Setup check",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-bathware",
+      "brandName": "Astral Bathware",
+      "status": "Setup Required",
+      "reason": "GSC_ENABLED is not set to 1.",
+      "property": "https://www.astralbathware.com/",
+      "summary": {
+        "clicks": null,
+        "impressions": null,
+        "ctr": null,
+        "averagePosition": null,
+        "brandQueryShare": null,
+        "nonBrandQueryShare": null
+      },
+      "topQueries": [],
+      "topPages": [],
+      "keywordMovement": [],
+      "brandVsNonBrand": [],
+      "ctrIssues": [],
+      "positionBuckets": [],
+      "devices": [],
+      "countries": [],
+      "evidence": {
+        "source": "Google Search Console",
+        "evidenceUrl": "https://www.astralbathware.com/",
+        "collectedAt": "2026-05-06T15:11:00.782Z",
+        "method": "Setup check",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-paints",
+      "brandName": "Astral Paints",
+      "status": "Setup Required",
+      "reason": "GSC_ENABLED is not set to 1.",
+      "property": "https://www.astralpaints.com/",
+      "summary": {
+        "clicks": null,
+        "impressions": null,
+        "ctr": null,
+        "averagePosition": null,
+        "brandQueryShare": null,
+        "nonBrandQueryShare": null
+      },
+      "topQueries": [],
+      "topPages": [],
+      "keywordMovement": [],
+      "brandVsNonBrand": [],
+      "ctrIssues": [],
+      "positionBuckets": [],
+      "devices": [],
+      "countries": [],
+      "evidence": {
+        "source": "Google Search Console",
+        "evidenceUrl": "https://www.astralpaints.com/",
+        "collectedAt": "2026-05-06T15:11:00.782Z",
+        "method": "Setup check",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-foundation",
+      "brandName": "Astral Foundation",
+      "status": "Setup Required",
+      "reason": "GSC_ENABLED is not set to 1.",
+      "property": "https://www.astralltd.com/",
+      "summary": {
+        "clicks": null,
+        "impressions": null,
+        "ctr": null,
+        "averagePosition": null,
+        "brandQueryShare": null,
+        "nonBrandQueryShare": null
+      },
+      "topQueries": [],
+      "topPages": [],
+      "keywordMovement": [],
+      "brandVsNonBrand": [],
+      "ctrIssues": [],
+      "positionBuckets": [],
+      "devices": [],
+      "countries": [],
+      "evidence": {
+        "source": "Google Search Console",
+        "evidenceUrl": "https://www.astralltd.com/",
+        "collectedAt": "2026-05-06T15:11:00.782Z",
+        "method": "Setup check",
+        "confidence": "Setup Required"
+      }
+    }
+  ]
+}

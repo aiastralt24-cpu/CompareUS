@@ -1,0 +1,177 @@
+[
+  {
+    "ownedBrandSlug": "astral-pipes",
+    "promptId": "pipes-best-brands-india",
+    "category": "Category consideration",
+    "prompt": "Which are the best PVC and CPVC pipe brands in India for home plumbing?",
+    "intent": "Track category-defining AI answers for pipes."
+  },
+  {
+    "ownedBrandSlug": "astral-pipes",
+    "promptId": "pipes-plumber-recommendation",
+    "category": "Trade recommendation",
+    "prompt": "Which pipe brand should a plumber recommend for reliable residential water supply in India?",
+    "intent": "Track plumber recommendation visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-pipes",
+    "promptId": "pipes-drainage-swr",
+    "category": "Product category",
+    "prompt": "What are the leading SWR drainage pipe brands in India?",
+    "intent": "Track drainage and SWR visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-pipes",
+    "promptId": "pipes-water-tanks",
+    "category": "Adjacent category",
+    "prompt": "Which plastic water tank brands in India are trusted for household use?",
+    "intent": "Track water tank answer visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-pipes",
+    "promptId": "pipes-agriculture",
+    "category": "Agriculture",
+    "prompt": "Which PVC pipe brands are commonly used for agriculture irrigation in India?",
+    "intent": "Track agriculture pipe visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-adhesives",
+    "promptId": "adhesives-best-brands",
+    "category": "Category consideration",
+    "prompt": "Which adhesive brands in India are reliable for household and construction use?",
+    "intent": "Track broad adhesive category answers."
+  },
+  {
+    "ownedBrandSlug": "astral-adhesives",
+    "promptId": "adhesives-solvent-cement",
+    "category": "Plumbing adhesive",
+    "prompt": "Which solvent cement brands are recommended for PVC and CPVC plumbing pipes in India?",
+    "intent": "Track pipe adhesive visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-adhesives",
+    "promptId": "adhesives-epoxy",
+    "category": "Epoxy repair",
+    "prompt": "What are the best epoxy adhesive brands for repair work in India?",
+    "intent": "Track epoxy category visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-adhesives",
+    "promptId": "adhesives-waterproofing",
+    "category": "Construction chemical",
+    "prompt": "Which waterproofing chemical brands should be considered for Indian homes?",
+    "intent": "Track construction chemical answer visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-adhesives",
+    "promptId": "adhesives-sealants",
+    "category": "Sealants",
+    "prompt": "Which silicone sealant brands are popular in India for kitchens and bathrooms?",
+    "intent": "Track sealant visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-bathware",
+    "promptId": "bathware-best-brands",
+    "category": "Category consideration",
+    "prompt": "Which bathware brands in India are best for faucets and sanitaryware?",
+    "intent": "Track bathware category answers."
+  },
+  {
+    "ownedBrandSlug": "astral-bathware",
+    "promptId": "bathware-faucets",
+    "category": "Faucets",
+    "prompt": "What are the leading faucet brands in India for modern bathrooms?",
+    "intent": "Track faucet answer visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-bathware",
+    "promptId": "bathware-sanitaryware",
+    "category": "Sanitaryware",
+    "prompt": "Which sanitaryware brands are trusted in India for toilets and basins?",
+    "intent": "Track sanitaryware answer visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-bathware",
+    "promptId": "bathware-premium",
+    "category": "Premium",
+    "prompt": "Which premium bathroom fittings brands are available in India?",
+    "intent": "Track premium competitor mentions."
+  },
+  {
+    "ownedBrandSlug": "astral-bathware",
+    "promptId": "bathware-accessories",
+    "category": "Accessories",
+    "prompt": "Which brands offer reliable bathroom accessories and showers in India?",
+    "intent": "Track shower and accessory visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-paints",
+    "promptId": "paints-best-brands",
+    "category": "Category consideration",
+    "prompt": "Which paint brands in India are best for home interiors and exteriors?",
+    "intent": "Track paint category answers."
+  },
+  {
+    "ownedBrandSlug": "astral-paints",
+    "promptId": "paints-exterior",
+    "category": "Exterior",
+    "prompt": "Which exterior paint brands perform well in Indian weather conditions?",
+    "intent": "Track exterior paint visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-paints",
+    "promptId": "paints-waterproof",
+    "category": "Waterproofing",
+    "prompt": "Which waterproof wall paint or damp-proof coating brands are recommended in India?",
+    "intent": "Track waterproofing paint visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-paints",
+    "promptId": "paints-premium",
+    "category": "Premium",
+    "prompt": "What are the premium decorative paint options available in India?",
+    "intent": "Track premium paint answer visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-paints",
+    "promptId": "paints-industrial",
+    "category": "Industrial",
+    "prompt": "Which industrial protective coating brands operate in India?",
+    "intent": "Track industrial coating mentions."
+  },
+  {
+    "ownedBrandSlug": "astral-foundation",
+    "promptId": "foundation-csr-india",
+    "category": "CSR visibility",
+    "prompt": "Which Indian corporate foundations are known for strong CSR and social impact work?",
+    "intent": "Track CSR comparable visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-foundation",
+    "promptId": "foundation-water-sanitation",
+    "category": "Water and sanitation",
+    "prompt": "Which corporate foundations in India work on water, sanitation, or rural development?",
+    "intent": "Track theme-specific foundation visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-foundation",
+    "promptId": "foundation-education",
+    "category": "Education",
+    "prompt": "Which Indian corporate foundations are active in education and skill development?",
+    "intent": "Track education CSR visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-foundation",
+    "promptId": "foundation-impact-reporting",
+    "category": "Impact reporting",
+    "prompt": "Which Indian corporate foundations publish strong impact reports and CSR stories?",
+    "intent": "Track trust and reporting visibility."
+  },
+  {
+    "ownedBrandSlug": "astral-foundation",
+    "promptId": "foundation-healthcare",
+    "category": "Healthcare",
+    "prompt": "Which corporate foundations in India are visible for healthcare and community welfare initiatives?",
+    "intent": "Track healthcare CSR visibility."
+  }
+]

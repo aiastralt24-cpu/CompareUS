@@ -1,0 +1,72 @@
+[
+  {
+    "ownedBrandSlug": "astral-pipes",
+    "brandName": "Astral Pipes",
+    "gscPropertyUrl": "https://www.astralpipes.com/",
+    "ga4PropertyId": "",
+    "hostnames": ["www.astralpipes.com", "astralpipes.com"],
+    "brandTerms": ["astral", "astral pipes", "astral pipe", "astral water tank"],
+    "nonBrandKeywordGroups": {
+      "pipes": ["pvc pipes", "cpvc pipes", "upvc pipes", "swr pipes", "plumbing pipes"],
+      "water_tanks": ["water tank", "plastic water tank", "overhead water tank"],
+      "trade": ["pipe fittings", "plumber pipe brand", "agriculture pipe"]
+    },
+    "promptBankRef": "astral-pipes"
+  },
+  {
+    "ownedBrandSlug": "astral-adhesives",
+    "brandName": "Astral Adhesives",
+    "gscPropertyUrl": "https://www.astraladhesives.com/",
+    "ga4PropertyId": "",
+    "hostnames": ["www.astraladhesives.com", "astraladhesives.com"],
+    "brandTerms": ["astral adhesives", "bondtite", "rescuetape", "seal it", "astral solvent cement"],
+    "nonBrandKeywordGroups": {
+      "adhesives": ["adhesive brands", "epoxy adhesive", "instant adhesive", "wood adhesive"],
+      "construction_chemicals": ["tile adhesive", "waterproofing chemical", "sealant"],
+      "plumbing": ["solvent cement", "cpvc solvent cement", "pvc pipe adhesive"]
+    },
+    "promptBankRef": "astral-adhesives"
+  },
+  {
+    "ownedBrandSlug": "astral-bathware",
+    "brandName": "Astral Bathware",
+    "gscPropertyUrl": "https://www.astralbathware.com/",
+    "ga4PropertyId": "",
+    "hostnames": ["www.astralbathware.com", "astralbathware.com"],
+    "brandTerms": ["astral bathware", "astral faucets", "astral sanitaryware"],
+    "nonBrandKeywordGroups": {
+      "bathware": ["bathware brands", "bathroom fittings", "sanitaryware brands"],
+      "faucets": ["faucet brands", "tap brands", "premium faucets"],
+      "showers": ["shower brands", "bathroom accessories"]
+    },
+    "promptBankRef": "astral-bathware"
+  },
+  {
+    "ownedBrandSlug": "astral-paints",
+    "brandName": "Astral Paints",
+    "gscPropertyUrl": "https://www.astralpaints.com/",
+    "ga4PropertyId": "",
+    "hostnames": ["www.astralpaints.com", "astralpaints.com"],
+    "brandTerms": ["astral paints", "gem paints", "astral wall paint"],
+    "nonBrandKeywordGroups": {
+      "decorative_paints": ["paint brands", "interior paint", "exterior paint", "wall paint"],
+      "waterproofing": ["waterproof paint", "damp proof paint", "roof coating"],
+      "industrial": ["industrial paint", "protective coating", "primer paint"]
+    },
+    "promptBankRef": "astral-paints"
+  },
+  {
+    "ownedBrandSlug": "astral-foundation",
+    "brandName": "Astral Foundation",
+    "gscPropertyUrl": "https://www.astralltd.com/",
+    "ga4PropertyId": "",
+    "hostnames": ["www.astralltd.com", "astralltd.com"],
+    "brandTerms": ["astral foundation", "astral csr", "astral limited csr"],
+    "nonBrandKeywordGroups": {
+      "csr": ["corporate foundation", "csr initiatives", "csr impact report"],
+      "impact": ["education csr", "water sanitation csr", "rural development foundation"],
+      "trust": ["corporate social responsibility India", "foundation impact report"]
+    },
+    "promptBankRef": "astral-foundation"
+  }
+]

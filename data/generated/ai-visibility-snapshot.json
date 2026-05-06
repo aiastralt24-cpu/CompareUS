@@ -1,0 +1,258 @@
+{
+  "generatedAt": "2026-05-06T15:11:00.943Z",
+  "source": "AI visibility prompt bank",
+  "dataMode": "setup_required",
+  "note": "AI platforms do not expose brand impression counts. Periscope records prompt visibility, mentions, citations, and GA4 referral traffic.",
+  "brands": [
+    {
+      "ownedBrandSlug": "astral-pipes",
+      "brandName": "Astral Pipes",
+      "status": "Setup Required",
+      "reason": "AI_VISIBILITY_ENABLED is not set to 1.",
+      "promptCount": 5,
+      "providers": [],
+      "summary": {
+        "promptRuns": 0,
+        "ownedMentionRate": null,
+        "citationShare": null,
+        "competitorMentionCount": null,
+        "sentimentProxy": null
+      },
+      "promptResults": [],
+      "missingCitations": [
+        {
+          "promptId": "pipes-best-brands-india",
+          "prompt": "Which are the best PVC and CPVC pipe brands in India for home plumbing?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "pipes-plumber-recommendation",
+          "prompt": "Which pipe brand should a plumber recommend for reliable residential water supply in India?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "pipes-drainage-swr",
+          "prompt": "What are the leading SWR drainage pipe brands in India?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "pipes-water-tanks",
+          "prompt": "Which plastic water tank brands in India are trusted for household use?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "pipes-agriculture",
+          "prompt": "Which PVC pipe brands are commonly used for agriculture irrigation in India?",
+          "reason": "No provider result collected."
+        }
+      ],
+      "evidence": {
+        "source": "AI visibility prompt bank",
+        "evidenceUrl": "AI visibility prompt bank",
+        "collectedAt": "2026-05-06T15:11:00.943Z",
+        "method": "Setup check",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-adhesives",
+      "brandName": "Astral Adhesives",
+      "status": "Setup Required",
+      "reason": "AI_VISIBILITY_ENABLED is not set to 1.",
+      "promptCount": 5,
+      "providers": [],
+      "summary": {
+        "promptRuns": 0,
+        "ownedMentionRate": null,
+        "citationShare": null,
+        "competitorMentionCount": null,
+        "sentimentProxy": null
+      },
+      "promptResults": [],
+      "missingCitations": [
+        {
+          "promptId": "adhesives-best-brands",
+          "prompt": "Which adhesive brands in India are reliable for household and construction use?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "adhesives-solvent-cement",
+          "prompt": "Which solvent cement brands are recommended for PVC and CPVC plumbing pipes in India?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "adhesives-epoxy",
+          "prompt": "What are the best epoxy adhesive brands for repair work in India?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "adhesives-waterproofing",
+          "prompt": "Which waterproofing chemical brands should be considered for Indian homes?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "adhesives-sealants",
+          "prompt": "Which silicone sealant brands are popular in India for kitchens and bathrooms?",
+          "reason": "No provider result collected."
+        }
+      ],
+      "evidence": {
+        "source": "AI visibility prompt bank",
+        "evidenceUrl": "AI visibility prompt bank",
+        "collectedAt": "2026-05-06T15:11:00.943Z",
+        "method": "Setup check",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-bathware",
+      "brandName": "Astral Bathware",
+      "status": "Setup Required",
+      "reason": "AI_VISIBILITY_ENABLED is not set to 1.",
+      "promptCount": 5,
+      "providers": [],
+      "summary": {
+        "promptRuns": 0,
+        "ownedMentionRate": null,
+        "citationShare": null,
+        "competitorMentionCount": null,
+        "sentimentProxy": null
+      },
+      "promptResults": [],
+      "missingCitations": [
+        {
+          "promptId": "bathware-best-brands",
+          "prompt": "Which bathware brands in India are best for faucets and sanitaryware?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "bathware-faucets",
+          "prompt": "What are the leading faucet brands in India for modern bathrooms?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "bathware-sanitaryware",
+          "prompt": "Which sanitaryware brands are trusted in India for toilets and basins?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "bathware-premium",
+          "prompt": "Which premium bathroom fittings brands are available in India?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "bathware-accessories",
+          "prompt": "Which brands offer reliable bathroom accessories and showers in India?",
+          "reason": "No provider result collected."
+        }
+      ],
+      "evidence": {
+        "source": "AI visibility prompt bank",
+        "evidenceUrl": "AI visibility prompt bank",
+        "collectedAt": "2026-05-06T15:11:00.943Z",
+        "method": "Setup check",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-paints",
+      "brandName": "Astral Paints",
+      "status": "Setup Required",
+      "reason": "AI_VISIBILITY_ENABLED is not set to 1.",
+      "promptCount": 5,
+      "providers": [],
+      "summary": {
+        "promptRuns": 0,
+        "ownedMentionRate": null,
+        "citationShare": null,
+        "competitorMentionCount": null,
+        "sentimentProxy": null
+      },
+      "promptResults": [],
+      "missingCitations": [
+        {
+          "promptId": "paints-best-brands",
+          "prompt": "Which paint brands in India are best for home interiors and exteriors?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "paints-exterior",
+          "prompt": "Which exterior paint brands perform well in Indian weather conditions?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "paints-waterproof",
+          "prompt": "Which waterproof wall paint or damp-proof coating brands are recommended in India?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "paints-premium",
+          "prompt": "What are the premium decorative paint options available in India?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "paints-industrial",
+          "prompt": "Which industrial protective coating brands operate in India?",
+          "reason": "No provider result collected."
+        }
+      ],
+      "evidence": {
+        "source": "AI visibility prompt bank",
+        "evidenceUrl": "AI visibility prompt bank",
+        "collectedAt": "2026-05-06T15:11:00.943Z",
+        "method": "Setup check",
+        "confidence": "Setup Required"
+      }
+    },
+    {
+      "ownedBrandSlug": "astral-foundation",
+      "brandName": "Astral Foundation",
+      "status": "Setup Required",
+      "reason": "AI_VISIBILITY_ENABLED is not set to 1.",
+      "promptCount": 5,
+      "providers": [],
+      "summary": {
+        "promptRuns": 0,
+        "ownedMentionRate": null,
+        "citationShare": null,
+        "competitorMentionCount": null,
+        "sentimentProxy": null
+      },
+      "promptResults": [],
+      "missingCitations": [
+        {
+          "promptId": "foundation-csr-india",
+          "prompt": "Which Indian corporate foundations are known for strong CSR and social impact work?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "foundation-water-sanitation",
+          "prompt": "Which corporate foundations in India work on water, sanitation, or rural development?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "foundation-education",
+          "prompt": "Which Indian corporate foundations are active in education and skill development?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "foundation-impact-reporting",
+          "prompt": "Which Indian corporate foundations publish strong impact reports and CSR stories?",
+          "reason": "No provider result collected."
+        },
+        {
+          "promptId": "foundation-healthcare",
+          "prompt": "Which corporate foundations in India are visible for healthcare and community welfare initiatives?",
+          "reason": "No provider result collected."
+        }
+      ],
+      "evidence": {
+        "source": "AI visibility prompt bank",
+        "evidenceUrl": "AI visibility prompt bank",
+        "collectedAt": "2026-05-06T15:11:00.943Z",
+        "method": "Setup check",
+        "confidence": "Setup Required"
+      }
+    }
+  ]
+}
