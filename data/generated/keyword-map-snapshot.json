@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-06T17:18:42.958Z",
+  "generatedAt": "2026-05-07T13:44:43.126Z",
   "source": "No-paid-API keyword mapping",
-  "dataMode": "setup_required",
+  "dataMode": "first_party",
   "importNotes": {
     "targetKeywordBank": "Optional CSV: data/imports/target-keywords.csv with ownedBrandSlug,keyword,cluster,intent,funnelStage,targetPage,priority,evidenceUrl"
   },
@@ -9,19 +9,250 @@
     {
       "ownedBrandSlug": "astral-pipes",
       "brandName": "Astral Pipes",
-      "status": "Setup Required",
-      "reason": "GSC_ENABLED is not set to 1.",
+      "status": "Live",
+      "reason": "",
       "summary": {
-        "keywordCount": 11,
-        "gscKeywordCount": 0,
+        "keywordCount": 36,
+        "gscKeywordCount": 25,
         "importedKeywordCount": 0,
         "seedKeywordCount": 11,
-        "brandKeywordCount": 0,
-        "nonBrandKeywordCount": 11,
-        "ctrOpportunityCount": 0,
+        "brandKeywordCount": 20,
+        "nonBrandKeywordCount": 16,
+        "ctrOpportunityCount": 6,
         "cannibalizationCount": 0
       },
       "clusters": [
+        {
+          "cluster": "astral_pipes",
+          "keywordCount": 7,
+          "clicks": 5512,
+          "impressions": 15843,
+          "bestAveragePosition": 1,
+          "intents": [
+            "Category",
+            "Transactional"
+          ],
+          "funnelStages": [
+            "Awareness",
+            "Conversion"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema",
+            "Commercial landing page"
+          ],
+          "slug": "astral-pipes"
+        },
+        {
+          "cluster": "astral_pipe",
+          "keywordCount": 3,
+          "clicks": 617,
+          "impressions": 2272,
+          "bestAveragePosition": 1.23625,
+          "intents": [
+            "Category",
+            "Transactional"
+          ],
+          "funnelStages": [
+            "Awareness",
+            "Conversion"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema",
+            "Commercial landing page"
+          ],
+          "slug": "astral-pipe"
+        },
+        {
+          "cluster": "water_tanks",
+          "keywordCount": 7,
+          "clicks": 494,
+          "impressions": 53351,
+          "bestAveragePosition": 1.7619047619047619,
+          "intents": [
+            "Category",
+            "Transactional"
+          ],
+          "funnelStages": [
+            "Awareness",
+            "Conversion"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema",
+            "Commercial landing page",
+            "Target page mapping"
+          ],
+          "slug": "water-tanks"
+        },
+        {
+          "cluster": "astral",
+          "keywordCount": 1,
+          "clicks": 167,
+          "impressions": 9080,
+          "bestAveragePosition": 4.802422907488987,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral"
+        },
+        {
+          "cluster": "astral_cpvc",
+          "keywordCount": 2,
+          "clicks": 139,
+          "impressions": 609,
+          "bestAveragePosition": 2.861607142857143,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-cpvc"
+        },
+        {
+          "cluster": "water_hammer",
+          "keywordCount": 1,
+          "clicks": 57,
+          "impressions": 13544,
+          "bestAveragePosition": 2.5978292971057293,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "water-hammer"
+        },
+        {
+          "cluster": "astralpipes",
+          "keywordCount": 1,
+          "clicks": 53,
+          "impressions": 98,
+          "bestAveragePosition": 6.5,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astralpipes"
+        },
+        {
+          "cluster": "astral_customer",
+          "keywordCount": 1,
+          "clicks": 52,
+          "impressions": 332,
+          "bestAveragePosition": 1.0210843373493976,
+          "intents": [
+            "Support"
+          ],
+          "funnelStages": [
+            "Post-purchase"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-customer"
+        },
+        {
+          "cluster": "cpvc_pipe",
+          "keywordCount": 1,
+          "clicks": 52,
+          "impressions": 16542,
+          "bestAveragePosition": 8.780377221617702,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "cpvc-pipe"
+        },
+        {
+          "cluster": "upvc_pipe",
+          "keywordCount": 1,
+          "clicks": 51,
+          "impressions": 19583,
+          "bestAveragePosition": 2.1296022059949955,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "upvc-pipe"
+        },
+        {
+          "cluster": "astral_upvc",
+          "keywordCount": 1,
+          "clicks": 43,
+          "impressions": 62,
+          "bestAveragePosition": 1,
+          "intents": [
+            "Support"
+          ],
+          "funnelStages": [
+            "Post-purchase"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-upvc"
+        },
+        {
+          "cluster": "astral_catalogue",
+          "keywordCount": 1,
+          "clicks": 42,
+          "impressions": 76,
+          "bestAveragePosition": 2.1315789473684212,
+          "intents": [
+            "Support"
+          ],
+          "funnelStages": [
+            "Post-purchase"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-catalogue"
+        },
+        {
+          "cluster": "pipe",
+          "keywordCount": 1,
+          "clicks": 40,
+          "impressions": 14956,
+          "bestAveragePosition": 10.412810912008558,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "pipe"
+        },
         {
           "cluster": "pipes",
           "keywordCount": 5,
@@ -38,23 +269,6 @@
             "Target page mapping"
           ],
           "slug": "pipes"
-        },
-        {
-          "cluster": "water_tanks",
-          "keywordCount": 3,
-          "clicks": 0,
-          "impressions": 0,
-          "bestAveragePosition": null,
-          "intents": [
-            "Category"
-          ],
-          "funnelStages": [
-            "Awareness"
-          ],
-          "aeoOpportunities": [
-            "Target page mapping"
-          ],
-          "slug": "water-tanks"
         },
         {
           "cluster": "trade",
@@ -75,6 +289,431 @@
         }
       ],
       "mappings": [
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral pipes",
+          "landingPage": "https://www.astralpipes.com/",
+          "cluster": "astral_pipes",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 5176,
+          "impressions": 13521,
+          "ctr": 0.3828119221951039,
+          "averagePosition": 1.1525774720804673,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral pipe",
+          "landingPage": "https://www.astralpipes.com/",
+          "cluster": "astral_pipe",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 502,
+          "impressions": 1600,
+          "ctr": 0.31375,
+          "averagePosition": 1.23625,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral water tank",
+          "landingPage": "https://www.astralpipes.com/water-tanks/",
+          "cluster": "water_tanks",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 332,
+          "impressions": 2009,
+          "ctr": 0.16525634644101542,
+          "averagePosition": 2.3190642110502737,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral",
+          "landingPage": "https://www.astralpipes.com/",
+          "cluster": "astral",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 167,
+          "impressions": 9080,
+          "ctr": 0.018392070484581496,
+          "averagePosition": 4.802422907488987,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral pipes ahmedabad",
+          "landingPage": "https://www.astralpipes.com/",
+          "cluster": "astral_pipes",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 100,
+          "impressions": 528,
+          "ctr": 0.1893939393939394,
+          "averagePosition": 1.8409090909090908,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral cpvc pipe",
+          "landingPage": "https://www.astralpipes.com/plumbing-pipes-fittings/cpvc-pro-pipes/",
+          "cluster": "astral_cpvc",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 78,
+          "impressions": 448,
+          "ctr": 0.17410714285714285,
+          "averagePosition": 2.861607142857143,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral water tank 1000 ltr price",
+          "landingPage": "https://www.astralpipes.com/water-tanks/cleo-four-layer-water-tank-1000-litre/",
+          "cluster": "water_tanks",
+          "intent": "Transactional",
+          "funnelStage": "Conversion",
+          "aeoOpportunity": "Commercial landing page",
+          "isBrand": true,
+          "clicks": 70,
+          "impressions": 1389,
+          "ctr": 0.0503959683225342,
+          "averagePosition": 5.601151907847372,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral cpvc",
+          "landingPage": "https://www.astralpipes.com/plumbing-pipes-fittings/cpvc-pro-pipes/",
+          "cluster": "astral_cpvc",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 61,
+          "impressions": 161,
+          "ctr": 0.37888198757763975,
+          "averagePosition": 3.639751552795031,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral pipes price list",
+          "landingPage": "https://www.astralpipes.com/wp-content/uploads/2022/12/AQUARIUS_PC_JUL-2023-1.pdf",
+          "cluster": "astral_pipes",
+          "intent": "Transactional",
+          "funnelStage": "Conversion",
+          "aeoOpportunity": "Commercial landing page",
+          "isBrand": true,
+          "clicks": 61,
+          "impressions": 705,
+          "ctr": 0.08652482269503546,
+          "averagePosition": 2.7177304964539006,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral pipes price",
+          "landingPage": "https://www.astralpipes.com/",
+          "cluster": "astral_pipes",
+          "intent": "Transactional",
+          "funnelStage": "Conversion",
+          "aeoOpportunity": "Commercial landing page",
+          "isBrand": true,
+          "clicks": 60,
+          "impressions": 857,
+          "ctr": 0.07001166861143523,
+          "averagePosition": 2.6662777129521587,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral pipe price list",
+          "landingPage": "https://www.astralpipes.com/wp-content/uploads/2022/12/AQUARIUS_PC_JUL-2023-1.pdf",
+          "cluster": "astral_pipe",
+          "intent": "Transactional",
+          "funnelStage": "Conversion",
+          "aeoOpportunity": "Commercial landing page",
+          "isBrand": true,
+          "clicks": 59,
+          "impressions": 324,
+          "ctr": 0.18209876543209877,
+          "averagePosition": 2.691358024691358,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "water hammer arrestor",
+          "landingPage": "https://www.astralpipes.com/blogs/where-to-install-a-water-hammer-arrestor/",
+          "cluster": "water_hammer",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 57,
+          "impressions": 13544,
+          "ctr": 0.004208505611340815,
+          "averagePosition": 2.5978292971057293,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral pvc pipe",
+          "landingPage": "https://www.astralpipes.com/",
+          "cluster": "astral_pipe",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 56,
+          "impressions": 348,
+          "ctr": 0.16091954022988506,
+          "averagePosition": 2.0660919540229887,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral water tanks",
+          "landingPage": "https://www.astralpipes.com/water-tanks/",
+          "cluster": "water_tanks",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 54,
+          "impressions": 105,
+          "ctr": 0.5142857142857142,
+          "averagePosition": 1.7619047619047619,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astralpipes",
+          "landingPage": "https://www.astralpipes.com/",
+          "cluster": "astralpipes",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 53,
+          "impressions": 98,
+          "ctr": 0.5408163265306123,
+          "averagePosition": 6.5,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral customer care number",
+          "landingPage": "https://www.astralpipes.com/contact-us/",
+          "cluster": "astral_customer",
+          "intent": "Support",
+          "funnelStage": "Post-purchase",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 52,
+          "impressions": 332,
+          "ctr": 0.1566265060240964,
+          "averagePosition": 1.0210843373493976,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "cpvc pipe",
+          "landingPage": "https://www.astralpipes.com/plumbing-pipes-fittings/cpvc-pro-pipes/",
+          "cluster": "cpvc_pipe",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 52,
+          "impressions": 16542,
+          "ctr": 0.0031435134808366584,
+          "averagePosition": 8.780377221617702,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "upvc pipe",
+          "landingPage": "https://www.astralpipes.com/blogs/what-are-the-pros-and-cons-of-cpvc-and-upvc-piping/",
+          "cluster": "upvc_pipe",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 51,
+          "impressions": 19583,
+          "ctr": 0.002604299647653577,
+          "averagePosition": 2.1296022059949955,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral upvc pipe catalogue pdf",
+          "landingPage": "https://www.astralpipes.com/wp-content/uploads/2022/12/AQUARIUS_PC_JUL-2023-1.pdf",
+          "cluster": "astral_upvc",
+          "intent": "Support",
+          "funnelStage": "Post-purchase",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 43,
+          "impressions": 62,
+          "ctr": 0.6935483870967742,
+          "averagePosition": 1,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral catalogue pdf",
+          "landingPage": "https://www.astralpipes.com/wp-content/uploads/2022/12/AQUARIUS_PC_JUL-2023-1.pdf",
+          "cluster": "astral_catalogue",
+          "intent": "Support",
+          "funnelStage": "Post-purchase",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 42,
+          "impressions": 76,
+          "ctr": 0.5526315789473685,
+          "averagePosition": 2.1315789473684212,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral pipes careers",
+          "landingPage": "https://www.astralpipes.com/careers/",
+          "cluster": "astral_pipes",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 40,
+          "impressions": 55,
+          "ctr": 0.7272727272727273,
+          "averagePosition": 1,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "pvc pipe",
+          "landingPage": "https://www.astralpipes.com/",
+          "cluster": "pipe",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 40,
+          "impressions": 14956,
+          "ctr": 0.002674511901577962,
+          "averagePosition": 10.412810912008558,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral pipes dealership cost",
+          "landingPage": "https://www.astralpipes.com/become-dealer/",
+          "cluster": "astral_pipes",
+          "intent": "Transactional",
+          "funnelStage": "Conversion",
+          "aeoOpportunity": "Commercial landing page",
+          "isBrand": true,
+          "clicks": 38,
+          "impressions": 132,
+          "ctr": 0.2878787878787879,
+          "averagePosition": 1.1363636363636362,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "water tank",
+          "landingPage": "https://www.astralpipes.com/water-tanks/sarita-water-tank/",
+          "cluster": "water_tanks",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 38,
+          "impressions": 49848,
+          "ctr": 0.0007623174450329001,
+          "averagePosition": 4.042649654951051,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral pipes career",
+          "landingPage": "https://www.astralpipes.com/careers/",
+          "cluster": "astral_pipes",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 37,
+          "impressions": 45,
+          "ctr": 0.8222222222222222,
+          "averagePosition": 1,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
         {
           "ownedBrandSlug": "astral-pipes",
           "keyword": "pvc pipes",
@@ -186,7 +825,110 @@
           "source": "Configured category keyword seed"
         }
       ],
-      "ctrOpportunities": [],
+      "ctrOpportunities": [
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "astral",
+          "landingPage": "https://www.astralpipes.com/",
+          "cluster": "astral",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 167,
+          "impressions": 9080,
+          "ctr": 0.018392070484581496,
+          "averagePosition": 4.802422907488987,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "water hammer arrestor",
+          "landingPage": "https://www.astralpipes.com/blogs/where-to-install-a-water-hammer-arrestor/",
+          "cluster": "water_hammer",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 57,
+          "impressions": 13544,
+          "ctr": 0.004208505611340815,
+          "averagePosition": 2.5978292971057293,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "cpvc pipe",
+          "landingPage": "https://www.astralpipes.com/plumbing-pipes-fittings/cpvc-pro-pipes/",
+          "cluster": "cpvc_pipe",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 52,
+          "impressions": 16542,
+          "ctr": 0.0031435134808366584,
+          "averagePosition": 8.780377221617702,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "upvc pipe",
+          "landingPage": "https://www.astralpipes.com/blogs/what-are-the-pros-and-cons-of-cpvc-and-upvc-piping/",
+          "cluster": "upvc_pipe",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 51,
+          "impressions": 19583,
+          "ctr": 0.002604299647653577,
+          "averagePosition": 2.1296022059949955,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "pvc pipe",
+          "landingPage": "https://www.astralpipes.com/",
+          "cluster": "pipe",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 40,
+          "impressions": 14956,
+          "ctr": 0.002674511901577962,
+          "averagePosition": 10.412810912008558,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-pipes",
+          "keyword": "water tank",
+          "landingPage": "https://www.astralpipes.com/water-tanks/sarita-water-tank/",
+          "cluster": "water_tanks",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 38,
+          "impressions": 49848,
+          "ctr": 0.0007623174450329001,
+          "averagePosition": 4.042649654951051,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpipes.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        }
+      ],
       "cannibalization": [],
       "promptMappings": [
         {
@@ -221,35 +963,54 @@
         }
       ],
       "evidence": {
-        "source": "Configured keyword seed",
+        "source": "Google Search Console + public keyword config",
         "evidenceUrl": "https://www.astralpipes.com/",
-        "collectedAt": "2026-05-06T17:18:42.958Z",
-        "method": "Setup-safe keyword mapping",
-        "confidence": "Setup Required"
+        "collectedAt": "2026-05-07T13:44:43.126Z",
+        "method": "GSC query/page mapping with intent and AEO classification",
+        "confidence": "First-party GSC evidence"
       }
     },
     {
       "ownedBrandSlug": "astral-adhesives",
       "brandName": "Astral Adhesives",
-      "status": "Setup Required",
-      "reason": "GSC_ENABLED is not set to 1.",
+      "status": "Live",
+      "reason": "",
       "summary": {
-        "keywordCount": 10,
-        "gscKeywordCount": 0,
+        "keywordCount": 35,
+        "gscKeywordCount": 25,
         "importedKeywordCount": 0,
         "seedKeywordCount": 10,
-        "brandKeywordCount": 0,
-        "nonBrandKeywordCount": 10,
-        "ctrOpportunityCount": 0,
+        "brandKeywordCount": 9,
+        "nonBrandKeywordCount": 26,
+        "ctrOpportunityCount": 2,
         "cannibalizationCount": 0
       },
       "clusters": [
         {
-          "cluster": "adhesives",
-          "keywordCount": 4,
-          "clicks": 0,
-          "impressions": 0,
-          "bestAveragePosition": null,
+          "cluster": "astral_adhesives",
+          "keywordCount": 6,
+          "clicks": 1074,
+          "impressions": 2546,
+          "bestAveragePosition": 1.0100502512562815,
+          "intents": [
+            "Category",
+            "Support"
+          ],
+          "funnelStages": [
+            "Awareness",
+            "Post-purchase"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-adhesives"
+        },
+        {
+          "cluster": "astral_adhesive",
+          "keywordCount": 2,
+          "clicks": 136,
+          "impressions": 253,
+          "bestAveragePosition": 1,
           "intents": [
             "Category"
           ],
@@ -257,16 +1018,156 @@
             "Awareness"
           ],
           "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-adhesive"
+        },
+        {
+          "cluster": "astral_bond",
+          "keywordCount": 2,
+          "clicks": 83,
+          "impressions": 975,
+          "bestAveragePosition": 1.0823529411764705,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-bond"
+        },
+        {
+          "cluster": "bond_tite",
+          "keywordCount": 4,
+          "clicks": 98,
+          "impressions": 1983,
+          "bestAveragePosition": 1.074074074074074,
+          "intents": [
+            "Category",
+            "Support"
+          ],
+          "funnelStages": [
+            "Awareness",
+            "Post-purchase"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "bond-tite"
+        },
+        {
+          "cluster": "bondtite",
+          "keywordCount": 1,
+          "clicks": 42,
+          "impressions": 2390,
+          "bestAveragePosition": 2.096652719665272,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "bondtite"
+        },
+        {
+          "cluster": "resibond",
+          "keywordCount": 1,
+          "clicks": 33,
+          "impressions": 1364,
+          "bestAveragePosition": 1.4743401759530792,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "resibond"
+        },
+        {
+          "cluster": "astral_silicone",
+          "keywordCount": 1,
+          "clicks": 26,
+          "impressions": 130,
+          "bestAveragePosition": 1.5846153846153848,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-silicone"
+        },
+        {
+          "cluster": "vetra",
+          "keywordCount": 1,
+          "clicks": 26,
+          "impressions": 1985,
+          "bestAveragePosition": 2.828211586901763,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "vetra"
+        },
+        {
+          "cluster": "construction_chemicals",
+          "keywordCount": 4,
+          "clicks": 25,
+          "impressions": 170,
+          "bestAveragePosition": 1.6823529411764706,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema",
+            "Target page mapping"
+          ],
+          "slug": "construction-chemicals"
+        },
+        {
+          "cluster": "adhesives",
+          "keywordCount": 5,
+          "clicks": 24,
+          "impressions": 61,
+          "bestAveragePosition": 8.688524590163935,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema",
             "Target page mapping"
           ],
           "slug": "adhesives"
         },
         {
-          "cluster": "construction_chemicals",
-          "keywordCount": 3,
-          "clicks": 0,
-          "impressions": 0,
-          "bestAveragePosition": null,
+          "cluster": "www.astral_adhesives.com",
+          "keywordCount": 1,
+          "clicks": 24,
+          "impressions": 48,
+          "bestAveragePosition": 1,
           "intents": [
             "Category"
           ],
@@ -274,9 +1175,77 @@
             "Awareness"
           ],
           "aeoOpportunities": [
-            "Target page mapping"
+            "Product/category schema"
           ],
-          "slug": "construction-chemicals"
+          "slug": "www-astral-adhesives-com"
+        },
+        {
+          "cluster": "astral_resibond",
+          "keywordCount": 1,
+          "clicks": 23,
+          "impressions": 259,
+          "bestAveragePosition": 1.579150579150579,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-resibond"
+        },
+        {
+          "cluster": "astral_fevicol",
+          "keywordCount": 1,
+          "clicks": 20,
+          "impressions": 98,
+          "bestAveragePosition": 4.408163265306122,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-fevicol"
+        },
+        {
+          "cluster": "crack_bond",
+          "keywordCount": 1,
+          "clicks": 20,
+          "impressions": 186,
+          "bestAveragePosition": 3.064516129032258,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "crack-bond"
+        },
+        {
+          "cluster": "bondtite_adhesive",
+          "keywordCount": 1,
+          "clicks": 17,
+          "impressions": 469,
+          "bestAveragePosition": 2.91044776119403,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "bondtite-adhesive"
         },
         {
           "cluster": "plumbing",
@@ -297,6 +1266,431 @@
         }
       ],
       "mappings": [
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral adhesives",
+          "landingPage": "https://www.astraladhesives.com/",
+          "cluster": "astral_adhesives",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 907,
+          "impressions": 1863,
+          "ctr": 0.4868491680085883,
+          "averagePosition": 1.1841116478797638,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral adhesive",
+          "landingPage": "https://www.astraladhesives.com/",
+          "cluster": "astral_adhesive",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 119,
+          "impressions": 225,
+          "ctr": 0.5288888888888889,
+          "averagePosition": 1.008888888888889,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral adhesives products",
+          "landingPage": "https://www.astraladhesives.com/",
+          "cluster": "astral_adhesives",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 75,
+          "impressions": 199,
+          "ctr": 0.3768844221105528,
+          "averagePosition": 1.0100502512562815,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral bond tite",
+          "landingPage": "https://www.astraladhesives.com/brand/bondtite.html",
+          "cluster": "astral_bond",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 69,
+          "impressions": 890,
+          "ctr": 0.07752808988764046,
+          "averagePosition": 1.344943820224719,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "bond tite",
+          "landingPage": "https://www.astraladhesives.com/bondtite-fast-and-clear.html",
+          "cluster": "bond_tite",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 52,
+          "impressions": 1634,
+          "ctr": 0.03182374541003672,
+          "averagePosition": 1.623623011015912,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral adhesives ltd",
+          "landingPage": "https://www.astraladhesives.com/",
+          "cluster": "astral_adhesives",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 46,
+          "impressions": 81,
+          "ctr": 0.5679012345679012,
+          "averagePosition": 1.074074074074074,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "bondtite",
+          "landingPage": "https://www.astraladhesives.com/bondtite-fast-and-clear.html",
+          "cluster": "bondtite",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 42,
+          "impressions": 2390,
+          "ctr": 0.017573221757322177,
+          "averagePosition": 2.096652719665272,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "resibond",
+          "landingPage": "https://www.astraladhesives.com/resibond-rtv-tube.html",
+          "cluster": "resibond",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 33,
+          "impressions": 1364,
+          "ctr": 0.024193548387096774,
+          "averagePosition": 1.4743401759530792,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral silicone",
+          "landingPage": "https://www.astraladhesives.com/chemistries/sealants.html",
+          "cluster": "astral_silicone",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 26,
+          "impressions": 130,
+          "ctr": 0.2,
+          "averagePosition": 1.5846153846153848,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "vetra",
+          "landingPage": "https://www.astraladhesives.com/brand/vetra.html",
+          "cluster": "vetra",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 26,
+          "impressions": 1985,
+          "ctr": 0.01309823677581864,
+          "averagePosition": 2.828211586901763,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral silicone sealant",
+          "landingPage": "https://www.astraladhesives.com/chemistries/sealants.html",
+          "cluster": "construction_chemicals",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 25,
+          "impressions": 170,
+          "ctr": 0.14705882352941177,
+          "averagePosition": 1.6823529411764706,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral wood adhesive",
+          "landingPage": "https://www.astraladhesives.com/",
+          "cluster": "adhesives",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 24,
+          "impressions": 61,
+          "ctr": 0.39344262295081966,
+          "averagePosition": 8.688524590163935,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "www.astral adhesives.com",
+          "landingPage": "https://www.astraladhesives.com/",
+          "cluster": "www.astral_adhesives.com",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 24,
+          "impressions": 48,
+          "ctr": 0.5,
+          "averagePosition": 1,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral resibond",
+          "landingPage": "https://www.astraladhesives.com/brand/resibond.html",
+          "cluster": "astral_resibond",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 23,
+          "impressions": 259,
+          "ctr": 0.0888030888030888,
+          "averagePosition": 1.579150579150579,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral adhesives ahmedabad",
+          "landingPage": "https://www.astraladhesives.com/",
+          "cluster": "astral_adhesives",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 20,
+          "impressions": 59,
+          "ctr": 0.3389830508474576,
+          "averagePosition": 1.8135593220338984,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral fevicol",
+          "landingPage": "https://www.astraladhesives.com/",
+          "cluster": "astral_fevicol",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 20,
+          "impressions": 98,
+          "ctr": 0.20408163265306123,
+          "averagePosition": 4.408163265306122,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "crack bond",
+          "landingPage": "https://www.astraladhesives.com/crackbond-hcf-351.html",
+          "cluster": "crack_bond",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 20,
+          "impressions": 186,
+          "ctr": 0.10752688172043011,
+          "averagePosition": 3.064516129032258,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "bond tite customer care number",
+          "landingPage": "https://www.astraladhesives.com/contact-us",
+          "cluster": "bond_tite",
+          "intent": "Support",
+          "funnelStage": "Post-purchase",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 19,
+          "impressions": 81,
+          "ctr": 0.2345679012345679,
+          "averagePosition": 1.074074074074074,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral adhesive products",
+          "landingPage": "https://www.astraladhesives.com/",
+          "cluster": "astral_adhesive",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 17,
+          "impressions": 28,
+          "ctr": 0.6071428571428571,
+          "averagePosition": 1,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "bondtite adhesive",
+          "landingPage": "https://www.astraladhesives.com/brand/bondtite.html",
+          "cluster": "bondtite_adhesive",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 17,
+          "impressions": 469,
+          "ctr": 0.03624733475479744,
+          "averagePosition": 2.91044776119403,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral adhesives customer care number",
+          "landingPage": "https://www.astraladhesives.com/contact-us",
+          "cluster": "astral_adhesives",
+          "intent": "Support",
+          "funnelStage": "Post-purchase",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 14,
+          "impressions": 48,
+          "ctr": 0.2916666666666667,
+          "averagePosition": 1.0208333333333333,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral bond tite fast & clear",
+          "landingPage": "https://www.astraladhesives.com/bondtite-fast-and-clear.html",
+          "cluster": "astral_bond",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 14,
+          "impressions": 85,
+          "ctr": 0.16470588235294117,
+          "averagePosition": 1.0823529411764705,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "bond tite referral code",
+          "landingPage": "https://www.astraladhesives.com/blogs/know-how-to-turn-bondtite-purchases-into-big-rewards",
+          "cluster": "bond_tite",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 14,
+          "impressions": 172,
+          "ctr": 0.08139534883720931,
+          "averagePosition": 1.8662790697674418,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "bond tite referral code free",
+          "landingPage": "https://www.astraladhesives.com/blogs/know-how-to-turn-bondtite-purchases-into-big-rewards",
+          "cluster": "bond_tite",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 13,
+          "impressions": 96,
+          "ctr": 0.13541666666666666,
+          "averagePosition": 2.354166666666667,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "astral adhesives login",
+          "landingPage": "https://www.astraladhesives.com/",
+          "cluster": "astral_adhesives",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 12,
+          "impressions": 296,
+          "ctr": 0.04054054054054054,
+          "averagePosition": 2.793918918918919,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
         {
           "ownedBrandSlug": "astral-adhesives",
           "keyword": "adhesive brands",
@@ -398,7 +1792,42 @@
           "source": "Configured category keyword seed"
         }
       ],
-      "ctrOpportunities": [],
+      "ctrOpportunities": [
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "bondtite",
+          "landingPage": "https://www.astraladhesives.com/bondtite-fast-and-clear.html",
+          "cluster": "bondtite",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 42,
+          "impressions": 2390,
+          "ctr": 0.017573221757322177,
+          "averagePosition": 2.096652719665272,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-adhesives",
+          "keyword": "vetra",
+          "landingPage": "https://www.astraladhesives.com/brand/vetra.html",
+          "cluster": "vetra",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 26,
+          "impressions": 1985,
+          "ctr": 0.01309823677581864,
+          "averagePosition": 2.828211586901763,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astraladhesives.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        }
+      ],
       "cannibalization": [],
       "promptMappings": [
         {
@@ -433,18 +1862,18 @@
         }
       ],
       "evidence": {
-        "source": "Configured keyword seed",
+        "source": "Google Search Console + public keyword config",
         "evidenceUrl": "https://www.astraladhesives.com/",
-        "collectedAt": "2026-05-06T17:18:42.958Z",
-        "method": "Setup-safe keyword mapping",
-        "confidence": "Setup Required"
+        "collectedAt": "2026-05-07T13:44:43.126Z",
+        "method": "GSC query/page mapping with intent and AEO classification",
+        "confidence": "First-party GSC evidence"
       }
     },
     {
       "ownedBrandSlug": "astral-bathware",
       "brandName": "Astral Bathware",
       "status": "Setup Required",
-      "reason": "GSC_ENABLED is not set to 1.",
+      "reason": "User does not have sufficient permission for site 'https://www.astralbathware.com/'. See also: https://support.google.com/webmasters/answer/2451999.",
       "summary": {
         "keywordCount": 8,
         "gscKeywordCount": 0,
@@ -627,7 +2056,7 @@
       "evidence": {
         "source": "Configured keyword seed",
         "evidenceUrl": "https://www.astralbathware.com/",
-        "collectedAt": "2026-05-06T17:18:42.958Z",
+        "collectedAt": "2026-05-07T13:44:43.126Z",
         "method": "Setup-safe keyword mapping",
         "confidence": "Setup Required"
       }
@@ -635,19 +2064,311 @@
     {
       "ownedBrandSlug": "astral-paints",
       "brandName": "Astral Paints",
-      "status": "Setup Required",
-      "reason": "GSC_ENABLED is not set to 1.",
+      "status": "Live",
+      "reason": "",
       "summary": {
-        "keywordCount": 10,
-        "gscKeywordCount": 0,
+        "keywordCount": 35,
+        "gscKeywordCount": 25,
         "importedKeywordCount": 0,
         "seedKeywordCount": 10,
-        "brandKeywordCount": 0,
-        "nonBrandKeywordCount": 10,
-        "ctrOpportunityCount": 0,
-        "cannibalizationCount": 0
+        "brandKeywordCount": 7,
+        "nonBrandKeywordCount": 28,
+        "ctrOpportunityCount": 4,
+        "cannibalizationCount": 1
       },
       "clusters": [
+        {
+          "cluster": "astral_paints",
+          "keywordCount": 7,
+          "clicks": 866,
+          "impressions": 1555,
+          "bestAveragePosition": 1,
+          "intents": [
+            "Category",
+            "Transactional"
+          ],
+          "funnelStages": [
+            "Awareness",
+            "Conversion"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema",
+            "Commercial landing page"
+          ],
+          "slug": "astral-paints"
+        },
+        {
+          "cluster": "astral_paint",
+          "keywordCount": 1,
+          "clicks": 64,
+          "impressions": 175,
+          "bestAveragePosition": 1.1142857142857143,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-paint"
+        },
+        {
+          "cluster": "epoxy_primer",
+          "keywordCount": 1,
+          "clicks": 8,
+          "impressions": 769,
+          "bestAveragePosition": 9.330299089726918,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "epoxy-primer"
+        },
+        {
+          "cluster": "astral_color",
+          "keywordCount": 1,
+          "clicks": 7,
+          "impressions": 85,
+          "bestAveragePosition": 6.647058823529412,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-color"
+        },
+        {
+          "cluster": "astral_adhesives",
+          "keywordCount": 1,
+          "clicks": 5,
+          "impressions": 92,
+          "bestAveragePosition": 5.315217391304348,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-adhesives"
+        },
+        {
+          "cluster": "paint_dealership",
+          "keywordCount": 1,
+          "clicks": 5,
+          "impressions": 87,
+          "bestAveragePosition": 3.8850574712643677,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "paint-dealership"
+        },
+        {
+          "cluster": "astal_paint",
+          "keywordCount": 1,
+          "clicks": 4,
+          "impressions": 12,
+          "bestAveragePosition": 1,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astal-paint"
+        },
+        {
+          "cluster": "bond_white",
+          "keywordCount": 1,
+          "clicks": 4,
+          "impressions": 28,
+          "bestAveragePosition": 4.428571428571429,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "bond-white"
+        },
+        {
+          "cluster": "matt_glossy",
+          "keywordCount": 1,
+          "clicks": 4,
+          "impressions": 39,
+          "bestAveragePosition": 2.6153846153846154,
+          "intents": [
+            "Commercial"
+          ],
+          "funnelStages": [
+            "Consideration"
+          ],
+          "aeoOpportunities": [
+            "Comparison answer page"
+          ],
+          "slug": "matt-glossy"
+        },
+        {
+          "cluster": "astral_coatings",
+          "keywordCount": 3,
+          "clicks": 7,
+          "impressions": 192,
+          "bestAveragePosition": 3.347826086956522,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-coatings"
+        },
+        {
+          "cluster": "astral_dealer",
+          "keywordCount": 1,
+          "clicks": 3,
+          "impressions": 574,
+          "bestAveragePosition": 6.074912891986063,
+          "intents": [
+            "Transactional"
+          ],
+          "funnelStages": [
+            "Conversion"
+          ],
+          "aeoOpportunities": [
+            "Commercial landing page"
+          ],
+          "slug": "astral-dealer"
+        },
+        {
+          "cluster": "matte_finish",
+          "keywordCount": 1,
+          "clicks": 3,
+          "impressions": 3253,
+          "bestAveragePosition": 5.49369812480787,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "matte-finish"
+        },
+        {
+          "cluster": "what_acrylic",
+          "keywordCount": 1,
+          "clicks": 3,
+          "impressions": 45,
+          "bestAveragePosition": 2.333333333333333,
+          "intents": [
+            "Informational"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "FAQ/direct-answer block"
+          ],
+          "slug": "what-acrylic"
+        },
+        {
+          "cluster": "arctic_asian",
+          "keywordCount": 1,
+          "clicks": 2,
+          "impressions": 20,
+          "bestAveragePosition": 1.5,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "arctic-asian"
+        },
+        {
+          "cluster": "astral",
+          "keywordCount": 1,
+          "clicks": 2,
+          "impressions": 2799,
+          "bestAveragePosition": 7.598785280457307,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral"
+        },
+        {
+          "cluster": "astral_colour",
+          "keywordCount": 1,
+          "clicks": 2,
+          "impressions": 44,
+          "bestAveragePosition": 1.4090909090909092,
+          "intents": [
+            "Category"
+          ],
+          "funnelStages": [
+            "Awareness"
+          ],
+          "aeoOpportunities": [
+            "Product/category schema"
+          ],
+          "slug": "astral-colour"
+        },
+        {
+          "cluster": "astral_damp",
+          "keywordCount": 1,
+          "clicks": 2,
+          "impressions": 43,
+          "bestAveragePosition": 10.116279069767442,
+          "intents": [
+            "Transactional"
+          ],
+          "funnelStages": [
+            "Conversion"
+          ],
+          "aeoOpportunities": [
+            "Commercial landing page"
+          ],
+          "slug": "astral-damp"
+        },
         {
           "cluster": "decorative_paints",
           "keywordCount": 4,
@@ -701,6 +2422,431 @@
         }
       ],
       "mappings": [
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral paints",
+          "landingPage": "https://www.astralpaints.com/",
+          "cluster": "astral_paints",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 826,
+          "impressions": 1329,
+          "ctr": 0.6215199398043642,
+          "averagePosition": 1.5349887133182845,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral paint",
+          "landingPage": "https://www.astralpaints.com/",
+          "cluster": "astral_paint",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 64,
+          "impressions": 175,
+          "ctr": 0.3657142857142857,
+          "averagePosition": 1.1142857142857143,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral gem paints",
+          "landingPage": "https://www.astralpaints.com/",
+          "cluster": "astral_paints",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 10,
+          "impressions": 83,
+          "ctr": 0.12048192771084337,
+          "averagePosition": 1.9879518072289155,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral paints dealership",
+          "landingPage": "https://www.astralpaints.com/dealer/",
+          "cluster": "astral_paints",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 8,
+          "impressions": 13,
+          "ctr": 0.6153846153846154,
+          "averagePosition": 1,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral paints price list",
+          "landingPage": "https://www.astralpaints.com/products/",
+          "cluster": "astral_paints",
+          "intent": "Transactional",
+          "funnelStage": "Conversion",
+          "aeoOpportunity": "Commercial landing page",
+          "isBrand": true,
+          "clicks": 8,
+          "impressions": 62,
+          "ctr": 0.12903225806451613,
+          "averagePosition": 2.8870967741935485,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "epoxy primer for metal",
+          "landingPage": "https://www.astralpaints.com/products/solvent-thinnable-primers/astral-premium-epoxy-metal-primer/",
+          "cluster": "epoxy_primer",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 8,
+          "impressions": 769,
+          "ctr": 0.010403120936280884,
+          "averagePosition": 9.330299089726918,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral color",
+          "landingPage": "https://www.astralpaints.com/colours/",
+          "cluster": "astral_color",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 7,
+          "impressions": 85,
+          "ctr": 0.08235294117647059,
+          "averagePosition": 6.647058823529412,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral paints price",
+          "landingPage": "https://www.astralpaints.com/products/exterior-emulsions/raga-smart-exterior-emulsion/",
+          "cluster": "astral_paints",
+          "intent": "Transactional",
+          "funnelStage": "Conversion",
+          "aeoOpportunity": "Commercial landing page",
+          "isBrand": true,
+          "clicks": 6,
+          "impressions": 48,
+          "ctr": 0.125,
+          "averagePosition": 1.1458333333333333,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral adhesives careers",
+          "landingPage": "https://www.astralpaints.com/careers/",
+          "cluster": "astral_adhesives",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 5,
+          "impressions": 92,
+          "ctr": 0.05434782608695652,
+          "averagePosition": 5.315217391304348,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "paint dealership",
+          "landingPage": "https://www.astralpaints.com/dealer/",
+          "cluster": "paint_dealership",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 5,
+          "impressions": 87,
+          "ctr": 0.05747126436781609,
+          "averagePosition": 3.8850574712643677,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astal paint",
+          "landingPage": "https://www.astralpaints.com/",
+          "cluster": "astal_paint",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 4,
+          "impressions": 12,
+          "ctr": 0.3333333333333333,
+          "averagePosition": 1,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral paints products",
+          "landingPage": "https://www.astralpaints.com/products/",
+          "cluster": "astral_paints",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 4,
+          "impressions": 6,
+          "ctr": 0.6666666666666666,
+          "averagePosition": 1,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral paints pvt ltd",
+          "landingPage": "https://www.astralpaints.com/",
+          "cluster": "astral_paints",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": true,
+          "clicks": 4,
+          "impressions": 14,
+          "ctr": 0.2857142857142857,
+          "averagePosition": 1,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "bond white colour",
+          "landingPage": "https://www.astralpaints.com/colours/off-white/bond-white/",
+          "cluster": "bond_white",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 4,
+          "impressions": 28,
+          "ctr": 0.14285714285714285,
+          "averagePosition": 4.428571428571429,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "matt vs glossy paint",
+          "landingPage": "https://www.astralpaints.com/blogs/matte-vs-glossy-finish-whats-right-for-your-walls/",
+          "cluster": "matt_glossy",
+          "intent": "Commercial",
+          "funnelStage": "Consideration",
+          "aeoOpportunity": "Comparison answer page",
+          "isBrand": false,
+          "clicks": 4,
+          "impressions": 39,
+          "ctr": 0.10256410256410256,
+          "averagePosition": 2.6153846153846154,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral coatings pvt ltd",
+          "landingPage": "https://www.astralpaints.com/",
+          "cluster": "astral_coatings",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 3,
+          "impressions": 84,
+          "ctr": 0.03571428571428571,
+          "averagePosition": 4.666666666666666,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral dealer login",
+          "landingPage": "https://www.astralpaints.com/dealer/",
+          "cluster": "astral_dealer",
+          "intent": "Transactional",
+          "funnelStage": "Conversion",
+          "aeoOpportunity": "Commercial landing page",
+          "isBrand": false,
+          "clicks": 3,
+          "impressions": 574,
+          "ctr": 0.005226480836236934,
+          "averagePosition": 6.074912891986063,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "matte finish",
+          "landingPage": "https://www.astralpaints.com/blogs/matte-vs-glossy-finish-whats-right-for-your-walls/",
+          "cluster": "matte_finish",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 3,
+          "impressions": 3253,
+          "ctr": 0.0009222256378727329,
+          "averagePosition": 5.49369812480787,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "what is acrylic distemper",
+          "landingPage": "https://www.astralpaints.com/blogs/buy-premium-acrylic-distemper/",
+          "cluster": "what_acrylic",
+          "intent": "Informational",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "FAQ/direct-answer block",
+          "isBrand": false,
+          "clicks": 3,
+          "impressions": 45,
+          "ctr": 0.06666666666666667,
+          "averagePosition": 2.333333333333333,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "arctic ice asian paints",
+          "landingPage": "https://www.astralpaints.com/colours/blue/arctic-ice/",
+          "cluster": "arctic_asian",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 2,
+          "impressions": 20,
+          "ctr": 0.1,
+          "averagePosition": 1.5,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral",
+          "landingPage": "https://www.astralpaints.com/products/",
+          "cluster": "astral",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 2,
+          "impressions": 2799,
+          "ctr": 0.0007145409074669524,
+          "averagePosition": 7.598785280457307,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral coatings private limited",
+          "landingPage": "https://www.astralpaints.com/",
+          "cluster": "astral_coatings",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 2,
+          "impressions": 85,
+          "ctr": 0.023529411764705882,
+          "averagePosition": 5.7176470588235295,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral coatings private limited bangalore",
+          "landingPage": "https://www.astralpaints.com/",
+          "cluster": "astral_coatings",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 2,
+          "impressions": 23,
+          "ctr": 0.08695652173913043,
+          "averagePosition": 3.347826086956522,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral colour",
+          "landingPage": "https://www.astralpaints.com/colours/",
+          "cluster": "astral_colour",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 2,
+          "impressions": 44,
+          "ctr": 0.045454545454545456,
+          "averagePosition": 1.4090909090909092,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral damp proof price",
+          "landingPage": "https://www.astralpaints.com/",
+          "cluster": "astral_damp",
+          "intent": "Transactional",
+          "funnelStage": "Conversion",
+          "aeoOpportunity": "Commercial landing page",
+          "isBrand": false,
+          "clicks": 2,
+          "impressions": 43,
+          "ctr": 0.046511627906976744,
+          "averagePosition": 10.116279069767442,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
         {
           "ownedBrandSlug": "astral-paints",
           "keyword": "paint brands",
@@ -802,8 +2948,87 @@
           "source": "Configured category keyword seed"
         }
       ],
-      "ctrOpportunities": [],
-      "cannibalization": [],
+      "ctrOpportunities": [
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "epoxy primer for metal",
+          "landingPage": "https://www.astralpaints.com/products/solvent-thinnable-primers/astral-premium-epoxy-metal-primer/",
+          "cluster": "epoxy_primer",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 8,
+          "impressions": 769,
+          "ctr": 0.010403120936280884,
+          "averagePosition": 9.330299089726918,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral dealer login",
+          "landingPage": "https://www.astralpaints.com/dealer/",
+          "cluster": "astral_dealer",
+          "intent": "Transactional",
+          "funnelStage": "Conversion",
+          "aeoOpportunity": "Commercial landing page",
+          "isBrand": false,
+          "clicks": 3,
+          "impressions": 574,
+          "ctr": 0.005226480836236934,
+          "averagePosition": 6.074912891986063,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "matte finish",
+          "landingPage": "https://www.astralpaints.com/blogs/matte-vs-glossy-finish-whats-right-for-your-walls/",
+          "cluster": "matte_finish",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 3,
+          "impressions": 3253,
+          "ctr": 0.0009222256378727329,
+          "averagePosition": 5.49369812480787,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        },
+        {
+          "ownedBrandSlug": "astral-paints",
+          "keyword": "astral",
+          "landingPage": "https://www.astralpaints.com/products/",
+          "cluster": "astral",
+          "intent": "Category",
+          "funnelStage": "Awareness",
+          "aeoOpportunity": "Product/category schema",
+          "isBrand": false,
+          "clicks": 2,
+          "impressions": 2799,
+          "ctr": 0.0007145409074669524,
+          "averagePosition": 7.598785280457307,
+          "source": "Google Search Console",
+          "evidenceUrl": "https://www.astralpaints.com/",
+          "collectedAt": "2026-05-07T13:43:09.876Z"
+        }
+      ],
+      "cannibalization": [
+        {
+          "keywordFamily": "astral paints",
+          "cluster": "astral_paints",
+          "pages": [
+            "https://www.astralpaints.com/",
+            "https://www.astralpaints.com/products/exterior-emulsions/raga-smart-exterior-emulsion/"
+          ],
+          "evidence": "Multiple landing pages visible for similar query family"
+        }
+      ],
       "promptMappings": [
         {
           "promptId": "paints-best-brands",
@@ -837,18 +3062,18 @@
         }
       ],
       "evidence": {
-        "source": "Configured keyword seed",
+        "source": "Google Search Console + public keyword config",
         "evidenceUrl": "https://www.astralpaints.com/",
-        "collectedAt": "2026-05-06T17:18:42.958Z",
-        "method": "Setup-safe keyword mapping",
-        "confidence": "Setup Required"
+        "collectedAt": "2026-05-07T13:44:43.126Z",
+        "method": "GSC query/page mapping with intent and AEO classification",
+        "confidence": "First-party GSC evidence"
       }
     },
     {
       "ownedBrandSlug": "astral-foundation",
       "brandName": "Astral Foundation",
       "status": "Setup Required",
-      "reason": "GSC_ENABLED is not set to 1.",
+      "reason": "User does not have sufficient permission for site 'https://www.astralltd.com/'. See also: https://support.google.com/webmasters/answer/2451999.",
       "summary": {
         "keywordCount": 8,
         "gscKeywordCount": 0,
@@ -1031,7 +3256,7 @@
       "evidence": {
         "source": "Configured keyword seed",
         "evidenceUrl": "https://www.astralltd.com/",
-        "collectedAt": "2026-05-06T17:18:42.958Z",
+        "collectedAt": "2026-05-07T13:44:43.126Z",
         "method": "Setup-safe keyword mapping",
         "confidence": "Setup Required"
       }
