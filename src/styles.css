@@ -1127,6 +1127,22 @@ h1 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.measurement-evidence {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.measurement-evidence span {
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(232, 239, 247, 0.78);
+  color: #43536a;
+  font-size: 12px;
+  font-weight: 800;
+}
+
 .metric-mini {
   position: relative;
   min-height: 76px;

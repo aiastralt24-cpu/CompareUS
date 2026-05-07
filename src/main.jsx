@@ -347,9 +347,10 @@ const metricHelp = {
   Canonical: "Whether a canonical URL is declared on the homepage. Canonical tags help search engines understand the preferred version of a page.",
   Sitemap: "HTTP status or availability of the public sitemap. A working sitemap helps search engines discover important URLs.",
   "Internal links": "Number of internal links detected on the homepage. This is a crawl-depth and site architecture proxy.",
-  "GSC clicks": "First-party Google Search Console clicks for the Astral-owned property over the collector date range.",
-  "GSC impressions": "First-party Google Search Console impressions for the Astral-owned property. This is search impression data, not competitor traffic.",
-  "Average position": "Google Search Console weighted average position for collected queries.",
+  "GSC clicks": "First-party Google Search Console clicks for the Astral-owned property over the last 28 final days, ending yesterday.",
+  "GSC impressions": "First-party Google Search Console impressions for the Astral-owned property over the last 28 final days. This is search impression data, not competitor traffic.",
+  "Average position": "Google Search Console weighted average position for collected queries over the last 28 final days.",
+  CTR: "Clicks divided by impressions from first-party Search Console data over the last 28 final days.",
   "AI referral sessions": "GA4 sessions where the traffic source matches known AI referrers such as ChatGPT, Perplexity, Gemini, Claude, Copilot, Poe, or You.com.",
   "AI visibility": "Prompt-bank visibility score from approved AI provider captures. This measures mentions/citations, not platform impressions.",
   "Citation share": "Share of collected AI answer citations that point to the Astral-owned domain."
@@ -2008,6 +2009,7 @@ function SearchConsolePanel({ brand, ownedBrand }) {
   const summary = data?.summary || {};
   const isOwnedFocus = brand.name === ownedBrand?.name;
   const live = data?.status === "Live";
+  const dateRangeLabel = formatDateRange(data?.dateRange);
   return (
     <section className="panel measurement-panel">
       <div className="panel-heading">
@@ -2029,6 +2031,11 @@ function SearchConsolePanel({ brand, ownedBrand }) {
         </div>
       ) : (
         <>
+          <div className="measurement-evidence">
+            <span>Basis: Google Search Console Search Analytics API</span>
+            <span>{dateRangeLabel || "Last 28 final days, ending yesterday"}</span>
+            <span>{data?.evidence?.method || "Collector logic: final Search Console data only"}</span>
+          </div>
           <div className="measurement-metrics">
             <MetricMini label="GSC clicks" value={formatCompactNumber(summary.clicks)} />
             <MetricMini label="GSC impressions" value={formatCompactNumber(summary.impressions)} />
@@ -2673,6 +2680,11 @@ function formatShortDate(value) {
     year: "numeric",
     timeZone: "Asia/Kolkata"
   }).format(new Date(value));
+}
+
+function formatDateRange(dateRange) {
+  if (!dateRange?.startDate || !dateRange?.endDate) return "";
+  return `${formatShortDate(dateRange.startDate)} to ${formatShortDate(dateRange.endDate)}`;
 }
 
 function formatNumber(value) {

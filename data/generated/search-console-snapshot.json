@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-07T13:43:09.876Z",
+  "generatedAt": "2026-05-07T13:50:18.529Z",
   "source": "Google Search Console",
   "dataMode": "first_party",
   "brands": [
@@ -5859,7 +5859,7 @@
       "evidence": {
         "source": "Google Search Console",
         "evidenceUrl": "https://www.astralpipes.com/",
-        "collectedAt": "2026-05-07T13:43:09.876Z",
+        "collectedAt": "2026-05-07T13:50:18.529Z",
         "method": "Search Analytics API, last 28 final days",
         "confidence": "First-party property access"
       }
@@ -11720,7 +11720,7 @@
       "evidence": {
         "source": "Google Search Console",
         "evidenceUrl": "https://www.astraladhesives.com/",
-        "collectedAt": "2026-05-07T13:43:09.876Z",
+        "collectedAt": "2026-05-07T13:50:18.529Z",
         "method": "Search Analytics API, last 28 final days",
         "confidence": "First-party property access"
       }
@@ -11728,32 +11728,5862 @@
     {
       "ownedBrandSlug": "astral-bathware",
       "brandName": "Astral Bathware",
-      "status": "Setup Required",
-      "reason": "User does not have sufficient permission for site 'https://www.astralbathware.com/'. See also: https://support.google.com/webmasters/answer/2451999.",
-      "property": "https://www.astralbathware.com/",
-      "summary": {
-        "clicks": null,
-        "impressions": null,
-        "ctr": null,
-        "averagePosition": null,
-        "brandQueryShare": null,
-        "nonBrandQueryShare": null
+      "status": "Live",
+      "property": "sc-domain:astralbathware.com",
+      "dateRange": {
+        "startDate": "2026-04-09",
+        "endDate": "2026-05-06"
       },
-      "topQueries": [],
-      "topPages": [],
+      "summary": {
+        "clicks": 1967,
+        "impressions": 63654,
+        "ctr": 0.030901435887768246,
+        "averagePosition": 4.0051685675684165,
+        "brandQueryShare": 0.04469475602475885,
+        "nonBrandQueryShare": 0.9553052439752412
+      },
+      "topQueries": [
+        {
+          "dimensions": {
+            "query": "astral bathware"
+          },
+          "clicks": 1032,
+          "impressions": 2385,
+          "ctr": 0.4327044025157233,
+          "averagePosition": 1.089727463312369
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitaryware"
+          },
+          "clicks": 68,
+          "impressions": 133,
+          "ctr": 0.5112781954887218,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware customer care number"
+          },
+          "clicks": 56,
+          "impressions": 101,
+          "ctr": 0.5544554455445545,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral commode"
+          },
+          "clicks": 37,
+          "impressions": 102,
+          "ctr": 0.3627450980392157,
+          "averagePosition": 1.2745098039215685
+        },
+        {
+          "dimensions": {
+            "query": "astral bathroom fittings"
+          },
+          "clicks": 36,
+          "impressions": 74,
+          "ctr": 0.4864864864864865,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bath fittings"
+          },
+          "clicks": 29,
+          "impressions": 61,
+          "ctr": 0.47540983606557374,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral taps"
+          },
+          "clicks": 29,
+          "impressions": 107,
+          "ctr": 0.27102803738317754,
+          "averagePosition": 1.644859813084112
+        },
+        {
+          "dimensions": {
+            "query": "+91 85117 81111"
+          },
+          "clicks": 26,
+          "impressions": 208,
+          "ctr": 0.125,
+          "averagePosition": 1.0432692307692308
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware catalogue"
+          },
+          "clicks": 26,
+          "impressions": 40,
+          "ctr": 0.65,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware price list"
+          },
+          "clicks": 25,
+          "impressions": 69,
+          "ctr": 0.36231884057971014,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astralbathware com e warranty"
+          },
+          "clicks": 23,
+          "impressions": 25,
+          "ctr": 0.92,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware catalogue pdf"
+          },
+          "clicks": 22,
+          "impressions": 28,
+          "ctr": 0.7857142857142857,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral toilet seat"
+          },
+          "clicks": 21,
+          "impressions": 80,
+          "ctr": 0.2625,
+          "averagePosition": 1.2
+        },
+        {
+          "dimensions": {
+            "query": "astral wash basin"
+          },
+          "clicks": 21,
+          "impressions": 46,
+          "ctr": 0.45652173913043476,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astralbathware"
+          },
+          "clicks": 21,
+          "impressions": 51,
+          "ctr": 0.4117647058823529,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral cp fittings"
+          },
+          "clicks": 19,
+          "impressions": 35,
+          "ctr": 0.5428571428571428,
+          "averagePosition": 1.1714285714285715
+        },
+        {
+          "dimensions": {
+            "query": "astral western toilet"
+          },
+          "clicks": 19,
+          "impressions": 60,
+          "ctr": 0.31666666666666665,
+          "averagePosition": 1.1833333333333333
+        },
+        {
+          "dimensions": {
+            "query": "astral diverter"
+          },
+          "clicks": 16,
+          "impressions": 126,
+          "ctr": 0.12698412698412698,
+          "averagePosition": 1.6587301587301586
+        },
+        {
+          "dimensions": {
+            "query": "astral"
+          },
+          "clicks": 15,
+          "impressions": 2060,
+          "ctr": 0.007281553398058253,
+          "averagePosition": 6.824271844660194
+        },
+        {
+          "dimensions": {
+            "query": "astral ptmt taps"
+          },
+          "clicks": 15,
+          "impressions": 35,
+          "ctr": 0.42857142857142855,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitary"
+          },
+          "clicks": 13,
+          "impressions": 49,
+          "ctr": 0.2653061224489796,
+          "averagePosition": 1.0408163265306123
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware toll free number"
+          },
+          "clicks": 12,
+          "impressions": 24,
+          "ctr": 0.5,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral commode price"
+          },
+          "clicks": 12,
+          "impressions": 58,
+          "ctr": 0.20689655172413793,
+          "averagePosition": 1.7241379310344827
+        },
+        {
+          "dimensions": {
+            "query": "astral customer care number"
+          },
+          "clicks": 12,
+          "impressions": 332,
+          "ctr": 0.03614457831325301,
+          "averagePosition": 2.6656626506024095
+        },
+        {
+          "dimensions": {
+            "query": "astral one piece toilet seat"
+          },
+          "clicks": 12,
+          "impressions": 20,
+          "ctr": 0.6,
+          "averagePosition": 1.1
+        }
+      ],
+      "topPages": [
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1644,
+          "impressions": 24432,
+          "ctr": 0.06728880157170923,
+          "averagePosition": 17.49160936476752
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 243,
+          "impressions": 14281,
+          "ctr": 0.01701561515300049,
+          "averagePosition": 13.998039352986485
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 212,
+          "impressions": 47596,
+          "ctr": 0.004454155811412724,
+          "averagePosition": 5.98350701739642
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 205,
+          "impressions": 3927,
+          "ctr": 0.05220269926152279,
+          "averagePosition": 2.521517697988286
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 140,
+          "impressions": 7471,
+          "ctr": 0.018739124615178692,
+          "averagePosition": 6.983402489626556
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/05/Bathware-MRP_Single-Page-PDF.pdf"
+          },
+          "clicks": 85,
+          "impressions": 2050,
+          "ctr": 0.041463414634146344,
+          "averagePosition": 5.729268292682927
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/06/Bathware-MRP_Single-.pdf"
+          },
+          "clicks": 83,
+          "impressions": 2935,
+          "ctr": 0.0282793867120954,
+          "averagePosition": 2.118909710391823
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/contact-us/office-details/"
+          },
+          "clicks": 75,
+          "impressions": 4846,
+          "ctr": 0.015476681799422205,
+          "averagePosition": 5.279199339661576
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-wall-hung-toilets/"
+          },
+          "clicks": 67,
+          "impressions": 11224,
+          "ctr": 0.005969351389878831,
+          "averagePosition": 13.43246614397719
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/faucets/"
+          },
+          "clicks": 66,
+          "impressions": 4669,
+          "ctr": 0.014135789248233027,
+          "averagePosition": 10.136645962732919
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/contact-us/"
+          },
+          "clicks": 65,
+          "impressions": 553,
+          "ctr": 0.11754068716094032,
+          "averagePosition": 5.2784810126582276
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/sanitaryware/"
+          },
+          "clicks": 59,
+          "impressions": 8295,
+          "ctr": 0.0071127185051235685,
+          "averagePosition": 14.637130801687764
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/wall-hung-toilets/"
+          },
+          "clicks": 58,
+          "impressions": 4785,
+          "ctr": 0.012121212121212121,
+          "averagePosition": 21.58453500522466
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/contact-us/e-warranty/"
+          },
+          "clicks": 57,
+          "impressions": 540,
+          "ctr": 0.10555555555555556,
+          "averagePosition": 3.761111111111111
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/faucets/allied-products/"
+          },
+          "clicks": 49,
+          "impressions": 1852,
+          "ctr": 0.026457883369330453,
+          "averagePosition": 8.61609071274298
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 49,
+          "impressions": 7703,
+          "ctr": 0.006361157990393353,
+          "averagePosition": 11.221082695053875
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/"
+          },
+          "clicks": 48,
+          "impressions": 19969,
+          "ctr": 0.002403725774951174,
+          "averagePosition": 41.017326856627776
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/pedestals/"
+          },
+          "clicks": 45,
+          "impressions": 6174,
+          "ctr": 0.007288629737609329,
+          "averagePosition": 20.857790735341755
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/faucets/shower-area/"
+          },
+          "clicks": 38,
+          "impressions": 3124,
+          "ctr": 0.012163892445582587,
+          "averagePosition": 10.342829705505762
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/faucets/kitchen-area/"
+          },
+          "clicks": 34,
+          "impressions": 3100,
+          "ctr": 0.01096774193548387,
+          "averagePosition": 20.93709677419355
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/sanitaryware/cisterns/"
+          },
+          "clicks": 31,
+          "impressions": 5414,
+          "ctr": 0.0057258958256372365,
+          "averagePosition": 53.57018840044329
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/wp-content/uploads/2023/11/Bathware-Product-Brochure-A4_single_.pdf"
+          },
+          "clicks": 30,
+          "impressions": 599,
+          "ctr": 0.05008347245409015,
+          "averagePosition": 5.185308848080133
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/faucets/concealed-parts/"
+          },
+          "clicks": 29,
+          "impressions": 2990,
+          "ctr": 0.009698996655518394,
+          "averagePosition": 3.9692307692307693
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/sanitaryware/cisterns/concealed-cisterns/"
+          },
+          "clicks": 28,
+          "impressions": 34953,
+          "ctr": 0.0008010757302663576,
+          "averagePosition": 17.269876691557233
+        },
+        {
+          "dimensions": {
+            "page": "https://www.astralbathware.com/blogs/indian-toilet-vs-western-toilet-which-is-better/"
+          },
+          "clicks": 27,
+          "impressions": 15618,
+          "ctr": 0.0017287744909719553,
+          "averagePosition": 6.242604686899731
+        }
+      ],
       "keywordMovement": [],
-      "brandVsNonBrand": [],
-      "ctrIssues": [],
-      "queryPages": [],
-      "positionBuckets": [],
-      "devices": [],
-      "countries": [],
+      "brandVsNonBrand": [
+        {
+          "segment": "Brand",
+          "clicks": 1267,
+          "impressions": 2845,
+          "ctr": 0.4453427065026362,
+          "averagePosition": 1.082952548330404
+        },
+        {
+          "segment": "Non-brand",
+          "clicks": 700,
+          "impressions": 60809,
+          "ctr": 0.011511453896627144,
+          "averagePosition": 4.141886891742999
+        }
+      ],
+      "ctrIssues": [
+        {
+          "dimensions": {
+            "query": "astral"
+          },
+          "clicks": 15,
+          "impressions": 2060,
+          "ctr": 0.007281553398058253,
+          "averagePosition": 6.824271844660194
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet seat"
+          },
+          "clicks": 11,
+          "impressions": 4170,
+          "ctr": 0.0026378896882494006,
+          "averagePosition": 7.4455635491606715
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet"
+          },
+          "clicks": 9,
+          "impressions": 7144,
+          "ctr": 0.0012597984322508398,
+          "averagePosition": 1.6063829787234043
+        },
+        {
+          "dimensions": {
+            "query": "toilet seat indian"
+          },
+          "clicks": 8,
+          "impressions": 1219,
+          "ctr": 0.006562756357670222,
+          "averagePosition": 2.018867924528302
+        },
+        {
+          "dimensions": {
+            "query": "wash basin stand only"
+          },
+          "clicks": 8,
+          "impressions": 754,
+          "ctr": 0.010610079575596816,
+          "averagePosition": 6.7387267904509285
+        },
+        {
+          "dimensions": {
+            "query": "diverter"
+          },
+          "clicks": 7,
+          "impressions": 13737,
+          "ctr": 0.000509572686903982,
+          "averagePosition": 1.1538181553468734
+        },
+        {
+          "dimensions": {
+            "query": "astral shower"
+          },
+          "clicks": 6,
+          "impressions": 6818,
+          "ctr": 0.0008800234672924611,
+          "averagePosition": 1.5448811968319154
+        },
+        {
+          "dimensions": {
+            "query": "floor mounted commode"
+          },
+          "clicks": 6,
+          "impressions": 1129,
+          "ctr": 0.005314437555358724,
+          "averagePosition": 11.070859167404784
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet price"
+          },
+          "clicks": 6,
+          "impressions": 1059,
+          "ctr": 0.0056657223796034,
+          "averagePosition": 10.920679886685553
+        },
+        {
+          "dimensions": {
+            "query": "indian seat"
+          },
+          "clicks": 5,
+          "impressions": 2256,
+          "ctr": 0.002216312056737589,
+          "averagePosition": 1.1307624113475176
+        },
+        {
+          "dimensions": {
+            "query": "floor mounted toilet seat"
+          },
+          "clicks": 4,
+          "impressions": 275,
+          "ctr": 0.014545454545454545,
+          "averagePosition": 9.538181818181819
+        },
+        {
+          "dimensions": {
+            "query": "wall mounted commode with flush tank"
+          },
+          "clicks": 4,
+          "impressions": 768,
+          "ctr": 0.005208333333333333,
+          "averagePosition": 12.700520833333334
+        }
+      ],
+      "queryPages": [
+        {
+          "dimensions": {
+            "query": "astral bathware",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 970,
+          "impressions": 2381,
+          "ctr": 0.40739185216295676,
+          "averagePosition": 1.0709785804283913
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitaryware",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 57,
+          "impressions": 133,
+          "ctr": 0.42857142857142855,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 54,
+          "impressions": 2257,
+          "ctr": 0.023925564909171467,
+          "averagePosition": 1.9428444838280905
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware customer care number",
+            "page": "https://www.astralbathware.com/contact-us/"
+          },
+          "clicks": 42,
+          "impressions": 99,
+          "ctr": 0.42424242424242425,
+          "averagePosition": 1.0303030303030303
+        },
+        {
+          "dimensions": {
+            "query": "astral bathroom fittings",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 32,
+          "impressions": 74,
+          "ctr": 0.43243243243243246,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 30,
+          "impressions": 102,
+          "ctr": 0.29411764705882354,
+          "averagePosition": 1.3725490196078431
+        },
+        {
+          "dimensions": {
+            "query": "astral bath fittings",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 28,
+          "impressions": 61,
+          "ctr": 0.45901639344262296,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware",
+            "page": "https://www.astralbathware.com/sanitaryware/"
+          },
+          "clicks": 25,
+          "impressions": 2114,
+          "ctr": 0.011825922421948912,
+          "averagePosition": 1.6967833491012299
+        },
+        {
+          "dimensions": {
+            "query": "astralbathware com e warranty",
+            "page": "https://www.astralbathware.com/contact-us/e-warranty/"
+          },
+          "clicks": 23,
+          "impressions": 25,
+          "ctr": 0.92,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral taps",
+            "page": "https://www.astralbathware.com/faucets/"
+          },
+          "clicks": 22,
+          "impressions": 107,
+          "ctr": 0.205607476635514,
+          "averagePosition": 1.6728971962616823
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware catalogue pdf",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 20,
+          "impressions": 28,
+          "ctr": 0.7142857142857143,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astralbathware",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 20,
+          "impressions": 51,
+          "ctr": 0.39215686274509803,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware catalogue",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 19,
+          "impressions": 40,
+          "ctr": 0.475,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 19,
+          "impressions": 80,
+          "ctr": 0.2375,
+          "averagePosition": 1.2375
+        },
+        {
+          "dimensions": {
+            "query": "astral wash basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/"
+          },
+          "clicks": 19,
+          "impressions": 46,
+          "ctr": 0.41304347826086957,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "+91 85117 81111",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2023/11/Bathware-Product-Brochure-A4_single_.pdf"
+          },
+          "clicks": 18,
+          "impressions": 206,
+          "ctr": 0.08737864077669903,
+          "averagePosition": 3.262135922330097
+        },
+        {
+          "dimensions": {
+            "query": "astral western toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 17,
+          "impressions": 60,
+          "ctr": 0.2833333333333333,
+          "averagePosition": 1.2166666666666668
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 16,
+          "impressions": 1328,
+          "ctr": 0.012048192771084338,
+          "averagePosition": 1.0308734939759037
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware customer care number",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 16,
+          "impressions": 101,
+          "ctr": 0.15841584158415842,
+          "averagePosition": 2.1683168316831685
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/06/Bathware-MRP_Single-.pdf"
+          },
+          "clicks": 14,
+          "impressions": 1663,
+          "ctr": 0.00841852074564041,
+          "averagePosition": 1.0012026458208059
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware price list",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/06/Bathware-MRP_Single-.pdf"
+          },
+          "clicks": 14,
+          "impressions": 69,
+          "ctr": 0.2028985507246377,
+          "averagePosition": 1.0579710144927537
+        },
+        {
+          "dimensions": {
+            "query": "astral",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 13,
+          "impressions": 1839,
+          "ctr": 0.0070690592713431215,
+          "averagePosition": 6.751495377922784
+        },
+        {
+          "dimensions": {
+            "query": "astral cp fittings",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 13,
+          "impressions": 34,
+          "ctr": 0.38235294117647056,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral customer care number",
+            "page": "https://www.astralbathware.com/contact-us/office-details/"
+          },
+          "clicks": 12,
+          "impressions": 331,
+          "ctr": 0.03625377643504532,
+          "averagePosition": 2.664652567975831
+        },
+        {
+          "dimensions": {
+            "query": "astral ptmt taps",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 12,
+          "impressions": 35,
+          "ctr": 0.34285714285714286,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitary",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 12,
+          "impressions": 49,
+          "ctr": 0.24489795918367346,
+          "averagePosition": 1.0408163265306123
+        },
+        {
+          "dimensions": {
+            "query": "astral one piece toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 11,
+          "impressions": 19,
+          "ctr": 0.5789473684210527,
+          "averagePosition": 1.2105263157894737
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 11,
+          "impressions": 3888,
+          "ctr": 0.002829218106995885,
+          "averagePosition": 7.863425925925926
+        },
+        {
+          "dimensions": {
+            "query": "wash basin pedestal only",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/pedestals/"
+          },
+          "clicks": 11,
+          "impressions": 157,
+          "ctr": 0.07006369426751592,
+          "averagePosition": 6.707006369426751
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware",
+            "page": "https://www.astralbathware.com/about-us/"
+          },
+          "clicks": 9,
+          "impressions": 1454,
+          "ctr": 0.006189821182943604,
+          "averagePosition": 1.0708390646492434
+        },
+        {
+          "dimensions": {
+            "query": "astral diverter",
+            "page": "https://www.astralbathware.com/faucets/shower-area/"
+          },
+          "clicks": 9,
+          "impressions": 75,
+          "ctr": 0.12,
+          "averagePosition": 1.92
+        },
+        {
+          "dimensions": {
+            "query": "astral faucets",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 9,
+          "impressions": 17,
+          "ctr": 0.5294117647058824,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral flush tank",
+            "page": "https://www.astralbathware.com/sanitaryware/cisterns/"
+          },
+          "clicks": 9,
+          "impressions": 42,
+          "ctr": 0.21428571428571427,
+          "averagePosition": 1.3095238095238095
+        },
+        {
+          "dimensions": {
+            "query": "astral taps",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 9,
+          "impressions": 106,
+          "ctr": 0.08490566037735849,
+          "averagePosition": 4.084905660377359
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware catalogue",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/05/Bathware-MRP_Single-Page-PDF.pdf"
+          },
+          "clicks": 8,
+          "impressions": 40,
+          "ctr": 0.2,
+          "averagePosition": 2.825
+        },
+        {
+          "dimensions": {
+            "query": "astral fittings",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 8,
+          "impressions": 82,
+          "ctr": 0.0975609756097561,
+          "averagePosition": 5.2439024390243905
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitaryware",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 8,
+          "impressions": 130,
+          "ctr": 0.06153846153846154,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral tap",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 8,
+          "impressions": 35,
+          "ctr": 0.22857142857142856,
+          "averagePosition": 2.4
+        },
+        {
+          "dimensions": {
+            "query": "astral toilet seat price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 8,
+          "impressions": 39,
+          "ctr": 0.20512820512820512,
+          "averagePosition": 2.9743589743589745
+        },
+        {
+          "dimensions": {
+            "query": "astral wall mixer",
+            "page": "https://www.astralbathware.com/faucets/g11-wall-mixer-2-in-1-system-with-provision-for-over-head-shower/"
+          },
+          "clicks": 8,
+          "impressions": 63,
+          "ctr": 0.12698412698412698,
+          "averagePosition": 2.111111111111111
+        },
+        {
+          "dimensions": {
+            "query": "wash basin stand only",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/pedestals/"
+          },
+          "clicks": 8,
+          "impressions": 754,
+          "ctr": 0.010610079575596816,
+          "averagePosition": 6.7387267904509285
+        },
+        {
+          "dimensions": {
+            "query": "+91 85117 81111",
+            "page": "https://astralbathware.com/"
+          },
+          "clicks": 7,
+          "impressions": 204,
+          "ctr": 0.03431372549019608,
+          "averagePosition": 1.3529411764705883
+        },
+        {
+          "dimensions": {
+            "query": "astral bathroom accessories",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 7,
+          "impressions": 14,
+          "ctr": 0.5,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bathroom fittings",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 7,
+          "impressions": 71,
+          "ctr": 0.09859154929577464,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware",
+            "page": "https://www.astralbathware.com/faucets/"
+          },
+          "clicks": 7,
+          "impressions": 1715,
+          "ctr": 0.004081632653061225,
+          "averagePosition": 1.0128279883381923
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware price list",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 7,
+          "impressions": 69,
+          "ctr": 0.10144927536231885,
+          "averagePosition": 2.246376811594203
+        },
+        {
+          "dimensions": {
+            "query": "astral commode price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 7,
+          "impressions": 55,
+          "ctr": 0.12727272727272726,
+          "averagePosition": 4.272727272727273
+        },
+        {
+          "dimensions": {
+            "query": "astral diverter price",
+            "page": "https://www.astralbathware.com/faucets/shower-area/"
+          },
+          "clicks": 7,
+          "impressions": 101,
+          "ctr": 0.06930693069306931,
+          "averagePosition": 2.871287128712871
+        },
+        {
+          "dimensions": {
+            "query": "astral wall mounted commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/wall-hung-toilets/"
+          },
+          "clicks": 7,
+          "impressions": 19,
+          "ctr": 0.3684210526315789,
+          "averagePosition": 1.1578947368421053
+        },
+        {
+          "dimensions": {
+            "query": "diverter",
+            "page": "https://www.astralbathware.com/faucets/concealed-parts/concealed-body-of-single-lever-diverter-40-mm-cartridge/"
+          },
+          "clicks": 7,
+          "impressions": 13736,
+          "ctr": 0.0005096097845078626,
+          "averagePosition": 1.1538293535235877
+        },
+        {
+          "dimensions": {
+            "query": "toilet seat indian",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 7,
+          "impressions": 1197,
+          "ctr": 0.005847953216374269,
+          "averagePosition": 2.2314118629908104
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware catalogue pdf",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/06/Bathware-MRP_Single-.pdf"
+          },
+          "clicks": 6,
+          "impressions": 28,
+          "ctr": 0.21428571428571427,
+          "averagePosition": 2.678571428571429
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware toll free number",
+            "page": "https://www.astralbathware.com/contact-us/"
+          },
+          "clicks": 6,
+          "impressions": 15,
+          "ctr": 0.4,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral catalogue pdf",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 6,
+          "impressions": 51,
+          "ctr": 0.11764705882352941,
+          "averagePosition": 4.490196078431373
+        },
+        {
+          "dimensions": {
+            "query": "astral ptmt",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 6,
+          "impressions": 10,
+          "ctr": 0.6,
+          "averagePosition": 1.4
+        },
+        {
+          "dimensions": {
+            "query": "floor mounted commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 6,
+          "impressions": 1120,
+          "ctr": 0.005357142857142857,
+          "averagePosition": 11.17232142857143
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 6,
+          "impressions": 1057,
+          "ctr": 0.005676442762535478,
+          "averagePosition": 10.927152317880795
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware customer care number",
+            "page": "https://www.astralbathware.com/contact-us/e-warranty/"
+          },
+          "clicks": 5,
+          "impressions": 96,
+          "ctr": 0.052083333333333336,
+          "averagePosition": 1.2395833333333333
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware price list pdf",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/06/Bathware-MRP_Single-.pdf"
+          },
+          "clicks": 5,
+          "impressions": 21,
+          "ctr": 0.23809523809523808,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral ceramic",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 5,
+          "impressions": 11,
+          "ctr": 0.45454545454545453,
+          "averagePosition": 1.5454545454545454
+        },
+        {
+          "dimensions": {
+            "query": "astral commode price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 5,
+          "impressions": 58,
+          "ctr": 0.08620689655172414,
+          "averagePosition": 3
+        },
+        {
+          "dimensions": {
+            "query": "astral cp fittings",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 5,
+          "impressions": 34,
+          "ctr": 0.14705882352941177,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral customer care",
+            "page": "https://www.astralbathware.com/contact-us/office-details/"
+          },
+          "clicks": 5,
+          "impressions": 30,
+          "ctr": 0.16666666666666666,
+          "averagePosition": 2.8
+        },
+        {
+          "dimensions": {
+            "query": "astral fittings catalogue",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 5,
+          "impressions": 13,
+          "ctr": 0.38461538461538464,
+          "averagePosition": 4.461538461538462
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitary fittings",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 5,
+          "impressions": 14,
+          "ctr": 0.35714285714285715,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/orissa-pan-500-x-390-x-180mm-cello-pan/"
+          },
+          "clicks": 5,
+          "impressions": 6153,
+          "ctr": 0.0008126117341134406,
+          "averagePosition": 1.133430846741427
+        },
+        {
+          "dimensions": {
+            "query": "two piece wall mounted toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-wall-hung-toilets/"
+          },
+          "clicks": 5,
+          "impressions": 26,
+          "ctr": 0.19230769230769232,
+          "averagePosition": 6.923076923076923
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware catalogue",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/01/Astral-Faucet-Brochure_-A5_Combine.pdf"
+          },
+          "clicks": 4,
+          "impressions": 38,
+          "ctr": 0.10526315789473684,
+          "averagePosition": 3.1052631578947367
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware catalogue pdf",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/05/Bathware-MRP_Single-Page-PDF.pdf"
+          },
+          "clicks": 4,
+          "impressions": 28,
+          "ctr": 0.14285714285714285,
+          "averagePosition": 2.678571428571429
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware toll free number",
+            "page": "https://www.astralbathware.com/contact-us/office-details/"
+          },
+          "clicks": 4,
+          "impressions": 14,
+          "ctr": 0.2857142857142857,
+          "averagePosition": 2.5
+        },
+        {
+          "dimensions": {
+            "query": "astral catalogue",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 4,
+          "impressions": 58,
+          "ctr": 0.06896551724137931,
+          "averagePosition": 5.413793103448276
+        },
+        {
+          "dimensions": {
+            "query": "astral commode",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 4,
+          "impressions": 44,
+          "ctr": 0.09090909090909091,
+          "averagePosition": 8.136363636363637
+        },
+        {
+          "dimensions": {
+            "query": "astral concealed flush tank",
+            "page": "https://www.astralbathware.com/sanitaryware/cisterns/concealed-cisterns/"
+          },
+          "clicks": 4,
+          "impressions": 23,
+          "ctr": 0.17391304347826086,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral diverter",
+            "page": "https://www.astralbathware.com/faucets/shower-area/p30-single-lever-concealed-diverter/"
+          },
+          "clicks": 4,
+          "impressions": 125,
+          "ctr": 0.032,
+          "averagePosition": 3.096
+        },
+        {
+          "dimensions": {
+            "query": "astral nal",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 4,
+          "impressions": 26,
+          "ctr": 0.15384615384615385,
+          "averagePosition": 1.7692307692307692
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitary ware",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 4,
+          "impressions": 14,
+          "ctr": 0.2857142857142857,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 4,
+          "impressions": 25,
+          "ctr": 0.16,
+          "averagePosition": 1.44
+        },
+        {
+          "dimensions": {
+            "query": "astral wc",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 4,
+          "impressions": 13,
+          "ctr": 0.3076923076923077,
+          "averagePosition": 1.1538461538461537
+        },
+        {
+          "dimensions": {
+            "query": "astral western toilet price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 4,
+          "impressions": 25,
+          "ctr": 0.16,
+          "averagePosition": 1.72
+        },
+        {
+          "dimensions": {
+            "query": "floor mounted toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 4,
+          "impressions": 275,
+          "ctr": 0.014545454545454545,
+          "averagePosition": 9.538181818181819
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 4,
+          "impressions": 2418,
+          "ctr": 0.0016542597187758478,
+          "averagePosition": 2.3643507030603805
+        },
+        {
+          "dimensions": {
+            "query": "one piece toilets",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 4,
+          "impressions": 42,
+          "ctr": 0.09523809523809523,
+          "averagePosition": 14.047619047619047
+        },
+        {
+          "dimensions": {
+            "query": "wall mounted commode with flush tank",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-wall-hung-toilets/"
+          },
+          "clicks": 4,
+          "impressions": 766,
+          "ctr": 0.005221932114882507,
+          "averagePosition": 12.725848563968668
+        },
+        {
+          "dimensions": {
+            "query": "western toilet models",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/page/2/"
+          },
+          "clicks": 4,
+          "impressions": 697,
+          "ctr": 0.005738880918220947,
+          "averagePosition": 10.450502152080345
+        },
+        {
+          "dimensions": {
+            "query": "western toilet models and prices",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 4,
+          "impressions": 256,
+          "ctr": 0.015625,
+          "averagePosition": 8.8046875
+        },
+        {
+          "dimensions": {
+            "query": "western toilets",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 4,
+          "impressions": 182,
+          "ctr": 0.02197802197802198,
+          "averagePosition": 8.807692307692307
+        },
+        {
+          "dimensions": {
+            "query": "astral accessories",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 3,
+          "impressions": 15,
+          "ctr": 0.2,
+          "averagePosition": 7.666666666666667
+        },
+        {
+          "dimensions": {
+            "query": "astral angle valve",
+            "page": "https://www.astralbathware.com/faucets/complementary-products/angle-valves/"
+          },
+          "clicks": 3,
+          "impressions": 20,
+          "ctr": 0.15,
+          "averagePosition": 1.8
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware complaint number",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 3,
+          "impressions": 8,
+          "ctr": 0.375,
+          "averagePosition": 2
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware complaint number",
+            "page": "https://www.astralbathware.com/contact-us/office-details/"
+          },
+          "clicks": 3,
+          "impressions": 8,
+          "ctr": 0.375,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware customer care number",
+            "page": "https://www.astralbathware.com/contact-us/office-details/"
+          },
+          "clicks": 3,
+          "impressions": 89,
+          "ctr": 0.033707865168539325,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware price list",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 3,
+          "impressions": 40,
+          "ctr": 0.075,
+          "averagePosition": 4.425
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware toll free number",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 3,
+          "impressions": 24,
+          "ctr": 0.125,
+          "averagePosition": 2
+        },
+        {
+          "dimensions": {
+            "query": "astral diverter",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 3,
+          "impressions": 121,
+          "ctr": 0.024793388429752067,
+          "averagePosition": 7.31404958677686
+        },
+        {
+          "dimensions": {
+            "query": "astral ptmt taps",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 3,
+          "impressions": 31,
+          "ctr": 0.0967741935483871,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral shower",
+            "page": "https://www.astralbathware.com/faucets/showers/"
+          },
+          "clicks": 3,
+          "impressions": 6788,
+          "ctr": 0.00044195639363582795,
+          "averagePosition": 1.6314083677077194
+        },
+        {
+          "dimensions": {
+            "query": "astral shower panel",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 3,
+          "impressions": 13,
+          "ctr": 0.23076923076923078,
+          "averagePosition": 1.2307692307692308
+        },
+        {
+          "dimensions": {
+            "query": "astral toilet seat price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 3,
+          "impressions": 28,
+          "ctr": 0.10714285714285714,
+          "averagePosition": 5.107142857142857
+        },
+        {
+          "dimensions": {
+            "query": "astral wash basin price",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/"
+          },
+          "clicks": 3,
+          "impressions": 16,
+          "ctr": 0.1875,
+          "averagePosition": 1.5625
+        },
+        {
+          "dimensions": {
+            "query": "bathroom fittings",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 3,
+          "impressions": 1114,
+          "ctr": 0.0026929982046678637,
+          "averagePosition": 21.691202872531417
+        },
+        {
+          "dimensions": {
+            "query": "bib cock",
+            "page": "https://www.astralbathware.com/faucets/allied-products/"
+          },
+          "clicks": 3,
+          "impressions": 76,
+          "ctr": 0.039473684210526314,
+          "averagePosition": 19.105263157894736
+        },
+        {
+          "dimensions": {
+            "query": "faucet catalogue pdf",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/01/Astral-Faucet-Brochure_-A5_Combine.pdf"
+          },
+          "clicks": 3,
+          "impressions": 7,
+          "ctr": 0.42857142857142855,
+          "averagePosition": 9
+        },
+        {
+          "dimensions": {
+            "query": "indian seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/orissa-pan-500-x-390-x-180mm-cello-pan/"
+          },
+          "clicks": 3,
+          "impressions": 1781,
+          "ctr": 0.0016844469399213925,
+          "averagePosition": 1.1066816395283547
+        },
+        {
+          "dimensions": {
+            "query": "indian seat toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 3,
+          "impressions": 541,
+          "ctr": 0.005545286506469501,
+          "averagePosition": 7.622920517560074
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 3,
+          "impressions": 241,
+          "ctr": 0.012448132780082987,
+          "averagePosition": 8.655601659751039
+        },
+        {
+          "dimensions": {
+            "query": "two piece commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-floor-mounting-toilets/"
+          },
+          "clicks": 3,
+          "impressions": 276,
+          "ctr": 0.010869565217391304,
+          "averagePosition": 3.170289855072464
+        },
+        {
+          "dimensions": {
+            "query": "wall hung wc with flush tank",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-wall-hung-toilets/"
+          },
+          "clicks": 3,
+          "impressions": 24,
+          "ctr": 0.125,
+          "averagePosition": 3
+        },
+        {
+          "dimensions": {
+            "query": "+91 85117 81111",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/05/Bathware-MRP_Single-Page-PDF.pdf"
+          },
+          "clicks": 2,
+          "impressions": 199,
+          "ctr": 0.010050251256281407,
+          "averagePosition": 8.160804020100503
+        },
+        {
+          "dimensions": {
+            "query": "2 piece toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-floor-mounting-toilets/"
+          },
+          "clicks": 2,
+          "impressions": 62,
+          "ctr": 0.03225806451612903,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral",
+            "page": "https://www.astralbathware.com/contact-us/office-details/"
+          },
+          "clicks": 2,
+          "impressions": 186,
+          "ctr": 0.010752688172043012,
+          "averagePosition": 8.919354838709676
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware",
+            "page": "https://www.astralbathware.com/careers/current-opening/"
+          },
+          "clicks": 2,
+          "impressions": 3,
+          "ctr": 0.6666666666666666,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware near me",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 2,
+          "impressions": 19,
+          "ctr": 0.10526315789473684,
+          "averagePosition": 2.736842105263158
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware price list",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 2,
+          "impressions": 14,
+          "ctr": 0.14285714285714285,
+          "averagePosition": 4.214285714285714
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware price list",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/05/Bathware-MRP_Single-Page-PDF.pdf"
+          },
+          "clicks": 2,
+          "impressions": 64,
+          "ctr": 0.03125,
+          "averagePosition": 4.328125
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware price list pdf",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/05/Bathware-MRP_Single-Page-PDF.pdf"
+          },
+          "clicks": 2,
+          "impressions": 21,
+          "ctr": 0.09523809523809523,
+          "averagePosition": 2.5238095238095237
+        },
+        {
+          "dimensions": {
+            "query": "astral bottle trap",
+            "page": "https://www.astralbathware.com/faucets/complementary-products/bottle-traps/"
+          },
+          "clicks": 2,
+          "impressions": 4,
+          "ctr": 0.5,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 2,
+          "impressions": 76,
+          "ctr": 0.02631578947368421,
+          "averagePosition": 6.197368421052632
+        },
+        {
+          "dimensions": {
+            "query": "astral complaint number",
+            "page": "https://www.astralbathware.com/contact-us/office-details/"
+          },
+          "clicks": 2,
+          "impressions": 37,
+          "ctr": 0.05405405405405406,
+          "averagePosition": 3.054054054054054
+        },
+        {
+          "dimensions": {
+            "query": "astral cp fittings",
+            "page": "https://www.astralbathware.com/faucets/"
+          },
+          "clicks": 2,
+          "impressions": 34,
+          "ctr": 0.058823529411764705,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral health faucet",
+            "page": "https://www.astralbathware.com/faucets/complementary-products/health-faucet/"
+          },
+          "clicks": 2,
+          "impressions": 9,
+          "ctr": 0.2222222222222222,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral one piece toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 2,
+          "impressions": 20,
+          "ctr": 0.1,
+          "averagePosition": 6
+        },
+        {
+          "dimensions": {
+            "query": "astral pipes dealers near me",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 2,
+          "impressions": 2,
+          "ctr": 1,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral pipes head office contact number",
+            "page": "https://www.astralbathware.com/contact-us/office-details/"
+          },
+          "clicks": 2,
+          "impressions": 61,
+          "ctr": 0.03278688524590164,
+          "averagePosition": 9.295081967213115
+        },
+        {
+          "dimensions": {
+            "query": "astral product catalogue",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 2,
+          "impressions": 17,
+          "ctr": 0.11764705882352941,
+          "averagePosition": 3.411764705882353
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitary fittings",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 2,
+          "impressions": 13,
+          "ctr": 0.15384615384615385,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitaryware",
+            "page": "https://www.astralbathware.com/sanitaryware/"
+          },
+          "clicks": 2,
+          "impressions": 132,
+          "ctr": 0.015151515151515152,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitaryware",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/06/Bathware-MRP_Single-.pdf"
+          },
+          "clicks": 2,
+          "impressions": 122,
+          "ctr": 0.01639344262295082,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral shower",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 2,
+          "impressions": 145,
+          "ctr": 0.013793103448275862,
+          "averagePosition": 9.882758620689655
+        },
+        {
+          "dimensions": {
+            "query": "astral shower panel",
+            "page": "https://www.astralbathware.com/faucets/showers/"
+          },
+          "clicks": 2,
+          "impressions": 13,
+          "ctr": 0.15384615384615385,
+          "averagePosition": 1.4615384615384617
+        },
+        {
+          "dimensions": {
+            "query": "astral sink tap",
+            "page": "https://www.astralbathware.com/faucets/kitchen-area/"
+          },
+          "clicks": 2,
+          "impressions": 11,
+          "ctr": 0.18181818181818182,
+          "averagePosition": 2
+        },
+        {
+          "dimensions": {
+            "query": "astral tap price",
+            "page": "https://www.astralbathware.com/faucets/"
+          },
+          "clicks": 2,
+          "impressions": 16,
+          "ctr": 0.125,
+          "averagePosition": 3.75
+        },
+        {
+          "dimensions": {
+            "query": "astral wash basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/table-top-basins/"
+          },
+          "clicks": 2,
+          "impressions": 21,
+          "ctr": 0.09523809523809523,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral water tap",
+            "page": "https://www.astralbathware.com/faucets/"
+          },
+          "clicks": 2,
+          "impressions": 14,
+          "ctr": 0.14285714285714285,
+          "averagePosition": 1.9285714285714286
+        },
+        {
+          "dimensions": {
+            "query": "astralbathware",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 2,
+          "impressions": 51,
+          "ctr": 0.0392156862745098,
+          "averagePosition": 1.9411764705882353
+        },
+        {
+          "dimensions": {
+            "query": "bathroom fittings online india",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 2,
+          "impressions": 4,
+          "ctr": 0.5,
+          "averagePosition": 22.25
+        },
+        {
+          "dimensions": {
+            "query": "bathware",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 2,
+          "impressions": 251,
+          "ctr": 0.00796812749003984,
+          "averagePosition": 10.426294820717132
+        },
+        {
+          "dimensions": {
+            "query": "commode floor mounted",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 2,
+          "impressions": 86,
+          "ctr": 0.023255813953488372,
+          "averagePosition": 10.593023255813954
+        },
+        {
+          "dimensions": {
+            "query": "concealed cistern",
+            "page": "https://www.astralbathware.com/sanitaryware/cisterns/concealed-cisterns/"
+          },
+          "clicks": 2,
+          "impressions": 11454,
+          "ctr": 0.00017461148943600488,
+          "averagePosition": 3.4201152435830275
+        },
+        {
+          "dimensions": {
+            "query": "designer wash basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/"
+          },
+          "clicks": 2,
+          "impressions": 383,
+          "ctr": 0.005221932114882507,
+          "averagePosition": 41.07832898172324
+        },
+        {
+          "dimensions": {
+            "query": "indian commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 2,
+          "impressions": 564,
+          "ctr": 0.0035460992907801418,
+          "averagePosition": 11.23758865248227
+        },
+        {
+          "dimensions": {
+            "query": "indian seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 2,
+          "impressions": 594,
+          "ctr": 0.003367003367003367,
+          "averagePosition": 1.6851851851851851
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet basin",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 2,
+          "impressions": 150,
+          "ctr": 0.013333333333333334,
+          "averagePosition": 8.193333333333333
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet seat price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 2,
+          "impressions": 956,
+          "ctr": 0.0020920502092050207,
+          "averagePosition": 10.484309623430962
+        },
+        {
+          "dimensions": {
+            "query": "indian wc",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 2,
+          "impressions": 681,
+          "ctr": 0.002936857562408223,
+          "averagePosition": 1.1071953010279
+        },
+        {
+          "dimensions": {
+            "query": "mg marketing services",
+            "page": "https://astralbathware.com/"
+          },
+          "clicks": 2,
+          "impressions": 25,
+          "ctr": 0.08,
+          "averagePosition": 4.88
+        },
+        {
+          "dimensions": {
+            "query": "orissa pan toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 2,
+          "impressions": 138,
+          "ctr": 0.014492753623188406,
+          "averagePosition": 2.833333333333333
+        },
+        {
+          "dimensions": {
+            "query": "pressmatic tap",
+            "page": "https://www.astralbathware.com/faucets/clinical-faucets-pressmatics/"
+          },
+          "clicks": 2,
+          "impressions": 90,
+          "ctr": 0.022222222222222223,
+          "averagePosition": 3.922222222222222
+        },
+        {
+          "dimensions": {
+            "query": "sandas seat price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 2,
+          "impressions": 45,
+          "ctr": 0.044444444444444446,
+          "averagePosition": 10.333333333333334
+        },
+        {
+          "dimensions": {
+            "query": "sanitary ware online shopping",
+            "page": "https://www.astralbathware.com/sanitaryware/"
+          },
+          "clicks": 2,
+          "impressions": 8,
+          "ctr": 0.25,
+          "averagePosition": 9.75
+        },
+        {
+          "dimensions": {
+            "query": "shower tap",
+            "page": "https://www.astralbathware.com/faucets/shower-area/"
+          },
+          "clicks": 2,
+          "impressions": 389,
+          "ctr": 0.005141388174807198,
+          "averagePosition": 11.7866323907455
+        },
+        {
+          "dimensions": {
+            "query": "toilet flush valve",
+            "page": "https://www.astralbathware.com/faucets/flush-valve-control-valve/"
+          },
+          "clicks": 2,
+          "impressions": 122,
+          "ctr": 0.01639344262295082,
+          "averagePosition": 12.057377049180328
+        },
+        {
+          "dimensions": {
+            "query": "toilet flush valve types",
+            "page": "https://www.astralbathware.com/faucets/flush-valve-control-valve/page/2/"
+          },
+          "clicks": 2,
+          "impressions": 155,
+          "ctr": 0.012903225806451613,
+          "averagePosition": 11.141935483870968
+        },
+        {
+          "dimensions": {
+            "query": "two way cock",
+            "page": "https://www.astralbathware.com/faucets/allied-products/"
+          },
+          "clicks": 2,
+          "impressions": 173,
+          "ctr": 0.011560693641618497,
+          "averagePosition": 7.699421965317919
+        },
+        {
+          "dimensions": {
+            "query": "wall hung commode with flush tank",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-wall-hung-toilets/"
+          },
+          "clicks": 2,
+          "impressions": 86,
+          "ctr": 0.023255813953488372,
+          "averagePosition": 9.930232558139535
+        },
+        {
+          "dimensions": {
+            "query": "wall hung toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/wall-hung-toilets/"
+          },
+          "clicks": 2,
+          "impressions": 133,
+          "ctr": 0.015037593984962405,
+          "averagePosition": 15.466165413533835
+        },
+        {
+          "dimensions": {
+            "query": "wash basin dimensions",
+            "page": "https://www.astralbathware.com/blogs/how-to-choose-the-right-wash-basin-size-for-your-bathroom/"
+          },
+          "clicks": 2,
+          "impressions": 458,
+          "ctr": 0.004366812227074236,
+          "averagePosition": 2.85589519650655
+        },
+        {
+          "dimensions": {
+            "query": "washbasin with stand",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/pedestals/"
+          },
+          "clicks": 2,
+          "impressions": 153,
+          "ctr": 0.013071895424836602,
+          "averagePosition": 9.261437908496733
+        },
+        {
+          "dimensions": {
+            "query": "western commodes",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 2,
+          "impressions": 13,
+          "ctr": 0.15384615384615385,
+          "averagePosition": 11.23076923076923
+        },
+        {
+          "dimensions": {
+            "query": "western toilets",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/page/2/"
+          },
+          "clicks": 2,
+          "impressions": 83,
+          "ctr": 0.024096385542168676,
+          "averagePosition": 10.518072289156626
+        },
+        {
+          "dimensions": {
+            "query": "2 way cock",
+            "page": "https://www.astralbathware.com/faucets/allied-products/"
+          },
+          "clicks": 1,
+          "impressions": 75,
+          "ctr": 0.013333333333333334,
+          "averagePosition": 7.346666666666667
+        },
+        {
+          "dimensions": {
+            "query": "angle bib tap",
+            "page": "https://www.astralbathware.com/faucets/allied-products/"
+          },
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 0.058823529411764705,
+          "averagePosition": 5.823529411764706
+        },
+        {
+          "dimensions": {
+            "query": "angle cock",
+            "page": "https://www.astralbathware.com/faucets/allied-products/"
+          },
+          "clicks": 1,
+          "impressions": 215,
+          "ctr": 0.004651162790697674,
+          "averagePosition": 12.367441860465116
+        },
+        {
+          "dimensions": {
+            "query": "angle valve",
+            "page": "https://www.astralbathware.com/faucets/clinical-faucets-pressmatics/pressmatic-angle-valve/"
+          },
+          "clicks": 1,
+          "impressions": 231,
+          "ctr": 0.004329004329004329,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral accessories",
+            "page": "https://www.astralbathware.com/sanitaryware/accessories/"
+          },
+          "clicks": 1,
+          "impressions": 4,
+          "ctr": 0.25,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral angle valve",
+            "page": "https://www.astralbathware.com/faucets/allied-products/angle-cock-2-way/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 11
+        },
+        {
+          "dimensions": {
+            "query": "astral bath fittings",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 1,
+          "impressions": 60,
+          "ctr": 0.016666666666666666,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bath fittings",
+            "page": "https://www.astralbathware.com/sanitaryware/"
+          },
+          "clicks": 1,
+          "impressions": 60,
+          "ctr": 0.016666666666666666,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bath fittings",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/06/Bathware-MRP_Single-.pdf"
+          },
+          "clicks": 1,
+          "impressions": 58,
+          "ctr": 0.017241379310344827,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bathroom accessories",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 1,
+          "impressions": 13,
+          "ctr": 0.07692307692307693,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bathrooms",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 0.3333333333333333,
+          "averagePosition": 2
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware",
+            "page": "https://shops.astralbathware.com/gujarat/surat/opposite-elephant-heights"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 2
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware",
+            "page": "https://www.astralbathware.com/contact-us/office-details/"
+          },
+          "clicks": 1,
+          "impressions": 59,
+          "ctr": 0.01694915254237288,
+          "averagePosition": 6.067796610169491
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 101,
+          "ctr": 0.009900990099009901,
+          "averagePosition": 1.1584158415841583
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware catalogue",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/06/Bathware-MRP_Single-.pdf"
+          },
+          "clicks": 1,
+          "impressions": 40,
+          "ctr": 0.025,
+          "averagePosition": 3.55
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware logo",
+            "page": "https://shops.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 24,
+          "ctr": 0.041666666666666664,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware near me",
+            "page": "https://shops.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 11,
+          "ctr": 0.09090909090909091,
+          "averagePosition": 6.181818181818182
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware photos",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 16,
+          "ctr": 0.0625,
+          "averagePosition": 2.375
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware price list",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 13
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware price list pdf",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 20,
+          "ctr": 0.05,
+          "averagePosition": 2.9
+        },
+        {
+          "dimensions": {
+            "query": "astral bathware price list pdf",
+            "page": "https://www.astralbathware.com/sanitaryware/"
+          },
+          "clicks": 1,
+          "impressions": 15,
+          "ctr": 0.06666666666666667,
+          "averagePosition": 3
+        },
+        {
+          "dimensions": {
+            "query": "astral closet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 39,
+          "ctr": 0.02564102564102564,
+          "averagePosition": 2.2564102564102564
+        },
+        {
+          "dimensions": {
+            "query": "astral closet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 29,
+          "ctr": 0.034482758620689655,
+          "averagePosition": 8.551724137931036
+        },
+        {
+          "dimensions": {
+            "query": "astral closet",
+            "page": "https://www.astralbathware.com/shop/?filter_feature=true-rimless&product_cat=one-piece-toilets+sanitaryware&query_type_wall-distance=or&add-to-cart=1774"
+          },
+          "clicks": 1,
+          "impressions": 21,
+          "ctr": 0.047619047619047616,
+          "averagePosition": 2.238095238095238
+        },
+        {
+          "dimensions": {
+            "query": "astral cock",
+            "page": "https://www.astralbathware.com/faucets/allied-products/"
+          },
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 0.3333333333333333,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/one-piece-toilets-765-x-360-x-665-mm-wall-distance-p-180-mm/"
+          },
+          "clicks": 1,
+          "impressions": 69,
+          "ctr": 0.014492753623188406,
+          "averagePosition": 4.463768115942029
+        },
+        {
+          "dimensions": {
+            "query": "astral concealed flush tank",
+            "page": "https://www.astralbathware.com/sanitaryware/cisterns/"
+          },
+          "clicks": 1,
+          "impressions": 23,
+          "ctr": 0.043478260869565216,
+          "averagePosition": 5.3478260869565215
+        },
+        {
+          "dimensions": {
+            "query": "astral cp fittings",
+            "page": "https://www.astralbathware.com/sanitaryware/"
+          },
+          "clicks": 1,
+          "impressions": 33,
+          "ctr": 0.030303030303030304,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral cp fittings",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07142857142857142,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral cp fittings",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/06/Bathware-MRP_Single-.pdf"
+          },
+          "clicks": 1,
+          "impressions": 33,
+          "ctr": 0.030303030303030304,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral diverter",
+            "page": "https://www.astralbathware.com/faucets/concealed-parts/"
+          },
+          "clicks": 1,
+          "impressions": 95,
+          "ctr": 0.010526315789473684,
+          "averagePosition": 2.8421052631578947
+        },
+        {
+          "dimensions": {
+            "query": "astral diverter plate",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 27,
+          "ctr": 0.037037037037037035,
+          "averagePosition": 6.851851851851852
+        },
+        {
+          "dimensions": {
+            "query": "astral diverter plate",
+            "page": "https://www.astralbathware.com/faucets/concealed-parts/"
+          },
+          "clicks": 1,
+          "impressions": 27,
+          "ctr": 0.037037037037037035,
+          "averagePosition": 2.148148148148148
+        },
+        {
+          "dimensions": {
+            "query": "astral diverter plate",
+            "page": "https://www.astralbathware.com/faucets/shower-area/p31-single-leverhigh-flow-concealed-diverter/"
+          },
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 0.3333333333333333,
+          "averagePosition": 10
+        },
+        {
+          "dimensions": {
+            "query": "astral diverter price",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 99,
+          "ctr": 0.010101010101010102,
+          "averagePosition": 8.242424242424242
+        },
+        {
+          "dimensions": {
+            "query": "astral faucets",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 0.058823529411764705,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral faucets",
+            "page": "https://www.astralbathware.com/faucets/"
+          },
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 0.058823529411764705,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral fittings catalogue",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 8
+        },
+        {
+          "dimensions": {
+            "query": "astral flush tank",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 0.05263157894736842,
+          "averagePosition": 8.789473684210527
+        },
+        {
+          "dimensions": {
+            "query": "astral flush tank price",
+            "page": "https://www.astralbathware.com/sanitaryware/cisterns/"
+          },
+          "clicks": 1,
+          "impressions": 16,
+          "ctr": 0.0625,
+          "averagePosition": 2
+        },
+        {
+          "dimensions": {
+            "query": "astral flush tank price",
+            "page": "https://www.astralbathware.com/sanitaryware/cisterns/plastic-cisterns/plastic-cistern-9-ltr-400-x-355-x-145-mm-single-flush/"
+          },
+          "clicks": 1,
+          "impressions": 15,
+          "ctr": 0.06666666666666667,
+          "averagePosition": 3
+        },
+        {
+          "dimensions": {
+            "query": "astral health faucet",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 4,
+          "ctr": 0.25,
+          "averagePosition": 5.25
+        },
+        {
+          "dimensions": {
+            "query": "astral helpline number",
+            "page": "https://www.astralbathware.com/contact-us/office-details/"
+          },
+          "clicks": 1,
+          "impressions": 37,
+          "ctr": 0.02702702702702703,
+          "averagePosition": 2.4864864864864864
+        },
+        {
+          "dimensions": {
+            "query": "astral jobs",
+            "page": "https://www.astralbathware.com/careers/current-opening/"
+          },
+          "clicks": 1,
+          "impressions": 9,
+          "ctr": 0.1111111111111111,
+          "averagePosition": 10.444444444444445
+        },
+        {
+          "dimensions": {
+            "query": "astral kitchen",
+            "page": "https://www.astralbathware.com/faucets/kitchen-area/"
+          },
+          "clicks": 1,
+          "impressions": 6,
+          "ctr": 0.16666666666666666,
+          "averagePosition": 3.3333333333333335
+        },
+        {
+          "dimensions": {
+            "query": "astral mixer",
+            "page": "https://www.astralbathware.com/faucets/g11-wall-mixer-2-in-1-system-with-provision-for-over-head-shower/"
+          },
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 0.08333333333333333,
+          "averagePosition": 3.1666666666666665
+        },
+        {
+          "dimensions": {
+            "query": "astral nal",
+            "page": "https://www.astralbathware.com/faucets/"
+          },
+          "clicks": 1,
+          "impressions": 25,
+          "ctr": 0.04,
+          "averagePosition": 4.640000000000001
+        },
+        {
+          "dimensions": {
+            "query": "astral nal",
+            "page": "https://www.astralbathware.com/faucets/shower-area/p31-wall-mixer-single-lever-2-in-1-system-with-provision-for-over-head-shower/"
+          },
+          "clicks": 1,
+          "impressions": 24,
+          "ctr": 0.041666666666666664,
+          "averagePosition": 1.2916666666666667
+        },
+        {
+          "dimensions": {
+            "query": "astral pan",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 6,
+          "ctr": 0.16666666666666666,
+          "averagePosition": 4.166666666666666
+        },
+        {
+          "dimensions": {
+            "query": "astral pdf",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/01/Astral-Faucet-Brochure_-A5_Combine.pdf"
+          },
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 0.08333333333333333,
+          "averagePosition": 4
+        },
+        {
+          "dimensions": {
+            "query": "astral pipe",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 15,
+          "ctr": 0.06666666666666667,
+          "averagePosition": 25.533333333333335
+        },
+        {
+          "dimensions": {
+            "query": "astral pipe fittings",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 33,
+          "ctr": 0.030303030303030304,
+          "averagePosition": 8.515151515151516
+        },
+        {
+          "dimensions": {
+            "query": "astral pipes dealers near me",
+            "page": "https://shops.astralbathware.com/maharashtra/pune/bibwewadi"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral plumbing material",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 20,
+          "ctr": 0.05,
+          "averagePosition": 8.1
+        },
+        {
+          "dimensions": {
+            "query": "astral products",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 70,
+          "ctr": 0.014285714285714285,
+          "averagePosition": 5.9714285714285715
+        },
+        {
+          "dimensions": {
+            "query": "astral ptmt taps",
+            "page": "https://www.astralbathware.com/faucets/"
+          },
+          "clicks": 1,
+          "impressions": 28,
+          "ctr": 0.03571428571428571,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitary",
+            "page": "https://www.astralbathware.com/sanitaryware/"
+          },
+          "clicks": 1,
+          "impressions": 48,
+          "ctr": 0.020833333333333332,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitary",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 26,
+          "ctr": 0.038461538461538464,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitary fittings",
+            "page": "https://www.astralbathware.com/sanitaryware/"
+          },
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07142857142857142,
+          "averagePosition": 1.3571428571428572
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitary ware",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07142857142857142,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitary ware",
+            "page": "https://www.astralbathware.com/sanitaryware/"
+          },
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07142857142857142,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitaryware",
+            "page": "https://www.astralbathware.com/about-us/"
+          },
+          "clicks": 1,
+          "impressions": 96,
+          "ctr": 0.010416666666666666,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitaryware",
+            "page": "https://www.astralbathware.com/contact-us/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral sanitaryware",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 115,
+          "ctr": 0.008695652173913044,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 9,
+          "ctr": 0.1111111111111111,
+          "averagePosition": 6.222222222222222
+        },
+        {
+          "dimensions": {
+            "query": "astral sheet",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 0.08333333333333333,
+          "averagePosition": 4.416666666666666
+        },
+        {
+          "dimensions": {
+            "query": "astral shower",
+            "page": "https://www.astralbathware.com/faucets/showers/overhead-showers/"
+          },
+          "clicks": 1,
+          "impressions": 780,
+          "ctr": 0.001282051282051282,
+          "averagePosition": 4.244871794871795
+        },
+        {
+          "dimensions": {
+            "query": "astral sink",
+            "page": "https://www.astralbathware.com/faucets/"
+          },
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 0.3333333333333333,
+          "averagePosition": 11
+        },
+        {
+          "dimensions": {
+            "query": "astral tap",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 1,
+          "impressions": 20,
+          "ctr": 0.05,
+          "averagePosition": 1.6
+        },
+        {
+          "dimensions": {
+            "query": "astral tap",
+            "page": "https://www.astralbathware.com/faucets/"
+          },
+          "clicks": 1,
+          "impressions": 33,
+          "ctr": 0.030303030303030304,
+          "averagePosition": 1.5151515151515151
+        },
+        {
+          "dimensions": {
+            "query": "astral taps price list",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 24,
+          "ctr": 0.041666666666666664,
+          "averagePosition": 10.083333333333334
+        },
+        {
+          "dimensions": {
+            "query": "astral taps price list",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/06/Bathware-MRP_Single-.pdf"
+          },
+          "clicks": 1,
+          "impressions": 26,
+          "ctr": 0.038461538461538464,
+          "averagePosition": 6.153846153846154
+        },
+        {
+          "dimensions": {
+            "query": "astral toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/"
+          },
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07142857142857142,
+          "averagePosition": 9.5
+        },
+        {
+          "dimensions": {
+            "query": "astral toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 49,
+          "ctr": 0.02040816326530612,
+          "averagePosition": 6.857142857142857
+        },
+        {
+          "dimensions": {
+            "query": "astral toilet seat price in india",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 21,
+          "ctr": 0.047619047619047616,
+          "averagePosition": 5.714285714285714
+        },
+        {
+          "dimensions": {
+            "query": "astral toilet seat price in india",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 0.05263157894736842,
+          "averagePosition": 7.157894736842105
+        },
+        {
+          "dimensions": {
+            "query": "astral toll free number",
+            "page": "https://www.astralbathware.com/contact-us/office-details/"
+          },
+          "clicks": 1,
+          "impressions": 53,
+          "ctr": 0.018867924528301886,
+          "averagePosition": 2.9433962264150946
+        },
+        {
+          "dimensions": {
+            "query": "astral wall mixer",
+            "page": "https://www.astralbathware.com/faucets/shower-area/i52-wall-mixer-single-lever-3-in-1-system-with-provision-for-hand-shower-and-over-head-shower/"
+          },
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 0.3333333333333333,
+          "averagePosition": 7.666666666666667
+        },
+        {
+          "dimensions": {
+            "query": "astral wall mounted commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 0.05263157894736842,
+          "averagePosition": 6.2631578947368425
+        },
+        {
+          "dimensions": {
+            "query": "astral water tank dealers near me",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 4,
+          "ctr": 0.25,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "astral water tap",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07142857142857142,
+          "averagePosition": 6.071428571428571
+        },
+        {
+          "dimensions": {
+            "query": "astral wc",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 8,
+          "ctr": 0.125,
+          "averagePosition": 5.25
+        },
+        {
+          "dimensions": {
+            "query": "astral western toilet",
+            "page": "https://www.astralbathware.com/blogs/advantages-of-upgrading-to-a-modern-western-toilet-in-your-home/"
+          },
+          "clicks": 1,
+          "impressions": 35,
+          "ctr": 0.02857142857142857,
+          "averagePosition": 8
+        },
+        {
+          "dimensions": {
+            "query": "astral western toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 45,
+          "ctr": 0.022222222222222223,
+          "averagePosition": 5.977777777777778
+        },
+        {
+          "dimensions": {
+            "query": "astral western toilet price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 20,
+          "ctr": 0.05,
+          "averagePosition": 6.35
+        },
+        {
+          "dimensions": {
+            "query": "astralbathware",
+            "page": "https://www.astralbathware.com/contact-us/"
+          },
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 0.05263157894736842,
+          "averagePosition": 1.4736842105263157
+        },
+        {
+          "dimensions": {
+            "query": "basin faucets",
+            "page": "https://www.astralbathware.com/faucets/basin-area/"
+          },
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 0.05263157894736842,
+          "averagePosition": 14.947368421052632
+        },
+        {
+          "dimensions": {
+            "query": "basin mixer tap",
+            "page": "https://www.astralbathware.com/blogs/what-is-the-difference-between-a-basin-tap-and-a-basin-mixer/"
+          },
+          "clicks": 1,
+          "impressions": 30,
+          "ctr": 0.03333333333333333,
+          "averagePosition": 13.1
+        },
+        {
+          "dimensions": {
+            "query": "basin size",
+            "page": "https://www.astralbathware.com/blogs/how-to-choose-the-right-wash-basin-size-for-your-bathroom/"
+          },
+          "clicks": 1,
+          "impressions": 117,
+          "ctr": 0.008547008547008548,
+          "averagePosition": 3.700854700854701
+        },
+        {
+          "dimensions": {
+            "query": "bath fitting",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 56,
+          "ctr": 0.017857142857142856,
+          "averagePosition": 22.946428571428573
+        },
+        {
+          "dimensions": {
+            "query": "bath fittings",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 117,
+          "ctr": 0.008547008547008548,
+          "averagePosition": 26.384615384615383
+        },
+        {
+          "dimensions": {
+            "query": "bath fittings manufacturers in india",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 8,
+          "ctr": 0.125,
+          "averagePosition": 46.25
+        },
+        {
+          "dimensions": {
+            "query": "bath fittings online",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 4,
+          "ctr": 0.25,
+          "averagePosition": 15.25
+        },
+        {
+          "dimensions": {
+            "query": "bathroom accessories",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 224,
+          "ctr": 0.004464285714285714,
+          "averagePosition": 37.5625
+        },
+        {
+          "dimensions": {
+            "query": "bathroom commode indian",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 51,
+          "ctr": 0.0196078431372549,
+          "averagePosition": 2.686274509803922
+        },
+        {
+          "dimensions": {
+            "query": "bathroom commode indian style",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 16,
+          "ctr": 0.0625,
+          "averagePosition": 7.75
+        },
+        {
+          "dimensions": {
+            "query": "bathroom concealed tank",
+            "page": "https://www.astralbathware.com/sanitaryware/cisterns/concealed-cisterns/"
+          },
+          "clicks": 1,
+          "impressions": 386,
+          "ctr": 0.0025906735751295338,
+          "averagePosition": 18.09585492227979
+        },
+        {
+          "dimensions": {
+            "query": "bathroom fittings brands",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 36,
+          "ctr": 0.027777777777777776,
+          "averagePosition": 18.916666666666668
+        },
+        {
+          "dimensions": {
+            "query": "bathroom wares",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 0.1,
+          "averagePosition": 16.2
+        },
+        {
+          "dimensions": {
+            "query": "bathware design",
+            "page": "https://www.astralbathware.com/blogs/the-impact-of-colours-and-materials-on-bathware-design/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 11
+        },
+        {
+          "dimensions": {
+            "query": "bathwear",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 29,
+          "ctr": 0.034482758620689655,
+          "averagePosition": 2.7241379310344827
+        },
+        {
+          "dimensions": {
+            "query": "best bathroom accessories",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 4,
+          "ctr": 0.25,
+          "averagePosition": 34.5
+        },
+        {
+          "dimensions": {
+            "query": "best indian toilet seat price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 23,
+          "ctr": 0.043478260869565216,
+          "averagePosition": 8.565217391304348
+        },
+        {
+          "dimensions": {
+            "query": "best wall mounted toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/wall-hung-toilets/page/2/"
+          },
+          "clicks": 1,
+          "impressions": 5,
+          "ctr": 0.2,
+          "averagePosition": 13.4
+        },
+        {
+          "dimensions": {
+            "query": "bottle trap pvc",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 22
+        },
+        {
+          "dimensions": {
+            "query": "buy indian toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 4.5
+        },
+        {
+          "dimensions": {
+            "query": "ceiling shower with lights",
+            "page": "https://www.astralbathware.com/faucets/showers/rain-showers/3-flow-led-ceiling-rain-shower-400-x-450-mm-ss/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 11
+        },
+        {
+          "dimensions": {
+            "query": "ceramic pedestal wash basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/pedestals/"
+          },
+          "clicks": 1,
+          "impressions": 15,
+          "ctr": 0.06666666666666667,
+          "averagePosition": 45.8
+        },
+        {
+          "dimensions": {
+            "query": "cistern price",
+            "page": "https://www.astralbathware.com/sanitaryware/cisterns/"
+          },
+          "clicks": 1,
+          "impressions": 47,
+          "ctr": 0.02127659574468085,
+          "averagePosition": 19.680851063829788
+        },
+        {
+          "dimensions": {
+            "query": "commode design",
+            "page": "https://www.astralbathware.com/blogs/how-to-select-a-toilet-seat-that-complements-your-bathroom-design/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 25
+        },
+        {
+          "dimensions": {
+            "query": "commode size",
+            "page": "https://www.astralbathware.com/blogs/how-to-choose-the-right-commode-size-for-your-bathroom/"
+          },
+          "clicks": 1,
+          "impressions": 325,
+          "ctr": 0.003076923076923077,
+          "averagePosition": 2.8584615384615386
+        },
+        {
+          "dimensions": {
+            "query": "commode size in feet",
+            "page": "https://www.astralbathware.com/blogs/how-to-choose-the-right-commode-size-for-your-bathroom/"
+          },
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 0.08333333333333333,
+          "averagePosition": 2
+        },
+        {
+          "dimensions": {
+            "query": "commode vs toilet",
+            "page": "https://www.astralbathware.com/blogs/indian-toilet-vs-western-toilet-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 203,
+          "ctr": 0.0049261083743842365,
+          "averagePosition": 1.7586206896551724
+        },
+        {
+          "dimensions": {
+            "query": "commodes",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 32.5
+        },
+        {
+          "dimensions": {
+            "query": "control valve for bathroom",
+            "page": "https://www.astralbathware.com/faucets/flush-valve-control-valve/page/2/"
+          },
+          "clicks": 1,
+          "impressions": 11,
+          "ctr": 0.09090909090909091,
+          "averagePosition": 10.909090909090908
+        },
+        {
+          "dimensions": {
+            "query": "desi toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 7,
+          "ctr": 0.14285714285714285,
+          "averagePosition": 5
+        },
+        {
+          "dimensions": {
+            "query": "difference between one piece and two piece toilet",
+            "page": "https://www.astralbathware.com/blogs/differences-between-one-piece-toilet-and-two-piece-toilet/"
+          },
+          "clicks": 1,
+          "impressions": 78,
+          "ctr": 0.01282051282051282,
+          "averagePosition": 2.7051282051282053
+        },
+        {
+          "dimensions": {
+            "query": "difference between table top and counter top basin",
+            "page": "https://www.astralbathware.com/blogs/difference-between-an-under-counter-and-a-table-top-wash-basin/"
+          },
+          "clicks": 1,
+          "impressions": 8,
+          "ctr": 0.125,
+          "averagePosition": 1.125
+        },
+        {
+          "dimensions": {
+            "query": "difference between thermostatic and mixer shower",
+            "page": "https://www.astralbathware.com/blogs/how-is-a-thermostatic-shower-different-from-a-mixer-shower/"
+          },
+          "clicks": 1,
+          "impressions": 15,
+          "ctr": 0.06666666666666667,
+          "averagePosition": 3.1333333333333333
+        },
+        {
+          "dimensions": {
+            "query": "different types of western toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/page/2/"
+          },
+          "clicks": 1,
+          "impressions": 34,
+          "ctr": 0.029411764705882353,
+          "averagePosition": 9.235294117647058
+        },
+        {
+          "dimensions": {
+            "query": "duroplast seat cover",
+            "page": "https://www.astralbathware.com/seat-cover/duroplast-soft-close-seat-cover/"
+          },
+          "clicks": 1,
+          "impressions": 33,
+          "ctr": 0.030303030303030304,
+          "averagePosition": 4.3939393939393945
+        },
+        {
+          "dimensions": {
+            "query": "english seat toilet price",
+            "page": "https://www.astralbathware.com/blogs/selecting-the-best-western-commode-seat-for-residential-commercial-spaces/"
+          },
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 0.3333333333333333,
+          "averagePosition": 3
+        },
+        {
+          "dimensions": {
+            "query": "exposed flush valve",
+            "page": "https://www.astralbathware.com/faucets/flush-valve-control-valve/exposed-flush-valve-32-mm/"
+          },
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 0.1,
+          "averagePosition": 6
+        },
+        {
+          "dimensions": {
+            "query": "faucet catalogue pdf",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2022/12/Bathware-Brochure-Single-Page-9-Dec.pdf"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 42
+        },
+        {
+          "dimensions": {
+            "query": "faucet catalogue pdf",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/05/Bathware-MRP_Single-Page-PDF.pdf"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 39
+        },
+        {
+          "dimensions": {
+            "query": "floor commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 110,
+          "ctr": 0.00909090909090909,
+          "averagePosition": 10.7
+        },
+        {
+          "dimensions": {
+            "query": "floor commode toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 47,
+          "ctr": 0.02127659574468085,
+          "averagePosition": 9.085106382978724
+        },
+        {
+          "dimensions": {
+            "query": "floor mount commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 260,
+          "ctr": 0.0038461538461538464,
+          "averagePosition": 11.715384615384615
+        },
+        {
+          "dimensions": {
+            "query": "floor mount seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 30,
+          "ctr": 0.03333333333333333,
+          "averagePosition": 10.033333333333333
+        },
+        {
+          "dimensions": {
+            "query": "floor mount toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 137,
+          "ctr": 0.0072992700729927005,
+          "averagePosition": 10.642335766423358
+        },
+        {
+          "dimensions": {
+            "query": "floor mount wc",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 161,
+          "ctr": 0.006211180124223602,
+          "averagePosition": 7.3478260869565215
+        },
+        {
+          "dimensions": {
+            "query": "floor mounted commode with flush tank",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 26,
+          "ctr": 0.038461538461538464,
+          "averagePosition": 14.307692307692308
+        },
+        {
+          "dimensions": {
+            "query": "floor mounted toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 120,
+          "ctr": 0.008333333333333333,
+          "averagePosition": 12.475
+        },
+        {
+          "dimensions": {
+            "query": "floor mounted toilet modern",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 5
+        },
+        {
+          "dimensions": {
+            "query": "floor mounted western toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 254,
+          "ctr": 0.003937007874015748,
+          "averagePosition": 11.31496062992126
+        },
+        {
+          "dimensions": {
+            "query": "floor mounting toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 0.058823529411764705,
+          "averagePosition": 10.588235294117647
+        },
+        {
+          "dimensions": {
+            "query": "flush valve for indian toilet",
+            "page": "https://www.astralbathware.com/faucets/flush-valve-control-valve/page/2/"
+          },
+          "clicks": 1,
+          "impressions": 25,
+          "ctr": 0.04,
+          "averagePosition": 12.56
+        },
+        {
+          "dimensions": {
+            "query": "flush valve system",
+            "page": "https://www.astralbathware.com/faucets/flush-valve-control-valve/"
+          },
+          "clicks": 1,
+          "impressions": 7,
+          "ctr": 0.14285714285714285,
+          "averagePosition": 13
+        },
+        {
+          "dimensions": {
+            "query": "flush valve toilet",
+            "page": "https://www.astralbathware.com/faucets/flush-valve-control-valve/"
+          },
+          "clicks": 1,
+          "impressions": 41,
+          "ctr": 0.024390243902439025,
+          "averagePosition": 11.21951219512195
+        },
+        {
+          "dimensions": {
+            "query": "full pedestal basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/pedestals/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 24
+        },
+        {
+          "dimensions": {
+            "query": "full pedestal wash basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/pedestals/"
+          },
+          "clicks": 1,
+          "impressions": 22,
+          "ctr": 0.045454545454545456,
+          "averagePosition": 17.136363636363637
+        },
+        {
+          "dimensions": {
+            "query": "grifería dorada",
+            "page": "https://www.astralbathware.com/blogs/why-gold-finishes-faucets-are-taking-over-bathrooms/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 2
+        },
+        {
+          "dimensions": {
+            "query": "half pedestal basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/one-piece-basins-with-integrated-pedestal/"
+          },
+          "clicks": 1,
+          "impressions": 146,
+          "ctr": 0.00684931506849315,
+          "averagePosition": 23.95205479452055
+        },
+        {
+          "dimensions": {
+            "query": "here parts",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 6
+        },
+        {
+          "dimensions": {
+            "query": "how to clean health faucet",
+            "page": "https://www.astralbathware.com/blogs/how-to-clean-and-maintain-your-bathroom-faucet/"
+          },
+          "clicks": 1,
+          "impressions": 16,
+          "ctr": 0.0625,
+          "averagePosition": 7.0625
+        },
+        {
+          "dimensions": {
+            "query": "imported bathroom fittings",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 0.3333333333333333,
+          "averagePosition": 31.666666666666668
+        },
+        {
+          "dimensions": {
+            "query": "india bathroom",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 0.3333333333333333,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "indian closet price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 154,
+          "ctr": 0.006493506493506494,
+          "averagePosition": 7.5064935064935066
+        },
+        {
+          "dimensions": {
+            "query": "indian closet trap",
+            "page": "https://www.astralbathware.com/sanitaryware/accessories/trap-for-indian-pans/"
+          },
+          "clicks": 1,
+          "impressions": 44,
+          "ctr": 0.022727272727272728,
+          "averagePosition": 1.0227272727272727
+        },
+        {
+          "dimensions": {
+            "query": "indian commode price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 415,
+          "ctr": 0.0024096385542168677,
+          "averagePosition": 10.74698795180723
+        },
+        {
+          "dimensions": {
+            "query": "indian commode toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 55,
+          "ctr": 0.01818181818181818,
+          "averagePosition": 11.454545454545455
+        },
+        {
+          "dimensions": {
+            "query": "indian cum western toilet",
+            "page": "https://www.astralbathware.com/blogs/indian-toilet-vs-western-toilet-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 49,
+          "ctr": 0.02040816326530612,
+          "averagePosition": 8.26530612244898
+        },
+        {
+          "dimensions": {
+            "query": "indian cum western toilet seat",
+            "page": "https://www.astralbathware.com/blogs/indian-toilet-vs-western-toilet-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 29,
+          "ctr": 0.034482758620689655,
+          "averagePosition": 8.206896551724139
+        },
+        {
+          "dimensions": {
+            "query": "indian pan toilet price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 41,
+          "ctr": 0.024390243902439025,
+          "averagePosition": 7.853658536585366
+        },
+        {
+          "dimensions": {
+            "query": "indian seat bathroom",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/orissa-pan-500-x-390-x-180mm-cello-pan/"
+          },
+          "clicks": 1,
+          "impressions": 59,
+          "ctr": 0.01694915254237288,
+          "averagePosition": 1.4745762711864407
+        },
+        {
+          "dimensions": {
+            "query": "indian style toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 189,
+          "ctr": 0.005291005291005291,
+          "averagePosition": 9.037037037037036
+        },
+        {
+          "dimensions": {
+            "query": "indian style wc",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 32,
+          "ctr": 0.03125,
+          "averagePosition": 3.15625
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet colours",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 16,
+          "ctr": 0.0625,
+          "averagePosition": 11.3125
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet commode price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 108,
+          "ctr": 0.009259259259259259,
+          "averagePosition": 10.731481481481481
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet design",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 57,
+          "ctr": 0.017543859649122806,
+          "averagePosition": 18.07017543859649
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet glass set price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07142857142857142,
+          "averagePosition": 9.714285714285714
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet images",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 89,
+          "ctr": 0.011235955056179775,
+          "averagePosition": 1.146067415730337
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet models and prices",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 22,
+          "ctr": 0.045454545454545456,
+          "averagePosition": 9.909090909090908
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet p trap size",
+            "page": "https://www.astralbathware.com/sanitaryware/accessories/trap-for-indian-pans/"
+          },
+          "clicks": 1,
+          "impressions": 49,
+          "ctr": 0.02040816326530612,
+          "averagePosition": 1.5714285714285714
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet pan",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 60,
+          "ctr": 0.016666666666666666,
+          "averagePosition": 9.266666666666667
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet seat price 500",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 9,
+          "ctr": 0.1111111111111111,
+          "averagePosition": 10.333333333333334
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet seat price 500",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/orissa-pan-500-x-390-x-180mm-cello-pan/"
+          },
+          "clicks": 1,
+          "impressions": 25,
+          "ctr": 0.04,
+          "averagePosition": 6.76
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet seat size in inch",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 401,
+          "ctr": 0.0024937655860349127,
+          "averagePosition": 1.8054862842892767
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet seat with flush price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 20,
+          "ctr": 0.05,
+          "averagePosition": 8.25
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet sheet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 54,
+          "ctr": 0.018518518518518517,
+          "averagePosition": 5.462962962962963
+        },
+        {
+          "dimensions": {
+            "query": "indian toilet with western toilet",
+            "page": "https://www.astralbathware.com/blogs/indian-toilet-vs-western-toilet-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 10
+        },
+        {
+          "dimensions": {
+            "query": "indian type water closet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 80,
+          "ctr": 0.0125,
+          "averagePosition": 2.0125
+        },
+        {
+          "dimensions": {
+            "query": "integrated wash basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/one-piece-basins-with-integrated-pedestal/"
+          },
+          "clicks": 1,
+          "impressions": 114,
+          "ctr": 0.008771929824561403,
+          "averagePosition": 2.6228070175438596
+        },
+        {
+          "dimensions": {
+            "query": "kitchen sink tap",
+            "page": "https://www.astralbathware.com/faucets/kitchen-area/"
+          },
+          "clicks": 1,
+          "impressions": 94,
+          "ctr": 0.010638297872340425,
+          "averagePosition": 23.872340425531913
+        },
+        {
+          "dimensions": {
+            "query": "large urinals",
+            "page": "https://www.astralbathware.com/sanitaryware/urinals/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 14
+        },
+        {
+          "dimensions": {
+            "query": "latrine seat indian",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 38,
+          "ctr": 0.02631578947368421,
+          "averagePosition": 8.578947368421051
+        },
+        {
+          "dimensions": {
+            "query": "latrine seat price",
+            "page": "https://www.astralbathware.com/blogs/indian-toilet-vs-western-toilet-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 2.5
+        },
+        {
+          "dimensions": {
+            "query": "levitating toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/wall-hung-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 10.5
+        },
+        {
+          "dimensions": {
+            "query": "long cock",
+            "page": "https://www.astralbathware.com/faucets/allied-products/bib-cock-long-body-2/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 2
+        },
+        {
+          "dimensions": {
+            "query": "m g marketing services",
+            "page": "https://astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 25,
+          "ctr": 0.04,
+          "averagePosition": 1.96
+        },
+        {
+          "dimensions": {
+            "query": "modern indian toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 29,
+          "ctr": 0.034482758620689655,
+          "averagePosition": 11.10344827586207
+        },
+        {
+          "dimensions": {
+            "query": "nahane wala shower",
+            "page": "https://www.astralbathware.com/faucets/showers/"
+          },
+          "clicks": 1,
+          "impressions": 56,
+          "ctr": 0.017857142857142856,
+          "averagePosition": 9.875
+        },
+        {
+          "dimensions": {
+            "query": "odisha pan toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/orissa-pan-500-x-390-x-180mm-cello-pan/"
+          },
+          "clicks": 1,
+          "impressions": 27,
+          "ctr": 0.037037037037037035,
+          "averagePosition": 1.1111111111111112
+        },
+        {
+          "dimensions": {
+            "query": "one piece basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/one-piece-basins-with-integrated-pedestal/one-piece-basin-with-integrated-half-pedestal-460-x-425-x-335-mm/"
+          },
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 0.05263157894736842,
+          "averagePosition": 1.9473684210526314
+        },
+        {
+          "dimensions": {
+            "query": "one piece commode with inbuilt jet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 10.5
+        },
+        {
+          "dimensions": {
+            "query": "one piece vs 2 piece toilet",
+            "page": "https://www.astralbathware.com/blogs/differences-between-one-piece-toilet-and-two-piece-toilet/"
+          },
+          "clicks": 1,
+          "impressions": 59,
+          "ctr": 0.01694915254237288,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "one piece vs two piece toilet",
+            "page": "https://www.astralbathware.com/blogs/differences-between-one-piece-toilet-and-two-piece-toilet/"
+          },
+          "clicks": 1,
+          "impressions": 267,
+          "ctr": 0.003745318352059925,
+          "averagePosition": 1.1610486891385767
+        },
+        {
+          "dimensions": {
+            "query": "one piece wc",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 56,
+          "ctr": 0.017857142857142856,
+          "averagePosition": 12.910714285714286
+        },
+        {
+          "dimensions": {
+            "query": "one piece western toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 25,
+          "ctr": 0.04,
+          "averagePosition": 20.08
+        },
+        {
+          "dimensions": {
+            "query": "online sanitary ware",
+            "page": "https://www.astralbathware.com/sanitaryware/"
+          },
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 0.058823529411764705,
+          "averagePosition": 9.470588235294118
+        },
+        {
+          "dimensions": {
+            "query": "orissa pan",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/orissa-pan-500-x-390-x-180mm-cello-pan/"
+          },
+          "clicks": 1,
+          "impressions": 974,
+          "ctr": 0.001026694045174538,
+          "averagePosition": 1.5585215605749485
+        },
+        {
+          "dimensions": {
+            "query": "orissa pan toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/orissa-pan-500-x-390-x-180mm-cello-pan/"
+          },
+          "clicks": 1,
+          "impressions": 69,
+          "ctr": 0.014492753623188406,
+          "averagePosition": 1.0724637681159421
+        },
+        {
+          "dimensions": {
+            "query": "orissa pan wc",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/orissa-pan-500-x-390-x-180mm-cello-pan/"
+          },
+          "clicks": 1,
+          "impressions": 118,
+          "ctr": 0.00847457627118644,
+          "averagePosition": 1.0084745762711864
+        },
+        {
+          "dimensions": {
+            "query": "orrisa pan",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 7,
+          "ctr": 0.14285714285714285,
+          "averagePosition": 4
+        },
+        {
+          "dimensions": {
+            "query": "ot pan",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/orissa-pan-510-x-405-x-250-mm/"
+          },
+          "clicks": 1,
+          "impressions": 147,
+          "ctr": 0.006802721088435374,
+          "averagePosition": 1.9523809523809523
+        },
+        {
+          "dimensions": {
+            "query": "overhead rain shower",
+            "page": "https://www.astralbathware.com/faucets/showers/overhead-showers/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 18.5
+        },
+        {
+          "dimensions": {
+            "query": "p trap for indian toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/accessories/trap-for-indian-pans/"
+          },
+          "clicks": 1,
+          "impressions": 66,
+          "ctr": 0.015151515151515152,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "p trap indian toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/accessories/trap-for-indian-pans/"
+          },
+          "clicks": 1,
+          "impressions": 75,
+          "ctr": 0.013333333333333334,
+          "averagePosition": 1.12
+        },
+        {
+          "dimensions": {
+            "query": "p trap pan",
+            "page": "https://www.astralbathware.com/sanitaryware/accessories/trap-for-indian-pans/"
+          },
+          "clicks": 1,
+          "impressions": 9,
+          "ctr": 0.1111111111111111,
+          "averagePosition": 2.5555555555555554
+        },
+        {
+          "dimensions": {
+            "query": "pedestal basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/pedestals/"
+          },
+          "clicks": 1,
+          "impressions": 56,
+          "ctr": 0.017857142857142856,
+          "averagePosition": 48.357142857142854
+        },
+        {
+          "dimensions": {
+            "query": "pedestal only",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/pedestals/"
+          },
+          "clicks": 1,
+          "impressions": 9,
+          "ctr": 0.1111111111111111,
+          "averagePosition": 7.222222222222222
+        },
+        {
+          "dimensions": {
+            "query": "pedestal pan meaning",
+            "page": "https://www.astralbathware.com/blogs/what-is-a-pedestal-wash-basin-and-why-should-you-consider-it/"
+          },
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07142857142857142,
+          "averagePosition": 3.357142857142857
+        },
+        {
+          "dimensions": {
+            "query": "pedestal wash basins",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/pedestals/"
+          },
+          "clicks": 1,
+          "impressions": 4,
+          "ctr": 0.25,
+          "averagePosition": 33.25
+        },
+        {
+          "dimensions": {
+            "query": "pilar coke",
+            "page": "https://www.astralbathware.com/blogs/why-pillar-cock-taps-are-the-perfect-choice-for-your-washbasin/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 3
+        },
+        {
+          "dimensions": {
+            "query": "pillar cock",
+            "page": "https://www.astralbathware.com/faucets/basin-area/p32-pillar-cock/"
+          },
+          "clicks": 1,
+          "impressions": 76,
+          "ctr": 0.013157894736842105,
+          "averagePosition": 5.447368421052632
+        },
+        {
+          "dimensions": {
+            "query": "poti pan",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 42,
+          "ctr": 0.023809523809523808,
+          "averagePosition": 9.5
+        },
+        {
+          "dimensions": {
+            "query": "push angle valve",
+            "page": "https://www.astralbathware.com/faucets/clinical-faucets-pressmatics/pressmatic-angle-valve/"
+          },
+          "clicks": 1,
+          "impressions": 62,
+          "ctr": 0.016129032258064516,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "push flush valve price",
+            "page": "https://www.astralbathware.com/faucets/flush-valve-control-valve/"
+          },
+          "clicks": 1,
+          "impressions": 5,
+          "ctr": 0.2,
+          "averagePosition": 7.8
+        },
+        {
+          "dimensions": {
+            "query": "pvc nal price",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 10
+        },
+        {
+          "dimensions": {
+            "query": "rain shower",
+            "page": "https://www.astralbathware.com/faucets/showers/overhead-showers/"
+          },
+          "clicks": 1,
+          "impressions": 146,
+          "ctr": 0.00684931506849315,
+          "averagePosition": 19.91780821917808
+        },
+        {
+          "dimensions": {
+            "query": "rain shower head",
+            "page": "https://www.astralbathware.com/faucets/showers/overhead-showers/"
+          },
+          "clicks": 1,
+          "impressions": 99,
+          "ctr": 0.010101010101010102,
+          "averagePosition": 15.808080808080808
+        },
+        {
+          "dimensions": {
+            "query": "rim vs rimless commode",
+            "page": "https://www.astralbathware.com/blogs/rimless-vs-rimmed-wall-mounted-toilets-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 22,
+          "ctr": 0.045454545454545456,
+          "averagePosition": 1.3636363636363638
+        },
+        {
+          "dimensions": {
+            "query": "rim vs rimless toilet seat",
+            "page": "https://www.astralbathware.com/blogs/rimless-vs-rimmed-wall-mounted-toilets-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 34,
+          "ctr": 0.029411764705882353,
+          "averagePosition": 1.2058823529411764
+        },
+        {
+          "dimensions": {
+            "query": "rimless toilet seat meaning in hindi",
+            "page": "https://www.astralbathware.com/blogs/rimless-vs-rimmed-wall-mounted-toilets-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 9,
+          "ctr": 0.1111111111111111,
+          "averagePosition": 6.555555555555555
+        },
+        {
+          "dimensions": {
+            "query": "rimless toilet vs normal",
+            "page": "https://www.astralbathware.com/blogs/rimless-vs-rimmed-wall-mounted-toilets-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 120,
+          "ctr": 0.008333333333333333,
+          "averagePosition": 1.575
+        },
+        {
+          "dimensions": {
+            "query": "rimless toilets",
+            "page": "https://www.astralbathware.com/blogs/rimless-vs-rimmed-wall-mounted-toilets-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 14,
+          "ctr": 0.07142857142857142,
+          "averagePosition": 6.571428571428571
+        },
+        {
+          "dimensions": {
+            "query": "rimless vs non rimless toilet",
+            "page": "https://www.astralbathware.com/blogs/rimless-vs-rimmed-wall-mounted-toilets-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 21,
+          "ctr": 0.047619047619047616,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "sanitary and bathroom fittings",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 11,
+          "ctr": 0.09090909090909091,
+          "averagePosition": 18.545454545454547
+        },
+        {
+          "dimensions": {
+            "query": "sanitary hardware shop near me",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "sanitary shop near me",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 0.3333333333333333,
+          "averagePosition": 25.333333333333332
+        },
+        {
+          "dimensions": {
+            "query": "sanitary ware",
+            "page": "https://www.astralbathware.com/sanitaryware/"
+          },
+          "clicks": 1,
+          "impressions": 251,
+          "ctr": 0.00398406374501992,
+          "averagePosition": 26.10358565737052
+        },
+        {
+          "dimensions": {
+            "query": "sanitary ware india",
+            "page": "https://www.astralbathware.com/sanitaryware/"
+          },
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 0.058823529411764705,
+          "averagePosition": 30.058823529411764
+        },
+        {
+          "dimensions": {
+            "query": "sanitaryware catalogue",
+            "page": "https://www.astralbathware.com/catalogues/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 14
+        },
+        {
+          "dimensions": {
+            "query": "sanitaryware company",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 18,
+          "ctr": 0.05555555555555555,
+          "averagePosition": 26.11111111111111
+        },
+        {
+          "dimensions": {
+            "query": "short body",
+            "page": "https://www.astralbathware.com/faucets/g11-bib-cock-short-body/"
+          },
+          "clicks": 1,
+          "impressions": 34,
+          "ctr": 0.029411764705882353,
+          "averagePosition": 1.3235294117647058
+        },
+        {
+          "dimensions": {
+            "query": "shower head india",
+            "page": "https://www.astralbathware.com/faucets/showers/overhead-showers/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 52
+        },
+        {
+          "dimensions": {
+            "query": "shower lever",
+            "page": "https://www.astralbathware.com/faucets/shower-area/"
+          },
+          "clicks": 1,
+          "impressions": 28,
+          "ctr": 0.03571428571428571,
+          "averagePosition": 8.321428571428571
+        },
+        {
+          "dimensions": {
+            "query": "shower valve tap",
+            "page": "https://www.astralbathware.com/faucets/shower-area/"
+          },
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 0.08333333333333333,
+          "averagePosition": 8.833333333333332
+        },
+        {
+          "dimensions": {
+            "query": "simple toilet seat price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 136,
+          "ctr": 0.007352941176470588,
+          "averagePosition": 11.117647058823529
+        },
+        {
+          "dimensions": {
+            "query": "sink pedestal only",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/pedestals/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 7
+        },
+        {
+          "dimensions": {
+            "query": "siphonic one piece toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 0.1,
+          "averagePosition": 3.2
+        },
+        {
+          "dimensions": {
+            "query": "small commode size",
+            "page": "https://www.astralbathware.com/blogs/how-to-choose-the-right-commode-size-for-your-bathroom/"
+          },
+          "clicks": 1,
+          "impressions": 67,
+          "ctr": 0.014925373134328358,
+          "averagePosition": 9.298507462686567
+        },
+        {
+          "dimensions": {
+            "query": "small wash basin size",
+            "page": "https://www.astralbathware.com/blogs/how-to-choose-the-right-wash-basin-size-for-your-bathroom/"
+          },
+          "clicks": 1,
+          "impressions": 50,
+          "ctr": 0.02,
+          "averagePosition": 1.12
+        },
+        {
+          "dimensions": {
+            "query": "standard commode size",
+            "page": "https://www.astralbathware.com/blogs/how-to-choose-the-right-commode-size-for-your-bathroom/"
+          },
+          "clicks": 1,
+          "impressions": 31,
+          "ctr": 0.03225806451612903,
+          "averagePosition": 9.709677419354838
+        },
+        {
+          "dimensions": {
+            "query": "table top basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/table-top-basins/page/3/"
+          },
+          "clicks": 1,
+          "impressions": 125,
+          "ctr": 0.008,
+          "averagePosition": 18.36
+        },
+        {
+          "dimensions": {
+            "query": "table top basin design",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/table-top-basins/"
+          },
+          "clicks": 1,
+          "impressions": 22,
+          "ctr": 0.045454545454545456,
+          "averagePosition": 16.045454545454547
+        },
+        {
+          "dimensions": {
+            "query": "table top vs counter top basin",
+            "page": "https://www.astralbathware.com/blogs/difference-between-an-under-counter-and-a-table-top-wash-basin/"
+          },
+          "clicks": 1,
+          "impressions": 20,
+          "ctr": 0.05,
+          "averagePosition": 1.35
+        },
+        {
+          "dimensions": {
+            "query": "table top wash basin design",
+            "page": "https://www.astralbathware.com/blogs/table-top-wash-basin-design-for-a-luxurious-bathroom-look/"
+          },
+          "clicks": 1,
+          "impressions": 8,
+          "ctr": 0.125,
+          "averagePosition": 26
+        },
+        {
+          "dimensions": {
+            "query": "toilet 1 piece vs 2 piece",
+            "page": "https://www.astralbathware.com/blogs/differences-between-one-piece-toilet-and-two-piece-toilet/"
+          },
+          "clicks": 1,
+          "impressions": 11,
+          "ctr": 0.09090909090909091,
+          "averagePosition": 1.2727272727272727
+        },
+        {
+          "dimensions": {
+            "query": "toilet 2 piece vs 1 piece",
+            "page": "https://www.astralbathware.com/blogs/differences-between-one-piece-toilet-and-two-piece-toilet/"
+          },
+          "clicks": 1,
+          "impressions": 10,
+          "ctr": 0.1,
+          "averagePosition": 5.3
+        },
+        {
+          "dimensions": {
+            "query": "toilet bhanda",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 77,
+          "ctr": 0.012987012987012988,
+          "averagePosition": 1.051948051948052
+        },
+        {
+          "dimensions": {
+            "query": "toilet closet shop near me",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 4
+        },
+        {
+          "dimensions": {
+            "query": "toilet commode indian",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 76,
+          "ctr": 0.013157894736842105,
+          "averagePosition": 10.236842105263158
+        },
+        {
+          "dimensions": {
+            "query": "toilet one piece vs two piece",
+            "page": "https://www.astralbathware.com/blogs/differences-between-one-piece-toilet-and-two-piece-toilet/"
+          },
+          "clicks": 1,
+          "impressions": 22,
+          "ctr": 0.045454545454545456,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "toilet pot indian",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 39,
+          "ctr": 0.02564102564102564,
+          "averagePosition": 6.923076923076923
+        },
+        {
+          "dimensions": {
+            "query": "toilet seat indian",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/orissa-pan-500-x-390-x-180mm-cello-pan/"
+          },
+          "clicks": 1,
+          "impressions": 53,
+          "ctr": 0.018867924528301886,
+          "averagePosition": 1.320754716981132
+        },
+        {
+          "dimensions": {
+            "query": "toilet seat indian price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 59,
+          "ctr": 0.01694915254237288,
+          "averagePosition": 10.932203389830509
+        },
+        {
+          "dimensions": {
+            "query": "toilet seat indian style",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/orissa-pan-500-x-390-x-180mm-cello-pan/"
+          },
+          "clicks": 1,
+          "impressions": 116,
+          "ctr": 0.008620689655172414,
+          "averagePosition": 1.956896551724138
+        },
+        {
+          "dimensions": {
+            "query": "toilet seat one piece",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 8,
+          "ctr": 0.125,
+          "averagePosition": 24.25
+        },
+        {
+          "dimensions": {
+            "query": "toilet seat price indian",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 158,
+          "ctr": 0.006329113924050633,
+          "averagePosition": 11.835443037974683
+        },
+        {
+          "dimensions": {
+            "query": "toilet seat single piece",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 4,
+          "ctr": 0.25,
+          "averagePosition": 14.5
+        },
+        {
+          "dimensions": {
+            "query": "toilet seat western",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 6,
+          "ctr": 0.16666666666666666,
+          "averagePosition": 21
+        },
+        {
+          "dimensions": {
+            "query": "two piece toilet wall hung",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-wall-hung-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 16,
+          "ctr": 0.0625,
+          "averagePosition": 5.0625
+        },
+        {
+          "dimensions": {
+            "query": "two piece vs one piece toilet",
+            "page": "https://www.astralbathware.com/blogs/differences-between-one-piece-toilet-and-two-piece-toilet/"
+          },
+          "clicks": 1,
+          "impressions": 54,
+          "ctr": 0.018518518518518517,
+          "averagePosition": 1.037037037037037
+        },
+        {
+          "dimensions": {
+            "query": "two piece wall hung toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-wall-hung-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 66,
+          "ctr": 0.015151515151515152,
+          "averagePosition": 6.196969696969697
+        },
+        {
+          "dimensions": {
+            "query": "two piece wall hung toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-wall-hung-toilets/two-piece-wall-hung-toilet-630-x-360-x-770-mm/"
+          },
+          "clicks": 1,
+          "impressions": 48,
+          "ctr": 0.020833333333333332,
+          "averagePosition": 4.208333333333334
+        },
+        {
+          "dimensions": {
+            "query": "two piece wall hung toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-wall-hung-toilets/two-piece-wall-hung-toilet-670-x-345-x-750-mm/"
+          },
+          "clicks": 1,
+          "impressions": 30,
+          "ctr": 0.03333333333333333,
+          "averagePosition": 4
+        },
+        {
+          "dimensions": {
+            "query": "two piece wall mounted toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-wall-hung-toilets/two-piece-wall-hung-toilet-670-x-345-x-750-mm/"
+          },
+          "clicks": 1,
+          "impressions": 17,
+          "ctr": 0.058823529411764705,
+          "averagePosition": 5.705882352941177
+        },
+        {
+          "dimensions": {
+            "query": "two piece western commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-floor-mounting-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 57,
+          "ctr": 0.017543859649122806,
+          "averagePosition": 11.596491228070175
+        },
+        {
+          "dimensions": {
+            "query": "two way angel cock",
+            "page": "https://www.astralbathware.com/faucets/allied-products/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 27
+        },
+        {
+          "dimensions": {
+            "query": "type of latrine",
+            "page": "https://www.astralbathware.com/blogs/indian-toilet-vs-western-toilet-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 3
+        },
+        {
+          "dimensions": {
+            "query": "types of faucets bathroom",
+            "page": "https://www.astralbathware.com/blogs/what-types-of-faucets-are-commonly-used-in-bathrooms/"
+          },
+          "clicks": 1,
+          "impressions": 12,
+          "ctr": 0.08333333333333333,
+          "averagePosition": 29.5
+        },
+        {
+          "dimensions": {
+            "query": "types of indian toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 23,
+          "ctr": 0.043478260869565216,
+          "averagePosition": 3.260869565217391
+        },
+        {
+          "dimensions": {
+            "query": "types of western commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/page/2/"
+          },
+          "clicks": 1,
+          "impressions": 37,
+          "ctr": 0.02702702702702703,
+          "averagePosition": 8.324324324324325
+        },
+        {
+          "dimensions": {
+            "query": "urinal buy",
+            "page": "https://www.astralbathware.com/sanitaryware/urinals/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 16.5
+        },
+        {
+          "dimensions": {
+            "query": "urinal spreader",
+            "page": "https://www.astralbathware.com/sanitaryware/accessories/urinal-spreader/"
+          },
+          "clicks": 1,
+          "impressions": 30,
+          "ctr": 0.03333333333333333,
+          "averagePosition": 19
+        },
+        {
+          "dimensions": {
+            "query": "urinal toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/urinals/"
+          },
+          "clicks": 1,
+          "impressions": 455,
+          "ctr": 0.002197802197802198,
+          "averagePosition": 12.749450549450549
+        },
+        {
+          "dimensions": {
+            "query": "urinal toilet low price",
+            "page": "https://www.astralbathware.com/sanitaryware/urinals/"
+          },
+          "clicks": 1,
+          "impressions": 46,
+          "ctr": 0.021739130434782608,
+          "averagePosition": 11.130434782608695
+        },
+        {
+          "dimensions": {
+            "query": "vacuum commode price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 30
+        },
+        {
+          "dimensions": {
+            "query": "wall hang wash basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/wall-hung-basins/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 5
+        },
+        {
+          "dimensions": {
+            "query": "wall hanging basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/wall-hung-basins/"
+          },
+          "clicks": 1,
+          "impressions": 102,
+          "ctr": 0.00980392156862745,
+          "averagePosition": 11.901960784313726
+        },
+        {
+          "dimensions": {
+            "query": "wall hanging sheet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-wall-hung-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 216,
+          "ctr": 0.004629629629629629,
+          "averagePosition": 9.722222222222221
+        },
+        {
+          "dimensions": {
+            "query": "wall hung basins",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/wall-hung-basins/"
+          },
+          "clicks": 1,
+          "impressions": 11,
+          "ctr": 0.09090909090909091,
+          "averagePosition": 16.363636363636363
+        },
+        {
+          "dimensions": {
+            "query": "wall hung commode size in inches",
+            "page": "https://www.astralbathware.com/blogs/how-to-choose-the-right-commode-size-for-your-bathroom/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 2
+        },
+        {
+          "dimensions": {
+            "query": "wall hung toilet with flush tank",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-wall-hung-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 32,
+          "ctr": 0.03125,
+          "averagePosition": 4.78125
+        },
+        {
+          "dimensions": {
+            "query": "wall mounted toilet gasket",
+            "page": "https://www.astralbathware.com/sanitaryware/accessories/inlet-gasket-for-wall-hung-toilet/"
+          },
+          "clicks": 1,
+          "impressions": 37,
+          "ctr": 0.02702702702702703,
+          "averagePosition": 2.4594594594594597
+        },
+        {
+          "dimensions": {
+            "query": "wall mounted toilet price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/wall-hung-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 7,
+          "ctr": 0.14285714285714285,
+          "averagePosition": 15
+        },
+        {
+          "dimensions": {
+            "query": "wall mounted toilet seat complete set",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-wall-hung-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 118,
+          "ctr": 0.00847457627118644,
+          "averagePosition": 3.0508474576271185
+        },
+        {
+          "dimensions": {
+            "query": "wall mounted toilet seat with flush tank",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/two-piece-wall-hung-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 66,
+          "ctr": 0.015151515151515152,
+          "averagePosition": 10.151515151515152
+        },
+        {
+          "dimensions": {
+            "query": "wall-mounted wash basins",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/wall-hung-basins/"
+          },
+          "clicks": 1,
+          "impressions": 46,
+          "ctr": 0.021739130434782608,
+          "averagePosition": 3.239130434782609
+        },
+        {
+          "dimensions": {
+            "query": "wash basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/"
+          },
+          "clicks": 1,
+          "impressions": 255,
+          "ctr": 0.00392156862745098,
+          "averagePosition": 32.4078431372549
+        },
+        {
+          "dimensions": {
+            "query": "wash basin dimension",
+            "page": "https://www.astralbathware.com/blogs/how-to-choose-the-right-wash-basin-size-for-your-bathroom/"
+          },
+          "clicks": 1,
+          "impressions": 55,
+          "ctr": 0.01818181818181818,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "wash basin pedestal",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/pedestals/"
+          },
+          "clicks": 1,
+          "impressions": 68,
+          "ctr": 0.014705882352941176,
+          "averagePosition": 18.897058823529413
+        },
+        {
+          "dimensions": {
+            "query": "wash basin price under 1000",
+            "page": "https://www.astralbathware.com/blogs/colour-guide-on-selecting-your-perfect-table-top-wash-basin/"
+          },
+          "clicks": 1,
+          "impressions": 2,
+          "ctr": 0.5,
+          "averagePosition": 3
+        },
+        {
+          "dimensions": {
+            "query": "wash basin price under 500",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/"
+          },
+          "clicks": 1,
+          "impressions": 38,
+          "ctr": 0.02631578947368421,
+          "averagePosition": 16.815789473684212
+        },
+        {
+          "dimensions": {
+            "query": "wash basin with stand",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/pedestals/"
+          },
+          "clicks": 1,
+          "impressions": 303,
+          "ctr": 0.0033003300330033004,
+          "averagePosition": 12.706270627062706
+        },
+        {
+          "dimensions": {
+            "query": "washbasin stand",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/pedestals/"
+          },
+          "clicks": 1,
+          "impressions": 156,
+          "ctr": 0.00641025641025641,
+          "averagePosition": 10.564102564102564
+        },
+        {
+          "dimensions": {
+            "query": "wc indian type",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 1,
+          "impressions": 60,
+          "ctr": 0.016666666666666666,
+          "averagePosition": 1.8666666666666667
+        },
+        {
+          "dimensions": {
+            "query": "western commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 124,
+          "ctr": 0.008064516129032258,
+          "averagePosition": 25.81451612903226
+        },
+        {
+          "dimensions": {
+            "query": "western commode online",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 21,
+          "ctr": 0.047619047619047616,
+          "averagePosition": 8.19047619047619
+        },
+        {
+          "dimensions": {
+            "query": "western cum indian toilet",
+            "page": "https://www.astralbathware.com/blogs/indian-toilet-vs-western-toilet-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 37,
+          "ctr": 0.02702702702702703,
+          "averagePosition": 9.405405405405405
+        },
+        {
+          "dimensions": {
+            "query": "western floor mounted toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 0.05263157894736842,
+          "averagePosition": 7.7894736842105265
+        },
+        {
+          "dimensions": {
+            "query": "western toilet cost",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 58,
+          "ctr": 0.017241379310344827,
+          "averagePosition": 16.775862068965516
+        },
+        {
+          "dimensions": {
+            "query": "western toilet floor mounted",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/floor-mounting-toilets/"
+          },
+          "clicks": 1,
+          "impressions": 55,
+          "ctr": 0.01818181818181818,
+          "averagePosition": 11.381818181818181
+        },
+        {
+          "dimensions": {
+            "query": "western toilet glass set price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 12
+        },
+        {
+          "dimensions": {
+            "query": "western toilet name",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/page/2/"
+          },
+          "clicks": 1,
+          "impressions": 98,
+          "ctr": 0.01020408163265306,
+          "averagePosition": 5.6020408163265305
+        },
+        {
+          "dimensions": {
+            "query": "western toilet online",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/page/2/"
+          },
+          "clicks": 1,
+          "impressions": 6,
+          "ctr": 0.16666666666666666,
+          "averagePosition": 11.166666666666666
+        },
+        {
+          "dimensions": {
+            "query": "western toilet price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 269,
+          "ctr": 0.0037174721189591076,
+          "averagePosition": 11.41263940520446
+        },
+        {
+          "dimensions": {
+            "query": "western toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 89,
+          "ctr": 0.011235955056179775,
+          "averagePosition": 27.089887640449437
+        },
+        {
+          "dimensions": {
+            "query": "western toilet seat design",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/page/2/"
+          },
+          "clicks": 1,
+          "impressions": 31,
+          "ctr": 0.03225806451612903,
+          "averagePosition": 9.935483870967742
+        },
+        {
+          "dimensions": {
+            "query": "western toilet seat types",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/page/2/"
+          },
+          "clicks": 1,
+          "impressions": 39,
+          "ctr": 0.02564102564102564,
+          "averagePosition": 10.64102564102564
+        },
+        {
+          "dimensions": {
+            "query": "what are rimless toilets",
+            "page": "https://www.astralbathware.com/blogs/rimless-vs-rimmed-wall-mounted-toilets-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 9,
+          "ctr": 0.1111111111111111,
+          "averagePosition": 1.2222222222222223
+        },
+        {
+          "dimensions": {
+            "query": "what is pedestal wash basin",
+            "page": "https://www.astralbathware.com/blogs/what-is-a-pedestal-wash-basin-and-why-should-you-consider-it/"
+          },
+          "clicks": 1,
+          "impressions": 19,
+          "ctr": 0.05263157894736842,
+          "averagePosition": 1.7894736842105263
+        },
+        {
+          "dimensions": {
+            "query": "what is rimless commode",
+            "page": "https://www.astralbathware.com/blogs/rimless-vs-rimmed-wall-mounted-toilets-which-is-better/"
+          },
+          "clicks": 1,
+          "impressions": 33,
+          "ctr": 0.030303030303030304,
+          "averagePosition": 1.0303030303030303
+        },
+        {
+          "dimensions": {
+            "query": "what's the difference between one piece and two piece toilets",
+            "page": "https://www.astralbathware.com/blogs/differences-between-one-piece-toilet-and-two-piece-toilet/"
+          },
+          "clicks": 1,
+          "impressions": 3,
+          "ctr": 0.3333333333333333,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "what's the difference between thermostatic and non thermostatic showers",
+            "page": "https://www.astralbathware.com/blogs/how-is-a-thermostatic-shower-different-from-a-mixer-shower/"
+          },
+          "clicks": 1,
+          "impressions": 27,
+          "ctr": 0.037037037037037035,
+          "averagePosition": 26.11111111111111
+        },
+        {
+          "dimensions": {
+            "query": "which company commode is best in india",
+            "page": "https://www.astralbathware.com/blogs/how-to-choose-the-right-commode-size-for-your-bathroom/"
+          },
+          "clicks": 1,
+          "impressions": 5,
+          "ctr": 0.2,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "white faucet bathroom",
+            "page": "https://www.astralbathware.com/"
+          },
+          "clicks": 1,
+          "impressions": 1,
+          "ctr": 1,
+          "averagePosition": 18
+        },
+        {
+          "dimensions": {
+            "query": "वेस्टर्न टॉयलेट सीट प्राइस",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/"
+          },
+          "clicks": 1,
+          "impressions": 128,
+          "ctr": 0.0078125,
+          "averagePosition": 6.4140625
+        },
+        {
+          "dimensions": {
+            "query": "\"compact bathroom design trends\"",
+            "page": "https://www.astralbathware.com/blogs/what-are-the-top-trending-layouts-for-small-bathroom-design-in-2025/"
+          },
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "averagePosition": 10
+        },
+        {
+          "dimensions": {
+            "query": "\"rimless\" \"orissa pan\"",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "averagePosition": 10
+        },
+        {
+          "dimensions": {
+            "query": "\"rimless\" \"orissa pan\"",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/orissa-pan-500-x-390-x-180mm-cello-pan/"
+          },
+          "clicks": 0,
+          "impressions": 8,
+          "ctr": 0,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "\"table top\" basin or sink vs \"counter top\" basin or sink",
+            "page": "https://www.astralbathware.com/blogs/difference-between-an-under-counter-and-a-table-top-wash-basin/"
+          },
+          "clicks": 0,
+          "impressions": 22,
+          "ctr": 0,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "\"toilet of the world\" india",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 0,
+          "impressions": 12,
+          "ctr": 0,
+          "averagePosition": 2
+        },
+        {
+          "dimensions": {
+            "query": "\"toilet of the world\" india meme or slang",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/orissa-pan/"
+          },
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "averagePosition": 3.3333333333333335
+        },
+        {
+          "dimensions": {
+            "query": "\"world's greatest toilet show\" india",
+            "page": "https://www.astralbathware.com/blogs/indian-toilet-vs-western-toilet-which-is-better/"
+          },
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "averagePosition": 2
+        },
+        {
+          "dimensions": {
+            "query": "+91 85117 81111",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2022/12/Bathware-Brochure-Single-Page-9-Dec.pdf"
+          },
+          "clicks": 0,
+          "impressions": 7,
+          "ctr": 0,
+          "averagePosition": 17
+        },
+        {
+          "dimensions": {
+            "query": "+91 85117 81111",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2023/12/Bathware-Product-Brochure-A4_Single-Page-PDF-2nd-Dec-1.pdf"
+          },
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "averagePosition": 30
+        },
+        {
+          "dimensions": {
+            "query": "+91 85117 81111",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2023/12/Big_5_catalouge_FINAL_LAYOUT_Bathware-22-Nov-CtoC-Single-page.pdf"
+          },
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "averagePosition": 16.833333333333336
+        },
+        {
+          "dimensions": {
+            "query": "+91 85117 81111",
+            "page": "https://www.astralbathware.com/wp-content/uploads/2024/01/Astral-Faucet-Brochure_-A5_Combine.pdf"
+          },
+          "clicks": 0,
+          "impressions": 3,
+          "ctr": 0,
+          "averagePosition": 10
+        },
+        {
+          "dimensions": {
+            "query": "+yes",
+            "page": "https://www.astralbathware.com/blogs/how-to-choose-the-right-style-of-kitchen-sink-tap-for-your-home/"
+          },
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "averagePosition": 11
+        },
+        {
+          "dimensions": {
+            "query": "1 or 2 piece toilet",
+            "page": "https://www.astralbathware.com/blogs/differences-between-one-piece-toilet-and-two-piece-toilet/"
+          },
+          "clicks": 0,
+          "impressions": 15,
+          "ctr": 0,
+          "averagePosition": 6.6
+        },
+        {
+          "dimensions": {
+            "query": "1 pc vs 2 pc toilet",
+            "page": "https://www.astralbathware.com/blogs/differences-between-one-piece-toilet-and-two-piece-toilet/"
+          },
+          "clicks": 0,
+          "impressions": 5,
+          "ctr": 0,
+          "averagePosition": 1.4
+        },
+        {
+          "dimensions": {
+            "query": "1 pic toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/one-piece-toilets-720-x-370-x-700-mm-2/"
+          },
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "averagePosition": 1
+        },
+        {
+          "dimensions": {
+            "query": "1 pic toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/one-piece-toilets-720-x-370-x-700-mm-2/"
+          },
+          "clicks": 0,
+          "impressions": 27,
+          "ctr": 0,
+          "averagePosition": 2.0740740740740744
+        },
+        {
+          "dimensions": {
+            "query": "1 piece basin",
+            "page": "https://www.astralbathware.com/sanitaryware/wash-basins/one-piece-basins-with-integrated-pedestal/"
+          },
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "averagePosition": 12
+        },
+        {
+          "dimensions": {
+            "query": "1 piece closet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "averagePosition": 11.166666666666666
+        },
+        {
+          "dimensions": {
+            "query": "1 piece commode",
+            "page": "https://www.astralbathware.com/blogs/differences-between-one-piece-toilet-and-two-piece-toilet/"
+          },
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "averagePosition": 4
+        },
+        {
+          "dimensions": {
+            "query": "1 piece commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 0,
+          "impressions": 10,
+          "ctr": 0,
+          "averagePosition": 21.8
+        },
+        {
+          "dimensions": {
+            "query": "1 piece commode",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/one-piece-toilets-720-x-370-x-700-mm-2/"
+          },
+          "clicks": 0,
+          "impressions": 29,
+          "ctr": 0,
+          "averagePosition": 8.551724137931036
+        },
+        {
+          "dimensions": {
+            "query": "1 piece commode price",
+            "page": "https://www.astralbathware.com/blogs/differences-between-one-piece-toilet-and-two-piece-toilet/"
+          },
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "averagePosition": 4
+        },
+        {
+          "dimensions": {
+            "query": "1 piece commode price",
+            "page": "https://www.astralbathware.com/blogs/what-are-the-advantages-of-one-piece-toilets/"
+          },
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "averagePosition": 3
+        },
+        {
+          "dimensions": {
+            "query": "1 piece commode price",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "averagePosition": 5
+        },
+        {
+          "dimensions": {
+            "query": "1 piece commode size",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "averagePosition": 8
+        },
+        {
+          "dimensions": {
+            "query": "1 piece english seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "averagePosition": 5
+        },
+        {
+          "dimensions": {
+            "query": "1 piece or 2 piece toilet",
+            "page": "https://www.astralbathware.com/blogs/differences-between-one-piece-toilet-and-two-piece-toilet/"
+          },
+          "clicks": 0,
+          "impressions": 9,
+          "ctr": 0,
+          "averagePosition": 6
+        },
+        {
+          "dimensions": {
+            "query": "1 piece seat toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 0,
+          "impressions": 4,
+          "ctr": 0,
+          "averagePosition": 11
+        },
+        {
+          "dimensions": {
+            "query": "1 piece seat toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/one-piece-toilets-720-x-370-x-700-mm-2/"
+          },
+          "clicks": 0,
+          "impressions": 2,
+          "ctr": 0,
+          "averagePosition": 2
+        },
+        {
+          "dimensions": {
+            "query": "1 piece toilet",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 0,
+          "impressions": 25,
+          "ctr": 0,
+          "averagePosition": 13.4
+        },
+        {
+          "dimensions": {
+            "query": "1 piece toilet bowl",
+            "page": "https://www.astralbathware.com/blogs/differences-between-one-piece-toilet-and-two-piece-toilet/"
+          },
+          "clicks": 0,
+          "impressions": 1,
+          "ctr": 0,
+          "averagePosition": 3
+        },
+        {
+          "dimensions": {
+            "query": "1 piece toilet seat",
+            "page": "https://www.astralbathware.com/sanitaryware/toilets/one-piece-toilets/"
+          },
+          "clicks": 0,
+          "impressions": 6,
+          "ctr": 0,
+          "averagePosition": 20.5
+        }
+      ],
+      "positionBuckets": [
+        {
+          "bucket": "1-3",
+          "queryCount": 62,
+          "clicks": 1805,
+          "impressions": 36225,
+          "ctr": 0.049827467218771564,
+          "averagePosition": 1.3675914423740512
+        },
+        {
+          "bucket": "4-10",
+          "queryCount": 24,
+          "clicks": 116,
+          "impressions": 21167,
+          "ctr": 0.005480228657816413,
+          "averagePosition": 5.218642226106676
+        },
+        {
+          "bucket": "11-20",
+          "queryCount": 11,
+          "clicks": 39,
+          "impressions": 4761,
+          "ctr": 0.008191556395715185,
+          "averagePosition": 11.542743121193027
+        },
+        {
+          "bucket": "21-50",
+          "queryCount": 3,
+          "clicks": 7,
+          "impressions": 1501,
+          "ctr": 0.004663557628247834,
+          "averagePosition": 26.639573617588276
+        },
+        {
+          "bucket": "50+",
+          "queryCount": 0,
+          "clicks": 0,
+          "impressions": 0,
+          "ctr": null,
+          "averagePosition": null
+        }
+      ],
+      "devices": [
+        {
+          "dimensions": {
+            "device": "MOBILE"
+          },
+          "clicks": 3489,
+          "impressions": 263945,
+          "ctr": 0.013218662979029723,
+          "averagePosition": 11.243111254238572
+        },
+        {
+          "dimensions": {
+            "device": "DESKTOP"
+          },
+          "clicks": 922,
+          "impressions": 168156,
+          "ctr": 0.005483003877351983,
+          "averagePosition": 15.99289945051024
+        },
+        {
+          "dimensions": {
+            "device": "TABLET"
+          },
+          "clicks": 19,
+          "impressions": 4196,
+          "ctr": 0.004528122020972355,
+          "averagePosition": 23.681839847473785
+        }
+      ],
+      "countries": [
+        {
+          "dimensions": {
+            "country": "ind"
+          },
+          "clicks": 3612,
+          "impressions": 340075,
+          "ctr": 0.010621186502977284,
+          "averagePosition": 14.457754907005807
+        },
+        {
+          "dimensions": {
+            "country": "sau"
+          },
+          "clicks": 613,
+          "impressions": 3440,
+          "ctr": 0.17819767441860465,
+          "averagePosition": 3.65
+        },
+        {
+          "dimensions": {
+            "country": "are"
+          },
+          "clicks": 55,
+          "impressions": 2260,
+          "ctr": 0.024336283185840708,
+          "averagePosition": 9.765486725663717
+        },
+        {
+          "dimensions": {
+            "country": "usa"
+          },
+          "clicks": 28,
+          "impressions": 29847,
+          "ctr": 0.0009381177337755888,
+          "averagePosition": 7.8978791838375715
+        },
+        {
+          "dimensions": {
+            "country": "bgd"
+          },
+          "clicks": 12,
+          "impressions": 1374,
+          "ctr": 0.008733624454148471,
+          "averagePosition": 6.202328966521106
+        },
+        {
+          "dimensions": {
+            "country": "pak"
+          },
+          "clicks": 12,
+          "impressions": 3749,
+          "ctr": 0.0032008535609495867,
+          "averagePosition": 3.8455588156841825
+        },
+        {
+          "dimensions": {
+            "country": "gbr"
+          },
+          "clicks": 11,
+          "impressions": 7684,
+          "ctr": 0.0014315460697553357,
+          "averagePosition": 19.350208224882874
+        },
+        {
+          "dimensions": {
+            "country": "sgp"
+          },
+          "clicks": 10,
+          "impressions": 1356,
+          "ctr": 0.007374631268436578,
+          "averagePosition": 12.915929203539823
+        },
+        {
+          "dimensions": {
+            "country": "npl"
+          },
+          "clicks": 7,
+          "impressions": 1067,
+          "ctr": 0.006560449859418931,
+          "averagePosition": 4.4095595126522955
+        },
+        {
+          "dimensions": {
+            "country": "can"
+          },
+          "clicks": 5,
+          "impressions": 4612,
+          "ctr": 0.0010841283607979184,
+          "averagePosition": 9.60971379011275
+        },
+        {
+          "dimensions": {
+            "country": "ken"
+          },
+          "clicks": 4,
+          "impressions": 536,
+          "ctr": 0.007462686567164179,
+          "averagePosition": 7.117537313432836
+        },
+        {
+          "dimensions": {
+            "country": "phl"
+          },
+          "clicks": 4,
+          "impressions": 3572,
+          "ctr": 0.0011198208286674132,
+          "averagePosition": 3.4280515117581185
+        },
+        {
+          "dimensions": {
+            "country": "qat"
+          },
+          "clicks": 4,
+          "impressions": 525,
+          "ctr": 0.007619047619047619,
+          "averagePosition": 7.287619047619048
+        },
+        {
+          "dimensions": {
+            "country": "zaf"
+          },
+          "clicks": 4,
+          "impressions": 1136,
+          "ctr": 0.0035211267605633804,
+          "averagePosition": 6.251760563380282
+        },
+        {
+          "dimensions": {
+            "country": "egy"
+          },
+          "clicks": 3,
+          "impressions": 233,
+          "ctr": 0.012875536480686695,
+          "averagePosition": 7.515021459227468
+        },
+        {
+          "dimensions": {
+            "country": "kwt"
+          },
+          "clicks": 3,
+          "impressions": 298,
+          "ctr": 0.010067114093959731,
+          "averagePosition": 5.184563758389261
+        },
+        {
+          "dimensions": {
+            "country": "tur"
+          },
+          "clicks": 3,
+          "impressions": 398,
+          "ctr": 0.007537688442211055,
+          "averagePosition": 7.969849246231155
+        },
+        {
+          "dimensions": {
+            "country": "aus"
+          },
+          "clicks": 2,
+          "impressions": 2111,
+          "ctr": 0.0009474182851729038,
+          "averagePosition": 14.883941260066319
+        },
+        {
+          "dimensions": {
+            "country": "eth"
+          },
+          "clicks": 2,
+          "impressions": 117,
+          "ctr": 0.017094017094017096,
+          "averagePosition": 5.3760683760683765
+        },
+        {
+          "dimensions": {
+            "country": "fra"
+          },
+          "clicks": 2,
+          "impressions": 299,
+          "ctr": 0.006688963210702341,
+          "averagePosition": 9.57190635451505
+        }
+      ],
       "evidence": {
         "source": "Google Search Console",
-        "evidenceUrl": "https://www.astralbathware.com/",
-        "collectedAt": "2026-05-07T13:43:09.876Z",
-        "method": "Setup check",
-        "confidence": "Setup Required"
+        "evidenceUrl": "sc-domain:astralbathware.com",
+        "collectedAt": "2026-05-07T13:50:18.529Z",
+        "method": "Search Analytics API, last 28 final days",
+        "confidence": "First-party property access"
       }
     },
     {
@@ -17594,7 +23424,7 @@
       "evidence": {
         "source": "Google Search Console",
         "evidenceUrl": "https://www.astralpaints.com/",
-        "collectedAt": "2026-05-07T13:43:09.876Z",
+        "collectedAt": "2026-05-07T13:50:18.529Z",
         "method": "Search Analytics API, last 28 final days",
         "confidence": "First-party property access"
       }
@@ -17625,7 +23455,7 @@
       "evidence": {
         "source": "Google Search Console",
         "evidenceUrl": "https://www.astralltd.com/",
-        "collectedAt": "2026-05-07T13:43:09.876Z",
+        "collectedAt": "2026-05-07T13:50:18.529Z",
         "method": "Setup check",
         "confidence": "Setup Required"
       }

@@ -30,7 +30,7 @@
   {
     "ownedBrandSlug": "astral-bathware",
     "brandName": "Astral Bathware",
-    "gscPropertyUrl": "https://www.astralbathware.com/",
+    "gscPropertyUrl": "sc-domain:astralbathware.com",
     "ga4PropertyId": "",
     "hostnames": ["www.astralbathware.com", "astralbathware.com"],
     "brandTerms": ["astral bathware", "astral faucets", "astral sanitaryware"],
